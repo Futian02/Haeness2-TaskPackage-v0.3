@@ -1,0 +1,12 @@
+CASE missing_context
+PATCH {'supervisor': {'route': 'need_context', 'audit_events': ['supervisor.route=need_context']}}
+PATCH {'request_context': {'answer': '需要先补充材质和介质，不能直接确定机理或RBI等级。', 'audit_events': ['request_context (no tool call)']}}
+EVENTS ['supervisor.route=need_context', 'request_context (no tool call)']
+ANSWER 需要先补充材质和介质，不能直接确定机理或RBI等级。
+CASE has_context
+PATCH {'supervisor': {'route': 'lookup', 'audit_events': ['supervisor.route=lookup']}}
+PATCH {'retrieve': {'audit_events': ['retrieve (teaching placeholder; no actual standards queried)']}}
+PATCH {'reporter': {'answer': '结构信息已具备；实际研判需调用官方三工具并核验来源。', 'audit_events': ['reporter (non-diagnostic demo)']}}
+EVENTS ['supervisor.route=lookup', 'retrieve (teaching placeholder; no actual standards queried)', 'reporter (non-diagnostic demo)']
+ANSWER 结构信息已具备；实际研判需调用官方三工具并核验来源。
+STUDY_DEMO_PASS

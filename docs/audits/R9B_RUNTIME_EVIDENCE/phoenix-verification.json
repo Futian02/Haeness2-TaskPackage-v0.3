@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "server": "127.0.0.1",
+  "database": "docs/audits/R9B_RUNTIME_EVIDENCE/phoenix-local.sqlite",
+  "project": "haeness2-local",
+  "trace_id": "96877df3ae6243b43f702437ac80b51a",
+  "span_count": 6,
+  "parent_child": "agent_run -> agent; agent -> actual teacher tool spans + OpenInference invoke spans",
+  "openinference_spans": 2,
+  "redacted_input_output_attributes": 4,
+  "unredacted_input_output_attributes": 0,
+  "tool_spans": [
+    {
+      "name": "teacher_tool.standard_clause_search",
+      "duration_ms": 1.362,
+      "outcome": "ok",
+      "source_digest": "c47332e3bc09b63f",
+      "parent_id": "404ee63ff83074e4"
+    },
+    {
+      "name": "teacher_tool.damage_mechanism_query",
+      "duration_ms": 7.745,
+      "outcome": "ok",
+      "source_digest": "4a67bd13f2d79c2b",
+      "parent_id": "404ee63ff83074e4"
+    }
+  ]
+}

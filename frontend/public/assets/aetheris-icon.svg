@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="aetheris-title">
+<title id="aetheris-title">澄衡 Aetheris</title>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102c28"/><stop offset="1" stop-color="#061614"/></linearGradient>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a6f8d6"/><stop offset=".5" stop-color="#35baa1"/><stop offset="1" stop-color="#13756b"/></linearGradient>
+ <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#b9dbd0"/></linearGradient>
+</defs>
+<rect x="3" y="3" width="122" height="122" rx="27" fill="url(#bg)"/>
+<path d="M53 10 H75 L80 17 H92 L100 27 L99 37 L110 46 V61 L118 66 V84 L107 92 L107 104 L94 113 L81 110 L74 119 H53 L46 110 L33 113 L21 102 V91 L11 84 V64 L18 56 V43 L29 36 V25 L41 17 H48 Z" fill="#214c45" stroke="#3c8072" stroke-width="2"/>
+<path d="M64 22 L101 36 V67 C101 93 87 107 64 117 C41 107 27 93 27 67 V36 Z" fill="#072e28" stroke="url(#g)" stroke-width="5"/>
+<path d="M39 94 L61 37 L69 37 L92 94 L78 94 L65 55 L53 82 H75 L79 94 Z" fill="url(#a)"/>
+<path d="M38 97 C52 84 67 78 88 77" fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round"/>
+<path d="M77 56 L89 65 L100 43" fill="none" stroke="#66e9c8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="77" cy="56" r="4.5" fill="#afffee"/><circle cx="89" cy="65" r="4.5" fill="#afffee"/><circle cx="100" cy="43" r="5.5" fill="#afffee"/>
+</svg>

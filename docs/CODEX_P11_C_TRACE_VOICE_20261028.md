@@ -1,0 +1,8 @@
+# Codex 窗口 C｜Codex风格折叠执行过程与浏览器语音输入（独立工作线）
+项目根目录：`D:\作业\竞赛\计算机设计智能体\机械智能体`。先读`AGENTS.md`、`docs/P11_AETHERIS_PRODUCT_POLISH_DESIGN_20261028.md`、`frontend/src/components/trace/ActivityTrace.tsx`、`frontend/src/trace-events/model.ts`、`frontend/src/AssistantMessages.tsx`（只读）、官方`https://www.assistant-ui.com/docs/guides/chain-of-thought`、`https://www.assistant-ui.com/docs/guides/part-grouping`、MDN SpeechRecognition。
+**允许写**`frontend/src/components/trace/**`、`frontend/src/trace-events/**`、`frontend/src/voice/**`、相应单元测试及`docs/audits/P11C_*.md`；**绝不写**`frontend/src/App.tsx`、`AssistantMessages.tsx`、`styles.css`、`api.ts`、`settings/**`、`dashboard/**`、`backend/**`、`orchestration/**`和`upstream/**`。App.tsx/Composer最终由A唯一负责接线，先建可预览的独立组件。
+目标1：Codex风格**真实活动记录**。折叠时一行显示“调查完成 · 查询2次 · 审查1次 · X秒”；展开后左侧竖线连接真实阶段，每段有标题、状态、Agent、已执行的工具函数名和摘要、引用/差缺/耗时；tool row二次展开显示真实输入参数和经授权的输出摘要；SSE重连、刷新恢复、run_id/sequence去重。R9B已有`ActivityTrace`，保留复用，不换全套框架；assistant-ui最新推荐`MessagePrimitive.GroupedParts`，若现有events是独立SQLite消息投影，不必硬转LLM reasoning tokens，也可用官方ReasoningPanel静态step UI。**不显示模型未提供的隐藏内部CoT**，不展示未执行的“修改文件/运行命令”；未来真的有文件工具时才能显示diff/命令记录。
+目标2：语音转文字按钮`SpeechInputButton({onTranscript,onStatus})`（或同等typed props）：`SpeechRecognition`或`webkitSpeechRecognition`，zh-CN，开始/停止/中间结果、权限拒绝、无麦克风、浏览器不支持提示；停止时仅填输入框，绝不自动发送聊天。麦克风光晕微动画和`aria-pressed`，尊重reduced-motion；用户如果使用Firefox没有该API就明确降级，不要假装可以离线识别。提醒某些浏览器使用云端识别并上传音频，用户需明确主动点击。
+目标3：不重复编码复杂工具schema，保留source、E0/E1核验、人审状态为可展开细节，默认用可读中文标题。普通chat没有工具也能折叠呈现1个模型对话事件，不要强制“4步审核”。只有真实事件才能生成step；逐Token hidden reasoning不可承诺。
+测试≥8条：Tool开始/结果/失败、并行审查、长100事件、乱序重放、旧事件字段兼容、没有活动时空态、mock SpeechRecognition、拒绝权限/不支持、转写不自动发送；真浏览器Edge先试，Firefox不支持也必须正常。
+产出`docs/audits/P11C_TRACE_VOICE_ACCEPTANCE.md`和简短A集成指南。不要直接入侵别窗口工作文件；`READY_FOR_OWNER_REVIEW`，不部署、不改上游。

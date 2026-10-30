@@ -1,0 +1,70 @@
+{
+  "error": "Error: frontend source fingerprint mismatch: page=826730eb3224622ed24fa54789a6caad35e08db3e137c30a5647eeca86e567b0 disk=66936b984ce1dc363f2ecb5a00dc812eba18ace1ccae4c026d318f840ba49168",
+  "stack": "Error: frontend source fingerprint mismatch: page=826730eb3224622ed24fa54789a6caad35e08db3e137c30a5647eeca86e567b0 disk=66936b984ce1dc363f2ecb5a00dc812eba18ace1ccae4c026d318f840ba49168\n    at main (C:\\Users\\37813\\AppData\\Local\\Temp\\r2_browser_cdp_20261030_163155.cjs:24:57)",
+  "cdpError": null,
+  "exceptionDetails": null,
+  "expressionHash": null,
+  "expressionPrefix": null,
+  "method": null,
+  "timeoutMs": null,
+  "nodePid": 19416,
+  "browserPid": 40860,
+  "target": {
+    "id": "07B57B7F5D279FA8945DFC6F54FC834C",
+    "type": "page",
+    "url": "http://127.0.0.1:5174/",
+    "webSocketDebuggerUrl": "ws://127.0.0.1:48334/devtools/page/07B57B7F5D279FA8945DFC6F54FC834C"
+  },
+  "completedJourneys": [],
+  "events": [
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    }
+  ],
+  "failedRequests": [
+    {
+      "requestId": "40144.12",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "40144.11",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "40144.9",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "40144.14",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "40144.10",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "40144.61",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    }
+  ],
+  "consoleErrors": []
+}

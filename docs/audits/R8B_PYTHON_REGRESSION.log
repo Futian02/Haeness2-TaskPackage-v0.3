@@ -1,0 +1,15 @@
+======================================================================
+FAIL: test_merge_deduplicates_retry_but_preserves_distinct_attempts (test_p6a_parallel_evidence.P6AParallelEvidenceTests.test_merge_deduplicates_retry_but_preserves_distinct_attempts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\作业\竞赛\计算机设计智能体\机械智能体\tests\test_p6a_parallel_evidence.py", line 118, in test_merge_deduplicates_retry_but_preserves_distinct_attempts
+    self.assertEqual(merged[0]["verification_level"], "E1")
+AssertionError: 'E0' != 'E1'
+- E0
++ E1
+
+
+----------------------------------------------------------------------
+Ran 124 tests in 10.236s
+
+FAILED (failures=1)

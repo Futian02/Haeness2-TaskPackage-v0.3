@@ -1,0 +1,16 @@
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第2行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第3行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第4行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第5行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第6行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第7行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第8行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第9行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第10行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第11行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第12行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第13行：必填列「抽取人」为空
+[错误] RBI_GBT26610_1_13candidates_for_review.xlsx 第14行：必填列「抽取人」为空
+有错误，未写出 clauses.jsonl。请回到 xlsx 修改后重跑。
+读取条款 567 条：损伤机理 82 条，RBI 485 条；错误 13 处，提示 0 处
+CONVERT_EXIT=1 OUTPUT_EXISTS=False

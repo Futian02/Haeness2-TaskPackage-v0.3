@@ -1,0 +1,506 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://haeness2.local/schemas/p6c-human-review.schema.json",
+  "title": "P6 Human Review Record",
+  "description": "Unsigned-by-default human review contract. This schema does not establish reviewer identity or certify engineering truth.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/expertAssessment"
+    },
+    {
+      "$ref": "#/$defs/siteContextConfirmation"
+    },
+    {
+      "$ref": "#/$defs/extractionAttestation"
+    }
+  ],
+  "$defs": {
+    "hash": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "reviewer": {
+      "type": "object",
+      "required": [
+        "reviewer_identity_verified",
+        "reviewer_role",
+        "reviewer_signature_ref"
+      ],
+      "properties": {
+        "reviewer_identity_verified": {
+          "type": "boolean"
+        },
+        "reviewer_role": {
+          "enum": [
+            "site_data_confirmant",
+            "domain_expert",
+            "standard_extractor",
+            "independent_reviewer",
+            "adjudicator",
+            "owner"
+          ]
+        },
+        "reviewer_signature_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reviewer_identity_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "additionalProperties": false
+    },
+    "expertAssessment": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "review_id",
+        "reviewer",
+        "claim_id",
+        "source_sha",
+        "source_clause_id",
+        "pdf_printed_page",
+        "device_context_hash",
+        "assessment_type",
+        "verdict",
+        "justification",
+        "reviewed_at",
+        "status"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "expert_assessment"
+        },
+        "review_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reviewer": {
+          "$ref": "#/$defs/reviewer"
+        },
+        "claim_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "source_sha": {
+          "$ref": "#/$defs/hash"
+        },
+        "source_clause_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "pdf_printed_page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "device_context_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "assessment_type": {
+          "enum": [
+            "E2_source_entailment",
+            "E3_applicability"
+          ]
+        },
+        "verdict": {
+          "enum": [
+            "supported",
+            "contradicted",
+            "unresolved"
+          ]
+        },
+        "justification": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d+)?(Z|[+-]([01]\\d|2[0-3]):[0-5]\\d)$"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "submitted",
+            "verified",
+            "adjudicated",
+            "rejected"
+          ]
+        },
+        "conflict_group_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "adjudication_ref": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "verified",
+                  "adjudicated"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewed_at": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d+)?(Z|[+-]([01]\\d|2[0-3]):[0-5]\\d)$"
+              },
+              "reviewer": {
+                "properties": {
+                  "reviewer_identity_verified": {
+                    "const": true
+                  },
+                  "reviewer_signature_ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "assessment_type": {
+                "enum": [
+                  "E2_source_entailment",
+                  "E3_applicability"
+                ]
+              }
+            },
+            "required": [
+              "assessment_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewer": {
+                "properties": {
+                  "reviewer_role": {
+                    "enum": [
+                      "domain_expert",
+                      "independent_reviewer",
+                      "adjudicator"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "siteContextConfirmation": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "confirmation_id",
+        "reviewer",
+        "device_context_hash",
+        "confirmed_fields",
+        "unknown_fields",
+        "confirmed_at",
+        "status"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "site_context_confirmation"
+        },
+        "confirmation_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reviewer": {
+          "$ref": "#/$defs/reviewer"
+        },
+        "device_context_hash": {
+          "$ref": "#/$defs/hash"
+        },
+        "confirmed_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "uniqueItems": true
+        },
+        "unknown_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "uniqueItems": true
+        },
+        "confirmed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d+)?(Z|[+-]([01]\\d|2[0-3]):[0-5]\\d)$"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "submitted",
+            "verified",
+            "rejected"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "confirmed_at": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d+)?(Z|[+-]([01]\\d|2[0-3]):[0-5]\\d)$"
+              },
+              "reviewer": {
+                "properties": {
+                  "reviewer_identity_verified": {
+                    "const": true
+                  },
+                  "reviewer_role": {
+                    "const": "site_data_confirmant"
+                  },
+                  "reviewer_signature_ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "reviewer": {
+              "properties": {
+                "reviewer_role": {
+                  "const": "site_data_confirmant"
+                }
+              },
+              "required": [
+                "reviewer_role"
+              ]
+            }
+          },
+          "required": [
+            "reviewer"
+          ]
+        }
+      ],
+      "additionalProperties": false
+    },
+    "extractionAttestation": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "attestation_id",
+        "reviewer",
+        "source_sha",
+        "source_clause_id",
+        "pdf_printed_page",
+        "quote_sha",
+        "attestation_role",
+        "status",
+        "attested_at"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "extraction_attestation"
+        },
+        "attestation_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "reviewer": {
+          "$ref": "#/$defs/reviewer"
+        },
+        "source_sha": {
+          "$ref": "#/$defs/hash"
+        },
+        "source_clause_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "pdf_printed_page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "quote_sha": {
+          "$ref": "#/$defs/hash"
+        },
+        "attestation_role": {
+          "enum": [
+            "standard_extractor",
+            "independent_reviewer"
+          ]
+        },
+        "attested_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d+)?(Z|[+-]([01]\\d|2[0-3]):[0-5]\\d)$"
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "submitted",
+            "verified",
+            "rejected"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "attested_at": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])T([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(\\.\\d+)?(Z|[+-]([01]\\d|2[0-3]):[0-5]\\d)$"
+              },
+              "reviewer": {
+                "properties": {
+                  "reviewer_identity_verified": {
+                    "const": true
+                  },
+                  "reviewer_signature_ref": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attestation_role": {
+                "const": "standard_extractor"
+              }
+            },
+            "required": [
+              "attestation_role"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewer": {
+                "properties": {
+                  "reviewer_role": {
+                    "const": "standard_extractor"
+                  }
+                },
+                "required": [
+                  "reviewer_role"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "attestation_role": {
+                "const": "independent_reviewer"
+              }
+            },
+            "required": [
+              "attestation_role"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewer": {
+                "properties": {
+                  "reviewer_role": {
+                    "const": "independent_reviewer"
+                  }
+                },
+                "required": [
+                  "reviewer_role"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,1 @@
+"""Local FastAPI product backend."""

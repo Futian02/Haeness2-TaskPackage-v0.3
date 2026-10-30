@@ -1,0 +1,79 @@
+{
+  "project": "haeness2-local",
+  "trace_id": "96877df3ae6243b43f702437ac80b51a",
+  "span_count": 6,
+  "spans": [
+    {
+      "name": "agent_run",
+      "span_id": "b36340d7706fcd4c",
+      "parent_id": null,
+      "trace_id": "96877df3ae6243b43f702437ac80b51a",
+      "attributes": {
+        "run_id": "7d2f5962-f0ba-4ae1-b152-043e058dea21",
+        "agent_name": "run_root",
+        "branch": "rule_demo"
+      }
+    },
+    {
+      "name": "agent",
+      "span_id": "404ee63ff83074e4",
+      "parent_id": "b36340d7706fcd4c",
+      "trace_id": "96877df3ae6243b43f702437ac80b51a",
+      "attributes": {
+        "run_id": "7d2f5962-f0ba-4ae1-b152-043e058dea21",
+        "agent_name": "evidence_agent",
+        "branch": "evidence"
+      }
+    },
+    {
+      "name": "invoke",
+      "span_id": "20d914f3dbf32a53",
+      "parent_id": "404ee63ff83074e4",
+      "trace_id": "96877df3ae6243b43f702437ac80b51a",
+      "attributes": {
+        "input.value": "__REDACTED__",
+        "output.value": "__REDACTED__"
+      }
+    },
+    {
+      "name": "teacher_tool.standard_clause_search",
+      "span_id": "90e6bdd140d964b3",
+      "parent_id": "404ee63ff83074e4",
+      "trace_id": "96877df3ae6243b43f702437ac80b51a",
+      "attributes": {
+        "tool_call_id": "0ced0301-d9cc-4f36-a22e-37a5812fa997",
+        "run_id": "7d2f5962-f0ba-4ae1-b152-043e058dea21",
+        "source_digest": "c47332e3bc09b63f",
+        "branch": "teacher_tool",
+        "tool_name": "standard_clause_search",
+        "outcome": "ok",
+        "duration_ms": 1.362
+      }
+    },
+    {
+      "name": "invoke",
+      "span_id": "39c5d93347f0ab9c",
+      "parent_id": "404ee63ff83074e4",
+      "trace_id": "96877df3ae6243b43f702437ac80b51a",
+      "attributes": {
+        "input.value": "__REDACTED__",
+        "output.value": "__REDACTED__"
+      }
+    },
+    {
+      "name": "teacher_tool.damage_mechanism_query",
+      "span_id": "7be9d85845bf61b9",
+      "parent_id": "404ee63ff83074e4",
+      "trace_id": "96877df3ae6243b43f702437ac80b51a",
+      "attributes": {
+        "tool_call_id": "6134e273-4261-479e-b068-c97b06c4dd7c",
+        "run_id": "7d2f5962-f0ba-4ae1-b152-043e058dea21",
+        "source_digest": "4a67bd13f2d79c2b",
+        "branch": "teacher_tool",
+        "tool_name": "damage_mechanism_query",
+        "outcome": "ok",
+        "duration_ms": 7.745
+      }
+    }
+  ]
+}

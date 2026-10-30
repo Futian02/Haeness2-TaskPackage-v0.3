@@ -1,0 +1,342 @@
+{
+  "status": "READY_FOR_OWNER_REVIEW",
+  "run_id": "2580424b-7b55-4df1-9094-abd1b77cf579",
+  "conversation_id": "0ea7bbd5-85dc-4ed0-b9bd-faa602722967",
+  "second_conversation_id": "ccf5d3a8-020d-4c16-8d4b-db60012de866",
+  "mode": "RULE_DEMO",
+  "health_status": "ok",
+  "full_context": {
+    "material": "碳钢",
+    "medium": [
+      "氯化氢"
+    ],
+    "equipment_type": "换热器",
+    "question": "塔顶水样pH 5.8，铁离子 4.1 mg/L，尚未测厚，可能的损伤机理？",
+    "run_status": "completed",
+    "event_count": 44,
+    "event_types": {
+      "run_started": 1,
+      "agent_started": 7,
+      "decision_summary": 7,
+      "agent_completed": 7,
+      "tool_called": 2,
+      "tool_result": 2,
+      "reference_added": 7,
+      "claim_added": 2,
+      "claim_checked": 2,
+      "requires_human_review": 4,
+      "verification": 1,
+      "token_delta": 1,
+      "run_completed": 1
+    },
+    "claim_count": 2,
+    "claim_grades": [
+      "E0",
+      "E1"
+    ],
+    "claims": [
+      {
+        "claim_id": "2580424b-7b55-4df1-9094-abd1b77cf579-mechanism-1",
+        "grade": "E1",
+        "review_status": "requires_human_review",
+        "verdict": "unresolved",
+        "provenance_status": "verified",
+        "source_clause_ids": [
+          "GBT30579-2022-5.1"
+        ],
+        "canonical_hashes": [
+          "ecc5fadb56aa1efda0d3df4a2f821dca46ad93745dd7b977e2aa7d64db09f89c"
+        ]
+      },
+      {
+        "claim_id": "2580424b-7b55-4df1-9094-abd1b77cf579-mechanism-2",
+        "grade": "E0",
+        "review_status": "requires_human_review",
+        "verdict": "unresolved",
+        "provenance_status": "partial",
+        "source_clause_ids": [
+          "GBT30579-2022-5.18"
+        ],
+        "canonical_hashes": []
+      }
+    ],
+    "disagreements": 2,
+    "reference_events": 7,
+    "reference_event_gates": {
+      "E0": 7
+    },
+    "claim_grade_counts": {
+      "E1": 1,
+      "E0": 1
+    },
+    "all_claims_require_human_review": true
+  },
+  "sse": {
+    "sequences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "replay_after_sequence_5": 39,
+    "first_replay_sequence": 6,
+    "refresh_restored": {
+      "events": 44,
+      "claims": 2,
+      "run": "本机会话运行\n1 条 · 跨设备不可恢复\nRun\n2580424b-7b55-\n44 events"
+    }
+  },
+  "ui": {
+    "desktop_1280": {
+      "width": 1280,
+      "bodyWidth": 1280,
+      "flowWidth": 267,
+      "claimCards": 2
+    },
+    "expanded_graph": {
+      "nodes": 7,
+      "width": 1058,
+      "height": 658
+    },
+    "fast_switch_isolated": true,
+    "e1_drawer_verified": true,
+    "e0_drawer_verified": true,
+    "reference_drawer_verified": true,
+    "responsive": {
+      "desktop1440": "P6B_DESKTOP_1440.png",
+      "mobile390": "P6B_MOBILE_390.png",
+      "mobileSourceDrawer": "P6B_MOBILE_SOURCE_DRAWER_390.png",
+      "dark": "P6B_DARK_MODE_1280.png",
+      "longChinese": "P6B_LONG_CHINESE_1280.png"
+    },
+    "viewport_audit": {
+      "width": 1280,
+      "bodyWidth": 1280,
+      "modal": false,
+      "longInput": 612
+    }
+  },
+  "api_statuses": [
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e447844e-1e05-4eb7-a251-647da2c42247",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e447844e-1e05-4eb7-a251-647da2c42247",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e447844e-1e05-4eb7-a251-647da2c42247",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e447844e-1e05-4eb7-a251-647da2c42247",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e447844e-1e05-4eb7-a251-647da2c42247/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967/runs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/2580424b-7b55-4df1-9094-abd1b77cf579/stream",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/ccf5d3a8-020d-4c16-8d4b-db60012de866",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/ccf5d3a8-020d-4c16-8d4b-db60012de866",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/ccf5d3a8-020d-4c16-8d4b-db60012de866",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/ccf5d3a8-020d-4c16-8d4b-db60012de866/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/2580424b-7b55-4df1-9094-abd1b77cf579/events?after_sequence=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/ccf5d3a8-020d-4c16-8d4b-db60012de866",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/ccf5d3a8-020d-4c16-8d4b-db60012de866",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/0ea7bbd5-85dc-4ed0-b9bd-faa602722967/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/2580424b-7b55-4df1-9094-abd1b77cf579/events?after_sequence=0",
+      "status": 200
+    }
+  ],
+  "console_errors": []
+}

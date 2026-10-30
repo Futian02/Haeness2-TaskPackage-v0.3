@@ -1,0 +1,170 @@
+{
+  "browserPid": 24544,
+  "target": {
+    "id": "137652CE4C9060C452D65BD544B6DAC5",
+    "type": "page",
+    "url": "http://127.0.0.1:5174/",
+    "webSocketDebuggerUrl": "ws://127.0.0.1:38417/devtools/page/137652CE4C9060C452D65BD544B6DAC5"
+  },
+  "browserVersion": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+  "state": {
+    "ready": "complete",
+    "title": "澄衡 Aetheris · 智能工程助手",
+    "url": "http://127.0.0.1:5174/",
+    "body": "澄\n澄衡 Aetheris\n智能工程助手\n新建分析\n⌘ K\n工作区\n⌘ /\n暂无历史分析\n研\n研究工作区\n本地 · SQLite 持久化\nAPI 连接中\nv0.3 · RULE_DEMO\n工程研判\n新建分析\n连接中\n证据审查\n澄衡 Aetheris · 智能工程助手\n从证据开始，逐步研判。\n\n围绕设备、工况与现场观察组织分析。每项判断都保留来源、适用条件与复核状态。\n\n梳理缺失工况\n定位需要补充的现场信息\n查找标准条款\n核对条款与适用范围\n检查证据边界\n查看依据、反证与待核项\n设备与工况 · 机理研判需填写材质/介质\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况、附件与标准原文不会自动上传外网搜索服务",
+    "contractVersion": "aetheris-r2.0.0",
+    "buildFingerprint": "826730eb3224622ed24fa54789a6caad35e08db3e137c30a5647eeca86e567b0",
+    "composer": [
+      {
+        "tag": "INPUT",
+        "aria": null,
+        "placeholder": "搜索历史分析"
+      },
+      {
+        "tag": "TEXTAREA",
+        "aria": "发送问题",
+        "placeholder": "描述设备、工况，或提出需要核查的问题…"
+      }
+    ],
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440
+    }
+  },
+  "proxiedHealth": {
+    "status": 200,
+    "contract_version": "aetheris-r2.0.0",
+    "build_fingerprint": "sha256:51dcdca504fc13eb4ae4e884ee3b35ec2018cec81d25a9b95c51ded60968b7be"
+  },
+  "hello": {
+    "conversation_id": "5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f",
+    "run_id": "8eb13540-b32d-4a6d-ad52-99411ac0e2a1",
+    "question": "你好",
+    "assistant_answer": "你好！我是 Aether。可以直接和我聊天，也可以问机械设备、腐蚀机理或相关标准的问题。",
+    "terminal_types": [
+      "context_resolved",
+      "intent_routed",
+      "run_completed"
+    ],
+    "event_sequences": [
+      1,
+      2,
+      3
+    ],
+    "composer_rect": {
+      "top": 607.875,
+      "bottom": 900,
+      "height": 292.125,
+      "viewport": 900
+    }
+  },
+  "apiResponses": [
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f/files",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/8eb13540-b32d-4a6d-ad52-99411ac0e2a1/input",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/8eb13540-b32d-4a6d-ad52-99411ac0e2a1/stream",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/8eb13540-b32d-4a6d-ad52-99411ac0e2a1/events",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/5dac05a7-5a7b-47c7-aaf0-5a55aac8ed9f",
+      "status": 200
+    }
+  ],
+  "failedRequests": [
+    {
+      "requestId": "46164.37",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "46164.36",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "46164.30",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    }
+  ],
+  "consoleErrors": [],
+  "screenshots": [
+    "D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030\\Edge_desktop_20261030_162429_welcome.png",
+    "D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030\\Edge_desktop_20261030_162429_hello.png"
+  ]
+}

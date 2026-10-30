@@ -1,0 +1,13 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting pytest==9.0.2
+  Downloading pytest-9.0.2-py3-none-any.whl (374 kB)
+Requirement already satisfied: colorama>=0.4 in .\.venv-langgraph\Lib\site-packages (from pytest==9.0.2) (0.4.6)
+Collecting iniconfig>=1.0.1 (from pytest==9.0.2)
+  Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Requirement already satisfied: packaging>=22 in .\.venv-langgraph\Lib\site-packages (from pytest==9.0.2) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest==9.0.2)
+  Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Requirement already satisfied: pygments>=2.7.2 in .\.venv-langgraph\Lib\site-packages (from pytest==9.0.2) (2.21.0)
+Installing collected packages: pluggy, iniconfig, pytest
+
+Successfully installed iniconfig-2.3.1 pluggy-1.7.0 pytest-9.0.2

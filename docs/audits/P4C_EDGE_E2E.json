@@ -1,0 +1,255 @@
+{
+  "initialLayout": {
+    "chatWidth": 750,
+    "bodyScrollWidth": 1280,
+    "innerWidth": 1280,
+    "flowWrap": {
+      "width": 269,
+      "height": 185
+    },
+    "reactFlow": {
+      "width": 267,
+      "height": 183
+    },
+    "renderedNodes": [
+      {
+        "rect": {
+          "x": 1011,
+          "y": 138,
+          "w": 74,
+          "h": 38
+        },
+        "text": "任务路由\n等待事件"
+      },
+      {
+        "rect": {
+          "x": 1094,
+          "y": 138,
+          "w": 74,
+          "h": 38
+        },
+        "text": "证据检索\n等待事件"
+      },
+      {
+        "rect": {
+          "x": 1176,
+          "y": 138,
+          "w": 74,
+          "h": 38
+        },
+        "text": "候选分析\n等待事件"
+      },
+      {
+        "rect": {
+          "x": 1011,
+          "y": 197,
+          "w": 74,
+          "h": 38
+        },
+        "text": "RBI 专家\n等待事件"
+      },
+      {
+        "rect": {
+          "x": 1094,
+          "y": 197,
+          "w": 74,
+          "h": 38
+        },
+        "text": "证据审计\n等待事件"
+      },
+      {
+        "rect": {
+          "x": 1176,
+          "y": 197,
+          "w": 74,
+          "h": 38
+        },
+        "text": "独立反证\n等待事件"
+      },
+      {
+        "rect": {
+          "x": 1011,
+          "y": 255,
+          "w": 74,
+          "h": 38
+        },
+        "text": "报告汇总\n等待事件"
+      }
+    ]
+  },
+  "selected": "新对话",
+  "runId": "7cb649d1-c833-46fb-9bd4-55615e79ce32",
+  "eventCount": 16,
+  "replayAfterSequence5": 11,
+  "eventTypes": [
+    "run_started",
+    "agent_started",
+    "decision_summary",
+    "agent_completed",
+    "agent_started",
+    "decision_summary",
+    "agent_completed",
+    "agent_started",
+    "decision_summary",
+    "agent_completed",
+    "agent_started",
+    "decision_summary",
+    "agent_completed",
+    "verification",
+    "token_delta",
+    "run_completed"
+  ],
+  "terminal": "run_completed",
+  "restored": {
+    "events": 16,
+    "runHistory": "本机会话运行\n1 条 · 跨设备不可恢复\nRun\n7cb649d1-c833-\n16 events",
+    "conversation": "新对话"
+  },
+  "apiStatuses": [
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/fa0fe518-c478-4056-a4bc-b9cf39295a84",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/fa0fe518-c478-4056-a4bc-b9cf39295a84",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/fa0fe518-c478-4056-a4bc-b9cf39295a84/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/780ac911-87fa-4197-9d73-cdad07100c3e/events?after_sequence=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/fa0fe518-c478-4056-a4bc-b9cf39295a84",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/fa0fe518-c478-4056-a4bc-b9cf39295a84",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/fa0fe518-c478-4056-a4bc-b9cf39295a84/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f/runs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/7cb649d1-c833-46fb-9bd4-55615e79ce32/stream",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/7cb649d1-c833-46fb-9bd4-55615e79ce32/events?after_sequence=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9996eb7c-b7de-40e8-a930-50ed4fc06e2f/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/7cb649d1-c833-46fb-9bd4-55615e79ce32/events?after_sequence=0",
+      "status": 200
+    }
+  ],
+  "consoleMessages": [],
+  "consoleErrors": [],
+  "focusToggle": true,
+  "longTextCharacters": 874,
+  "runHistoryVisible": true
+}

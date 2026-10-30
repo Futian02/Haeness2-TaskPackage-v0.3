@@ -1,0 +1,13 @@
+
+> frontend@1.0.0 test
+> vitest run --run
+
+
+ RUN  v5.0.5 D:/作业/竞赛/计算机设计智能体/机械智能体/frontend
+
+
+ Test Files  20 passed (20)
+      Tests  128 passed (128)
+   Start at  16:36:02
+   Duration  10.46s (environment 50%, import 29%, tests 12%, setup 8%, transform 1%)
+

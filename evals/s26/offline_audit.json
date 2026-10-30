@@ -1,0 +1,54 @@
+{
+  "mode": "offline_mock_and_deterministic_policy_only",
+  "real_model_requests": 0,
+  "mock_success_counted_as_native": 0,
+  "case_count": 120,
+  "corpus_sha256": "76dcd75e0ae2152e84d997d89b835189f55ace7245a790ec1d8a68cb227f4a2a",
+  "label_status": "developer_curated_provisional_not_independent_expert_gold",
+  "category_counts": {
+    "GENERAL": 12,
+    "GENERAL_EXPLANATION": 6,
+    "STANDARD_LOOKUP": 18,
+    "ENGINEERING": 42,
+    "DEVICE_DIAGNOSIS": 12,
+    "RBI_ASSESSMENT": 12,
+    "MIXED": 12,
+    "WRITING_SYNTHESIS": 6
+  },
+  "policy_checks": [
+    {
+      "name": "native_schema_valid",
+      "pass": true
+    },
+    {
+      "name": "exactly_three_tools",
+      "pass": true
+    },
+    {
+      "name": "valid_standard_tool_args_accepted",
+      "pass": true
+    },
+    {
+      "name": "query_keyword_mismatch_rejected",
+      "pass": true
+    },
+    {
+      "name": "fourth_tool_rejected",
+      "pass": true
+    },
+    {
+      "name": "dm_without_explicit_facts_rerouted_to_search",
+      "pass": true
+    },
+    {
+      "name": "dm_schema_and_explicit_facts_accepted",
+      "pass": true
+    },
+    {
+      "name": "rbi_missing_material_rerouted_not_graded",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "status": "PASS"
+}

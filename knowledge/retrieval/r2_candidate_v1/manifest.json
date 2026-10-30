@@ -1,0 +1,16 @@
+{
+  "index_version": "r2_candidate_v1",
+  "built_from": "upstream/05_提交区/clauses.jsonl",
+  "source_sha256": "a8151797ba15a6a7452dd83aaec9fab4c0a815724ca45062eb1e2bac7b4d49ef",
+  "source_rows": 554,
+  "knowledge_type_counts": {
+    "rbi": 472,
+    "damage_mechanism": 82
+  },
+  "derived_rows": 554,
+  "full_standard_text_copied": false,
+  "pdf_page_index": "null where source JSONL does not supply physical PDF page index",
+  "human_reviewed": false,
+  "applicability_authority": "none; all candidates remain UNKNOWN until case-specific review",
+  "teacher_tool_added": false
+}

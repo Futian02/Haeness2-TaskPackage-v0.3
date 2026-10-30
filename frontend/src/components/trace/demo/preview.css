@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f4f6f3; color: #26352f; font: 14px/1.6 Inter, "Segoe UI", "Microsoft YaHei", sans-serif; }
+.trace-preview { width: min(880px, calc(100% - 32px)); margin: 48px auto; padding: 24px; border: 1px solid #e1e7e1; border-radius: 18px; background: #fff; box-shadow: 0 12px 40px #1b2b2410; }
+.trace-preview header { display: flex; align-items: baseline; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid #e9ede9; }
+.trace-preview header b { font-size: 15px; letter-spacing: .04em; }
+.trace-preview header span, .trace-preview-note, .trace-preview-status { color: #738078; font-size: 12px; }
+.trace-preview-note { margin: 18px 0 12px; }
+.trace-preview-status { padding: 10px 12px; border-radius: 10px; background: #f5f8f5; overflow-wrap: anywhere; }
+.trace-preview .activity-trace { margin-top: 22px; }
+@media (max-width: 600px) { .trace-preview { width: calc(100% - 20px); margin: 10px auto; padding: 16px; } }

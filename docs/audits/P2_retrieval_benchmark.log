@@ -1,0 +1,188 @@
+{
+  "summary": {
+    "cases": 8,
+    "repeats_per_case": 30,
+    "corpus_clauses": 554,
+    "official_initialization_ms": 103.839,
+    "fts5_index_build_ms": 13.635,
+    "official_recall_at_5": 1.0,
+    "fts5_recall_at_5": 1.0,
+    "official_mrr_at_5": 1.0,
+    "fts5_mrr_at_5": 1.0,
+    "official_warm_mean_ms": 0.1622,
+    "fts5_warm_mean_ms": 0.0199,
+    "note": "Only 8 exact technical terms: neither semantic nor risk/safety validation. No network/LLM latency included."
+  },
+  "cases": [
+    {
+      "query": "盐酸腐蚀",
+      "expected": [
+        "GBT30579-2022-5.1"
+      ],
+      "official_top5": [
+        "GBT30579-2022-5.1",
+        "GBT30579-2022-5.18"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-5.1",
+        "GBT30579-2022-5.18"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.1596,
+      "fts5_warm_mean_ms": 0.0158,
+      "official_warm_p95_ms": 0.1722,
+      "fts5_warm_p95_ms": 0.0198
+    },
+    {
+      "query": "氯化铵腐蚀",
+      "expected": [
+        "GBT30579-2022-5.19"
+      ],
+      "official_top5": [
+        "GBT30579-2022-5.19"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-5.19"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.1687,
+      "fts5_warm_mean_ms": 0.0153,
+      "official_warm_p95_ms": 0.2815,
+      "fts5_warm_p95_ms": 0.018
+    },
+    {
+      "query": "二氧化碳腐蚀",
+      "expected": [
+        "GBT30579-2022-5.5"
+      ],
+      "official_top5": [
+        "GBT30579-2022-5.5"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-5.5"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.1525,
+      "fts5_warm_mean_ms": 0.0173,
+      "official_warm_p95_ms": 0.1704,
+      "fts5_warm_p95_ms": 0.0233
+    },
+    {
+      "query": "湿硫化氢破坏",
+      "expected": [
+        "GBT30579-2022-6.7"
+      ],
+      "official_top5": [
+        "GBT30579-2022-6.7",
+        "GBT30579-2022-6.6"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-6.7",
+        "GBT30579-2022-6.6"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.1588,
+      "fts5_warm_mean_ms": 0.02,
+      "official_warm_p95_ms": 0.1666,
+      "fts5_warm_p95_ms": 0.0214
+    },
+    {
+      "query": "冷却水腐蚀",
+      "expected": [
+        "GBT30579-2022-5.12"
+      ],
+      "official_top5": [
+        "GBT30579-2022-5.12"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-5.12"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.1575,
+      "fts5_warm_mean_ms": 0.0157,
+      "official_warm_p95_ms": 0.1736,
+      "fts5_warm_p95_ms": 0.0189
+    },
+    {
+      "query": "氯化物应力腐蚀开裂",
+      "expected": [
+        "GBT30579-2022-6.1"
+      ],
+      "official_top5": [
+        "GBT30579-2022-6.1",
+        "GBT30579-2022-5.11",
+        "GBT30579-2022-5.24"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-6.1",
+        "GBT30579-2022-5.24",
+        "GBT30579-2022-5.11"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.1704,
+      "fts5_warm_mean_ms": 0.0324,
+      "official_warm_p95_ms": 0.1846,
+      "fts5_warm_p95_ms": 0.0417
+    },
+    {
+      "query": "热疲劳",
+      "expected": [
+        "GBT30579-2022-8.2"
+      ],
+      "official_top5": [
+        "GBT30579-2022-8.2"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-8.2"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.152,
+      "fts5_warm_mean_ms": 0.0117,
+      "official_warm_p95_ms": 0.1606,
+      "fts5_warm_p95_ms": 0.0159
+    },
+    {
+      "query": "高温氢腐蚀",
+      "expected": [
+        "GBT30579-2022-9.1"
+      ],
+      "official_top5": [
+        "GBT30579-2022-9.1",
+        "GBT30579-2022-7.6"
+      ],
+      "fts5_top5": [
+        "GBT30579-2022-9.1",
+        "GBT30579-2022-7.6"
+      ],
+      "official_hit": 1.0,
+      "fts5_hit": 1.0,
+      "official_rr": 1.0,
+      "fts5_rr": 1.0,
+      "official_warm_mean_ms": 0.178,
+      "fts5_warm_mean_ms": 0.0314,
+      "official_warm_p95_ms": 0.1938,
+      "fts5_warm_p95_ms": 0.0333
+    }
+  ]
+}

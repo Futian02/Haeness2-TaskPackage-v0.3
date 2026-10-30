@@ -1,0 +1,14 @@
+{"case_id":"p4b-neg-01","class":"missing_printed_page","mutation":{"drop":"page"},"expected":"E0_missing"}
+{"case_id":"p4b-neg-02","class":"unknown_printed_page","mutation":{"set":{"page":null}},"expected":"E0_unknown"}
+{"case_id":"p4b-neg-03","class":"wrong_printed_page","mutation":{"set":{"page":999}},"expected":"E0_mismatch"}
+{"case_id":"p4b-neg-04","class":"fake_standard_code","mutation":{"set":{"standard_code":"GB/T FAKE-9999"}},"expected":"E0_mismatch"}
+{"case_id":"p4b-neg-05","class":"wrong_clause_number","mutation":{"set":{"clause_no":"99.99"}},"expected":"E0_mismatch"}
+{"case_id":"p4b-neg-06","class":"missing_tool_source","mutation":{"source":null},"expected":"E0_missing"}
+{"case_id":"p4b-neg-07","class":"unknown_clause_id","mutation":{"set_id":"NOT-IN-CANONICAL"},"expected":"E0_missing"}
+{"case_id":"p4b-neg-08","class":"empty_canonical_quote","mutation":{"empty_quote":true},"expected":"E0_missing"}
+{"case_id":"p4b-neg-09","class":"source_version_conflict","mutation":{"set":{"version":"old-version"}},"expected":"E0_mismatch"}
+{"case_id":"p4b-neg-10","class":"risk_label_without_evidence","mutation":{"claim_kind":"risk_level"},"expected":"E0_risk_gate"}
+{"case_id":"p4b-neg-11","class":"mixed_medium","mutation":{"context":{"medium":["盐酸","水"]}},"expected":"condition_not_sufficient"}
+{"case_id":"p4b-neg-12","class":"unknown_temperature","mutation":{"temperature_unknown":true},"expected":"condition_unknown"}
+{"case_id":"p4b-neg-13","class":"observed_false_not_unknown","mutation":{"wall_state":"observed_false"},"expected":"false_distinct"}
+{"case_id":"p4b-neg-14","class":"unknown_not_false","mutation":{"wall_state":"unknown"},"expected":"false_distinct"}

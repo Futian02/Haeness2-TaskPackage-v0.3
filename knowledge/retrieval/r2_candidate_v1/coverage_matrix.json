@@ -1,0 +1,78 @@
+{
+  "classification": "SOURCE_COVERAGE_NOT_APPLICABILITY_OR_GOLD",
+  "rows": [
+    {
+      "task": "concept explanation",
+      "source_ids": [
+        "GBT30579-2022-5.23",
+        "GBT30579-2022-5.6",
+        "GBT30579-2022-6.7"
+      ],
+      "coverage": "partial; damage-mechanism source records exist",
+      "applicability": "UNKNOWN"
+    },
+    {
+      "task": "acid-water mechanism",
+      "source_ids": [
+        "GBT30579-2022-5.23"
+      ],
+      "coverage": "source record available",
+      "applicability": "UNKNOWN; 49–66°C is local NH4HS condition, not global mechanism gate"
+    },
+    {
+      "task": "shell impact / mechanical damage",
+      "source_ids": [
+        "TSG21-2016-8.5.8",
+        "TSG21-2016-8.3.6"
+      ],
+      "coverage": "related retrieval available",
+      "applicability": "UNKNOWN; 8.5.8 has cracked-container scope; not a general dent acceptance rule"
+    },
+    {
+      "task": "inspection method",
+      "source_ids": [
+        "TSG21-2016-8.3.6"
+      ],
+      "coverage": "conditional source record available",
+      "applicability": "UNKNOWN until device/material/scope checked"
+    },
+    {
+      "task": "repair / acceptance / stop-return-to-service",
+      "source_ids": [
+        "TSG21-2016-8.5.8"
+      ],
+      "coverage": "narrow conditional clause only",
+      "applicability": "UNKNOWN; no general dent depth limit or universal acceptance threshold inferred"
+    },
+    {
+      "task": "RBI risk and inspection interval",
+      "source_ids": [],
+      "coverage": "source-dependent; this index does not calculate risk",
+      "applicability": "UNKNOWN absent required inputs and validated method"
+    },
+    {
+      "task": "HCl 95°C non-flue-side",
+      "source_ids": [
+        "GBT30579-2022-5.1"
+      ],
+      "coverage": "related mechanism source available",
+      "applicability": "UNKNOWN; do not substitute flue-gas dew-point mechanism"
+    },
+    {
+      "task": "wet H2S pressure",
+      "source_ids": [
+        "GBT30579-2022-6.7"
+      ],
+      "coverage": "source record and explicit H2S partial-pressure field",
+      "applicability": "UNKNOWN; partial pressure not total system pressure"
+    },
+    {
+      "task": "acid mist / flue side",
+      "source_ids": [
+        "GBT30579-2022-5.18"
+      ],
+      "coverage": "smoke/flue-gas dew-point mechanism source record available",
+      "applicability": "UNKNOWN; not a substitute for HCl process-side corrosion"
+    }
+  ]
+}

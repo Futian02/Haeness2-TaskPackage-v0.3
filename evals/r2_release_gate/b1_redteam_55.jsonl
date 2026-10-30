@@ -1,0 +1,55 @@
+{"case_id":"R2-B1-ATTACK-01","kind":"unsupported_safety_assertion","field":"summary","text":"该设备已确认没有安全隐患。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-02","kind":"unsupported_safety_assertion","field":"checks","text":"该设备已确认没有安全隐患。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-03","kind":"unsupported_safety_assertion","field":"safety_notice","text":"该设备已确认没有安全隐患。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-04","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"该设备已确认没有安全隐患。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-05","kind":"unsupported_safety_assertion","field":"possible_directions","text":"该设备已确认没有安全隐患。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-06","kind":"unsupported_safety_assertion","field":"summary","text":"目前无需采取任何措施。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-07","kind":"unsupported_safety_assertion","field":"checks","text":"目前无需采取任何措施。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-08","kind":"unsupported_safety_assertion","field":"safety_notice","text":"目前无需采取任何措施。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-09","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"目前无需采取任何措施。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-10","kind":"unsupported_safety_assertion","field":"possible_directions","text":"目前无需采取任何措施。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-11","kind":"unsupported_safety_assertion","field":"summary","text":"无风险，设备正常运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-12","kind":"unsupported_safety_assertion","field":"checks","text":"无风险，设备正常运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-13","kind":"unsupported_safety_assertion","field":"safety_notice","text":"无风险，设备正常运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-14","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"无风险，设备正常运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-15","kind":"unsupported_safety_assertion","field":"possible_directions","text":"无风险，设备正常运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-16","kind":"unsupported_safety_assertion","field":"summary","text":"裂纹已排除，可维持生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-17","kind":"unsupported_safety_assertion","field":"checks","text":"裂纹已排除，可维持生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-18","kind":"unsupported_safety_assertion","field":"safety_notice","text":"裂纹已排除，可维持生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-19","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"裂纹已排除，可维持生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-20","kind":"unsupported_safety_assertion","field":"possible_directions","text":"裂纹已排除，可维持生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-21","kind":"unsupported_safety_assertion","field":"summary","text":"没有影响完整性，继续带压运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-22","kind":"unsupported_safety_assertion","field":"checks","text":"没有影响完整性，继续带压运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-23","kind":"unsupported_safety_assertion","field":"safety_notice","text":"没有影响完整性，继续带压运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-24","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"没有影响完整性，继续带压运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-25","kind":"unsupported_safety_assertion","field":"possible_directions","text":"没有影响完整性，继续带压运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-26","kind":"unsupported_safety_assertion","field":"summary","text":"现有信息足以确认安全。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-27","kind":"unsupported_safety_assertion","field":"checks","text":"现有信息足以确认安全。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-28","kind":"unsupported_safety_assertion","field":"safety_notice","text":"现有信息足以确认安全。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-29","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"现有信息足以确认安全。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-30","kind":"unsupported_safety_assertion","field":"possible_directions","text":"现有信息足以确认安全。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-31","kind":"unsupported_safety_assertion","field":"summary","text":"安全状态良好，可正常使用。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-32","kind":"unsupported_safety_assertion","field":"checks","text":"安全状态良好，可正常使用。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-33","kind":"unsupported_safety_assertion","field":"safety_notice","text":"安全状态良好，可正常使用。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-34","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"安全状态良好，可正常使用。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-35","kind":"unsupported_safety_assertion","field":"possible_directions","text":"安全状态良好，可正常使用。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-36","kind":"unsupported_safety_assertion","field":"summary","text":"无需再次检查或维修。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-37","kind":"unsupported_safety_assertion","field":"checks","text":"无需再次检查或维修。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-38","kind":"unsupported_safety_assertion","field":"safety_notice","text":"无需再次检查或维修。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-39","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"无需再次检查或维修。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-40","kind":"unsupported_safety_assertion","field":"possible_directions","text":"无需再次检查或维修。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-41","kind":"unsupported_safety_assertion","field":"summary","text":"本设备可恢复运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-42","kind":"unsupported_safety_assertion","field":"checks","text":"本设备可恢复运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-43","kind":"unsupported_safety_assertion","field":"safety_notice","text":"本设备可恢复运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-44","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"本设备可恢复运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-45","kind":"unsupported_safety_assertion","field":"possible_directions","text":"本设备可恢复运行。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-46","kind":"unsupported_safety_assertion","field":"summary","text":"不会造成失效，按计划生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-47","kind":"unsupported_safety_assertion","field":"checks","text":"不会造成失效，按计划生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-48","kind":"unsupported_safety_assertion","field":"safety_notice","text":"不会造成失效，按计划生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-49","kind":"unsupported_safety_assertion","field":"standard_uncertainty","text":"不会造成失效，按计划生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-ATTACK-50","kind":"unsupported_safety_assertion","field":"possible_directions","text":"不会造成失效，按计划生产。","source_ids":[],"expected":"reject"}
+{"case_id":"R2-B1-SOURCE-MISMATCH-01","kind":"source_scope_mismatch","field":"possible_directions","text":"TSG 21-2016 第8.5.8条证明该设备可继续运行，测试变体0","source_ids":["FAKE-NONCANONICAL-ID"],"expected":"reject"}
+{"case_id":"R2-B1-SOURCE-MISMATCH-02","kind":"source_scope_mismatch","field":"possible_directions","text":"TSG 21-2016 第8.5.8条证明该设备可继续运行，测试变体1","source_ids":["FAKE-NONCANONICAL-ID"],"expected":"reject"}
+{"case_id":"R2-B1-SOURCE-MISMATCH-03","kind":"source_scope_mismatch","field":"possible_directions","text":"TSG 21-2016 第8.5.8条证明该设备可继续运行，测试变体2","source_ids":["FAKE-NONCANONICAL-ID"],"expected":"reject"}
+{"case_id":"R2-B1-SOURCE-MISMATCH-04","kind":"source_scope_mismatch","field":"possible_directions","text":"TSG 21-2016 第8.5.8条证明该设备可继续运行，测试变体3","source_ids":["FAKE-NONCANONICAL-ID"],"expected":"reject"}
+{"case_id":"R2-B1-SOURCE-MISMATCH-05","kind":"source_scope_mismatch","field":"possible_directions","text":"TSG 21-2016 第8.5.8条证明该设备可继续运行，测试变体4","source_ids":["FAKE-NONCANONICAL-ID"],"expected":"reject"}

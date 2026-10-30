@@ -1,0 +1,3 @@
+{"case_id":"standard_lookup_no_material","question":"GB/T 30579 湿硫化氢破坏标准条款","context":{"medium":["湿硫化氢"]},"purpose":"纯标准查询不得强制要求设备材质"}
+{"case_id":"missing_wall_thickness","question":"管道湿硫化氢损伤机理研判","context":{"equipment":"管道","equipment_type":"管道","material":"碳钢","medium":["湿硫化氢"],"evidence":{"h2s_ppm":2.0}},"purpose":"壁厚未测不能升级为设备结论或风险等级"}
+{"case_id":"measured_field_review","question":"管道湿硫化氢损伤机理研判","context":{"equipment":"管道","equipment_type":"管道","material":"碳钢","medium":["湿硫化氢"],"temperature_c":120,"evidence":{"h2s_ppm":2.0,"wall_thinning":false}},"purpose":"现场证据齐备后才进入双审；仍不自动签核"}

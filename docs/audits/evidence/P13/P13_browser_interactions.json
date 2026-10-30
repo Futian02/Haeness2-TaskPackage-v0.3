@@ -1,0 +1,31 @@
+{
+  "edge_version": "Edg/142.0.3595.53",
+  "web_mode_roundtrip": [
+    {
+      "selected": "off",
+      "persisted": "off"
+    },
+    {
+      "selected": "auto",
+      "persisted": "auto"
+    },
+    {
+      "selected": "on",
+      "persisted": "on"
+    }
+  ],
+  "web_mode_after_refresh_and_reselect": "on",
+  "run_snapshot_failure_replay": "verified in P13_browser_probe.json",
+  "long_code_chars": 121030,
+  "clipboard_chars": 122233,
+  "copy_button_state": "已复制",
+  "clipboard_matches_code_after_windows_newline_normalization": true,
+  "mobile_metrics": {
+    "width": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "mode": "off",
+    "theme": "light"
+  },
+  "browser_page_errors": []
+}

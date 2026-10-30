@@ -1,0 +1,882 @@
+{
+  "status": "RULE_DEMO_EXPERIMENT_NOT_GOLD",
+  "cases": 3,
+  "candidate_latency_ms": {
+    "min": 5.358,
+    "median": 6.443,
+    "max": 15.689
+  },
+  "records": [
+    {
+      "case_id": "standard_lookup_no_material",
+      "purpose": "纯标准查询不得强制要求设备材质",
+      "same_input_snapshot": true,
+      "baseline": {
+        "path": "frozen_R1_seven_role_sequence",
+        "latency_ms": 127.161,
+        "tool_calls": 0,
+        "citation_count": 0,
+        "review_status": [],
+        "source_ids": [],
+        "events": [
+          {
+            "event": "run_started",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_started",
+            "node": "supervisor"
+          },
+          {
+            "event": "decision_summary",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_completed",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_started",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "decision_summary",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "agent_completed",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "agent_started",
+            "node": "skeptic"
+          },
+          {
+            "event": "decision_summary",
+            "node": "skeptic"
+          },
+          {
+            "event": "agent_completed",
+            "node": "skeptic"
+          },
+          {
+            "event": "agent_started",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "decision_summary",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "agent_completed",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "verification",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "token_delta",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "run_completed",
+            "node": "supervisor"
+          }
+        ],
+        "route": "ask_for_context",
+        "answer_prefix": "目前工况上下文不足，暂不调用工具。请补充材质与介质。"
+      },
+      "candidate": {
+        "path": "R9A_candidate",
+        "latency_ms": 15.689,
+        "tool_calls": 1,
+        "citation_count": 5,
+        "review_status": [],
+        "route": "standard_lookup",
+        "status": "draft_for_review",
+        "verification_level": "E1",
+        "risk_level": null,
+        "human_signed": false,
+        "iterations": 1,
+        "query_variants": [
+          "GB/T 30579 湿硫化氢破坏标准条款"
+        ],
+        "source_ids": [
+          "GBT26610.2-2022-7.1.4",
+          "GBT26610.2-2022-8.2",
+          "GBT26610.2-2022-C.5",
+          "GBT26610.3-2014-6.4.3.1.1-a",
+          "GBT26610.4-2022-8.3.2"
+        ],
+        "gate_decisions": [
+          {
+            "next_action": "report",
+            "reason_codes": [
+              "source_traceable_standard_lookup"
+            ],
+            "missing_fields": [],
+            "new_evidence_count": 1,
+            "budget_remaining": 7
+          }
+        ],
+        "events": [
+          {
+            "event": "phase_started",
+            "phase": "route",
+            "iteration": 0
+          },
+          {
+            "event": "investigation_iteration",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_called",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_result",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "evidence_gate",
+            "phase": "evidence_gate",
+            "iteration": 1
+          },
+          {
+            "event": "final",
+            "phase": "report",
+            "iteration": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "missing_wall_thickness",
+      "purpose": "壁厚未测不能升级为设备结论或风险等级",
+      "same_input_snapshot": true,
+      "baseline": {
+        "path": "frozen_R1_seven_role_sequence",
+        "latency_ms": 141.304,
+        "tool_calls": 2,
+        "citation_count": 6,
+        "review_status": [
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review"
+        ],
+        "source_ids": [
+          "GBT30579-2022-5.14",
+          "GBT30579-2022-5.17",
+          "GBT30579-2022-5.2",
+          "GBT30579-2022-6.10",
+          "GBT30579-2022-6.2",
+          "GBT30579-2022-6.7"
+        ],
+        "events": [
+          {
+            "event": "run_started",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_started",
+            "node": "supervisor"
+          },
+          {
+            "event": "decision_summary",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_completed",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_started",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_called",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_result",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_called",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_result",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "decision_summary",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "agent_completed",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "agent_started",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "decision_summary",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "agent_completed",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "agent_started",
+            "node": "rbi_specialist"
+          },
+          {
+            "event": "decision_summary",
+            "node": "rbi_specialist"
+          },
+          {
+            "event": "agent_completed",
+            "node": "rbi_specialist"
+          },
+          {
+            "event": "agent_started",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "decision_summary",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "agent_completed",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "agent_started",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "decision_summary",
+            "node": "skeptic"
+          },
+          {
+            "event": "agent_completed",
+            "node": "skeptic"
+          },
+          {
+            "event": "agent_started",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "decision_summary",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "agent_completed",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "verification",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "token_delta",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "run_completed",
+            "node": "supervisor"
+          }
+        ],
+        "route": "mechanism_analysis",
+        "answer_prefix": "执行模式：RULE_DEMO（确定性节点，不是多LLM结果）。\n候选机理：氢脆、湿硫化氢破坏、燃灰腐蚀、硫酸腐蚀、微生物腐蚀、碳酸盐应力腐蚀开裂\n本轮实际检索出处：GB/T 30579-2022 6."
+      },
+      "candidate": {
+        "path": "R9A_candidate",
+        "latency_ms": 5.358,
+        "tool_calls": 2,
+        "citation_count": 6,
+        "review_status": [],
+        "route": "diagnosis",
+        "status": "insufficient_evidence",
+        "verification_level": "E0",
+        "risk_level": null,
+        "human_signed": false,
+        "iterations": 1,
+        "query_variants": [
+          "管道湿硫化氢损伤机理研判"
+        ],
+        "source_ids": [
+          "GBT30579-2022-5.14",
+          "GBT30579-2022-5.17",
+          "GBT30579-2022-5.2",
+          "GBT30579-2022-6.10",
+          "GBT30579-2022-6.2",
+          "GBT30579-2022-6.7"
+        ],
+        "gate_decisions": [
+          {
+            "next_action": "ask_user",
+            "reason_codes": [
+              "field_measurement_required"
+            ],
+            "missing_fields": [
+              "wall_thinning"
+            ],
+            "new_evidence_count": 1,
+            "budget_remaining": 6
+          }
+        ],
+        "events": [
+          {
+            "event": "phase_started",
+            "phase": "route",
+            "iteration": 0
+          },
+          {
+            "event": "investigation_iteration",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_called",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_result",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_called",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_result",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "evidence_gate",
+            "phase": "evidence_gate",
+            "iteration": 1
+          },
+          {
+            "event": "final",
+            "phase": "report",
+            "iteration": 1
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "measured_field_review",
+      "purpose": "现场证据齐备后才进入双审；仍不自动签核",
+      "same_input_snapshot": true,
+      "baseline": {
+        "path": "frozen_R1_seven_role_sequence",
+        "latency_ms": 124.612,
+        "tool_calls": 2,
+        "citation_count": 6,
+        "review_status": [
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review"
+        ],
+        "source_ids": [
+          "GBT30579-2022-5.14",
+          "GBT30579-2022-5.17",
+          "GBT30579-2022-5.2",
+          "GBT30579-2022-6.10",
+          "GBT30579-2022-6.2",
+          "GBT30579-2022-6.7"
+        ],
+        "events": [
+          {
+            "event": "run_started",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_started",
+            "node": "supervisor"
+          },
+          {
+            "event": "decision_summary",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_completed",
+            "node": "supervisor"
+          },
+          {
+            "event": "agent_started",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_called",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_result",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_called",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "tool_result",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "reference_added",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "decision_summary",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "agent_completed",
+            "node": "evidence_agent"
+          },
+          {
+            "event": "agent_started",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "claim_added",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "decision_summary",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "agent_completed",
+            "node": "diagnosis_agent"
+          },
+          {
+            "event": "agent_started",
+            "node": "rbi_specialist"
+          },
+          {
+            "event": "decision_summary",
+            "node": "rbi_specialist"
+          },
+          {
+            "event": "agent_completed",
+            "node": "rbi_specialist"
+          },
+          {
+            "event": "agent_started",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "claim_checked",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "decision_summary",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "agent_completed",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "agent_started",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "requires_human_review",
+            "node": "skeptic"
+          },
+          {
+            "event": "decision_summary",
+            "node": "skeptic"
+          },
+          {
+            "event": "agent_completed",
+            "node": "skeptic"
+          },
+          {
+            "event": "agent_started",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "decision_summary",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "agent_completed",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "verification",
+            "node": "evidence_auditor"
+          },
+          {
+            "event": "token_delta",
+            "node": "reporting_agent"
+          },
+          {
+            "event": "run_completed",
+            "node": "supervisor"
+          }
+        ],
+        "route": "mechanism_analysis",
+        "answer_prefix": "执行模式：RULE_DEMO（确定性节点，不是多LLM结果）。\n候选机理：氢脆、湿硫化氢破坏、燃灰腐蚀、硫酸腐蚀、微生物腐蚀、碳酸盐应力腐蚀开裂\n本轮实际检索出处：GB/T 30579-2022 6."
+      },
+      "candidate": {
+        "path": "R9A_candidate",
+        "latency_ms": 6.443,
+        "tool_calls": 2,
+        "citation_count": 5,
+        "review_status": [
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review",
+          "requires_human_review"
+        ],
+        "route": "diagnosis",
+        "status": "draft_for_review",
+        "verification_level": "E1",
+        "risk_level": null,
+        "human_signed": false,
+        "iterations": 1,
+        "query_variants": [
+          "管道湿硫化氢损伤机理研判"
+        ],
+        "source_ids": [
+          "GBT30579-2022-5.14",
+          "GBT30579-2022-5.17",
+          "GBT30579-2022-5.2",
+          "GBT30579-2022-6.2",
+          "GBT30579-2022-6.7"
+        ],
+        "gate_decisions": [
+          {
+            "next_action": "review",
+            "reason_codes": [
+              "grounded_hypothesis_requires_independent_review"
+            ],
+            "missing_fields": [],
+            "new_evidence_count": 1,
+            "budget_remaining": 6
+          },
+          {
+            "next_action": "report",
+            "reason_codes": [
+              "review_complete_or_retry_budget_exhausted"
+            ],
+            "missing_fields": [],
+            "new_evidence_count": 0,
+            "budget_remaining": 6
+          }
+        ],
+        "events": [
+          {
+            "event": "phase_started",
+            "phase": "route",
+            "iteration": 0
+          },
+          {
+            "event": "investigation_iteration",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_called",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_result",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_called",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "tool_result",
+            "phase": "investigate",
+            "iteration": 1
+          },
+          {
+            "event": "evidence_gate",
+            "phase": "evidence_gate",
+            "iteration": 1
+          },
+          {
+            "event": "review_started",
+            "phase": "review_dispatch",
+            "iteration": 1
+          },
+          {
+            "event": "review_result",
+            "phase": "review_merge",
+            "iteration": 1
+          },
+          {
+            "event": "evidence_gate",
+            "phase": "review_gate",
+            "iteration": 1
+          },
+          {
+            "event": "final",
+            "phase": "report",
+            "iteration": 1
+          }
+        ]
+      }
+    }
+  ]
+}

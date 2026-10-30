@@ -1,0 +1,27 @@
+{
+  "initial": {
+    "collapsed": true,
+    "run": "e4402ed1-320a-4203-91ac-fd757c6405ba",
+    "eventText": "61 条持久化事件",
+    "errors": 0
+  },
+  "expanded": true,
+  "toolDetails": {
+    "toolGroups": 2,
+    "toolDetails": 2,
+    "containsSecret": false
+  },
+  "refresh": {
+    "restored": true,
+    "run": "e4402ed1-320a-4203-91ac-fd757c6405ba",
+    "eventText": "61 条持久化事件",
+    "errors": 0
+  },
+  "consoleErrors": [],
+  "mobile": {
+    "width": 390,
+    "horizontalOverflow": false,
+    "run": "e4402ed1-320a-4203-91ac-fd757c6405ba",
+    "events": 61
+  }
+}

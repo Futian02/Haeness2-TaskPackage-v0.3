@@ -1,0 +1,21 @@
+# Upstream cloned teacher task package is a separate, nested Git checkout.
+/upstream/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.gradio/
+/data/
+.env
+.env.*
+!.env.example
+logs/
+cache/
+artifacts/
+*.sqlite
+*.db
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/frontend/.env.*
+!/frontend/.env.example

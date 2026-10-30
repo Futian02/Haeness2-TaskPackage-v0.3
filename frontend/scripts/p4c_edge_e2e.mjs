@@ -1,0 +1,53 @@
+import fs from 'node:fs/promises';
+const base='http://127.0.0.1:5173';
+const wsInfo=await fetch('http://127.0.0.1:9222/json/list').then(r=>r.json());
+const target=wsInfo.find(t=>t.type==='page');
+if(!target)throw new Error('Edge DevTools page target missing');
+const ws=new WebSocket(target.webSocketDebuggerUrl);
+await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true})});
+let seq=0;const pending=new Map();const consoleErrors=[];const network=[];
+ws.addEventListener('message',event=>{const m=JSON.parse(event.data);if(m.id&&pending.has(m.id)){const p=pending.get(m.id);pending.delete(m.id);m.error?p.reject(new Error(`${p.method}: ${m.error.message}`)):p.resolve(m.result)}else if(m.method==='Runtime.exceptionThrown'){consoleErrors.push(m.params.exceptionDetails.text)}else if(m.method==='Runtime.consoleAPICalled'&&['error','warning'].includes(m.params.type)){consoleErrors.push(`${m.params.type}: ${m.params.args.map(a=>a.value??a.description).join(' ')}`)}else if(m.method==='Network.responseReceived'&&m.params.response.url.includes('/api/'))network.push({url:m.params.response.url,status:m.params.response.status})});
+function cdp(method,params={}){const id=++seq;return new Promise((resolve,reject)=>{pending.set(id,{resolve,reject,method});ws.send(JSON.stringify({id,method,params}))})}
+async function evaluate(expression){try{const r=await cdp('Runtime.evaluate',{expression,awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw new Error(JSON.stringify(r.exceptionDetails));return r.result?.value}catch(error){console.error('EVAL:',expression.slice(0,240));throw error}}
+async function waitFor(expression,label,timeout=15000){const end=Date.now()+timeout;while(Date.now()<end){const value=await evaluate(expression);if(value)return value;await new Promise(r=>setTimeout(r,200))}throw new Error(`timeout waiting for ${label}`)}
+async function shot(name){const result=await cdp('Page.captureScreenshot',{format:'png',captureBeyondViewport:true});await fs.writeFile(new URL(`../../docs/audits/${name}.png`,import.meta.url),Buffer.from(result.data,'base64'))}
+await cdp('Page.enable');await cdp('Runtime.enable');await cdp('Network.enable');await cdp('Log.enable');
+await cdp('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
+await cdp('Page.navigate',{url:base});await waitFor("!!document.querySelector('.new-chat')",'app shell');await evaluate('localStorage.clear();location.reload()');await waitFor("!!document.querySelector('.new-chat')",'clean app shell');
+await new Promise(r=>setTimeout(r,700));
+await waitFor("document.querySelectorAll('.react-flow__node').length===7",'measured agent graph');
+const initialLayout=JSON.parse(await evaluate(`JSON.stringify((()=>{const x=document.querySelector('.chat-inner').getBoundingClientRect();const f=document.querySelector('.flow-wrap').getBoundingClientRect();const r=document.querySelector('.react-flow')?.getBoundingClientRect();return {chatWidth:Math.round(x.width),bodyScrollWidth:document.body.scrollWidth,innerWidth,flowWrap:{width:f.width,height:f.height},reactFlow:r&&{width:r.width,height:r.height},renderedNodes:[...document.querySelectorAll('.react-flow__node')].map(n=>({rect:(()=>{const b=n.getBoundingClientRect();return {x:Math.round(b.x),y:Math.round(b.y),w:Math.round(b.width),h:Math.round(b.height)}})(),text:n.innerText}))}})())`));
+await shot('P4C_WELCOME_1280');
+const conversationsBefore=await fetch('http://127.0.0.1:8000/api/conversations').then(r=>r.json());
+await evaluate(`document.querySelector('.new-chat').click()`);
+await waitFor(`document.querySelectorAll('.conversation').length>${conversationsBefore.length}`,'new conversation created');
+const latestConversation=await fetch('http://127.0.0.1:8000/api/conversations').then(r=>r.json()).then(x=>x[0]);
+await evaluate(`document.querySelector('.conversation').click()`);
+await waitFor(`document.querySelector('.crumbs b')?.textContent===${JSON.stringify(latestConversation.title)}`,'new conversation selected');
+await evaluate(`(()=>{const x=document.querySelector('[aria-label="发送问题"]');const set=Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype,'value').set;set.call(x,'请基于现有现场证据梳理下一步需要核对的适用条件。');x.dispatchEvent(new Event('input',{bubbles:true}));document.querySelector('.send-button').click()})()`);
+const runId=await waitFor(`localStorage.getItem(${JSON.stringify(`aether:last-run:${latestConversation.id}`)})`,'run created');
+await waitFor("!!(document.querySelector('.run-footer')||document.querySelector('[role=alert]'))",'terminal UI',25000);
+const runInfo=JSON.parse(await evaluate(`(()=>{const id=${JSON.stringify(runId)};return fetch('/api/runs/'+encodeURIComponent(id)+'/events?after_sequence=0').then(r=>r.json()).then(x=>JSON.stringify({events:x.events.map(e=>({sequence:e.sequence,type:e.type,agent:e.agent})),run_id:x.run_id}))})()`));
+if(!runInfo.events?.some(e=>e.type==='run_completed'||e.type==='error'))throw new Error('SQLite replay missing terminal event');
+const replaySuffix=await fetch(`http://127.0.0.1:8000/api/runs/${runId}/events?after_sequence=5`).then(r=>r.json());
+if(replaySuffix.events[0]?.sequence!==6||replaySuffix.events.some((e,i)=>i&&e.sequence!==replaySuffix.events[i-1].sequence+1))throw new Error('after_sequence replay was not contiguous');
+const selected=await evaluate(`document.querySelector('.crumbs b')?.textContent`);
+await evaluate(`document.querySelector('.inspector-toggle').click()`);const focus=await evaluate("document.querySelector('.app-shell').classList.contains('focus-chat')");if(!focus)throw new Error('focus chat toggle failed');
+await evaluate(`document.querySelector('.inspector-toggle').click()`);
+await cdp('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});await new Promise(r=>setTimeout(r,350));
+if(!(await evaluate("!!document.querySelector('.inspector')")))await evaluate(`document.querySelector('.inspector-toggle').click()`);
+await shot('P4C_DESKTOP_1280');
+await cdp('Emulation.setDeviceMetricsOverride',{width:1440,height:960,deviceScaleFactor:1,mobile:false});await new Promise(r=>setTimeout(r,300));await shot('P4C_DESKTOP_1440');
+await cdp('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await new Promise(r=>setTimeout(r,400));await shot('P4C_MOBILE_390');
+await cdp('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});await new Promise(r=>setTimeout(r,350));await evaluate(`document.querySelector('[aria-label="切换深浅色"]').click()`);await new Promise(r=>setTimeout(r,300));await shot('P4C_DARK_MODE_1280');
+await evaluate(`document.querySelector('[aria-label="切换深浅色"]').click()`);
+const longText='請核對設計、材料、工況、介質、檢驗與判定條件。'.repeat(38);
+await evaluate(`(()=>{const x=document.querySelector('[aria-label="发送问题"]');const set=Object.getOwnPropertyDescriptor(HTMLTextAreaElement.prototype,'value').set;set.call(x,${JSON.stringify(longText)});x.dispatchEvent(new Event('input',{bubbles:true}));})()`);
+await shot('P4C_LONG_CHINESE_INPUT');
+const bodyText=await evaluate('document.body.innerText');
+await cdp('Page.reload',{ignoreCache:true});await waitFor("document.querySelectorAll('.event-item').length===16",'SQLite replay restored into UI',20000);
+const restored=await evaluate(`JSON.stringify({events:document.querySelectorAll('.event-item').length,runHistory:document.querySelector('.run-history-section')?.innerText||'',conversation:document.querySelector('.crumbs b')?.textContent})`);
+const result={initialLayout,selected,runId,eventCount:runInfo.events.length,replayAfterSequence5:replaySuffix.events.length,eventTypes:runInfo.events.map(e=>e.type),terminal:runInfo.events.at(-1)?.type,restored:JSON.parse(restored),apiStatuses:network.filter(x=>x.url.includes('/api/')),consoleMessages:consoleErrors,consoleErrors:consoleErrors.filter(x=>/^(error:|Error:)/i.test(x)),focusToggle:focus,longTextCharacters:[...longText].length,runHistoryVisible:bodyText.includes('本机会话运行')};
+if(result.consoleErrors.length)throw new Error(`browser console errors: ${result.consoleErrors.join('; ')}`);
+await fs.writeFile(new URL('../../docs/audits/P4C_EDGE_E2E.json',import.meta.url),JSON.stringify(result,null,2));
+console.log(JSON.stringify(result,null,2));ws.close();

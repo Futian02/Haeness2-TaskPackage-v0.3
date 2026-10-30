@@ -1,0 +1,17 @@
+{
+  "version": "r2_candidate_v1",
+  "cases": [
+    {
+      "scenario": "shell_impact",
+      "clause_id": "GBT30579-2022-7.11",
+      "classification": "NEGATIVE_SEMANTIC_MATCH",
+      "reason": "词面碰撞命中的是辐照粒子与晶格原子碰撞；语义对象不是壳体机械磕碰"
+    },
+    {
+      "scenario": "hcl_not_flue",
+      "clause_id": "GBT30579-2022-5.18",
+      "classification": "NEGATIVE_SEMANTIC_MATCH",
+      "reason": "查询明确限定非烟气侧；5.18标题为烟气露点腐蚀，存在介质/位置语义冲突，应保留作负例而非适用候选"
+    }
+  ]
+}

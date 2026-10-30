@@ -1,0 +1,6 @@
+# Test-only tools pinned for reproducible project-venv verification.
+# PyMuPDF is also included in requirements-langgraph.lock.txt because the
+# P16 evidence regression imports fitz in the full unittest discovery run.
+# Install pytest/PyMuPDF only into the project venv; never into global Python.
+pytest==9.0.2
+PyMuPDF==1.27.2.2

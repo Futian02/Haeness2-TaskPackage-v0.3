@@ -1,0 +1,27 @@
+{
+  "status": "READY_FOR_OWNER_REVIEW",
+  "mode": "RULE_DEMO synthetic fixture; not multi-LLM and not expert gold",
+  "cases": 20,
+  "runs_per_mode": 20,
+  "parallel_ms": {
+    "p50": 3.432,
+    "p95": 3.869
+  },
+  "sequential_ms": {
+    "p50": 0.096,
+    "p95": 0.108
+  },
+  "tool_calls_per_mode_total": {
+    "parallel": 20,
+    "sequential": 20
+  },
+  "duplicate_source_reads": 0,
+  "illegal_risk_grade_or_level_count": 0,
+  "expert_accuracy": null,
+  "interpretation": "Latency includes graph compile/invoke for parallel and direct sequential helper execution; not an apples-to-apples production benchmark.",
+  "nonclaims": [
+    "no professional accuracy claim",
+    "no E2/E3 adjudication",
+    "no teacher side-effecting tool call"
+  ]
+}

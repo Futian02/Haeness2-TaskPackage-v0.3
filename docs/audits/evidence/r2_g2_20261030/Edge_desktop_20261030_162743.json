@@ -1,0 +1,184 @@
+{
+  "error": "ReferenceError: viewport is not defined",
+  "stack": "ReferenceError: viewport is not defined\n    at sendJourney (C:\\Users\\37813\\AppData\\Local\\Temp\\r2_browser_cdp_20261030_162743.cjs:74:300)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async main (C:\\Users\\37813\\AppData\\Local\\Temp\\r2_browser_cdp_20261030_162743.cjs:78:661)",
+  "cdpError": null,
+  "exceptionDetails": null,
+  "expressionHash": null,
+  "expressionPrefix": null,
+  "method": null,
+  "timeoutMs": null,
+  "nodePid": 8448,
+  "browserPid": 45416,
+  "target": {
+    "id": "6F748FD77ADC5B482907B4F10487AF81",
+    "type": "page",
+    "url": "http://127.0.0.1:5174/",
+    "webSocketDebuggerUrl": "ws://127.0.0.1:21682/devtools/page/6F748FD77ADC5B482907B4F10487AF81"
+  },
+  "events": [
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/health",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/ca672f8c-a053-423b-a9c5-80c658b8e7f3",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/ca672f8c-a053-423b-a9c5-80c658b8e7f3/files",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/ca672f8c-a053-423b-a9c5-80c658b8e7f3/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/0527f322-5a7f-4e2a-a34e-7262a3d693b3/events",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/0527f322-5a7f-4e2a-a34e-7262a3d693b3/input",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/0527f322-5a7f-4e2a-a34e-7262a3d693b3/events",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5/runs",
+      "status": 503
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5/files",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950/input",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950/events",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950/stream",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950/input",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations/abd2db49-8b41-471c-be80-0124951e40a5/runs",
+      "status": 200
+    },
+    {
+      "url": "/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950/events",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950/stream",
+      "status": 200
+    },
+    {
+      "url": "/api/runs/a9ca4fe5-cd30-48fa-87bb-1a3eeef6f950/stream",
+      "status": 200
+    }
+  ],
+  "failedRequests": [
+    {
+      "requestId": "36148.36",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "36148.37",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "36148.30",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "36148.85",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    },
+    {
+      "requestId": "36148.134",
+      "errorText": "net::ERR_ABORTED",
+      "canceled": true
+    }
+  ],
+  "consoleErrors": []
+}

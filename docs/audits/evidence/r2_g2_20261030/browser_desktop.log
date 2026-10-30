@@ -1,0 +1,805 @@
+CDP target: id=F02D3A327D0F2061864A4CEC38D7C512 type=page url=http://127.0.0.1:5174/ websocket=ws://127.0.0.1:24713/devtools/page/F02D3A327D0F2061864A4CEC38D7C512
+Isolated browser profile retained at: C:\Users\37813\AppData\Local\Temp\aetheris-r2-qa-20261030_163549-6f3229a04b34413084c5f1676ea6a1ee
+CDP validation failed (exit=1); stdout=; stderr={"error":"Error: timeout: professional_B_shell_impact createRun","stack
+":"Error: timeout: professional_B_shell_impact createRun\n    at waitUntil (C:\\Users\\37813\\AppData\\Local\\Temp\\r2_
+browser_cdp_20261030_163549.cjs:61:145)\n    at async sendJourney (C:\\Users\\37813\\AppData\\Local\\Temp\\r2_browser_c
+dp_20261030_163549.cjs:67:17)\n    at async main (C:\\Users\\37813\\AppData\\Local\\Temp\\r2_browser_cdp_20261030_16354
+9.cjs:84:40)","cdpError":null,"exceptionDetails":null,"expressionHash":null,"expressionPrefix":null,"method":null,"time
+outMs":null,"nodePid":47812,"browserPid":40628,"target":{"id":"F02D3A327D0F2061864A4CEC38D7C512","type":"page","url":"h
+ttp://127.0.0.1:5174/","webSocketDebuggerUrl":"ws://127.0.0.1:24713/devtools/page/F02D3A327D0F2061864A4CEC38D7C512"},"c
+ompletedJourneys":[{"label":"unconfigured_model_503","conversation_id":"063e779e-3236-4a05-a2bb-cec501b86ae8","http_sta
+tus":503,"error":"DeepSeek 未配置；请设置 DEEPSEEK_API_KEY","run_created":false},{"label":"rule_demo_recovery","conversation_i
+d":"063e779e-3236-4a05-a2bb-cec501b86ae8","run_id":"c4c52516-9154-43ff-b7bd-e4b5db831c04","question":"你好","mode":"RULE_
+DEMO","status":"completed","terminal_event":"run_completed","assistant_messages_for_run":1,"input_snapshot":{"question"
+:"你好","mode":"RULE_DEMO","context":{"equipment":"","equipment_type":"","material":"","medium":[],"operating_condition":
+"","field_evidence":"","web_mode":"auto","allow_sensitive_web_search":false,"_object_scope":"conversation_object","_v2_
+route_decision":{"version":"v2a.1","primary_route":"GENERAL","subtasks":[{"id":"general","kind":"GENERAL_EXPLANATION","
+user_goal":"普通对话","requires":[],"depends_on":[],"task_risk":"LOW"}],"safety_relevance":false,"confidence":0.55,"reasons
+_public":["未发现标准查证或具体设备安全任务"],"needs_clarification":false,"clarification_question":null,"model_usage":{"request_count":
+0,"source":"deterministic_fallback"},"dispatch_route":"GENERAL"},"_v2_route_execution":"DIRECT_CHAT","_context_sources"
+:{},"_context_conflicts":[],"_context_raw_values":{},"_context_unknown_enums":{},"_context_field_details":{},"raw_mediu
+m":null,"_context_extraction_method":"bounded_explicit_span_parser_v2"}},"events":[{"sequence":1,"type":"context_resolv
+ed","agent":"supervisor","tool":null},{"sequence":2,"type":"intent_routed","agent":"supervisor","tool":null},{"sequence
+":3,"type":"run_completed","agent":"supervisor","tool":null}],"sse_disconnect_replay":{"status":200,"first_sequence":1,
+"resumed_status":200,"resumed_sequences":[2,3],"duplicate_sequences":[]},"teacher_tools":[],"source_ids":[],"main_answe
+r":"你好！我是 Aether。可以直接和我聊天，也可以问机械设备、腐蚀机理或相关标准的问题。","visible_in_dom":true,"dom_excerpt":"澄衡 Aetheris\n智能工程助手\n新建分析\n⌘ K\n
+工作区\n⌘ /\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\
+n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···
+\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n研\n研究工作区\n本地 · SQLite 持久化\nAPI 在线\nv0.3 · RULE_DEMO\n工程研判\n新对话\nRUL
+E_DEMO\n证据审查\n问题 1\n本轮服务端输入快照 · RULE_DEMO · 联网 auto\n\n你好\n\n✳\n思维过程 · 3 步 · 任务完成 · 39 ms\n⌄\n\n你好！我是 Aether。可以直接和我聊天，也
+可以问机械设备、腐蚀机理或相关标准的问题。\n\n本轮执行已结束\n重试本轮\n查看审查轨迹\n设备与工况 · 机理研判需填写材质/介质\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最多5个\n点击麦克风开
+始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况、附件与标准原文不会自动上传外
+网搜索服务","evidence_panel":"","screenshot":"D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030/Edge_deskt
+op_rule_demo_recovery_1793349351959.png"},{"label":"scc_concept","conversation_id":"7acab43c-1623-4eb3-9405-e78bcbd71a5
+a","run_id":"5c8600de-dbf3-4ed3-84e3-96f27fe04857","question":"什么是应力腐蚀开裂？","mode":"RULE_DEMO","status":"completed","ter
+minal_event":"run_completed","assistant_messages_for_run":1,"input_snapshot":{"question":"什么是应力腐蚀开裂？","mode":"RULE_DEMO
+","context":{"equipment":"","equipment_type":"","material":"","medium":[],"operating_condition":"","field_evidence":"",
+"web_mode":"auto","allow_sensitive_web_search":false,"damage_morphology":"腐蚀","_object_scope":"conversation_object","_v
+2_route_decision":{"version":"v2a.1","primary_route":"GENERAL","subtasks":[{"id":"explain","kind":"GENERAL_EXPLANATION"
+,"user_goal":"解释一般概念，不作现场判断","requires":[],"depends_on":[],"task_risk":"LOW"}],"safety_relevance":false,"confidence":0.
+55,"reasons_public":["一般概念解释，不是现场设备结论"],"needs_clarification":false,"clarification_question":null,"model_usage":{"reque
+st_count":0,"source":"deterministic_fallback"},"dispatch_route":"GENERAL"},"_v2_route_execution":"DIRECT_CHAT","_contex
+t_sources":{"damage_morphology":"current_message"},"_context_conflicts":[],"_context_raw_values":{"damage_morphology":"
+腐蚀"},"_context_unknown_enums":{},"_context_field_details":{"damage_morphology":{"raw_value":"腐蚀","normalized_value":"腐蚀
+","unit":null,"source":"current_message","confirmation_state":"USER_ASSERTED","independently_verified":false,"object":"
+UNKNOWN","object_scope":"conversation_object","source_span":{"text":"腐蚀","start":5,"end":7,"assertion_state":"USER_ASSE
+RTED","origin":"morphology_location_match"}}},"raw_medium":null,"_context_extraction_method":"bounded_explicit_span_par
+ser_v2"}},"events":[{"sequence":1,"type":"context_resolved","agent":"supervisor","tool":null},{"sequence":2,"type":"int
+ent_routed","agent":"supervisor","tool":null},{"sequence":3,"type":"run_completed","agent":"supervisor","tool":null}],"
+sse_disconnect_replay":{"status":200,"first_sequence":1,"resumed_status":200,"resumed_sequences":[2,3],"duplicate_seque
+nces":[]},"teacher_tools":[],"source_ids":[],"main_answer":"**已知工况：** 本轮未提供可确认工况。\n\n应力腐蚀开裂（SCC）是易感材料在特定腐蚀环境与拉应力共同作用下发生
+的局部开裂；它不同于单纯均匀腐蚀，裂纹可能在总体减薄不明显时发展。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 一般机理框架通常包括三要素：材料具有相应环境敏感性、存在腐蚀介质/特定环境、存在拉应力
+（可来自载荷或残余应力）。缺少任一要素的现场证据时，只能解释概念，不能据此诊断某台设备。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 工程排
+查时分别核对材料牌号与热处理状态、介质及温度/浓度等环境因素、焊接或装配残余应力和载荷；再由专业人员通过表面/体积检测确认是否存在裂纹。\n\n**缺项及原因：**\n- 具体对象与问题边界（仅在要求设备级判断时）：概念解释不依赖完整工况
+；设备级适用性判断需要对应对象。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\
+n设备确诊、法定验收/复机结论和RBI风险等级均未确认。","visible_in_dom":true,"dom_excerpt":"澄衡 Aetheris\n智能工程助手\n新建分析\n⌘ K\n工作区\n⌘ /\n新对话\n···\n
+新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\
+n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···
+\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n研\n研究工作区\n本地 · SQLite 持久化\nAPI 在线\nv0.3 · RULE_DEMO\n工程研判\n新对话\nRULE_DEMO\n证据
+审查\n问题 1\n本轮服务端输入快照 · RULE_DEMO · 联网 auto\n\n什么是应力腐蚀开裂？\n\n✳\n思维过程 · 3 步 · 任务完成 · 70 ms\n⌄\n\n长篇研判报告已折叠，请展开下方原文。\n\n展开完
+整报告原文（544 字）\n**已知工况：** 本轮未提供可确认工况。\n\n应力腐蚀开裂（SCC）是易感材料在特定腐蚀环境与拉应力共同作用下发生的局部开裂；它不同于单纯均匀腐蚀，裂纹可能在总体减薄不明显时发展。\n\n**可能方向（非设
+备确诊）：**\n- [GENERAL_GUIDANCE] 一般机理框架通常包括三要素：材料具有相应环境敏感性、存在腐蚀介质/特定环境、存在拉应力（可来自载荷或残余应力）。缺少任一要素的现场证据时，只能解释概念，不能据此诊断某台设备。\n
+\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 工程排查时分别核对材料牌号与热处理状态、介质及温度/浓度等环境因素、焊接或装配残余应力和载荷；再由
+专业人员通过表面/体积检测确认是否存在裂纹。\n\n**缺项及原因：**\n- 具体对象与问题边界（仅在要求设备级判断时）：概念解释不依赖完整工况；设备级适用性判断需要对应对象。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设
+，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查
+看审查轨迹\n设备与工况 · 机理研判需填写材质/介质\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别
+结果只进入草稿。\n发送\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况、附件与标准原文不会自动上传外网搜索服务","evidence_panel":"","screenshot":"
+D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030/Edge_desktop_scc_concept_1793349352854.png"},{"labe
+l":"professional_A_60C","conversation_id":"331f8692-2a61-46c1-a6a1-831bb9a4704b","run_id":"f0053832-ef95-4a20-82e2-9a87
+a07ef680","question":"设备局部减薄可能属于哪类腐蚀机理？请列来源及适用条件未知项。","mode":"RULE_DEMO","status":"completed","terminal_event":"run_com
+pleted","assistant_messages_for_run":1,"input_snapshot":{"question":"设备局部减薄可能属于哪类腐蚀机理？请列来源及适用条件未知项。","mode":"RULE_DEMO"
+,"context":{"equipment":"塔顶碱液管线弯头","equipment_type":"","material":"300系列不锈钢","medium":["碱式酸性水"],"operating_condition":"
+60°C，1.0 MPa","field_evidence":"","web_mode":"auto","allow_sensitive_web_search":false,"damage_morphology":"减薄","_objec
+t_scope":"塔顶碱液管线弯头","_v2_route_decision":{"version":"v2a.1","primary_route":"ENGINEERING","subtasks":[{"id":"exploratio
+n","kind":"MECHANISM_EXPLORATION","user_goal":"对专业损伤机理开展有来源、保留未知项的初步探索","requires":[],"depends_on":[],"task_risk":"SAFE
+TY_RELEVANT"}],"safety_relevance":true,"confidence":0.55,"reasons_public":["识别到专业损伤机理或模式问题；不依赖已填设备参数"],"needs_clarifica
+tion":false,"clarification_question":null,"model_usage":{"request_count":0,"source":"deterministic_fallback"},"dispatch
+_route":"ENGINEERING"},"_v2_route_execution":"R9_ENGINEERING","_context_sources":{"equipment":"structured_form","materi
+al":"structured_form","medium":"structured_form","damage_morphology":"current_message"},"_context_conflicts":[],"_conte
+xt_raw_values":{"equipment":"塔顶碱液管线弯头","material":"300系列不锈钢","medium":["碱式酸性水"],"damage_morphology":"减薄"},"_context_unk
+nown_enums":{},"_context_field_details":{"equipment":{"raw_value":"塔顶碱液管线弯头","normalized_value":"塔顶碱液管线弯头","unit":null,
+"source":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":false,"object"
+:"塔顶碱液管线弯头","object_scope":"conversation_object","source_span":null},"material":{"raw_value":"300系列不锈钢","normalized_val
+ue":"300系列不锈钢","unit":null,"source":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","independent
+ly_verified":false,"object":"塔顶碱液管线弯头","object_scope":"conversation_object","source_span":null},"medium":{"raw_value":[
+"碱式酸性水"],"normalized_value":["碱式酸性水"],"unit":null,"source":"structured_form","confirmation_state":"USER_ASSERTED_STRUCT
+URED_FORM","independently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"conversation_object","source_span":null},
+"damage_morphology":{"raw_value":"减薄","normalized_value":"减薄","unit":null,"source":"current_message","confirmation_stat
+e":"USER_ASSERTED","independently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"conversation_object","source_span
+":{"text":"减薄","start":4,"end":6,"assertion_state":"USER_ASSERTED","origin":"morphology_location_match"}}},"raw_medium"
+:["碱式酸性水"],"_context_extraction_method":"bounded_explicit_span_parser_v2"}},"events":[{"sequence":1,"type":"context_res
+olved","agent":"supervisor","tool":null},{"sequence":2,"type":"intent_routed","agent":"supervisor","tool":null},{"seque
+nce":3,"type":"phase_started","agent":"supervisor","tool":null},{"sequence":4,"type":"phase_started","agent":"superviso
+r","tool":null},{"sequence":5,"type":"investigation_iteration","agent":"diagnosis_agent","tool":null},{"sequence":6,"ty
+pe":"tool_called","agent":"diagnosis_agent","tool":"damage_mechanism_query"},{"sequence":7,"type":"tool_result","agent"
+:"diagnosis_agent","tool":"damage_mechanism_query"},{"sequence":8,"type":"tool_called","agent":"diagnosis_agent","tool"
+:"standard_clause_search"},{"sequence":9,"type":"tool_result","agent":"diagnosis_agent","tool":"standard_clause_search"
+},{"sequence":10,"type":"evidence_gate","agent":"supervisor","tool":null},{"sequence":11,"type":"investigation_iteratio
+n","agent":"diagnosis_agent","tool":null},{"sequence":12,"type":"tool_called","agent":"diagnosis_agent","tool":"standar
+d_clause_search"},{"sequence":13,"type":"tool_result","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequ
+ence":14,"type":"evidence_gate","agent":"supervisor","tool":null},{"sequence":15,"type":"a2_candidate_retrieval","agent
+":"supervisor","tool":null},{"sequence":16,"type":"run_completed","agent":"supervisor","tool":null}],"sse_disconnect_re
+play":{"status":200,"first_sequence":1,"resumed_status":200,"resumed_sequences":[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+"duplicate_sequences":[]},"teacher_tools":["damage_mechanism_query","standard_clause_search"],"source_ids":[],"main_ans
+wer":"**已知工况：** 设备/部位=塔顶碱液管线弯头（structured_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structu
+red_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选
+机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n
+- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未
+取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文
+、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等
+竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追
+溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。","visible_in_dom":true,"dom_excerpt":"澄衡 Aetheris\n智能工程助手
+\n新建分析\n⌘ K\n工作区\n⌘ /\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n·
+··\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n
+···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n研\n研究工作区\n本地 · SQLite 持久化\nAPI 在线\
+nv0.3 · RULE_DEMO\n工程研判\n新对话\nRULE_DEMO\n证据审查\n问题 1\n本轮服务端输入快照 · RULE_DEMO · 联网 auto\n\n设备局部减薄可能属于哪类腐蚀机理？请列来源及适用条件未知项。\
+n\n✳\n思维过程 · 16 步 · 调查完成 · 查询 3 次 · 585 ms\n⌄\n\n长篇研判报告已折叠，请展开下方原文。\n\n展开完整报告原文（864 字）\n**已知工况：** 设备/部位=塔顶碱液管线弯头（struct
+ured_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析
+；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌
+比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待
+查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\
+n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：
+**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/31
+6等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确
+诊、法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查看审查轨迹\n设备与工况 · 已填写\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最多5个\n点击麦克风开始中文语音输入。
+\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况、附件与标准原文不会自动上传外网搜索服务","
+evidence_panel":"","screenshot":"D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030/Edge_desktop_profe
+ssional_A_60C_1793349354665.png"},{"label":"professional_A_80C","conversation_id":"331f8692-2a61-46c1-a6a1-831bb9a4704b
+","run_id":"0071f4c1-ffc6-4f03-b13b-319945b3d5d0","question":"若温度更正为80°C，是否足以排除碱式酸性水腐蚀？","mode":"RULE_DEMO","status":"c
+ompleted","terminal_event":"run_completed","assistant_messages_for_run":1,"input_snapshot":{"question":"若温度更正为80°C，是否足以
+排除碱式酸性水腐蚀？","mode":"RULE_DEMO","context":{"equipment":"塔顶碱液管线弯头","equipment_type":"","material":"300系列不锈钢","medium":["碱
+式酸性水"],"operating_condition":"80°C，1.0 MPa","field_evidence":"","web_mode":"auto","allow_sensitive_web_search":false,"d
+amage_morphology":"减薄","_object_scope":"塔顶碱液管线弯头","_v2_route_decision":{"version":"v2a.1","primary_route":"ENGINEERING"
+,"subtasks":[{"id":"engineering","kind":"MECHANISM_EXPLORATION","user_goal":"对设备问题开展有来源、保留未知项的专业初步分析","requires":[],"de
+pends_on":[],"task_risk":"SAFETY_RELEVANT"}],"safety_relevance":true,"confidence":0.55,"reasons_public":["确定性安全门将设备安全请求
+优先送专业路径"],"needs_clarification":false,"clarification_question":null,"model_usage":{"request_count":0,"source":"determin
+istic_fallback"},"dispatch_route":"ENGINEERING"},"_v2_route_execution":"R9_ENGINEERING","_context_sources":{"equipment"
+:"structured_form","material":"structured_form","medium":"structured_form","damage_morphology":"same_conversation_prior
+_user_statement"},"_context_conflicts":[],"_context_raw_values":{"equipment":"塔顶碱液管线弯头","material":"300系列不锈钢","medium":
+["碱式酸性水"],"damage_morphology":"减薄"},"_context_unknown_enums":{},"_context_field_details":{"equipment":{"raw_value":"塔顶碱
+液管线弯头","normalized_value":"塔顶碱液管线弯头","unit":null,"source":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTU
+RED_FORM","independently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","source_span":null},"material":{
+"raw_value":"300系列不锈钢","normalized_value":"300系列不锈钢","unit":null,"source":"structured_form","confirmation_state":"USER_
+ASSERTED_STRUCTURED_FORM","independently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","source_span":nu
+ll},"medium":{"raw_value":["碱式酸性水"],"normalized_value":["碱式酸性水"],"unit":null,"source":"structured_form","confirmation_s
+tate":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","sou
+rce_span":null},"damage_morphology":{"raw_value":"减薄","normalized_value":"减薄","unit":null,"source":"same_conversation_p
+rior_user_statement","confirmation_state":"USER_ASSERTED_PRIOR","independently_verified":false,"object":"塔顶碱液管线弯头","obj
+ect_scope":"塔顶碱液管线弯头","source_span":null}},"raw_medium":["碱式酸性水"],"_context_extraction_method":"bounded_explicit_span_p
+arser_v2"}},"events":[{"sequence":1,"type":"context_resolved","agent":"supervisor","tool":null},{"sequence":2,"type":"i
+ntent_routed","agent":"supervisor","tool":null},{"sequence":3,"type":"phase_started","agent":"supervisor","tool":null},
+{"sequence":4,"type":"phase_started","agent":"supervisor","tool":null},{"sequence":5,"type":"investigation_iteration","
+agent":"diagnosis_agent","tool":null},{"sequence":6,"type":"tool_called","agent":"diagnosis_agent","tool":"damage_mecha
+nism_query"},{"sequence":7,"type":"tool_result","agent":"diagnosis_agent","tool":"damage_mechanism_query"},{"sequence":
+8,"type":"tool_called","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":9,"type":"tool_result","a
+gent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":10,"type":"evidence_gate","agent":"supervisor","to
+ol":null},{"sequence":11,"type":"investigation_iteration","agent":"diagnosis_agent","tool":null},{"sequence":12,"type":
+"tool_called","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":13,"type":"tool_result","agent":"d
+iagnosis_agent","tool":"standard_clause_search"},{"sequence":14,"type":"evidence_gate","agent":"supervisor","tool":null
+},{"sequence":15,"type":"a2_candidate_retrieval","agent":"supervisor","tool":null},{"sequence":16,"type":"run_completed
+","agent":"supervisor","tool":null}],"sse_disconnect_replay":{"status":200,"first_sequence":1,"resumed_status":200,"res
+umed_sequences":[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"duplicate_sequences":[]},"teacher_tools":["damage_mechanism_que
+ry","standard_clause_search"],"source_ids":[],"main_answer":"**已知工况：** 设备/部位=塔顶碱液管线弯头（structured_form，未作独立实测确认）；用户陈述材质=
+300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据
+确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [
+GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐
+蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与
+pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用
+于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本
+回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。","
+visible_in_dom":true,"dom_excerpt":"况纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把
+问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金
+属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：**
+ 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款
+；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、
+沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检
+索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n展开完整报告原文（864 字）\n**已知工况：** 设备/部位=塔顶碱液管线弯头（structur
+ed_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这
+些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较
+候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方
+向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n*
+*下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**
+\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等
+具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、
+法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查看审查轨迹\n设备与工况 · 已填写\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最多5个\n点击麦克风开始中文语音输入。\n
+浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况、附件与标准原文不会自动上传外网搜索服务","ev
+idence_panel":"","screenshot":"D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030/Edge_desktop_profess
+ional_A_80C_1793349355765.png"},{"label":"source_review","conversation_id":"331f8692-2a61-46c1-a6a1-831bb9a4704b","run_
+id":"c19773f3-4ae8-4a6f-b9b4-4caa6b49c693","question":"请审查本会话出现的来源ID、来源等级、支持范围、未知条件，并说明这些来源是否足以证明本设备可继续运行。","mode":"RUL
+E_DEMO","status":"completed","terminal_event":"run_completed","assistant_messages_for_run":1,"input_snapshot":{"questio
+n":"请审查本会话出现的来源ID、来源等级、支持范围、未知条件，并说明这些来源是否足以证明本设备可继续运行。","mode":"RULE_DEMO","context":{"equipment":"塔顶碱液管线弯头","equipmen
+t_type":"","material":"300系列不锈钢","medium":["碱式酸性水"],"operating_condition":"80°C，1.0 MPa","field_evidence":"","web_mode"
+:"auto","allow_sensitive_web_search":false,"_object_scope":"塔顶碱液管线弯头","_v2_route_decision":{"version":"v2a.1","primary_
+route":"ENGINEERING","subtasks":[{"id":"engineering","kind":"MECHANISM_EXPLORATION","user_goal":"对设备问题开展有来源、保留未知项的专业初步分
+析","requires":[],"depends_on":[],"task_risk":"SAFETY_RELEVANT"}],"safety_relevance":true,"confidence":0.55,"reasons_pub
+lic":["确定性安全门将设备安全请求优先送专业路径"],"needs_clarification":false,"clarification_question":null,"model_usage":{"request_count":
+0,"source":"deterministic_fallback"},"dispatch_route":"ENGINEERING"},"_v2_route_execution":"R9_ENGINEERING","_context_s
+ources":{"equipment":"structured_form","material":"structured_form","medium":"structured_form"},"_context_conflicts":[]
+,"_context_raw_values":{"equipment":"塔顶碱液管线弯头","material":"300系列不锈钢","medium":["碱式酸性水"]},"_context_unknown_enums":{},"_
+context_field_details":{"equipment":{"raw_value":"塔顶碱液管线弯头","normalized_value":"塔顶碱液管线弯头","unit":null,"source":"structu
+red_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":false,"object":"塔顶碱液管线弯头","obje
+ct_scope":"塔顶碱液管线弯头","source_span":null},"material":{"raw_value":"300系列不锈钢","normalized_value":"300系列不锈钢","unit":null,"
+source":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":false,"object":
+"塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","source_span":null},"medium":{"raw_value":["碱式酸性水"],"normalized_value":["碱式酸性水"],"
+unit":null,"source":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":fal
+se,"object":"塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","source_span":null}},"raw_medium":["碱式酸性水"],"_context_extraction_metho
+d":"bounded_explicit_span_parser_v2"}},"events":[{"sequence":1,"type":"context_resolved","agent":"supervisor","tool":nu
+ll},{"sequence":2,"type":"intent_routed","agent":"supervisor","tool":null},{"sequence":3,"type":"phase_started","agent"
+:"supervisor","tool":null},{"sequence":4,"type":"phase_started","agent":"supervisor","tool":null},{"sequence":5,"type":
+"investigation_iteration","agent":"diagnosis_agent","tool":null},{"sequence":6,"type":"tool_called","agent":"diagnosis_
+agent","tool":"damage_mechanism_query"},{"sequence":7,"type":"tool_result","agent":"diagnosis_agent","tool":"damage_mec
+hanism_query"},{"sequence":8,"type":"tool_called","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence
+":9,"type":"tool_result","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":10,"type":"evidence_gat
+e","agent":"supervisor","tool":null},{"sequence":11,"type":"investigation_iteration","agent":"diagnosis_agent","tool":n
+ull},{"sequence":12,"type":"tool_called","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":13,"typ
+e":"tool_result","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":14,"type":"evidence_gate","agen
+t":"supervisor","tool":null},{"sequence":15,"type":"a2_candidate_retrieval","agent":"supervisor","tool":null},{"sequenc
+e":16,"type":"run_completed","agent":"supervisor","tool":null}],"sse_disconnect_replay":{"status":200,"first_sequence":
+1,"resumed_status":200,"resumed_sequences":[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"duplicate_sequences":[]},"teacher_to
+ols":["damage_mechanism_query","standard_clause_search"],"source_ids":["GBT30579-2022-5.23","GBT30579-2022-5.6"],"main_
+answer":"**已知工况：** 设备/部位=塔顶碱液管线弯头（structured_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（stru
+ctured_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作
+为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温
+。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地
+检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核
+对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下
+腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取
+得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。","visible_in_dom":true,"dom_excerpt":"况纳入本轮分析；这些字段未作独立
+复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项
+保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部
+减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：
+**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质p
+H与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态
+确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机
+结论和RBI风险等级均未确认。\n展开完整报告原文（864 字）\n**已知工况：** 设备/部位=塔顶碱液管线弯头（structured_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作
+独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- 
+[GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测
+厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭
+当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判
+断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、
+沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级
+。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查看审查轨迹\n设备与工况
+ · 已填写\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵\n\nRU
+LE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况、附件与标准原文不会自动上传外网搜索服务","evidence_panel":"","screenshot":"D:\\作业\\竞赛\\计算机设计智能体\
+\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030/Edge_desktop_source_review_1793349357005.png"}],"events":[{"url":"/api/h
+ealth","status":200},{"url":"/api/conversations","status":200},{"url":"/api/health","status":200},{"url":"/api/conversa
+tions","status":200},{"url":"/api/conversations/72eb889b-92c4-4605-bb39-56763d0a84af","status":200},{"url":"/api/conver
+sations/72eb889b-92c4-4605-bb39-56763d0a84af","status":200},{"url":"/api/health","status":200},{"url":"/api/conversatio
+ns/72eb889b-92c4-4605-bb39-56763d0a84af/files","status":200},{"url":"/api/conversations/72eb889b-92c4-4605-bb39-56763d0
+a84af/runs","status":200},{"url":"/api/runs/eb2ee44d-81be-4e9f-acd2-a9ec6dd28c7d/events","status":200},{"url":"/api/run
+s/eb2ee44d-81be-4e9f-acd2-a9ec6dd28c7d/input","status":200},{"url":"/api/runs/eb2ee44d-81be-4e9f-acd2-a9ec6dd28c7d/even
+ts","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conv
+ersations","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-c
+ec501b86ae8","status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/files","status":200},{"url":
+"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs","status":200},{"url":"/api/conversations","status":200},
+{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs","status":503},{"url":"/api/conversations/063e779e
+-3236-4a05-a2bb-cec501b86ae8/runs","status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs",
+"status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs","status":200},{"url":"/api/runs/c4c
+52516-9154-43ff-b7bd-e4b5db831c04/input","status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/events","
+status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/stream","status":200},{"url":"/api/conversations/06
+3e779e-3236-4a05-a2bb-cec501b86ae8","status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs"
+,"status":200},{"url":"/api/conversations","status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/events"
+,"status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8","status":200},{"url":"/api/runs/c4c5251
+6-9154-43ff-b7bd-e4b5db831c04/input","status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04","status":200
+},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/events","status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7b
+d-e4b5db831c04/stream","status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/stream","status":200},{"url
+":"/api/conversations","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations","status":200
+},{"url":"/api/conversations","status":200},{"url":"/api/conversations/7acab43c-1623-4eb3-9405-e78bcbd71a5a","status":2
+00},{"url":"/api/conversations/7acab43c-1623-4eb3-9405-e78bcbd71a5a/files","status":200},{"url":"/api/conversations/7ac
+ab43c-1623-4eb3-9405-e78bcbd71a5a/runs","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversati
+ons/7acab43c-1623-4eb3-9405-e78bcbd71a5a/runs","status":200},{"url":"/api/conversations/7acab43c-1623-4eb3-9405-e78bcbd
+71a5a/runs","status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857/input","status":200},{"url":"/api/conv
+ersations/7acab43c-1623-4eb3-9405-e78bcbd71a5a/runs","status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe048
+57/events","status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857/stream","status":200},{"url":"/api/conv
+ersations/7acab43c-1623-4eb3-9405-e78bcbd71a5a","status":200},{"url":"/api/conversations/7acab43c-1623-4eb3-9405-e78bcb
+d71a5a/runs","status":200},{"url":"/api/conversations","status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe0
+4857/events","status":200},{"url":"/api/conversations/7acab43c-1623-4eb3-9405-e78bcbd71a5a","status":200},{"url":"/api/
+runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857/input","status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857",
+"status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857/events","status":200},{"url":"/api/runs/5c8600de-d
+bf3-4ed3-84e3-96f27fe04857/stream","status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857/stream","status
+":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations",
+"status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b
+","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/files","status":200},{"url":"/api/conve
+rsations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/conversations","status":200},{"url":"/ap
+i/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-
+a6a1-831bb9a4704b/runs","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/events","status":200},{"ur
+l":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82
+e2-9a87a07ef680/input","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/stream","status":200},{"url
+":"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/events","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a87a
+07ef680/events","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b","status":200},{"url":"/a
+pi/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/events","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-8
+31bb9a4704b/runs","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/331f8692-2a61-46c1
+-a6a1-831bb9a4704b","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/input","status":200},{"url":"/
+api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/eve
+nts","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/stream","status":200},{"url":"/api/runs/f0053
+832-ef95-4a20-82e2-9a87a07ef680/stream","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/r
+uns","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/con
+versations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3d
+5d0/input","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/events","status":200},{"url":"/api/runs
+/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/stream","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/even
+ts","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b","status":200},{"url":"/api/conversat
+ions/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/conversations","status":200},{"url":"/api/ru
+ns/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/events","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9
+a4704b","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/input","status":200},{"url":"/api/runs/007
+1f4c1-ffc6-4f03-b13b-319945b3d5d0","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/events","status
+":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/stream","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f0
+3-b13b-319945b3d5d0/stream","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status
+":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/conversations/3
+31f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/input","
+status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/events","status":200},{"url":"/api/runs/c19773f3-4a
+e8-4a6f-b9b4-4caa6b49c693/stream","status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/events","status"
+:200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b","status":200},{"url":"/api/conversations/331f869
+2-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/events","statu
+s":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b","sta
+tus":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/input","status":200},{"url":"/api/runs/c19773f3-4ae8-4
+a6f-b9b4-4caa6b49c693","status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/events","status":200},{"url
+":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/stream","status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6
+b49c693/stream","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations","status":200},{"url
+":"/api/conversations","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200
+},{"url":"/api/conversations","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","stat
+us":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a","status":200},{"url":"/api/conversations/4d5b
+4f22-3d69-4c86-8517-4145e5ba693a/files","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/r
+uns","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/run
+s/910c4032-7115-404f-8939-175239688449/input","status":200},{"url":"/api/runs/910c4032-7115-404f-8939-175239688449/stre
+am","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conv
+ersations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4
+145e5ba693a/runs","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b","status":200},{"url":"
+/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/conversations","status":200},{
+"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-
+3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","
+status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversat
+ions/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5
+ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"
+/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c
+86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"
+:200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d
+5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/
+runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/co
+nversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517
+-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{
+"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-
+3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","
+status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversat
+ions/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5
+ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"
+/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c
+86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"
+:200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d
+5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/
+runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/co
+nversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517
+-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{
+"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-
+3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","
+status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversat
+ions/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5
+ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"
+/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c
+86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"
+:200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d
+5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/
+runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/co
+nversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517
+-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{
+"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-
+3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","
+status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversat
+ions/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5
+ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"
+/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c
+86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"
+:200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d
+5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/
+runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/co
+nversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517
+-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{
+"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-
+3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","
+status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversat
+ions/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5
+ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"
+/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c
+86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"
+:200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d
+5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/
+runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/co
+nversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517
+-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200}],
+"failedRequests":[{"requestId":"44444.30","errorText":"net::ERR_ABORTED","canceled":true},{"requestId":"44444.37","erro
+rText":"net::ERR_ABORTED","canceled":true},{"requestId":"44444.36","errorText":"net::ERR_ABORTED","canceled":true},{"re
+questId":"44444.84","errorText":"net::ERR_ABORTED","canceled":true},{"requestId":"44444.136","errorText":"net::ERR_ABOR
+TED","canceled":true},{"requestId":"44444.166","errorText":"net::ERR_ABORTED","canceled":true},{"requestId":"44444.197"
+,"errorText":"net::ERR_ABORTED","canceled":true},{"requestId":"44444.218","errorText":"net::ERR_ABORTED","canceled":tru
+e},{"requestId":"44444.239","errorText":"net::ERR_ABORTED","canceled":true}],"consoleErrors":[]}
+; diagnostics=D:\作业\竞赛\计算机设计智能体\机械智能体\docs\audits\evidence\r2_g2_20261030\Edge_desktop_20261030_163549.json
+At D:\作业\竞赛\计算机设计智能体\机械智能体\scripts\r2_browser_e2e.ps1:236 char:40
++ ... de -ne 0) { throw "CDP validation failed (exit=$($nodeProcess.ExitCod ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (CDP validation ...030_163549.json:String) [], RuntimeException
+    + FullyQualifiedErrorId : CDP validation failed (exit=1); stdout=; stderr={"error":"Error: timeout: professional_B 
+   _shell_impact createRun","stack":"Error: timeout: professional_B_shell_impact createRun\n    at waitUntil (C:\\Use  
+  rs\\37813\\AppData\\Local\\Temp\\r2_browser_cdp_20261030_163549.cjs:61:145)\n    at async sendJourney (C:\\Users\\   
+ 37813\\AppData\\Local\\Temp\\r2_browser_cdp_20261030_163549.cjs:67:17)\n    at async main (C:\\Users\\37813\\AppDa    
+ta\\Local\\Temp\\r2_browser_cdp_20261030_163549.cjs:84:40)","cdpError":null,"exceptionDetails":null,"expressionHas    h
+":null,"expressionPrefix":null,"method":null,"timeoutMs":null,"nodePid":47812,"browserPid":40628,"target":{"id":"    F0
+2D3A327D0F2061864A4CEC38D7C512","type":"page","url":"http://127.0.0.1:5174/","webSocketDebuggerUrl":"ws://127.0.    0.1
+:24713/devtools/page/F02D3A327D0F2061864A4CEC38D7C512"},"completedJourneys":[{"label":"unconfigured_model_503",    "con
+versation_id":"063e779e-3236-4a05-a2bb-cec501b86ae8","http_status":503,"error":"DeepSeek 未配置；请设置 DEEPSEEK_API_    KEY",
+"run_created":false},{"label":"rule_demo_recovery","conversation_id":"063e779e-3236-4a05-a2bb-cec501b86ae8","    run_id
+":"c4c52516-9154-43ff-b7bd-e4b5db831c04","question":"你好","mode":"RULE_DEMO","status":"completed","terminal_e    vent":"
+run_completed","assistant_messages_for_run":1,"input_snapshot":{"question":"你好","mode":"RULE_DEMO","context    ":{"equi
+pment":"","equipment_type":"","material":"","medium":[],"operating_condition":"","field_evidence":"","web_    mode":"au
+to","allow_sensitive_web_search":false,"_object_scope":"conversation_object","_v2_route_decision":{"versi    on":"v2a.1
+","primary_route":"GENERAL","subtasks":[{"id":"general","kind":"GENERAL_EXPLANATION","user_goal":"普通对话",    "requires":
+[],"depends_on":[],"task_risk":"LOW"}],"safety_relevance":false,"confidence":0.55,"reasons_public":["未发    现标准查证或具体设备安全
+任务"],"needs_clarification":false,"clarification_question":null,"model_usage":{"request_count":0,"sourc    e":"determini
+stic_fallback"},"dispatch_route":"GENERAL"},"_v2_route_execution":"DIRECT_CHAT","_context_sources":{}    ,"_context_con
+flicts":[],"_context_raw_values":{},"_context_unknown_enums":{},"_context_field_details":{},"raw_med    ium":null,"_con
+text_extraction_method":"bounded_explicit_span_parser_v2"}},"events":[{"sequence":1,"type":"context    _resolved","agen
+t":"supervisor","tool":null},{"sequence":2,"type":"intent_routed","agent":"supervisor","tool":null    },{"sequence":3,"
+type":"run_completed","agent":"supervisor","tool":null}],"sse_disconnect_replay":{"status":200,"f    irst_sequence":1,"
+resumed_status":200,"resumed_sequences":[2,3],"duplicate_sequences":[]},"teacher_tools":[],"sour    ce_ids":[],"main_an
+swer":"你好！我是 Aether。可以直接和我聊天，也可以问机械设备、腐蚀机理或相关标准的问题。","visible_in_dom":true,"dom_excerpt":"澄衡 Ae    theris\n智能工程助手\n新建分析
+\n⌘ K\n工作区\n⌘ /\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n··    ·\n新对话\n···\n新对话\n···
+\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新    对话\n···\n新对话\n···\n新对话
+\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n研\n研究工作区\n本地 · SQLite 持久化    \nAPI 在线\nv0.3 · RULE_D
+EMO\n工程研判\n新对话\nRULE_DEMO\n证据审查\n问题 1\n本轮服务端输入快照 · RULE_DEMO · 联网 auto\n\n你好\n\n✳\n思维过程 · 3     步 · 任务完成 · 39 ms\n⌄\n\n
+你好！我是 Aether。可以直接和我聊天，也可以问机械设备、腐蚀机理或相关标准的问题。\n\n本轮执行已结束\n重试本轮\n查看审查轨迹\n设备与工况 · 机理研判需填写材质/介    质\n联网\n关闭\n自动\n开启\n拖放附件或选
+择文件 · 单个≤15MiB，最多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵\n\nRU    LE_DEMO · 附件仅本地保存，不发送到第三方模
+型 · 联网 auto；设备工况、附件与标准原文不会自动上传外网搜索服务","evidence_panel":"","screenshot":"D:\\作业\\竞赛\\计算机设    计智能体\\机械智能体\\docs\\audits\\
+evidence\\r2_g2_20261030/Edge_desktop_rule_demo_recovery_1793349351959.png"},{"label":"    scc_concept","conversation_i
+d":"7acab43c-1623-4eb3-9405-e78bcbd71a5a","run_id":"5c8600de-dbf3-4ed3-84e3-96f27fe048    57","question":"什么是应力腐蚀开裂？","
+mode":"RULE_DEMO","status":"completed","terminal_event":"run_completed","assistant_me    ssages_for_run":1,"input_snaps
+hot":{"question":"什么是应力腐蚀开裂？","mode":"RULE_DEMO","context":{"equipment":"","equipmen    t_type":"","material":"","mediu
+m":[],"operating_condition":"","field_evidence":"","web_mode":"auto","allow_sensiti    ve_web_search":false,"damage_mor
+phology":"腐蚀","_object_scope":"conversation_object","_v2_route_decision":{"version    ":"v2a.1","primary_route":"GENERA
+L","subtasks":[{"id":"explain","kind":"GENERAL_EXPLANATION","user_goal":"解释一般概念，不    作现场判断","requires":[],"depends_on":
+[],"task_risk":"LOW"}],"safety_relevance":false,"confidence":0.55,"reasons_publi    c":["一般概念解释，不是现场设备结论"],"needs_clari
+fication":false,"clarification_question":null,"model_usage":{"request_count":0,    "source":"deterministic_fallback"},"
+dispatch_route":"GENERAL"},"_v2_route_execution":"DIRECT_CHAT","_context_sourc    es":{"damage_morphology":"current_mes
+sage"},"_context_conflicts":[],"_context_raw_values":{"damage_morphology":"腐蚀    "},"_context_unknown_enums":{},"_conte
+xt_field_details":{"damage_morphology":{"raw_value":"腐蚀","normalized_value":    "腐蚀","unit":null,"source":"current_mess
+age","confirmation_state":"USER_ASSERTED","independently_verified":false,"o    bject":"UNKNOWN","object_scope":"convers
+ation_object","source_span":{"text":"腐蚀","start":5,"end":7,"assertion_stat    e":"USER_ASSERTED","origin":"morphology_l
+ocation_match"}}},"raw_medium":null,"_context_extraction_method":"bounded    _explicit_span_parser_v2"}},"events":[{"se
+quence":1,"type":"context_resolved","agent":"supervisor","tool":null},{"    sequence":2,"type":"intent_routed","agent":
+"supervisor","tool":null},{"sequence":3,"type":"run_completed","agent":    "supervisor","tool":null}],"sse_disconnect_r
+eplay":{"status":200,"first_sequence":1,"resumed_status":200,"resumed_    sequences":[2,3],"duplicate_sequences":[]},"t
+eacher_tools":[],"source_ids":[],"main_answer":"**已知工况：** 本轮未提供可确认工况。    \n\n应力腐蚀开裂（SCC）是易感材料在特定腐蚀环境与拉应力共同作用下发生的局部开裂；它不
+同于单纯均匀腐蚀，裂纹可能在总体减薄不明显时发展。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE]     一般机理框架通常包括三要素：材料具有相应环境敏感性、存在腐蚀介质/特定环境、存在拉应力（可来自
+载荷或残余应力）。缺少任一要素的现场证据时，只能解释概念，不能据此诊断某台设备。\n\n**标准状态：** 本地检索未取得可追溯条款（    没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 工程排
+查时分别核对材料牌号与热处理状态、介质及温度/浓度等环境因素、焊接或装配残余应力和载荷；再由专业人员通过表面/体积检测确认是否存在裂    纹。\n\n**缺项及原因：**\n- 具体对象与问题边界（仅在要求设备级判断时）：概念解释不依赖
+完整工况；设备级适用性判断需要对应对象。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n    \n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条
+款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。","visible_in_dom":true,"dom    _excerpt":"澄衡 Aetheris\n智能工程助手\n新建分析\n⌘ K\n工作区\n⌘ /
+\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新    对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话
+\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n    ···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···
+\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\    n研\n研究工作区\n本地 · SQLite 持久化\nAPI 在线\nv0.3 · RULE_DEMO\n
+工程研判\n新对话\nRULE_DEMO\n证据审查\n问题 1\n本轮服务端输入快照 · RULE_DEMO · 联网     auto\n\n什么是应力腐蚀开裂？\n\n✳\n思维过程 · 3 步 · 任务完成 · 70 ms\n⌄\
+n\n长篇研判报告已折叠，请展开下方原文。\n\n展开完整报告原文（544 字）\n**已知工况：** 本轮未提供可确    认工况。\n\n应力腐蚀开裂（SCC）是易感材料在特定腐蚀环境与拉应力共同作用下发生的局部开裂；它不同于单纯均匀
+腐蚀，裂纹可能在总体减薄不明显时发展。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDAN    CE] 一般机理框架通常包括三要素：材料具有相应环境敏感性、存在腐蚀介质/特定环境、存在拉应力（可来自载荷或残余应
+力）。缺少任一要素的现场证据时，只能解释概念，不能据此诊断某台设备。\n\n**标准状态：** 本地检索未取得可追    溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 工程排查时分别核对
+材料牌号与热处理状态、介质及温度/浓度等环境因素、焊接或装配残余应力和载荷；再由专业人员通过表面/体积检测确认是    否存在裂纹。\n\n**缺项及原因：**\n- 具体对象与问题边界（仅在要求设备级判断时）：概念解释不依赖完整工况；设
+备级适用性判断需要对应对象。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等    级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\
+n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查看审查轨迹\    n设备与工况 · 机理研判需填写材质/介质\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最
+多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结    果只进入草稿。\n发送\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况
+、附件与标准原文不会自动上传外网搜索服务","evidence_panel":"","screensho    t":"D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_
+20261030/Edge_desktop_scc_concept_1793349352854.png    "},{"label":"professional_A_60C","conversation_id":"331f8692-2a6
+1-46c1-a6a1-831bb9a4704b","run_id":"f0053832-ef95-    4a20-82e2-9a87a07ef680","question":"设备局部减薄可能属于哪类腐蚀机理？请列来源及适用条件未知项
+。","mode":"RULE_DEMO","status":"completed","termi    nal_event":"run_completed","assistant_messages_for_run":1,"input_s
+napshot":{"question":"设备局部减薄可能属于哪类腐蚀机理？请列来源及适用条件    未知项。","mode":"RULE_DEMO","context":{"equipment":"塔顶碱液管线弯头","equipme
+nt_type":"","material":"300系列不锈钢","medium":["碱式    酸性水"],"operating_condition":"60°C，1.0 MPa","field_evidence":"","web_
+mode":"auto","allow_sensitive_web_search":fals    e,"damage_morphology":"减薄","_object_scope":"塔顶碱液管线弯头","_v2_route_deci
+sion":{"version":"v2a.1","primary_route":"ENG    INEERING","subtasks":[{"id":"exploration","kind":"MECHANISM_EXPLORATIO
+N","user_goal":"对专业损伤机理开展有来源、保留未知项的初步探索","re    quires":[],"depends_on":[],"task_risk":"SAFETY_RELEVANT"}],"safety_rele
+vance":true,"confidence":0.55,"reasons_publ    ic":["识别到专业损伤机理或模式问题；不依赖已填设备参数"],"needs_clarification":false,"clarificat
+ion_question":null,"model_usage":{"request    _count":0,"source":"deterministic_fallback"},"dispatch_route":"ENGINEERIN
+G"},"_v2_route_execution":"R9_ENGINEERING    ","_context_sources":{"equipment":"structured_form","material":"structured
+_form","medium":"structured_form","damag    e_morphology":"current_message"},"_context_conflicts":[],"_context_raw_valu
+es":{"equipment":"塔顶碱液管线弯头","material":    "300系列不锈钢","medium":["碱式酸性水"],"damage_morphology":"减薄"},"_context_unknown_en
+ums":{},"_context_field_details":{"equ    ipment":{"raw_value":"塔顶碱液管线弯头","normalized_value":"塔顶碱液管线弯头","unit":null,"so
+urce":"structured_form","confirmation    _state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":false,"object
+":"塔顶碱液管线弯头","object_scope":"convers    ation_object","source_span":null},"material":{"raw_value":"300系列不锈钢","normalize
+d_value":"300系列不锈钢","unit":null,"so    urce":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","in
+dependently_verified":false,"objec    t":"塔顶碱液管线弯头","object_scope":"conversation_object","source_span":null},"medium":{
+"raw_value":["碱式酸性水"],"normalized    _value":["碱式酸性水"],"unit":null,"source":"structured_form","confirmation_state":"USE
+R_ASSERTED_STRUCTURED_FORM","ind    ependently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"conversation_object"
+,"source_span":null},"damage_mo    rphology":{"raw_value":"减薄","normalized_value":"减薄","unit":null,"source":"current_me
+ssage","confirmation_state":"U    SER_ASSERTED","independently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"conv
+ersation_object","source_span    ":{"text":"减薄","start":4,"end":6,"assertion_state":"USER_ASSERTED","origin":"morpholog
+y_location_match"}}},"raw_me    dium":["碱式酸性水"],"_context_extraction_method":"bounded_explicit_span_parser_v2"}},"event
+s":[{"sequence":1,"type":"c    ontext_resolved","agent":"supervisor","tool":null},{"sequence":2,"type":"intent_routed",
+"agent":"supervisor","tool    ":null},{"sequence":3,"type":"phase_started","agent":"supervisor","tool":null},{"sequence
+":4,"type":"phase_started    ","agent":"supervisor","tool":null},{"sequence":5,"type":"investigation_iteration","agent"
+:"diagnosis_agent","tool    ":null},{"sequence":6,"type":"tool_called","agent":"diagnosis_agent","tool":"damage_mechani
+sm_query"},{"sequence":    7,"type":"tool_result","agent":"diagnosis_agent","tool":"damage_mechanism_query"},{"sequence
+":8,"type":"tool_calle    d","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":9,"type":"tool_resu
+lt","agent":"diagnosi    s_agent","tool":"standard_clause_search"},{"sequence":10,"type":"evidence_gate","agent":"super
+visor","tool":null},    {"sequence":11,"type":"investigation_iteration","agent":"diagnosis_agent","tool":null},{"sequen
+ce":12,"type":"tool    _called","agent":"diagnosis_agent","tool":"standard_clause_search"},{"sequence":13,"type":"tool_
+result","agent":"d    iagnosis_agent","tool":"standard_clause_search"},{"sequence":14,"type":"evidence_gate","agent":"s
+upervisor","tool"    :null},{"sequence":15,"type":"a2_candidate_retrieval","agent":"supervisor","tool":null},{"sequence
+":16,"type":"run    _completed","agent":"supervisor","tool":null}],"sse_disconnect_replay":{"status":200,"first_sequenc
+e":1,"resumed_s    tatus":200,"resumed_sequences":[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"duplicate_sequences":[]},"tea
+cher_tools":["    damage_mechanism_query","standard_clause_search"],"source_ids":[],"main_answer":"**已知工况：** 设备/部位=塔顶碱液
+管线弯头（structur    ed_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作独立实测确认）\n\n
+已将用户提供的工况纳入本    轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、
+流速/湍流、温压、沉积    /水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_
+UNVERIFIED    ] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有
+取得可追溯条款）；    未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料
+、介质、温压和局    部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争
+解释。\n-     材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得
+可追溯条款；    一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。","visible_in_dom":true,"dom_excerpt":"澄衡 Aetheris\n
+智能工程助    手\n新建分析\n⌘ K\n工作区\n⌘ /\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n·
+··\n    新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新
+对话\    n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n新对话\n···\n研\n研究工作区\n本地 · S
+QL    ite 持久化\nAPI 在线\nv0.3 · RULE_DEMO\n工程研判\n新对话\nRULE_DEMO\n证据审查\n问题 1\n本轮服务端输入快照 · RULE_DEMO · 联网 auto\n\n设备局部减薄可能属
+于    哪类腐蚀机理？请列来源及适用条件未知项。\n\n✳\n思维过程 · 16 步 · 调查完成 · 查询 3 次 · 585 ms\n⌄\n\n长篇研判报告已折叠，请展开下方原文。\n\n展开完整报告原文（864 字）\n**已知工
+    况：** 设备/部位=塔顶碱液管线弯头（structured_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_fo 
+   rm，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机  
+  理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁   
+ 温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态    
+：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结    果
+仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分    布：
+用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\    n**
+来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查看审查轨迹\n设备与工    况 · 
+已填写\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15MiB，最多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵    \n\nR
+ULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；设备工况、附件与标准原文不会自动上传外网搜索服务","evidence_panel":"","screenshot":"D:\\作业\\竞赛    \\计算机设
+计智能体\\机械智能体\\docs\\audits\\evidence\\r2_g2_20261030/Edge_desktop_professional_A_60C_1793349354665.png"},{"la    bel":"p
+rofessional_A_80C","conversation_id":"331f8692-2a61-46c1-a6a1-831bb9a4704b","run_id":"0071f4c1-ffc6-4f03-b1    3b-31994
+5b3d5d0","question":"若温度更正为80°C，是否足以排除碱式酸性水腐蚀？","mode":"RULE_DEMO","status":"completed","terminal_event":"    run_compl
+eted","assistant_messages_for_run":1,"input_snapshot":{"question":"若温度更正为80°C，是否足以排除碱式酸性水腐蚀？","mode":"RUL    E_DEMO","c
+ontext":{"equipment":"塔顶碱液管线弯头","equipment_type":"","material":"300系列不锈钢","medium":["碱式酸性水"],"operating_    condition":
+"80°C，1.0 MPa","field_evidence":"","web_mode":"auto","allow_sensitive_web_search":false,"damage_morphol    ogy":"减薄","_
+object_scope":"塔顶碱液管线弯头","_v2_route_decision":{"version":"v2a.1","primary_route":"ENGINEERING","subtas    ks":[{"id":"e
+ngineering","kind":"MECHANISM_EXPLORATION","user_goal":"对设备问题开展有来源、保留未知项的专业初步分析","requires":[],"depen    ds_on":[],"tas
+k_risk":"SAFETY_RELEVANT"}],"safety_relevance":true,"confidence":0.55,"reasons_public":["确定性安全门将设备安全    请求优先送专业路径"],"ne
+eds_clarification":false,"clarification_question":null,"model_usage":{"request_count":0,"source":"d    eterministic_fal
+lback"},"dispatch_route":"ENGINEERING"},"_v2_route_execution":"R9_ENGINEERING","_context_sources":    {"equipment":"str
+uctured_form","material":"structured_form","medium":"structured_form","damage_morphology":"same_c    onversation_prior_
+user_statement"},"_context_conflicts":[],"_context_raw_values":{"equipment":"塔顶碱液管线弯头","material    ":"300系列不锈钢","mediu
+m":["碱式酸性水"],"damage_morphology":"减薄"},"_context_unknown_enums":{},"_context_field_details":{"e    quipment":{"raw_valu
+e":"塔顶碱液管线弯头","normalized_value":"塔顶碱液管线弯头","unit":null,"source":"structured_form","confirmati    on_state":"USER_ASSER
+TED_STRUCTURED_FORM","independently_verified":false,"object":"塔顶碱液管线弯头","object_scope":"塔顶碱液管    线弯头","source_span":nul
+l},"material":{"raw_value":"300系列不锈钢","normalized_value":"300系列不锈钢","unit":null,"source":"st    ructured_form","confirm
+ation_state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":false,"object":"塔顶碱液管    线弯头","object_scope":"塔顶碱
+液管线弯头","source_span":null},"medium":{"raw_value":["碱式酸性水"],"normalized_value":["碱式酸性水"],"u    nit":null,"source":"struc
+tured_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified"    :false,"object":"塔顶碱液管线弯头"
+,"object_scope":"塔顶碱液管线弯头","source_span":null},"damage_morphology":{"raw_value":"减薄","no    rmalized_value":"减薄","unit"
+:null,"source":"same_conversation_prior_user_statement","confirmation_state":"USER_ASSE    RTED_PRIOR","independently_v
+erified":false,"object":"塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","source_span":null}},"raw    _medium":["碱式酸性水"],"_context_
+extraction_method":"bounded_explicit_span_parser_v2"}},"events":[{"sequence":1,"type"    :"context_resolved","agent":"s
+upervisor","tool":null},{"sequence":2,"type":"intent_routed","agent":"supervisor","t    ool":null},{"sequence":3,"type"
+:"phase_started","agent":"supervisor","tool":null},{"sequence":4,"type":"phase_star    ted","agent":"supervisor","tool"
+:null},{"sequence":5,"type":"investigation_iteration","agent":"diagnosis_agent","t    ool":null},{"sequence":6,"type":"
+tool_called","agent":"diagnosis_agent","tool":"damage_mechanism_query"},{"sequenc    e":7,"type":"tool_result","agent":
+"diagnosis_agent","tool":"damage_mechanism_query"},{"sequence":8,"type":"tool_ca    lled","agent":"diagnosis_agent","to
+ol":"standard_clause_search"},{"sequence":9,"type":"tool_result","agent":"diagn    osis_agent","tool":"standard_clause_
+search"},{"sequence":10,"type":"evidence_gate","agent":"supervisor","tool":nul    l},{"sequence":11,"type":"investigati
+on_iteration","agent":"diagnosis_agent","tool":null},{"sequence":12,"type":"t    ool_called","agent":"diagnosis_agent",
+"tool":"standard_clause_search"},{"sequence":13,"type":"tool_result","agent"    :"diagnosis_agent","tool":"standard_cla
+use_search"},{"sequence":14,"type":"evidence_gate","agent":"supervisor","to    ol":null},{"sequence":15,"type":"a2_cand
+idate_retrieval","agent":"supervisor","tool":null},{"sequence":16,"type":"    run_completed","agent":"supervisor","tool
+":null}],"sse_disconnect_replay":{"status":200,"first_sequence":1,"resume    d_status":200,"resumed_sequences":[2,3,4,5
+,6,7,8,9,10,11,12,13,14,15,16],"duplicate_sequences":[]},"teacher_tools"    :["damage_mechanism_query","standard_clause
+_search"],"source_ids":[],"main_answer":"**已知工况：** 设备/部位=塔顶碱液管线弯头（struc    tured_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structu
+red_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作独立实测确认）\n\n已将用户提供的工况    纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方
+向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压    、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_
+GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIF    IED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀
+协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条    款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与
+pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温    压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化
+物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\    n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安
+全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯    条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI
+风险等级均未确认。","visible_in_dom":true,"dom_excerpt":"况纳入本轮分析；这些字段未作独    立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENER
+AL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候    选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数
+据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作    为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能
+只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法    定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测
+厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。    \n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。
+\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：3    00系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核
+假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准    要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n展开完整报告原文（8
+64 字）\n**已知工况：** 设备/部位=塔顶碱液管线弯头（structured_form，未作独立实测确认    ）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（st
+ructured_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这些字段未作独立复验，减    薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 
+可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺    项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输
+入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向    ；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n
+\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\    n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 
+本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能谈适用性。\n\n*    *缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物
+及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不    锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等
+级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮    具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查看审查轨迹\n
+设备与工况 · 已填写\n联网\n关闭\n自动\n开启\n拖放附件或选择文件 · 单个≤15Mi    B，最多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送
+\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型 · 联网 auto；    设备工况、附件与标准原文不会自动上传外网搜索服务","evidence_panel":"","screenshot":"D:\\作业\\
+竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\r    2_g2_20261030/Edge_desktop_professional_A_80C_1793349355765.png"},{"l
+abel":"source_review","conversation_id":"331f    8692-2a61-46c1-a6a1-831bb9a4704b","run_id":"c19773f3-4ae8-4a6f-b9b4-4c
+aa6b49c693","question":"请审查本会话出现的来源ID、来源等级、支    持范围、未知条件，并说明这些来源是否足以证明本设备可继续运行。","mode":"RULE_DEMO","status":"completed
+","terminal_event":"run_completed","assista    nt_messages_for_run":1,"input_snapshot":{"question":"请审查本会话出现的来源ID、来源等级、
+支持范围、未知条件，并说明这些来源是否足以证明本设备可继续运行。","mode":"    RULE_DEMO","context":{"equipment":"塔顶碱液管线弯头","equipment_type":"","materia
+l":"300系列不锈钢","medium":["碱式酸性水"],"operati    ng_condition":"80°C，1.0 MPa","field_evidence":"","web_mode":"auto","allow_
+sensitive_web_search":false,"_object_sco    pe":"塔顶碱液管线弯头","_v2_route_decision":{"version":"v2a.1","primary_route":"ENG
+INEERING","subtasks":[{"id":"engineerin    g","kind":"MECHANISM_EXPLORATION","user_goal":"对设备问题开展有来源、保留未知项的专业初步分析","req
+uires":[],"depends_on":[],"task_risk":    "SAFETY_RELEVANT"}],"safety_relevance":true,"confidence":0.55,"reasons_public
+":["确定性安全门将设备安全请求优先送专业路径"],"needs_cla    rification":false,"clarification_question":null,"model_usage":{"request_count"
+:0,"source":"deterministic_fallback"    },"dispatch_route":"ENGINEERING"},"_v2_route_execution":"R9_ENGINEERING","_cont
+ext_sources":{"equipment":"structur    ed_form","material":"structured_form","medium":"structured_form"},"_context_conf
+licts":[],"_context_raw_values":{"    equipment":"塔顶碱液管线弯头","material":"300系列不锈钢","medium":["碱式酸性水"]},"_context_unknown
+_enums":{},"_context_field_detail    s":{"equipment":{"raw_value":"塔顶碱液管线弯头","normalized_value":"塔顶碱液管线弯头","unit":null,
+"source":"structured_form","conf    irmation_state":"USER_ASSERTED_STRUCTURED_FORM","independently_verified":false,"obj
+ect":"塔顶碱液管线弯头","object_scope":    "塔顶碱液管线弯头","source_span":null},"material":{"raw_value":"300系列不锈钢","normalized_value"
+:"300系列不锈钢","unit":null,"sourc    e":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTURED_FORM","independen
+tly_verified":false,"object":    "塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","source_span":null},"medium":{"raw_value":["碱式酸性水
+"],"normalized_value":["碱式酸性    水"],"unit":null,"source":"structured_form","confirmation_state":"USER_ASSERTED_STRUCTUR
+ED_FORM","independently_ver    ified":false,"object":"塔顶碱液管线弯头","object_scope":"塔顶碱液管线弯头","source_span":null}},"raw_med
+ium":["碱式酸性水"],"_context_e    xtraction_method":"bounded_explicit_span_parser_v2"}},"events":[{"sequence":1,"type":"con
+text_resolved","agent":"s    upervisor","tool":null},{"sequence":2,"type":"intent_routed","agent":"supervisor","tool":n
+ull},{"sequence":3,"type    ":"phase_started","agent":"supervisor","tool":null},{"sequence":4,"type":"phase_started","a
+gent":"supervisor","too    l":null},{"sequence":5,"type":"investigation_iteration","agent":"diagnosis_agent","tool":nul
+l},{"sequence":6,"type    ":"tool_called","agent":"diagnosis_agent","tool":"damage_mechanism_query"},{"sequence":7,"typ
+e":"tool_result","age    nt":"diagnosis_agent","tool":"damage_mechanism_query"},{"sequence":8,"type":"tool_called","age
+nt":"diagnosis_agent    ","tool":"standard_clause_search"},{"sequence":9,"type":"tool_result","agent":"diagnosis_agent"
+,"tool":"standard_c    lause_search"},{"sequence":10,"type":"evidence_gate","agent":"supervisor","tool":null},{"sequenc
+e":11,"type":"inve    stigation_iteration","agent":"diagnosis_agent","tool":null},{"sequence":12,"type":"tool_called","
+agent":"diagnosis    _agent","tool":"standard_clause_search"},{"sequence":13,"type":"tool_result","agent":"diagnosis_ag
+ent","tool":"sta    ndard_clause_search"},{"sequence":14,"type":"evidence_gate","agent":"supervisor","tool":null},{"seq
+uence":15,"type    ":"a2_candidate_retrieval","agent":"supervisor","tool":null},{"sequence":16,"type":"run_completed","
+agent":"superv    isor","tool":null}],"sse_disconnect_replay":{"status":200,"first_sequence":1,"resumed_status":200,"re
+sumed_sequenc    es":[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],"duplicate_sequences":[]},"teacher_tools":["damage_mechanis
+m_query","st    andard_clause_search"],"source_ids":["GBT30579-2022-5.23","GBT30579-2022-5.6"],"main_answer":"**已知工况：**
+ 设备/部位=塔顶碱液    管线弯头（structured_form，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作
+独立实测确认）\n\    n已将用户提供的工况纳入本轮分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合
+介质组成、pH/杂    质、流速/湍流、温压、沉积/水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [
+HYPOTHES    IS_UNVERIFIED] 酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索
+未取得可追溯条    款（没有取得可追溯条款）；未引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；
+需核对原文、    对象、材料、介质、温压和局部条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部
+冲蚀、沉积    下腐蚀等竞争解释。\n- 材料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 
+本轮本地    标准检索未取得可追溯条款；一般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。","visible_in_dom":true,"dom_excerpt":"况纳
+入本轮    分析；这些字段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉
+积/    水相和损伤形貌比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED
+]     酸性水相关腐蚀可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未
+    引用具体标准条款或法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部 
+   条件后才能谈适用性。\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材  
+  料牌号或材质证明：300系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一   
+ 般工程建议不等于标准要求，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n展开完整报告原文（864 字）\n**已知工况：** 设备/部位=塔顶碱液管线弯头（structured_for    
+m，未作独立实测确认）；用户陈述材质=300系列不锈钢（structured_form，未作独立实测确认）；用户陈述介质=碱式酸性水（structured_form，未作独立实测确认）\n\n已将用户提供的工况纳入本轮分析；这些    字
+段未作独立复验，减薄形貌和具体机理仍待现场证据确认。\n\n**可能方向（非设备确诊）：**\n- [GENERAL_GUIDANCE] 可先把问题作为候选机理调查：结合介质组成、pH/杂质、流速/湍流、温压、沉积/水相和损伤    形貌
+比较候选机制；缺项保持未知，不据此排除机理。\n- [GENERAL_GUIDANCE] ‘减薄’描述应由测厚数据及其位置分布确认；温度输入不自动等于金属壁温。\n- [HYPOTHESIS_UNVERIFIED] 酸性水相    关腐蚀
+可作为待查方向；弯头处局部减薄还应排查流速/湍流导致的冲蚀或腐蚀-冲蚀协同，并用现场介质分析和损伤形貌区分，不能只凭当前输入确定类别。\n\n**标准状态：** 本地检索未取得可追溯条款（没有取得可追溯条款）；未引用具体标    准条款或
+法定限值。\n\n**下一步排查：**\n1. 先核实介质化验/水相与pH、关键杂质及流动条件，再与损伤形貌和测厚分布交叉判断。\n2. 本地标准检索结果仅作为候选条款；需核对原文、对象、材料、介质、温压和局部条件后才能    谈适用性。
+\n\n**缺项及原因：**\n- 介质pH与关键组分（如硫化物/氯化物）：用于区分酸性/碱性水及具体腐蚀环境。\n- 流速/流态、沉积物及实测减薄分布：用于判断弯头局部冲蚀、沉积下腐蚀等竞争解释。\n- 材料牌号或材    质证明：30
+0系列不锈钢不能替代304/316等具体牌号和状态确认。\n\n**安全边界：** 本回答仅为一般工程指导/待核假设，不是设备确诊或风险等级。\n\n**来源说明：** 本轮本地标准检索未取得可追溯条款；一般工程建议    不等于标准要求
+，本轮具体标准条款未核实。\n\n设备确诊、法定验收/复机结论和RBI风险等级均未确认。\n本轮执行已结束\n重试本轮\n查看审查轨迹\n设备与工况 · 已填写\n联网\n关闭\n自动\n开启\n拖放附件或选择文件     · 单个≤15
+MiB，最多5个\n点击麦克风开始中文语音输入。\n浏览器语音识别可能调用厂商服务并发送音频；请主动点击开始，识别结果只进入草稿。\n发送\n↵\n\nRULE_DEMO · 附件仅本地保存，不发送到第三方模型     · 联网 auto
+；设备工况、附件与标准原文不会自动上传外网搜索服务","evidence_panel":"","screenshot":"D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\e    vidence\\r
+2_g2_20261030/Edge_desktop_source_review_1793349357005.png"}],"events":[{"url":"/api/health","status":20    0},{"url":"
+/api/conversations","status":200},{"url":"/api/health","status":200},{"url":"/api/conversations","statu    s":200},{"ur
+l":"/api/conversations/72eb889b-92c4-4605-bb39-56763d0a84af","status":200},{"url":"/api/conversations/    72eb889b-92c4
+-4605-bb39-56763d0a84af","status":200},{"url":"/api/health","status":200},{"url":"/api/conversations/    72eb889b-92c4-
+4605-bb39-56763d0a84af/files","status":200},{"url":"/api/conversations/72eb889b-92c4-4605-bb39-56763    d0a84af/runs","
+status":200},{"url":"/api/runs/eb2ee44d-81be-4e9f-acd2-a9ec6dd28c7d/events","status":200},{"url":"/    api/runs/eb2ee44
+d-81be-4e9f-acd2-a9ec6dd28c7d/input","status":200},{"url":"/api/runs/eb2ee44d-81be-4e9f-acd2-a9ec6    dd28c7d/events","
+status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations","status":200},    {"url":"/api/conve
+rsations","status":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/063    e779e-3236-4a05-a2b
+b-cec501b86ae8","status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/f    iles","status":200},
+{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs","status":200},{"url":"/a    pi/conversations","st
+atus":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs","status":503    },{"url":"/api/convers
+ations/063e779e-3236-4a05-a2bb-cec501b86ae8/runs","status":200},{"url":"/api/conversations/0    63e779e-3236-4a05-a2bb-
+cec501b86ae8/runs","status":200},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b    86ae8/runs","status":200
+},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/input","status":200},{"url":"/api    /runs/c4c52516-9154-43ff-
+b7bd-e4b5db831c04/events","status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db8    31c04/stream","status":200
+},{"url":"/api/conversations/063e779e-3236-4a05-a2bb-cec501b86ae8","status":200},{"url":    "/api/conversations/063e779
+e-3236-4a05-a2bb-cec501b86ae8/runs","status":200},{"url":"/api/conversations","status":    200},{"url":"/api/runs/c4c52
+516-9154-43ff-b7bd-e4b5db831c04/events","status":200},{"url":"/api/conversations/063e7    79e-3236-4a05-a2bb-cec501b86a
+e8","status":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/input","stat    us":200},{"url":"/api/runs/c4c
+52516-9154-43ff-b7bd-e4b5db831c04","status":200},{"url":"/api/runs/c4c52516-9154-43f    f-b7bd-e4b5db831c04/events","st
+atus":200},{"url":"/api/runs/c4c52516-9154-43ff-b7bd-e4b5db831c04/stream","status":    200},{"url":"/api/runs/c4c52516-
+9154-43ff-b7bd-e4b5db831c04/stream","status":200},{"url":"/api/conversations","sta    tus":200},{"url":"/api/conversati
+ons","status":200},{"url":"/api/conversations","status":200},{"url":"/api/convers    ations","status":200},{"url":"/api
+/conversations/7acab43c-1623-4eb3-9405-e78bcbd71a5a","status":200},{"url":"/api/    conversations/7acab43c-1623-4eb3-94
+05-e78bcbd71a5a/files","status":200},{"url":"/api/conversations/7acab43c-1623-4    eb3-9405-e78bcbd71a5a/runs","status"
+:200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/7ac    ab43c-1623-4eb3-9405-e78bcbd71a5a/run
+s","status":200},{"url":"/api/conversations/7acab43c-1623-4eb3-9405-e78bcbd71    a5a/runs","status":200},{"url":"/api/r
+uns/5c8600de-dbf3-4ed3-84e3-96f27fe04857/input","status":200},{"url":"/api/c    onversations/7acab43c-1623-4eb3-9405-e7
+8bcbd71a5a/runs","status":200},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96    f27fe04857/events","status":200},{"url":
+"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857/stream","status":200},{"ur    l":"/api/conversations/7acab43c-1623-4eb3
+-9405-e78bcbd71a5a","status":200},{"url":"/api/conversations/7acab43c-162    3-4eb3-9405-e78bcbd71a5a/runs","status":20
+0},{"url":"/api/conversations","status":200},{"url":"/api/runs/5c8600de-    dbf3-4ed3-84e3-96f27fe04857/events","status
+":200},{"url":"/api/conversations/7acab43c-1623-4eb3-9405-e78bcbd71a5a"    ,"status":200},{"url":"/api/runs/5c8600de-db
+f3-4ed3-84e3-96f27fe04857/input","status":200},{"url":"/api/runs/5c860    0de-dbf3-4ed3-84e3-96f27fe04857","status":200
+},{"url":"/api/runs/5c8600de-dbf3-4ed3-84e3-96f27fe04857/events","sta    tus":200},{"url":"/api/runs/5c8600de-dbf3-4ed3
+-84e3-96f27fe04857/stream","status":200},{"url":"/api/runs/5c8600de-    dbf3-4ed3-84e3-96f27fe04857/stream","status":20
+0},{"url":"/api/conversations","status":200},{"url":"/api/conversat    ions","status":200},{"url":"/api/conversations",
+"status":200},{"url":"/api/conversations","status":200},{"url":"/a    pi/conversations/331f8692-2a61-46c1-a6a1-831bb9a4
+704b","status":200},{"url":"/api/conversations/331f8692-2a61-46c1    -a6a1-831bb9a4704b/files","status":200},{"url":"/a
+pi/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","sta    tus":200},{"url":"/api/conversations","status":200}
+,{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704    b/runs","status":200},{"url":"/api/conversations/331
+f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"    /api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/events
+","status":200},{"url":"/api/conversations/331f8692-2a61-46c1    -a6a1-831bb9a4704b/runs","status":200},{"url":"/api/ru
+ns/f0053832-ef95-4a20-82e2-9a87a07ef680/input","status":200}    ,{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680
+/stream","status":200},{"url":"/api/runs/f0053832-ef95-4a20    -82e2-9a87a07ef680/events","status":200},{"url":"/api/ru
+ns/f0053832-ef95-4a20-82e2-9a87a07ef680/events","status":2    00},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-83
+1bb9a4704b","status":200},{"url":"/api/runs/f0053832-ef95    -4a20-82e2-9a87a07ef680/events","status":200},{"url":"/api
+/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs    ","status":200},{"url":"/api/conversations","status":200},{
+"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb    9a4704b","status":200},{"url":"/api/runs/f0053832-ef95-4a20-
+82e2-9a87a07ef680/input","status":200},{"url":"/api/ru    ns/f0053832-ef95-4a20-82e2-9a87a07ef680","status":200},{"url"
+:"/api/runs/f0053832-ef95-4a20-82e2-9a87a07ef680/even    ts","status":200},{"url":"/api/runs/f0053832-ef95-4a20-82e2-9a
+87a07ef680/stream","status":200},{"url":"/api/runs/f    0053832-ef95-4a20-82e2-9a87a07ef680/stream","status":200},{"url
+":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb    9a4704b/runs","status":200},{"url":"/api/conversations/331f8692-
+2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"    url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/run
+s","status":200},{"url":"/api/runs/0071f4c1-ffc6-    4f03-b13b-319945b3d5d0/input","status":200},{"url":"/api/runs/0071
+f4c1-ffc6-4f03-b13b-319945b3d5d0/events","status    ":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/strea
+m","status":200},{"url":"/api/runs/0071f4c1-ffc    6-4f03-b13b-319945b3d5d0/events","status":200},{"url":"/api/conversa
+tions/331f8692-2a61-46c1-a6a1-831bb9a4704b","s    tatus":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831bb9
+a4704b/runs","status":200},{"url":"/api/conve    rsations","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-3199
+45b3d5d0/events","status":200},{"url":"/api/    conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b","status":200},{"url
+":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945    b3d5d0/input","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-31
+9945b3d5d0","status":200},{"url":"/api/run    s/0071f4c1-ffc6-4f03-b13b-319945b3d5d0/events","status":200},{"url":"/api
+/runs/0071f4c1-ffc6-4f03-b13b-319945b3d5d    0/stream","status":200},{"url":"/api/runs/0071f4c1-ffc6-4f03-b13b-319945b3
+d5d0/stream","status":200},{"url":"/api/    conversations/331f8692-2a61-46c1-a6a1-831bb9a4704b/runs","status":200},{"ur
+l":"/api/conversations/331f8692-2a61-46    c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/conversations/331f8692
+-2a61-46c1-a6a1-831bb9a4704b/runs","st    atus":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/input","sta
+tus":200},{"url":"/api/runs/c19773f3-    4ae8-4a6f-b9b4-4caa6b49c693/events","status":200},{"url":"/api/runs/c19773f3-4
+ae8-4a6f-b9b4-4caa6b49c693/stream","    status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/events","st
+atus":200},{"url":"/api/conversatio    ns/331f8692-2a61-46c1-a6a1-831bb9a4704b","status":200},{"url":"/api/conversation
+s/331f8692-2a61-46c1-a6a1-831bb9a4    704b/runs","status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/e
+vents","status":200},{"url":"/api    /conversations","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-8
+31bb9a4704b","status":200},{"url    ":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/input","status":200},{"url":"/api
+/runs/c19773f3-4ae8-4a6f-b9b4-4    caa6b49c693","status":200},{"url":"/api/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/ev
+ents","status":200},{"url":"/a    pi/runs/c19773f3-4ae8-4a6f-b9b4-4caa6b49c693/stream","status":200},{"url":"/api/runs/
+c19773f3-4ae8-4a6f-b9b4-4caa6    b49c693/stream","status":200},{"url":"/api/conversations","status":200},{"url":"/api/c
+onversations","status":200},    {"url":"/api/conversations","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86
+-8517-4145e5ba693a/runs","s    tatus":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/4d5b4f2
+2-3d69-4c86-8517-4145e5ba6    93a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a",
+"status":200},{"url":"/ap    i/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/files","status":200},{"url":"/api/con
+versations/331f8692-2a61    -46c1-a6a1-831bb9a4704b/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8
+517-4145e5ba693a/runs",    "status":200},{"url":"/api/runs/910c4032-7115-404f-8939-175239688449/input","status":200},{"
+url":"/api/runs/910c40    32-7115-404f-8939-175239688449/stream","status":200},{"url":"/api/conversations/4d5b4f22-3d69
+-4c86-8517-4145e5ba69    3a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","
+status":200},{"url":    "/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conve
+rsations/331f8692-2    a61-46c1-a6a1-831bb9a4704b","status":200},{"url":"/api/conversations/331f8692-2a61-46c1-a6a1-831
+bb9a4704b/runs","s    tatus":200},{"url":"/api/conversations","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c
+86-8517-4145e5ba6    93a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","sta
+tus":200},{"url"    :"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversa
+tions/4d5b4f22-    3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4
+145e5ba693a/ru    ns","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200}
+,{"url":"/api    /conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5
+b4f22-3d69-4    c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba69
+3a/runs","s    tatus":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"
+/api/conve    rsations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d6
+9-4c86-85    17-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs",
+"status"    :200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conv
+ersatio    ns/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-85
+17-414    5e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":
+200},    {"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations
+/4d5    b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5
+ba6    93a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"ur
+l"    :"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22
+-    3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/ru
+    ns","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api 
+   /conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4  
+  c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","s   
+ tatus":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conve    
+rsations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-85    1
+7-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"    :2
+00},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversatio    ns/
+4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-414    5e5b
+a693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},    {"url
+":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5    b4f22-
+3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba6    93a/run
+s","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url"    :"/api/c
+onversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-    3d69-4c86
+-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/ru    ns","statu
+s":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api    /conversati
+ons/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4    c86-8517-414
+5e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","s    tatus":200},{
+"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conve    rsations/4d5b4
+f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-85    17-4145e5ba693a
+/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"    :200},{"url":"/a
+pi/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversatio    ns/4d5b4f22-3d69-
+4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-414    5e5ba693a/runs","s
+tatus":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},    {"url":"/api/conver
+sations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5    b4f22-3d69-4c86-8517
+-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba6    93a/runs","status":20
+0},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url"    :"/api/conversations/4
+d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-    3d69-4c86-8517-4145e5ba
+693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/ru    ns","status":200},{"url"
+:"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api    /conversations/4d5b4f22-3
+d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4    c86-8517-4145e5ba693a/runs
+","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","s    tatus":200},{"url":"/api/co
+nversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conve    rsations/4d5b4f22-3d69-4c86-
+8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-85    17-4145e5ba693a/runs","status
+":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status"    :200},{"url":"/api/conversatio
+ns/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversatio    ns/4d5b4f22-3d69-4c86-8517-4145
+e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-414    5e5ba693a/runs","status":200},{"
+url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},    {"url":"/api/conversations/4d5b4f
+22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5    b4f22-3d69-4c86-8517-4145e5ba693a/
+runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba6    93a/runs","status":200},{"url":"/ap
+i/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url"    :"/api/conversations/4d5b4f22-3d69-4
+c86-8517-4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-    3d69-4c86-8517-4145e5ba693a/runs","st
+atus":200},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/ru    ns","status":200},{"url":"/api/convers
+ations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","status":200},{"url":"/api    /conversations/4d5b4f22-3d69-4c86-8517-
+4145e5ba693a/runs","status":200},{"url":"/api/conversations/4d5b4f22-3d69-4    c86-8517-4145e5ba693a/runs","status":200
+},{"url":"/api/conversations/4d5b4f22-3d69-4c86-8517-4145e5ba693a/runs","s    tatus":200}],"failedRequests":[{"requestI
+d":"44444.30","errorText":"net::ERR_ABORTED","canceled":true},{"requestId    ":"44444.37","errorText":"net::ERR_ABORTED
+","canceled":true},{"requestId":"44444.36","errorText":"net::ERR_ABORTED    ","canceled":true},{"requestId":"44444.84",
+"errorText":"net::ERR_ABORTED","canceled":true},{"requestId":"44444.136    ","errorText":"net::ERR_ABORTED","canceled":
+true},{"requestId":"44444.166","errorText":"net::ERR_ABORTED","cancele    d":true},{"requestId":"44444.197","errorText"
+:"net::ERR_ABORTED","canceled":true},{"requestId":"44444.218","errorT    ext":"net::ERR_ABORTED","canceled":true},{"req
+uestId":"44444.239","errorText":"net::ERR_ABORTED","canceled":true}]    ,"consoleErrors":[]}
+; diagnostics=D:\作业\竞赛\计算机设计智能体\机械智能体\docs\audits\evidence\r2_g2_20261030\Edge_desktop_20261030_163549.json
+ 

@@ -1,0 +1,8 @@
+test_create_run_stream_and_replay_are_persisted (tests.test_api_vertical_slice.ApiVerticalSliceTests.test_create_run_stream_and_replay_are_persisted) ... ok
+test_event_replay_is_idempotent (tests.test_api_vertical_slice.ApiVerticalSliceTests.test_event_replay_is_idempotent) ... ok
+test_health_exposes_only_frozen_teacher_tools (tests.test_api_vertical_slice.ApiVerticalSliceTests.test_health_exposes_only_frozen_teacher_tools) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.855s
+
+OK

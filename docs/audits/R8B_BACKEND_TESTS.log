@@ -1,0 +1,12 @@
+test_pdf_preview_extracts_simple_content_stream_without_external_upload (test_r8b_upload.R8BUploadTests.test_pdf_preview_extracts_simple_content_stream_without_external_upload) ... ok
+test_run_rejects_cross_conversation_attachment_and_patch_rename (test_r8b_upload.R8BUploadTests.test_run_rejects_cross_conversation_attachment_and_patch_rename) ... ok
+test_run_snapshot_reports_prior_history_without_claiming_it_was_included (test_r8b_upload.R8BUploadTests.test_run_snapshot_reports_prior_history_without_claiming_it_was_included) ... ok
+test_upload_isolated_by_conversation_and_run_snapshot_binds_files (test_r8b_upload.R8BUploadTests.test_upload_isolated_by_conversation_and_run_snapshot_binds_files) ... ok
+test_upload_persists_file_and_preview_metadata (test_r8b_upload.R8BUploadTests.test_upload_persists_file_and_preview_metadata) ... ok
+test_upload_rejects_unsupported_extension_and_mime_mismatch (test_r8b_upload.R8BUploadTests.test_upload_rejects_unsupported_extension_and_mime_mismatch) ... ok
+test_upload_stream_limit_and_six_file_batch_are_rejected (test_r8b_upload.R8BUploadTests.test_upload_stream_limit_and_six_file_batch_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.958s
+
+OK

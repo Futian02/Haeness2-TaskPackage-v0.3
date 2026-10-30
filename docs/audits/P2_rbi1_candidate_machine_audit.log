@@ -1,0 +1,17 @@
+MACHINE_MATCH 5.1.1 printed_page=4 pdf_index=8 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 5.2.1 printed_page=4 pdf_index=8 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 5.2.2 printed_page=4 pdf_index=8 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 6.2.4.1 printed_page=7 pdf_index=11 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 6.4.1.2 printed_page=7 pdf_index=11 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 7.1.2 printed_page=9 pdf_index=13 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 7.2.2 printed_page=9 pdf_index=13 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 8.1.2 printed_page=11 pdf_index=15 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 8.2.1.2 printed_page=11 pdf_index=15 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 9.1.2 printed_page=13 pdf_index=17 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 12.1.1 printed_page=20 pdf_index=24 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 13.8.1 printed_page=23 pdf_index=27 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_MATCH 14.3.2 printed_page=25 pdf_index=29 quote=PASS title=VISUAL_REVIEW_REQUIRED
+MACHINE_DRAFT_CHECK_PASS rows=13 headers=23 IDs=unique no_source_overlap identities=blank risk_fields=blank
+SOURCE_SHA256 38cf71bf9f9868cfa531729cda70dea2e2857b3a788ec1a67f56d27ef01512f9
+WORKING_COPY_SHA256 d292a20f1487b3cedcc67d6b36ea192df15f79e3e360905f946252970e818853
+PDF_SHA256 af4a2b2aebe3b792635e9e14aff6b4255bcc0e20627c59bb656fae1721522c57

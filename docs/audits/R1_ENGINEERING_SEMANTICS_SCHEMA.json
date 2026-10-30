@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Haeness2 R1 product engineering semantics",
+  "description": "Product-layer draft contracts; not a teacher tool schema.",
+  "$defs": {
+    "EngineeringObservation": {
+      "$defs": {
+        "ObservationState": {
+          "enum": [
+            "observed_true",
+            "observed_false",
+            "unknown",
+            "not_applicable"
+          ],
+          "title": "ObservationState",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "raw_span": {
+          "title": "Raw Span",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "normalized_value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Value"
+        },
+        "normalized_unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Normalized Unit"
+        },
+        "observation_state": {
+          "$ref": "#/$defs/ObservationState",
+          "default": "unknown"
+        },
+        "sampled_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sampled At"
+        },
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Aliases",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field",
+        "raw_span"
+      ],
+      "title": "EngineeringObservation",
+      "type": "object"
+    },
+    "Hypothesis": {
+      "additionalProperties": false,
+      "properties": {
+        "hypothesis_id": {
+          "title": "Hypothesis Id",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "supporting_evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supporting Evidence",
+          "type": "array"
+        },
+        "conflicting_evidence": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Conflicting Evidence",
+          "type": "array"
+        },
+        "unknowns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unknowns",
+          "type": "array"
+        },
+        "source_clause_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Clause Ids",
+          "type": "array"
+        },
+        "disposition": {
+          "default": "candidate",
+          "title": "Disposition",
+          "type": "string"
+        },
+        "review_status": {
+          "default": "draft_needs_review",
+          "title": "Review Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "hypothesis_id",
+        "label"
+      ],
+      "title": "Hypothesis",
+      "type": "object"
+    },
+    "EvidenceLink": {
+      "additionalProperties": false,
+      "properties": {
+        "clause_id": {
+          "title": "Clause Id",
+          "type": "string"
+        },
+        "standard_code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Standard Code"
+        },
+        "clause_no": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Clause No"
+        },
+        "printed_page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Printed Page"
+        },
+        "pdf_page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Pdf Page"
+        },
+        "quote_span": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quote Span"
+        },
+        "extraction_method": {
+          "default": "structured_clause_jsonl",
+          "title": "Extraction Method",
+          "type": "string"
+        },
+        "review_status": {
+          "default": "draft_needs_review",
+          "title": "Review Status",
+          "type": "string"
+        },
+        "doc_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Doc Sha256"
+        }
+      },
+      "required": [
+        "clause_id"
+      ],
+      "title": "EvidenceLink",
+      "type": "object"
+    },
+    "InformationGap": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "question": {
+          "title": "Question",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "priority": {
+          "default": "normal",
+          "title": "Priority",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "question",
+        "reason"
+      ],
+      "title": "InformationGap",
+      "type": "object"
+    }
+  }
+}

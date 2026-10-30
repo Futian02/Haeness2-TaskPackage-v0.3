@@ -1,0 +1,10 @@
+[
+  {"query": "盐酸腐蚀", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-5.1"], "difficulty": "exact_title"},
+  {"query": "氯化铵腐蚀", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-5.19"], "difficulty": "exact_title"},
+  {"query": "二氧化碳腐蚀", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-5.5"], "difficulty": "exact_title"},
+  {"query": "湿硫化氢破坏", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-6.7"], "difficulty": "exact_title"},
+  {"query": "冷却水腐蚀", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-5.12"], "difficulty": "exact_title"},
+  {"query": "氯化物应力腐蚀开裂", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-6.1"], "difficulty": "exact_title"},
+  {"query": "热疲劳", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-8.2"], "difficulty": "exact_title"},
+  {"query": "高温氢腐蚀", "kind": "damage_mechanism", "relevant": ["GBT30579-2022-9.1"], "difficulty": "exact_title"}
+]

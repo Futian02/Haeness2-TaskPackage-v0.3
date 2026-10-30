@@ -1,0 +1,100 @@
+{
+  "conversations": [
+    {
+      "conversation_id": "255335b8-cdbd-46e6-9ac9-2e09bce09570",
+      "title": "R8B E2E 1",
+      "runs": [
+        {
+          "run_id": "e4d44b30-1fd4-426d-80e1-60ccc4ffa23f",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 2
+        },
+        {
+          "run_id": "00e1b45d-4662-419c-85e2-df80f5dd4643",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        },
+        {
+          "run_id": "a6e28448-c6da-4ec0-b75d-986e5102a442",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        }
+      ],
+      "message_count": 6
+    },
+    {
+      "conversation_id": "05a2767d-2899-4ec3-884a-457885dbc8d5",
+      "title": "R8B E2E 2",
+      "runs": [
+        {
+          "run_id": "d5586482-9979-464c-b566-1e2ee30cd862",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        },
+        {
+          "run_id": "b6aab8b7-a8d3-4f8a-a914-768aeeb21bc5",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        },
+        {
+          "run_id": "764ecee5-0631-43cb-bfac-a2e076ce3489",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        }
+      ],
+      "message_count": 6
+    },
+    {
+      "conversation_id": "924f9b0c-f82b-4db0-9b6e-d8053969bba3",
+      "title": "R8B E2E 3",
+      "runs": [
+        {
+          "run_id": "bf07b757-5eaa-4714-b3cc-46d2ba26c2aa",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        },
+        {
+          "run_id": "00805dd2-e1d0-456c-895c-0d38f06fadc9",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        },
+        {
+          "run_id": "3c3b36a2-37b0-4657-9fbb-ba46d32f853f",
+          "stream_status": 200,
+          "events": 16,
+          "terminal": "run_completed",
+          "snapshot_mode": "RULE_DEMO；本轮仅使用明确快照字段，不会自动纳入历史消息，也不代表LLM记忆",
+          "files": 0
+        }
+      ],
+      "message_count": 6
+    }
+  ],
+  "cross_conversation_status": 404,
+  "unsupported_extension_status": 415,
+  "fake_pdf_status": 415
+}

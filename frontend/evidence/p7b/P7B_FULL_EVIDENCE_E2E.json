@@ -1,0 +1,373 @@
+{
+  "status": "READY_FOR_OWNER_REVIEW",
+  "run_id": "64f535f2-4dfc-4983-97f8-634e121c8810",
+  "second_run_id": "b65043a8-1304-4489-9cfa-ecffb10c0b25",
+  "conversation_id": "3e94b893-ac86-4b74-af99-6e633baa5850",
+  "second_conversation_id": "9b3e7137-9993-4945-a0bd-66057cfa3907",
+  "mode": "RULE_DEMO",
+  "health_status": "ok",
+  "full_context": {
+    "material": "碳钢",
+    "medium": [
+      "氯化氢"
+    ],
+    "equipment_type": "换热器",
+    "question": "塔顶水样pH 5.8，铁离子 4.1 mg/L，尚未测厚，可能的损伤机理？",
+    "run_status": "completed",
+    "event_count": 44,
+    "event_types": {
+      "run_started": 1,
+      "agent_started": 7,
+      "decision_summary": 7,
+      "agent_completed": 7,
+      "tool_called": 2,
+      "tool_result": 2,
+      "reference_added": 7,
+      "claim_added": 2,
+      "claim_checked": 2,
+      "requires_human_review": 4,
+      "verification": 1,
+      "token_delta": 1,
+      "run_completed": 1
+    },
+    "claim_count": 2,
+    "claim_grades": [
+      "E0",
+      "E1"
+    ],
+    "claims": [
+      {
+        "claim_id": "64f535f2-4dfc-4983-97f8-634e121c8810-mechanism-1",
+        "grade": "E1",
+        "review_status": "requires_human_review",
+        "verdict": "unresolved",
+        "provenance_status": "verified",
+        "source_clause_ids": [
+          "GBT30579-2022-5.1"
+        ],
+        "canonical_hashes": [
+          "ecc5fadb56aa1efda0d3df4a2f821dca46ad93745dd7b977e2aa7d64db09f89c"
+        ]
+      },
+      {
+        "claim_id": "64f535f2-4dfc-4983-97f8-634e121c8810-mechanism-2",
+        "grade": "E0",
+        "review_status": "requires_human_review",
+        "verdict": "unresolved",
+        "provenance_status": "partial",
+        "source_clause_ids": [
+          "GBT30579-2022-5.18"
+        ],
+        "canonical_hashes": []
+      }
+    ],
+    "disagreements": 2,
+    "reference_events": 7,
+    "reference_event_gates": {
+      "E0": 7
+    },
+    "claim_grade_counts": {
+      "E1": 1,
+      "E0": 1
+    },
+    "all_claims_require_human_review": true
+  },
+  "sse": {
+    "sequences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "second_run_event_count": 39,
+    "replay_after_sequence_5": 39,
+    "first_replay_sequence": 6,
+    "refresh_restored": {
+      "events": 39,
+      "claims": 2,
+      "run": "本机会话运行\n2 条 · 跨设备不可恢复\nRun\nb65043a8-1304-\n39 events\nRun\n64f535f2-4dfc-\n44 events"
+    }
+  },
+  "ui": {
+    "desktop_1280": {
+      "width": 1280,
+      "bodyWidth": 1280,
+      "flowWidth": 267,
+      "claimCards": 2
+    },
+    "expanded_graph": {
+      "nodes": 7,
+      "width": 1058,
+      "height": 658
+    },
+    "two_run_input_binding": {
+      "first_run_snapshot_restored": true,
+      "second_run_snapshot_restored": true,
+      "cross_run_fact_leak": false
+    },
+    "fast_switch_isolated": true,
+    "e1_drawer_verified": true,
+    "e0_drawer_verified": true,
+    "reference_drawer_verified": true,
+    "responsive": {
+      "desktop1440": "P7B_DESKTOP_1440.png",
+      "mobile390": "P7B_MOBILE_390.png",
+      "mobileSourceDrawer": "P7B_MOBILE_SOURCE_DRAWER_390.png",
+      "dark": "P7B_DARK_MODE_1280.png",
+      "longChinese": "P7B_LONG_CHINESE_1280.png"
+    },
+    "viewport_audit": {
+      "width": 1280,
+      "bodyWidth": 1280,
+      "modal": false,
+      "longInput": 612
+    }
+  },
+  "api_statuses": [
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e50f79c3-0393-4086-b1d9-f888ffc45776",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e50f79c3-0393-4086-b1d9-f888ffc45776",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e50f79c3-0393-4086-b1d9-f888ffc45776",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/e50f79c3-0393-4086-b1d9-f888ffc45776/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850/runs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/64f535f2-4dfc-4983-97f8-634e121c8810/stream",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850/runs",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/b65043a8-1304-4489-9cfa-ecffb10c0b25/stream",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/b65043a8-1304-4489-9cfa-ecffb10c0b25/events?after_sequence=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/health",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/9b3e7137-9993-4945-a0bd-66057cfa3907/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/conversations/3e94b893-ac86-4b74-af99-6e633baa5850/runs?limit=100&offset=0",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:5173/api/runs/b65043a8-1304-4489-9cfa-ecffb10c0b25/events?after_sequence=0",
+      "status": 200
+    }
+  ],
+  "console_errors": []
+}

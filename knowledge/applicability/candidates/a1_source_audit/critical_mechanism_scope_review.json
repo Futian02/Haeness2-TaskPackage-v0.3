@@ -1,0 +1,96 @@
+[
+  {
+    "clause_id": "GBT30579-2022-5.23",
+    "query_family": "60/80 C + 300-series stainless + alkaline sour water",
+    "temperature_c_record": [
+      49,
+      66
+    ],
+    "pressure_mpa_record": [
+      null,
+      null
+    ],
+    "material_record": [
+      "碳钢",
+      "300系列不锈钢",
+      "双相不锈钢"
+    ],
+    "medium_record": [
+      "碱式酸性水",
+      "硫氢化铵"
+    ],
+    "printed_page_candidate": 32,
+    "pdf_physical_page_index_candidate": 37,
+    "source_record_sha256": "b471eb2f6b666b8d20fdb61a00ccde9abf9fc1d83f4356b1dae10b116ca18de4",
+    "source_pdf_path": "upstream/02_损伤机理参考/GBT30579-2022_承压设备损伤模式识别.pdf",
+    "source_pdf_sha256": "b941a8469f53331be2b6461484670dc83f09a2e36a039fb8c4ec9546a10ec200",
+    "source_availability": "FORMAL_JSONL_RECORD_AND_SOURCE_PDF_PRESENT",
+    "semantic_relevance": "MACHINE_IDENTIFIED_CANDIDATE_ONLY",
+    "applicability": "UNKNOWN_PENDING_SOURCE_AND_EXPERT_REVIEW",
+    "visual_pdf_review": "NOT_PERFORMED",
+    "literal_excerpt_included": false,
+    "interpretation_boundary": "The structured 49–66 C interval appears in the applicable_conditions record and its other text links it to NH4HS gas-phase precipitation. It is a local/submechanism predicate, not a necessary condition for all acid-water corrosion. 60 C is only a candidate if that local condition and other prerequisites are established; 80 C outside the bounded interval does not exclude the overall mechanism. Both scenarios remain UNKNOWN for actual applicability."
+  },
+  {
+    "clause_id": "GBT30579-2022-5.6",
+    "query_family": "naphthenic acid scope and temperature fields",
+    "temperature_c_record": [
+      177,
+      242
+    ],
+    "pressure_mpa_record": [
+      null,
+      null
+    ],
+    "material_record": [
+      "碳钢",
+      "低合金钢",
+      "300系列不锈钢",
+      "400系列不锈钢"
+    ],
+    "medium_record": [
+      "环烷酸"
+    ],
+    "printed_page_candidate": 9,
+    "pdf_physical_page_index_candidate": 14,
+    "source_record_sha256": "c7a33f6c11203fbf6183b6643ec88512521ae92765b5e7094e8e5a841e3cc687",
+    "source_pdf_path": "upstream/02_损伤机理参考/GBT30579-2022_承压设备损伤模式识别.pdf",
+    "source_pdf_sha256": "b941a8469f53331be2b6461484670dc83f09a2e36a039fb8c4ec9546a10ec200",
+    "source_availability": "FORMAL_JSONL_RECORD_AND_SOURCE_PDF_PRESENT",
+    "semantic_relevance": "MACHINE_IDENTIFIED_CANDIDATE_ONLY",
+    "applicability": "UNKNOWN_PENDING_SOURCE_AND_EXPERT_REVIEW",
+    "visual_pdf_review": "NOT_PERFORMED",
+    "literal_excerpt_included": false,
+    "interpretation_boundary": "The structured 177–242 C interval is distinct from a 218–400 C light-phase factor in influencing_factors. Keep the field roles separate; do not flatten the latter into a global necessary temperature range. Source page/content remain machine-inventory only."
+  },
+  {
+    "clause_id": "GBT30579-2022-6.7",
+    "query_family": "wet H2S partial pressure and submechanisms",
+    "temperature_c_record": [
+      null,
+      150
+    ],
+    "pressure_mpa_record": [
+      null,
+      null
+    ],
+    "material_record": [
+      "碳钢",
+      "低合金钢"
+    ],
+    "medium_record": [
+      "湿硫化氢"
+    ],
+    "printed_page_candidate": 51,
+    "pdf_physical_page_index_candidate": 56,
+    "source_record_sha256": "22466813e411ecb00299dec36d2b246d684ed9dc8c52beb8e9a88b5abb1a24e2",
+    "source_pdf_path": "upstream/02_损伤机理参考/GBT30579-2022_承压设备损伤模式识别.pdf",
+    "source_pdf_sha256": "b941a8469f53331be2b6461484670dc83f09a2e36a039fb8c4ec9546a10ec200",
+    "source_availability": "FORMAL_JSONL_RECORD_AND_SOURCE_PDF_PRESENT",
+    "semantic_relevance": "MACHINE_IDENTIFIED_CANDIDATE_ONLY",
+    "applicability": "UNKNOWN_PENDING_SOURCE_AND_EXPERT_REVIEW",
+    "visual_pdf_review": "NOT_PERFORMED",
+    "literal_excerpt_included": false,
+    "interpretation_boundary": "The record puts an H2S gas partial-pressure threshold in free text while structured pressure_mpa is null. Total system pressure is not interchangeable with H2S partial pressure. Aggregate temperature ranges and submechanism-specific boundaries must stay scoped; no individual equipment applicability is established."
+  }
+]

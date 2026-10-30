@@ -1,0 +1,72 @@
+{
+  "audit_version": "r2-a1-source-audit-v1",
+  "source_jsonl": "upstream/05_提交区/clauses.jsonl",
+  "source_jsonl_sha256": "a8151797ba15a6a7452dd83aaec9fab4c0a815724ca45062eb1e2bac7b4d49ef",
+  "source_manifest_sha256": "bfc8fc9c4de9a0047e9d65f55c2569610b770be5ce4be98feba519286818db87",
+  "dm82_field_audit_sha256": "8e8d4627a4bb71720417aca47b7ecaea6bb6341fcb0e1405b219eb6c9c18b2fb",
+  "source_rows": 554,
+  "unique_clause_ids": 554,
+  "by_standard_code": {
+    "GB/T 26610.2-2022": 134,
+    "GB/T 26610.3-2014": 141,
+    "GB/T 26610.4-2022": 139,
+    "GB/T 26610.5-2022": 26,
+    "GB/T 30579-2022": 82,
+    "TSG 21-2016": 32
+  },
+  "by_knowledge_type": {
+    "damage_mechanism": 82,
+    "rbi": 472
+  },
+  "verified_by_blank_count": 554,
+  "pdf_files_found": [
+    "upstream/01_RBI标准/GBT26610.2-2022_基于风险的检验策略.pdf",
+    "upstream/01_RBI标准/GBT26610.3-2014_风险的定性分析方法.pdf",
+    "upstream/01_RBI标准/GBT26610.4-2022_失效可能性定量分析方法.pdf",
+    "upstream/01_RBI标准/GBT26610.5-2022_失效后果定量分析方法.pdf",
+    "upstream/01_RBI标准/补充规范/TSG21-2016_固定式压力容器安全技术监察规程.pdf",
+    "upstream/02_损伤机理参考/GBT30579-2022_承压设备损伤模式识别.pdf"
+  ],
+  "pdf_hashes_by_standard": {
+    "GB/T 30579-2022": "b941a8469f53331be2b6461484670dc83f09a2e36a039fb8c4ec9546a10ec200",
+    "GB/T 26610.2-2022": "09240c48f5b6b555f9be5fc7a54b92861e37d9c57087044b77b48fb561815045",
+    "GB/T 26610.3-2014": "4fb7921ff7dd91d7f069565de3649185b046c803808fd2521bf75ad28690b229",
+    "GB/T 26610.4-2022": "7be473415706ccef429deeca341c648e1a92c560bc266ed26a97e62577637edc",
+    "GB/T 26610.5-2022": "4dab2849c898a09c66bf25081d9083924c5e5df0eba61fbc9a4123e9f93bcac4",
+    "TSG 21-2016": "c8b0362b18342e07b3355575799e34a6f5bcfa32a1b9e5bb9472a2cbf4d97d4b"
+  },
+  "locator_status_counts": {
+    "SOURCE_PDF_PRESENT_ROW_TO_PDF_PAGE_UNVERIFIED": 472,
+    "MANIFEST_CANDIDATE_NOT_PAGE_BY_PAGE_VERIFIED": 82
+  },
+  "human_verified_rows": 0,
+  "independent_human_gold": 0,
+  "exact_pdf_page_verified_rows": 0,
+  "condition_field_key_present_count": {
+    "equipment_type": 113,
+    "material": 74,
+    "medium": 26,
+    "other": 554,
+    "pressure_mpa": 554,
+    "temperature_c": 554
+  },
+  "condition_field_known_value_count": {
+    "equipment_type": 113,
+    "material": 74,
+    "medium": 26,
+    "other": 554,
+    "pressure_mpa": 0,
+    "temperature_c": 23
+  },
+  "mechanism_detail_nonempty_field_counts": {
+    "affected_materials": 82,
+    "description": 82,
+    "detection_methods": 82,
+    "influencing_factors": 82,
+    "morphology": 82,
+    "prevention": 82,
+    "related_damages": 82,
+    "susceptible_locations": 82
+  },
+  "interpretation": "Machine inventory and field presence only. No claim of PDF transcription accuracy, expert applicability, or citation precision."
+}

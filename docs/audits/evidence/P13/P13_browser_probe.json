@@ -1,0 +1,26 @@
+{
+  "fixture": {
+    "conversation_id": "ed890f00-7ff2-4f9c-92aa-725e0060d7ac",
+    "run_id": "8f9273ed-454d-4475-9a90-c2158781e31f",
+    "web_mode": "on",
+    "synthetic": true
+  },
+  "selected_mode_after_ui_change": "on",
+  "stored_web_modes": "[[\"aether:web-mode:ed890f00-7ff2-4f9c-92aa-725e0060d7ac\",\"on\"]]",
+  "desktop": "D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\P13\\P13_browser_desktop_dark_failure.png",
+  "mobile": "D:\\作业\\竞赛\\计算机设计智能体\\机械智能体\\docs\\audits\\evidence\\P13\\P13_browser_mobile_dark_failure.png",
+  "mobile_metrics": {
+    "width": 390,
+    "scrollWidth": 390,
+    "bodyWidth": 390,
+    "mode": "on",
+    "theme": "dark",
+    "alerts": [
+      "本轮未完成 · 模型没有返回可显示内容。可重试，或缩短问题后再试。\n重试本轮"
+    ],
+    "snapshot": [
+      "本轮服务端输入快照 · DEEPSEEK · 联网 on"
+    ]
+  },
+  "browser_error_events": []
+}

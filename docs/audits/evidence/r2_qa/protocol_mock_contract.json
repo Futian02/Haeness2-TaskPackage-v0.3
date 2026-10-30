@@ -1,0 +1,64 @@
+{
+  "contract_version": "aetheris-r2.0.0",
+  "capabilities": {
+    "runs_create": true,
+    "runs_sse_stream": true,
+    "runs_replay": true,
+    "run_input_snapshot": true,
+    "model_profiles": true,
+    "professional_guidance": true,
+    "file_upload": true,
+    "explicit_web_consent": true,
+    "conversation_history": true,
+    "conversation_memory": true,
+    "sensitive_web_consent_gate": true,
+    "teacher_tool_count": 3
+  },
+  "build_fingerprint": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "build": {
+    "source_files": ["backend/api.py", "backend/store.py"],
+    "source_manifest": {
+      "backend/api.py": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "backend/store.py": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    "python_version": "3.11.0"
+  },
+  "run_input_fields": [
+    "question",
+    "equipment",
+    "equipment_type",
+    "material",
+    "medium",
+    "operating_condition",
+    "field_evidence",
+    "mode",
+    "web_mode",
+    "web_search_enabled",
+    "allow_sensitive_web_search",
+    "model_profile_id"
+  ],
+  "run_create": {
+    "idempotency_header": "Idempotency-Key",
+    "repeat_same_key_same_body": "same_run_id",
+    "repeat_same_key_different_body": "409_idempotency_conflict"
+  },
+  "replay": {
+    "event_identity": ["run_id", "sequence"],
+    "after_sequence_is_exclusive": true,
+    "sequence_starts_at": 1
+  },
+  "public_event_forbidden_keys": [
+    "api_key",
+    "authorization",
+    "system_prompt",
+    "hidden_reasoning",
+    "raw_sse",
+    "environment"
+  ],
+  "http_error_classes": {
+    "409": "idempotency_conflict",
+    "422": "request_contract_error",
+    "429": "backpressure_retryable",
+    "5xx": "server_or_provider_failure"
+  }
+}

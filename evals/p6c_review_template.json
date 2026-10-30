@@ -1,0 +1,28 @@
+{
+  "template_only": true,
+  "notice": "Placeholder fields are not a review, identity assertion, signature, expert label, or gold case.",
+  "records": [
+    {
+      "record_type": "expert_assessment",
+      "review_id": "TEMPLATE-ONLY-replace-before-use",
+      "reviewer": {
+        "reviewer_identity_verified": false,
+        "reviewer_role": "domain_expert",
+        "reviewer_signature_ref": null,
+        "reviewer_identity_ref": null
+      },
+      "claim_id": "TEMPLATE-ONLY-no-real-claim",
+      "source_sha": "0000000000000000000000000000000000000000000000000000000000000000",
+      "source_clause_id": "TEMPLATE-ONLY-no-source",
+      "pdf_printed_page": 1,
+      "device_context_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "assessment_type": "E2_source_entailment",
+      "verdict": "unresolved",
+      "justification": "TEMPLATE ONLY. Replace with the human reviewer's evidence and reasoning.",
+      "reviewed_at": null,
+      "status": "draft",
+      "conflict_group_id": null,
+      "adjudication_ref": null
+    }
+  ]
+}

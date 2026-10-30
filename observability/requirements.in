@@ -1,0 +1,4 @@
+arize-phoenix==20.26.1
+arize-phoenix-otel==0.17.2
+openinference-instrumentation-langchain==0.1.80
+langchain-core==1.2.19

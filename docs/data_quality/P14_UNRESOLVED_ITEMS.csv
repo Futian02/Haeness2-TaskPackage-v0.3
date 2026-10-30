@@ -1,0 +1,14 @@
+item_id,priority,scope,unresolved_item,machine_evidence,required_human_action,blocking_gate,status
+P14-U001,P0,20-page pilot,"原生文本/ OCR 的逐字精度没有真人ground truth；30579 OCR标题仅6/8命中且正文有错漏。",20页完成渲染与OCR诊断；exactness=not_scored_against_human_transcription,独立审核人逐页核条号/页码/F原文/表格数值与坐标/适用条件并签真实姓名,禁止新条款批量入表,REVIEW_BLOCKED
+P14-U002,P0,DM 82 rows,"82行原文与G-N八段式没有逐条PDF视觉核对；复核人82/82空。",章节计数29/16/16/11/10；82/82字段非空、F<=300只为机器结构检查,抽取人/独立复核人用PDF逐子条款核对F和每个八段式字段；留空无据字段,DM正式候选审核,REVIEW_BLOCKED
+P14-U003,P0,DM page mapping,"印刷页到PDF index偏移只确认印刷p.2→PDF物理页8/0-index7一个锚点。",A线给出p+5 zero-index映射为机器候选,抽查并记录每条实际印刷页页脚与PDF物理页索引；不得整体外推未经核验的偏移,来源页准确性,REVIEW_BLOCKED
+P14-U004,P0,RBI 221 heuristic rows,"221条表X中/表格解释式F列需要区分真实原文、单元格原文与解释文字；启发式不等于错误。",B线逐行定位；58 exact/19 fragment/408 no-match受CMap、跨页、表格抽取干扰,按表号/行列/表头/单位/边界/脚注对照PDF页面图，解释转述放备注或W列且需教师合同可接受,高风险RBI原文真实性,REVIEW_BLOCKED
+P14-U005,P0,RBI 13 unreviewed GBT26610.1 rows,"当前工作树485行中额外13行没有抽取人和复核人签名，未纳入472条baseline候选Excel/转换。",B线扫描看到13行签名空；staging RBI workbook严格使用Git HEAD 472行,真实抽取人和独立复核人逐条签署并复核后由单独批准任务决定是否纳入,禁止伪签和直接转换,REVIEW_BLOCKED
+P14-U006,P1,RBI numeric tables,"26610.3 25格风险映射、26610.4数值表、26610.5面积/后果阈值尚无本轮逐格视觉100%核验。",已有机器模式候选和Owner历史记录；无本轮新视觉签核,逐格保留表标题/行列/单位/上下限/开闭边界/脚注和印刷页+PDF index，第二人复核,风险表条目入库,REVIEW_BLOCKED
+P14-U007,P1,26610.2 and TSG 21,"检验策略与TSG条件周期的适用对象/条件未逐条核验；TSG安全状况等级不能当RBI风险等级。",PDF与Excel来源定位扫描完成，周期列现有485行0值；无自动补周期,核对条文及2021修改单，并区分首次/定期、设备状态、法定上限与RBI周期,检验周期字段写入,REVIEW_BLOCKED
+P14-U008,P1,12-PDF chapter coverage,"RBI部分PDF章名/印刷页区间无法从原生文字层稳定抽取；逐页矩阵完整但部分章级界线不完整。",source matrix 1385 rows；combined chapter matrix 99 rows，RBI条款前缀是现存Excel覆盖而非整本目录清单,人工/高质量OCR核对六份RBI目录与章页边界，补 chapter coverage 行且保留不适用理由,声称完整章覆盖,REVIEW_BLOCKED
+P14-U009,P1,supplementary standards,"补充5标准中只有GB/T21447 §4.3表1-4可能支持环境分类，尚不明确是否适合教师DM表；其余多为设计/制造背景。",C线761页/37章机器扫描；1条空引文辅助候选,审核标准白名单与DM合同；21447逐格核表并由Owner/教师决定是否入库，其它章节保留背景/排除理由,补充标准入教师表,REVIEW_BLOCKED
+P14-U010,P1,50-row citation accuracy,"尚无固定seed随机抽取候选Clauses后由独立真人完成的≥50条交叉核验。",convert/validate只能检查结构/引用ID；本轮人工签核0条,从最终候选固定seed抽样并记录条款ID/核对人/是否通过/错误类型；至少48/50通过,老师内容准确率指标,REVIEW_BLOCKED
+P14-U011,P2,conversion scope,"本轮候选JSONL字段完全等于正式554条，因此没有体现任何新标准内容增量。",官方converter exit0，candidate validate --final exit0，semantic diff 0,等pilot与人审通过后再追加经核准记录，重跑转换/校验及工具回归,新的大规模蒸馏交付,REVIEW_BLOCKED
+P14-U012,P2,OCR/tool coverage,"未对1385页全量OCR；PP-StructureV3未安装/未在本机验证；Tesseract只做20页诊断。",PyMuPDF全量page cache；Tesseract `chi_sim+eng --psm 6` 20页,先用人工golden pilot选择OCR/表格工具与参数，只对乱码/公式/表格疑难页分批OCR,自动抽取批处理精度,REVIEW_BLOCKED
+P14-U013,P2,existing P13 test suite,"项目全量unittest存在1项失败：P5A failed terminal旧worker事件数为2，测试预期1；隔离复现。",194 tests run; 193 other tests pass or skip; P14专项5/5 pass,交由唯一负责P13 backend/tests的Owner窗口审查并决定修复；P14不改禁止目录,项目全量回归,OPEN_OUT_OF_SCOPE

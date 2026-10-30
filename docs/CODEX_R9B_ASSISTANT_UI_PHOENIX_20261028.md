@@ -1,0 +1,14 @@
+# Codex新窗口B｜R9B“豆包式可折叠思考/执行过程”+ Phoenix本机Trace（先独立开发，不抢R8B）
+你是Codex执行者。项目`D:\作业\竞赛\计算机设计智能体\机械智能体`。先读`AGENTS.md`、`docs/R9_COLLAPSIBLE_TRACE_PHOENIX_UI_DESIGN_20261028.md`、`docs/OWNER_R9_INDUSTRIAL_AGENT_TRACE_OSS_RESEARCH_20261028.md`、`frontend/package.json`、`frontend/src/AssistantMessages.tsx`、`frontend/src/api.ts`、`backend/store.py`、`orchestration/graph.py`；本任务只管真实运行轨迹和观测SDK，不重写RBI Graph。
+**允许新建**`observability/`、`frontend/src/components/trace/`、`frontend/src/trace-events/`、`frontend/src/trace-events.test.ts`及`docs/audits/R9B_*`、`tests/test_r9b_*`；只允许阅读`backend/`和`orchestration/`，**不写它们或upstream**。R8B正在修改`frontend/src/App.tsx`、上传/会话，所以本任务**不得修改App.tsx/AssistantMessages.tsx/api.ts/styles.css，直到Owner确认R8B窗口已结束并单独允许最终联调**。可以用独立Story/demo页面运行真实SQLite/SSE数据+新组件验证，而不是停止开发等别人。
+
+**前端主组件：assistant-ui官方仓库MIT，直接复用而不是仿写。**
+文档`https://www.assistant-ui.com/docs/guides/chain-of-thought`和`https://www.assistant-ui.com/docs/guides/part-grouping`。采用当前版`MessagePrimitive.GroupedParts`、`groupPartByType`、`ReasoningRoot/Trigger/Content`、`ToolGroup`、`ToolFallback`开源实现/安装源文件，保留LICENSE和来源commit；不要采用deprecated的ChainOfThoughtPrimitive作为新方案。
+从**当前已存在的真实SSE/SQLite events**构造可恢复`ActivityPart`数据：`run_id+sequence`幂等、`agent_started`、`tool_called/tool_result`、`decision_summary`、`claim_checked`、`contradiction_found`、`requires_human_review`、`run_completed/error`，只有真实phase/iteration才显示真实多轮。只展示公开决策摘要与真实工具调用，不能说是可获取模型隐藏内部逐token CoT；普通设备用户不应看到API Key、受版权保护标准原文全文、个人敏感设备编号。默认折叠成“已执行N步·检索2次·存在1条待审”，展开真实审查工具和可溯源CID/page，展开Tool显示合法参数与脱敏结果。若真实HITL审批须独立UI不被折叠。
+要像豆包那样美观清爽、聊天主体优先；移动390与桌面1280/1440，浅深色、长运行50个事件、运行中实时状态、SSE中断后39→44恢复、切换会话无串线；至少10条新Vitest用例和截图/浏览器console0，保留R8B既有组件。纯mock画面不算真实接入，若最终联调未获授权，报告必须标`COMPONENT_INTEGRATION_PENDING`并提供独立演示的真实SSE适配证据。
+
+**Phoenix接入：原样运行现成追踪平台，不去复制Phoenix全站React。**
+参考`https://github.com/Arize-ai/phoenix`，`https://arize-ai.github.io/openinference/python/instrumentation/openinference-instrumentation-langchain/`；使用隔离venv而非破坏已钉死的`.venv-langgraph`，按官方实际版本用`phoenix-otel`与OpenInference。用`observability/bootstrap.py`设置`TRACE_BACKEND=none|phoenix`，默认none；产品侧适配器wrap官方3工具的普通Python调用，不改老师签名/五键，记录tool名称/耗时/CID hash/结果状态，**不上传原始用户消息、设备隐私、标准PDF正文和API Key**。
+本轮允许在`observability/`新建可运行standalone runner和本机Phoenix验证；**禁止未经协调直接改backend/api.py或orchestration/graph.py注入代码**。从standalone TestClient或Graph fixture验证`root trace → LangGraph/agent → teacher tool`在Phoenix同一trace_id，以及Span parent、导出失败不影响用户Run/SQLite记录。如果必须等核心图插桩，报告明确`FULL_INTEGRATION_PENDING`，不可造“真实全栈Trace PASS”。
+Phoenix服务仅localhost，开发者诊断界面可以本机另开页面；用户侧折叠过程**原生存在我们的React**，不是只给Phoenix跳转。Langfuse本轮不装、不同时启双callback；若Phoenix许可证/依赖不兼容，先完成assistant-ui+真实SSE折叠即可并标阻塞。商业再分发的许可与嵌入风险写明确。
+交付`docs/audits/R9B_COLLAPSIBLE_TRACE_PHOENIX_ACCEPTANCE.md`、截图、真实事件/replay数、导出的脱敏trace测试、SDK依赖版本与开源来源许可、后续并入R8B的精确2-3文件diff建议；测试通过后`READY_FOR_OWNER_REVIEW`，不部署、不提交，不改上游与别窗口。

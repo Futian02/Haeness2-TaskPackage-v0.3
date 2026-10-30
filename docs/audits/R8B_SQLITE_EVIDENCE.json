@@ -1,0 +1,33 @@
+{
+  "conversations": 9,
+  "runs": [
+    {
+      "status": "completed",
+      "n": 27
+    }
+  ],
+  "messages": [
+    {
+      "role": "assistant",
+      "n": 27
+    },
+    {
+      "role": "user",
+      "n": 27
+    }
+  ],
+  "files": 6,
+  "message_attachment_links": 6,
+  "run_attachment_links": 6,
+  "file_status": [
+    {
+      "extraction_status": "pdf_preview",
+      "n": 3
+    },
+    {
+      "extraction_status": "text_preview",
+      "n": 3
+    }
+  ],
+  "runs_with_input_snapshot": 27
+}

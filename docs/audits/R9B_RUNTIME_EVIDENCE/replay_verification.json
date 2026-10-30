@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "run_id": "e4402ed1-320a-4203-91ac-fd757c6405ba",
+  "event_count": 61,
+  "sse_event_count": 61,
+  "tail_after_sequence": 30,
+  "tail_event_count": 31,
+  "last_sequence": 61,
+  "tool_call_count": 2,
+  "tool_result_count": 2,
+  "reference_count": 8,
+  "replay_source": "SQLite persisted events + SSE replay endpoint"
+}

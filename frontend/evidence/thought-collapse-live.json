@@ -1,0 +1,26 @@
+{
+  "desktop": {
+    "heading": "✳\n思考过程 · 35 步 · 检索 2 次 · 6 个引用\n⌄",
+    "collapsed": true,
+    "answer": "A\n✳\n思考过程 · 35 步 · 检索 2 次 · 6 个引用\n⌄\n\n已取得本轮来源；该来源只证明可追溯性，不等同设备适用性或工程结论。\n\n当前研判状态：draft_for_review · E1。风险等级未给出；需要人工复核。"
+  },
+  "mobile": {
+    "heading": "✳\n思考过程 · 35 步 · 检索 2 次 · 6 个引用\n⌄",
+    "collapsed": true,
+    "viewport": {
+      "w": 390,
+      "h": 844
+    },
+    "composerBottom": 844
+  },
+  "expandedCard": {
+    "open": true,
+    "note": "仅展示本轮实际执行事件与模型整理摘要，不包含隐藏思维链。",
+    "innerOpen": false
+  },
+  "expandedModelSummary": {
+    "open": true,
+    "summaryLength": 454,
+    "answerOutside": true
+  }
+}
