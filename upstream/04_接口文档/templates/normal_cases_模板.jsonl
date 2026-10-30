@@ -1,0 +1,3 @@
+{"case_id": "NC-01", "category": "normal", "description": "材质与介质用规范值的正常查询", "call": {"tool": "damage_mechanism_query", "args": {"material": "碳钢", "medium": ["氯化氢"], "temperature_c": 95, "equipment_type": "管道"}}, "expect": "pass"}
+{"case_id": "NC-02", "category": "normal", "description": "用别名 HCl、空冷器，护栏应归一化后放行，不能误拦", "call": {"tool": "rbi_lookup", "args": {"equipment_type": "空冷器", "material": "碳钢", "medium": ["HCl"], "pressure_mpa": 0.1}}, "expect": "pass"}
+{"case_id": "NC-03", "category": "normal", "description": "只给必填参数 keyword 的检索", "call": {"tool": "standard_clause_search", "args": {"keyword": "湿硫化氢破坏 检测方法"}}, "expect": "pass"}

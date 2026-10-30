@@ -1,0 +1,622 @@
+"""
+Harness 骨架 —— 面向设备风险研判的工具调用框架
+
+四个模块:
+  1. 工具注册 ToolRegistry
+  2. 执行循环 Harness.run
+  3. 安全护栏 Guardrail
+  4. 轨迹留痕 TrajectoryLogger
+
+学生需要填的地方都标了 TODO。不要改类名和字段名。
+
+运行: python harness.py   (会跑一遍 mock 演示,不需要大模型)
+
+v0.3 修订:
+  - mock 返回改为八段式,与《工具接口规范》一致
+  - rbi_lookup 参数表补齐 medium / temperature_c / pressure_mpa,并注册 standard_clause_search
+  - 护栏增加参数类型检查
+  - Trajectory 增加 special_type;区分两种输出:
+      to_dict()   运行日志,含 blocked / block_kind / elapsed_ms,用于统计轨迹完整率(指标3)
+      to_record() 数据集记录,只保留 trajectory.schema.json 允许的字段,写入 trajectories.jsonl
+    含被拦截步骤的轨迹只进运行日志,不进数据集
+  - 一律用 save_jsonl() 写文件(UTF-8)。不要用 > 重定向保存,Windows 下会存成 GBK,validate.py 读不了
+"""
+
+import json
+import time
+from dataclasses import dataclass, field, asdict
+from difflib import get_close_matches
+from functools import lru_cache
+from pathlib import Path
+from typing import Any, Callable, Dict, Iterable, List, Optional
+
+
+# =============================================================
+# 0. 统一返回外壳 —— 不可修改
+# =============================================================
+
+def make_response(
+    status: str = "ok",
+    in_domain: bool = True,
+    result: Optional[dict] = None,
+    source: Optional[List[dict]] = None,
+    message: str = "",
+) -> dict:
+    """所有工具必须通过这个函数构造返回值。
+
+    status:    ok | out_of_domain | not_found | error
+    in_domain: 适用性标识。超出条款适用范围时必须为 False
+    source:    条款出处列表。status=ok 时不得为空
+    """
+    resp = {
+        "status": status,
+        "in_domain": in_domain,
+        "result": result or {},
+        "source": source or [],
+        "message": message,
+    }
+    # 硬性红线:ok 必须带出处
+    if resp["status"] == "ok" and not resp["source"]:
+        raise ValueError("status=ok 的返回必须包含 source,这是硬性要求")
+    return resp
+
+
+# =============================================================
+# 1. 工具注册
+# =============================================================
+
+@dataclass
+class ToolSpec:
+    name: str
+    func: Callable[..., dict]
+    description: str
+    parameters: Dict[str, dict]      # 参数名 -> {"type":..., "required":bool, "enum":[...]}
+
+
+class ToolRegistry:
+    def __init__(self):
+        self._tools: Dict[str, ToolSpec] = {}
+
+    def register(self, spec: ToolSpec) -> None:
+        if spec.name in self._tools:
+            raise ValueError(f"工具重复注册: {spec.name}")
+        self._tools[spec.name] = spec
+
+    def get(self, name: str) -> Optional[ToolSpec]:
+        return self._tools.get(name)
+
+    def names(self) -> List[str]:
+        return list(self._tools.keys())
+
+    def to_schema(self) -> List[dict]:
+        """转成可以塞进大模型 prompt 的工具声明。"""
+        return [
+            {
+                "name": s.name,
+                "description": s.description,
+                "parameters": s.parameters,
+            }
+            for s in self._tools.values()
+        ]
+
+
+# =============================================================
+# 2. 安全护栏 —— 四类异常
+# =============================================================
+
+@lru_cache(maxsize=1)
+def load_enums() -> Dict[str, Dict[str, dict]]:
+    """读取并缓存枚举表；路径相对于本文件，不依赖运行时的工作目录。"""
+    enum_path = Path(__file__).resolve().parent.parent / "enums.json"
+    with enum_path.open(encoding="utf-8") as f:
+        data = json.load(f)
+
+    tables = {}
+    for pname in ("material", "medium", "equipment_type"):
+        table = data[pname]
+        if not isinstance(table, dict) or not table:
+            raise ValueError(f"枚举表 {pname!r} 必须是非空对象")
+        owners = {}
+        for canonical, entry in table.items():
+            if not isinstance(canonical, str) or not canonical or not isinstance(entry, dict):
+                raise ValueError(f"枚举表 {pname!r} 含非法条目")
+            aliases = entry.get("aliases")
+            if not isinstance(aliases, list) or any(
+                not isinstance(alias, str) or not alias for alias in aliases
+            ):
+                raise ValueError(f"枚举项 {pname}.{canonical} 的 aliases 必须是字符串数组")
+            for value in [canonical, *aliases]:
+                if value in owners and owners[value] != canonical:
+                    raise ValueError(f"枚举表 {pname!r} 中的写法 {value!r} 对应多个标准值")
+                owners[value] = canonical
+        tables[pname] = table
+    return tables
+
+
+# 启动时加载一次；后续校验和再次调用 load_enums() 都复用缓存。
+ENUM_TABLES = load_enums()
+
+
+_JSON_TYPES = {
+    "string": lambda v: isinstance(v, str),
+    "number": lambda v: isinstance(v, (int, float)) and not isinstance(v, bool),
+    "array": lambda v: isinstance(v, list),
+    "object": lambda v: isinstance(v, dict),
+    "boolean": lambda v: isinstance(v, bool),
+}
+
+
+def _type_ok(value: Any, expected: str) -> bool:
+    check = _JSON_TYPES.get(expected)
+    return check(value) if check else True
+
+
+@lru_cache(maxsize=1)
+def load_material_family() -> Dict[str, List[str]]:
+    """牌号 -> 所属材料类别,见 ../material_family.json。"""
+    path = Path(__file__).resolve().parent.parent / "material_family.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return {k: v["belongs_to"] for k, v in data["family"].items()}
+
+
+def material_candidates(material: str) -> List[str]:
+    """条款匹配用:返回入参材质本身及其所属的全部类别。
+    例:06Cr19Ni10 -> [06Cr19Ni10, 300系列不锈钢, 奥氏体不锈钢, 不锈钢]
+    只向上扩展(牌号 -> 类别),不向下扩展(类别 -> 牌号)。"""
+    family = load_material_family()
+    out, queue = [], [material]
+    while queue:
+        m = queue.pop(0)
+        if m not in out:
+            out.append(m)
+            queue.extend(family.get(m, []))
+    return out
+
+
+class GuardrailError(Exception):
+    def __init__(self, kind: str, detail: str):
+        self.kind = kind          # unknown_tool | missing_param | out_of_domain | bad_format
+        self.detail = detail
+        super().__init__(f"[{kind}] {detail}")
+
+
+class Guardrail:
+    """四类异常各需构造 >=3 个测试用例,拦截率必须 100%,且不得误拦正常调用。"""
+
+    def __init__(self, registry: ToolRegistry):
+        self.registry = registry
+
+    # --- 第一类:工具名错误 ---
+    def check_tool_exists(self, tool_name: str) -> ToolSpec:
+        spec = self.registry.get(tool_name)
+        if spec is None:
+            raise GuardrailError(
+                "unknown_tool",
+                f"工具 {tool_name!r} 未注册。可用工具: {self.registry.names()}",
+            )
+        return spec
+
+    # --- 第二类:参数缺失 / 参数非法 ---
+    def check_params(self, spec: ToolSpec, args: dict) -> None:
+        if not isinstance(args, dict):
+            raise GuardrailError("bad_format", f"args 必须是 dict,收到 {type(args).__name__}")
+
+        for pname, pconf in spec.parameters.items():
+            if pconf.get("required") and pname not in args:
+                raise GuardrailError("missing_param", f"缺少必填参数 {pname!r}")
+
+        normalized_args = {}
+        for pname, pvalue in args.items():
+            pconf = spec.parameters.get(pname)
+            if pconf is None:
+                raise GuardrailError("bad_format", f"未知参数 {pname!r}")
+            expected = pconf.get("type")
+            if expected and not _type_ok(pvalue, expected):
+                raise GuardrailError(
+                    "bad_format", f"参数 {pname!r} 应为 {expected},收到 {type(pvalue).__name__}: {pvalue!r}"
+                )
+            if "maximum" in pconf and _type_ok(pvalue, "number") and pvalue > pconf["maximum"]:
+                raise GuardrailError("bad_format", f"参数 {pname!r} 超过上限 {pconf['maximum']}")
+            table = ENUM_TABLES.get(pname)
+            enum = pconf.get("enum")
+            if table is not None:
+                # 文件提供白名单；参数自身若声明更窄的 enum，仍保留该限制。
+                enum = [value for value in table if not enum or value in enum]
+            if table is not None or enum:
+                values = pvalue if isinstance(pvalue, list) else [pvalue]
+                normalized_values = []
+                for v in values:
+                    canonical = v
+                    if table is not None and isinstance(v, str) and v not in table:
+                        canonical = next(
+                            (name for name, entry in table.items() if v in entry["aliases"]),
+                            v,
+                        )
+                    if canonical not in enum:
+                        suggestions = get_close_matches(
+                            str(v), [str(value) for value in enum], n=3, cutoff=0.0
+                        )
+                        raise GuardrailError(
+                            "bad_format",
+                            f"参数 {pname!r} 的值 {v!r} 不在枚举表中。"
+                            f"最接近的 {len(suggestions)} 个合法取值: {suggestions!r}",
+                        )
+                    normalized_values.append(canonical)
+                normalized_args[pname] = (
+                    normalized_values if isinstance(pvalue, list) else normalized_values[0]
+                )
+
+        # 全部校验通过后再写回，工具执行与轨迹记录都会使用标准值。
+        args.update(normalized_args)
+
+    # --- 第三类:超出适用范围 ---
+    def check_in_domain(self, resp: dict) -> None:
+        """注意:超范围不是报错,是正常返回 in_domain=False。
+        这里拦截的是"超范围却仍然给了结论"这种情况。"""
+        if resp.get("in_domain") is False and resp.get("result"):
+            raise GuardrailError(
+                "out_of_domain",
+                "in_domain=False 时 result 必须为空,不得给出结论",
+            )
+
+    # --- 第四类:输出格式不合规 ---
+    def check_response_format(self, resp: Any) -> None:
+        if not isinstance(resp, dict):
+            raise GuardrailError("bad_format", f"返回必须是 dict,收到 {type(resp).__name__}")
+        required = {"status", "in_domain", "result", "source", "message"}
+        missing = required - set(resp.keys())
+        if missing:
+            raise GuardrailError("bad_format", f"返回缺少字段: {sorted(missing)}")
+        if resp["status"] not in {"ok", "out_of_domain", "not_found", "error"}:
+            raise GuardrailError("bad_format", f"非法 status: {resp['status']!r}")
+        if resp["status"] == "ok" and not resp["source"]:
+            raise GuardrailError("bad_format", "status=ok 但 source 为空")
+
+
+# =============================================================
+# 3. 轨迹留痕 —— 完整率必须 100%,失败和被拦截的调用也要记
+# =============================================================
+
+@dataclass
+class Step:
+    step: int
+    thought: str
+    tool: str
+    args: dict
+    result: dict = field(default_factory=dict)
+    observation: str = ""
+    blocked: bool = False            # 是否被护栏拦截
+    block_kind: str = ""             # 拦截类型
+    elapsed_ms: int = 0
+
+
+class DatasetExportError(Exception):
+    """轨迹不能写进 trajectories.jsonl 时抛出。"""
+
+
+RECORD_STEP_FIELDS = ("step", "thought", "tool", "args", "result", "observation")
+
+
+@dataclass
+class Trajectory:
+    traj_id: str
+    task_type: str                   # single_step | multi_step,由调用次数决定
+    input: dict
+    steps: List[Step] = field(default_factory=list)
+    final_answer: dict = field(default_factory=dict)
+    annotator: str = ""
+    checked: bool = False
+    special_type: Optional[str] = None   # exclusion | insufficient_info | out_of_domain;普通轨迹保持 None
+
+    def _task_type(self) -> str:
+        # 多步定义:调用次数 >= 3(同一工具多次调用也算)
+        return "multi_step" if len(self.steps) >= 3 else "single_step"
+
+    def to_dict(self) -> dict:
+        """运行日志:保留全部步骤及拦截信息,用于统计轨迹完整率。"""
+        d = asdict(self)
+        d["task_type"] = self._task_type()
+        return d
+
+    def to_record(self) -> dict:
+        """数据集记录:字段与 trajectory.schema.json 一致,可直接写入 trajectories.jsonl。"""
+        blocked = [s.step for s in self.steps if s.blocked]
+        if blocked:
+            raise DatasetExportError(
+                f"{self.traj_id} 第 {blocked} 步被护栏拦截或执行异常,这条只保留在运行日志里,不进数据集"
+            )
+        if not self.final_answer:
+            raise DatasetExportError(f"{self.traj_id} 没有 final_answer")
+        missing = [k for k in ("equipment", "material", "medium", "operating_condition", "field_evidence", "question")
+                   if k not in self.input]
+        if missing:
+            raise DatasetExportError(f"{self.traj_id} 的 input 缺少 {missing};没有的信息填空字符串,不要省略字段")
+        record = {"traj_id": self.traj_id, "task_type": self._task_type()}
+        if self.special_type:
+            record["special_type"] = self.special_type
+        record["input"] = self.input
+        record["steps"] = [{k: getattr(s, k) for k in RECORD_STEP_FIELDS} for s in self.steps]
+        record["final_answer"] = self.final_answer
+        record["annotator"] = self.annotator
+        record["checked"] = self.checked
+        return record
+
+    def dumps(self) -> str:
+        return json.dumps(self.to_dict(), ensure_ascii=False)
+
+
+def save_jsonl(path, records: Iterable[dict]) -> Path:
+    """按 UTF-8 写 JSONL。所有输出文件都用这个函数写。"""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="\n") as f:
+        for r in records:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    return path
+
+
+# =============================================================
+# 4. 执行循环
+# =============================================================
+
+class Harness:
+    MAX_ROUNDS = 8                   # 指标要求支持 >=5 轮,这里留余量
+
+    def __init__(self, registry: ToolRegistry):
+        self.registry = registry
+        self.guard = Guardrail(registry)
+
+    def call_tool(self, tool_name: str, args: dict) -> dict:
+        """单次工具调用,全程走护栏。"""
+        spec = self.guard.check_tool_exists(tool_name)
+        self.guard.check_params(spec, args)
+        resp = spec.func(**args)
+        self.guard.check_response_format(resp)
+        self.guard.check_in_domain(resp)
+        return resp
+
+    def run(self, traj_id: str, task_input: dict, planner: Callable) -> Trajectory:
+        """
+        planner: 决定下一步做什么的函数。
+                 签名 planner(task_input, history) -> dict
+                 返回 {"thought":..., "tool":..., "args":{...}}
+                 或   {"thought":..., "final_answer":{...}}  表示结束
+
+        TODO: 学生实现 —— 把 planner 换成真正调用大模型的版本。
+              先用 mock_planner 把流程跑通,再接模型。
+        """
+        traj = Trajectory(traj_id=traj_id, task_type="single_step", input=task_input)
+        history: List[Step] = []
+
+        for i in range(1, self.MAX_ROUNDS + 1):
+            decision = planner(task_input, history)
+
+            if "final_answer" in decision:
+                traj.final_answer = decision["final_answer"]
+                break
+
+            step = Step(
+                step=i,
+                thought=decision.get("thought", ""),
+                tool=decision.get("tool", ""),
+                args=decision.get("args", {}),
+            )
+            t0 = time.time()
+            try:
+                resp = self.call_tool(step.tool, step.args)
+                step.result = resp
+                step.observation = self._summarize(resp)
+            except GuardrailError as e:
+                # 被拦截也要完整记录 —— 轨迹完整率 100%
+                step.blocked = True
+                step.block_kind = e.kind
+                step.observation = f"调用被护栏拦截: {e.detail}"
+            except Exception as e:
+                step.blocked = True
+                step.block_kind = "error"
+                step.observation = f"工具执行异常: {e}"
+            step.elapsed_ms = int((time.time() - t0) * 1000)
+
+            traj.steps.append(step)
+            history.append(step)
+        else:
+            traj.final_answer = {
+                "conclusion": f"达到最大轮次 {self.MAX_ROUNDS},未能得出结论",
+                "basis": [],
+            }
+
+        return traj
+
+    @staticmethod
+    def _summarize(resp: dict) -> str:
+        """把工具返回压成一句话,喂给下一轮。
+        TODO: 学生按各工具的 result 结构写得更贴切。"""
+        if resp["status"] != "ok":
+            return f"{resp['status']}: {resp['message']}"
+        if not resp["in_domain"]:
+            return f"超出适用范围: {resp['message']}"
+        return f"命中 {len(resp['source'])} 条依据"
+
+
+# =============================================================
+# 5. Mock 演示 —— 直接 python harness.py 就能跑
+# =============================================================
+
+def _mock_damage_mechanism_query(material, medium, temperature_c=None, **kw):
+    if temperature_c is not None and temperature_c > 400:
+        return make_response(
+            status="out_of_domain",
+            in_domain=False,
+            message="查询温度超出本条款覆盖区间(常温~400℃)",
+        )
+    return make_response(
+        result={
+            "mechanisms": [{
+                "name": "盐酸腐蚀",
+                "clause_id": "GBT30579-2022-5.1",
+                "description": "示例数据,学生替换为真实条款库查询结果",
+                "morphology": ["均匀腐蚀", "局部腐蚀"],
+                "affected_materials": ["碳钢", "低合金钢", "300系列不锈钢", "400系列不锈钢"],
+                "influencing_factors": ["盐酸浓度", "温度"],
+                "susceptible_locations": ["常压塔塔顶管道与热交换器"],
+                "prevention": ["注水", "注中和剂", "注缓蚀剂"],
+                "detection_methods": ["定点测厚", "监测pH、铁离子和氯化物含量"],
+                "related_damages": ["氯化铵腐蚀", "氯化物应力腐蚀开裂"],
+                "match_level": "high",
+            }],
+            "discriminator": "需补充塔顶水 pH、注水点位置与沉积物情况以区分氯化铵腐蚀",
+            "excluded": [],
+        },
+        source=[{
+            "clause_id": "GBT30579-2022-5.1",
+            "standard_code": "GB/T 30579-2022",
+            "clause_no": "5.1",
+            "page": 2,
+        }],
+    )
+
+
+def _mock_rbi_lookup(equipment_type, material, **kw):
+    return make_response(
+        result={
+            "likelihood": "3",
+            "consequence": "D",
+            "risk_level": "中高风险",
+            "risk_level_unified": "L3",
+            "inspection_interval_year": None,
+            "inspection_methods": ["定点测厚"],
+            "basis_note": "示例数据:3D 按 GB/T 26610.3-2014 图1 为中高风险;该标准不给检验周期",
+        },
+        source=[{
+            "clause_id": "GBT26610.3-2014-7-n",
+            "standard_code": "GB/T 26610.3-2014",
+            "clause_no": "7",
+            "page": 11,
+        }],
+    )
+
+
+def _mock_standard_clause_search(keyword, knowledge_type=None, top_k=5, **kw):
+    return make_response(
+        result={"hits": [{
+            "clause_id": "GBT30579-2022-5.19",
+            "title": "氯化铵腐蚀",
+            "snippet": "示例数据,学生替换为真实检索结果",
+            "score": 0.9,
+        }]},
+        source=[{
+            "clause_id": "GBT30579-2022-5.19",
+            "standard_code": "GB/T 30579-2022",
+            "clause_no": "5.19",
+            "page": 27,
+        }],
+    )
+
+
+def build_registry() -> ToolRegistry:
+    """TODO: 学生把 mock 函数替换成真正查 clauses.jsonl 的实现。
+    参数表要和《工具接口规范》完全一致,不得增删改名。"""
+    reg = ToolRegistry()
+    reg.register(ToolSpec(
+        name="damage_mechanism_query",
+        func=_mock_damage_mechanism_query,
+        description="按材质/介质/工况识别可能的损伤机理,并给出鉴别依据",
+        parameters={
+            "material": {"type": "string", "required": True},
+            "medium": {"type": "array", "required": True},
+            "temperature_c": {"type": "number", "required": False},
+            "equipment_type": {"type": "string", "required": False},
+            "evidence": {"type": "object", "required": False},
+        },
+    ))
+    reg.register(ToolSpec(
+        name="rbi_lookup",
+        func=_mock_rbi_lookup,
+        description="按设备/材质/机理查询风险等级与检验周期建议",
+        parameters={
+            "equipment_type": {"type": "string", "required": True},
+            "material": {"type": "string", "required": True},
+            "mechanism": {"type": "string", "required": False},
+            "medium": {"type": "array", "required": False},
+            "temperature_c": {"type": "number", "required": False},
+            "pressure_mpa": {"type": "number", "required": False},
+            "service_years": {"type": "number", "required": False},
+        },
+    ))
+    reg.register(ToolSpec(
+        name="standard_clause_search",
+        func=_mock_standard_clause_search,
+        description="按关键词或现象描述检索条款,兜底用",
+        parameters={
+            "keyword": {"type": "string", "required": True},
+            "knowledge_type": {"type": "string", "required": False, "enum": ["rbi", "damage_mechanism"]},
+            "top_k": {"type": "number", "required": False, "maximum": 20},
+        },
+    ))
+    return reg
+
+
+DEMO_INPUT = {
+    "equipment": "常压塔顶空冷器",
+    "material": "碳钢",
+    "medium": ["氯化氢", "氯化铵"],
+    "operating_condition": "管束入口温度约110℃,投用8年",
+    "field_evidence": "塔顶回流罐水样铁离子由1.2上升至4.1 mg/L",
+    "question": "铁离子上升的可能原因是什么?",
+}
+
+
+def make_mock_planner(with_bad_call: bool):
+    """假的决策器。with_bad_call=True 时第 2 步故意调用不存在的工具,演示护栏拦截。"""
+    plan = [
+        {"thought": "先根据材质与介质确定候选损伤机理", "tool": "damage_mechanism_query",
+         "args": {"material": "碳钢", "medium": ["HCl", "氯化铵"], "temperature_c": 110}},
+        {"thought": "区分盐酸腐蚀与氯化铵腐蚀,检索结盐相关条款", "tool": "standard_clause_search",
+         "args": {"keyword": "氯化铵 结盐 注水", "knowledge_type": "damage_mechanism"}},
+        {"thought": "查风险等级", "tool": "rbi_lookup",
+         "args": {"equipment_type": "空冷器", "material": "碳钢", "mechanism": "氯化铵腐蚀", "service_years": 8}},
+    ]
+    if with_bad_call:
+        plan.insert(1, {"thought": "故意调用一个不存在的工具,验证护栏能否拦住", "tool": "no_such_tool", "args": {}})
+
+    def planner(task_input, history):
+        if len(history) < len(plan):
+            return plan[len(history)]
+        return {
+            "thought": "依据已足够,给出结论",
+            "final_answer": {
+                "conclusion": "示例结论。真实结论中每条断言后必须标注依据(依据 GBT30579-2022-5.1)。",
+                "basis": ["GBT30579-2022-5.1"],
+            },
+        }
+    return planner
+
+
+if __name__ == "__main__":
+    for stream in (__import__("sys").stdout,):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
+    out_dir = Path(__file__).resolve().parent / "runs"
+    h = Harness(build_registry())
+
+    # 演示 1:含一次被拦截的调用
+    traj = h.run(traj_id="DEMO-0001", task_input=dict(DEMO_INPUT), planner=make_mock_planner(True))
+    save_jsonl(out_dir / "demo_run_log.jsonl", [traj.to_dict()])
+    print(json.dumps(traj.to_dict(), ensure_ascii=False, indent=2))
+    print("\n--- 检查点(演示 1) ---")
+    print(f"轮次: {len(traj.steps)}  (指标要求支持 >=5 轮)")
+    print(f"被拦截步数: {sum(1 for s in traj.steps if s.blocked)}  (应为 1,即那个不存在的工具)")
+    try:
+        traj.to_record()
+    except DatasetExportError as e:
+        print(f"导出数据集: 已拒绝。{e}")
+
+    # 演示 2:三次正常调用,可导出为数据集记录
+    traj2 = h.run(traj_id="DEMO-0002", task_input=dict(DEMO_INPUT), planner=make_mock_planner(False))
+    path = save_jsonl(out_dir / "demo_trajectories.jsonl", [traj2.to_record()])
+    print("\n--- 检查点(演示 2) ---")
+    print(f"轨迹类型: {traj2.to_record()['task_type']},已写出 {path}")
+    print("可在任务包根目录运行:python 04_接口文档/validate.py "
+          "--clauses 03_案例样例/clauses.jsonl --trajectories 04_接口文档/harness_skeleton/runs/demo_trajectories.jsonl")

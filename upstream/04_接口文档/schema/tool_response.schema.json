@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "工具统一返回外壳",
+  "$comment": "仅定义接口规范 2.5 的共用外壳；不向返回数据添加工具名等字段，不在此推断具体工具的 result 类型。",
+  "type": "object",
+  "description": "工具接口规范第 2.5 节的统一返回外壳，三个工具共用。",
+  "properties": {
+    "status": {
+      "type": "string",
+      "description": "执行状态；填写一个状态值，不填写用竖线拼接的示例字符串。",
+      "enum": [
+        "ok",
+        "out_of_domain",
+        "not_found",
+        "error"
+      ]
+    },
+    "in_domain": {
+      "type": "boolean",
+      "description": "查询条件是否处于条款覆盖范围；超出范围时为 false。"
+    },
+    "result": {
+      "type": "object",
+      "description": "工具的业务结果对象，其内部字段由相应工具定义；in_domain=false 时必须为空对象。"
+    },
+    "source": {
+      "type": "array",
+      "description": "标准条款出处列表；status=ok 时至少包含一条出处。",
+      "items": {
+        "type": "object",
+        "description": "一条可定位到标准原文的出处。",
+        "properties": {
+          "clause_id": {
+            "type": "string",
+            "description": "引用条款在条款库中的唯一标识。"
+          },
+          "standard_code": {
+            "type": "string",
+            "description": "引用标准的编号及年份。"
+          },
+          "clause_no": {
+            "type": "string",
+            "description": "引用条款在标准中的编号。"
+          },
+          "page": {
+            "type": "integer",
+            "description": "引用条款所在的标准正文页码。"
+          }
+        },
+        "required": [
+          "clause_id",
+          "standard_code",
+          "clause_no",
+          "page"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "message": {
+      "type": "string",
+      "description": "补充说明或错误信息；超范围时必须说明超出了什么。"
+    }
+  },
+  "required": [
+    "status",
+    "in_domain",
+    "result",
+    "source",
+    "message"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "ok"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "source": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "in_domain": {
+            "const": false
+          }
+        },
+        "required": [
+          "in_domain"
+        ]
+      },
+      "then": {
+        "properties": {
+          "result": {
+            "maxProperties": 0
+          },
+          "message": {
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        }
+      }
+    }
+  ]
+}

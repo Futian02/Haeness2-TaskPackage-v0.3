@@ -1,0 +1,188 @@
+{
+  "_comment": "本文件为 v0.3 定稿，学生不得自行增改。各枚举表的键为规范值，每项的 aliases 为候选归一化写法；仅 material、medium 和 equipment_type 三表的键用于构造工具参数白名单。中文术语参考 GB/T 30579-2022 第5、6章及附录B、D，材质牌号保留标准代码；设备类型采用工具接口规范规定的六类。material 表说明：材料类别与具体牌号分别保留，材料类别包含关系见 material_family.json，不通过 aliases 自动合并。设备为不锈钢复合板或堆焊层结构时，material 只填复层材质（即直接接触介质的一侧），基材信息写入轨迹的 input.operating_condition 或条款的 applicable_conditions.other。例：碳钢基材 + 06Cr19Ni10 复层，material 填 06Cr19Ni10。medium 表说明：只用于腐蚀性介质、腐蚀性组分及与损伤机理对应的介质环境，不使用原油、石脑油等物流名称匹配条款，也不凭物流名称推定腐蚀性组分。有机氯化物说明：原油带入的有机氯在加热后水解生成 HCl，是常减压的重要腐蚀来源。酸式酸性水 / 碱式酸性水选用说明：按 GB/T 30579—2022 对应条款，结合现场 pH、主导组分等证据选用，二者不得同时填写；信息不足时应补充证据，不使用“酸性水”作为兜底取值。sour water 按本任务包约定归一化为“酸式酸性水”，别名归一化不代替机理判定。损伤模式命名提醒：损伤模式名称必须使用 GB/T 30579—2022 原文叫法，例如“湿硫化氢破坏”（非“湿硫化氢损伤”）、“氯化铵腐蚀”（非“氯化铵垢下腐蚀”）、“高温硫化物腐蚀”（非“高温硫腐蚀”）。自行改名会导致条款检索失败。本表的介质枚举值不能直接代替损伤模式名称。stream_type 表说明：仅用于记录工况，不参与工具参数校验；保留原有物流及公用工程介质名称，其取值可写入轨迹的 input.operating_condition，不新增工具入参。harness.py 启动时读取并缓存工具参数枚举表，参数先做别名归一化再校验；白名单校验不代替条款适用性判断。",
+  "material": {
+    "碳钢": {
+      "aliases": ["碳素钢", "CS", "carbon steel"]
+    },
+    "低合金钢": {
+      "aliases": ["低合金钢材", "LAS", "low alloy steel"]
+    },
+    "不锈钢": {
+      "aliases": ["不锈钢材", "SS", "stainless steel"]
+    },
+    "300系列不锈钢": {
+      "aliases": ["300系不锈钢", "300 系列不锈钢", "300 series stainless steel"]
+    },
+    "400系列不锈钢": {
+      "aliases": ["400系不锈钢", "400 系列不锈钢", "400 series stainless steel"]
+    },
+    "奥氏体不锈钢": {
+      "aliases": ["奥氏体型不锈钢", "奥氏体不锈钢材", "austenitic stainless steel"]
+    },
+    "铁素体不锈钢": {
+      "aliases": ["铁素体型不锈钢", "铁素体不锈钢材", "ferritic stainless steel"]
+    },
+    "双相不锈钢": {
+      "aliases": ["双相型不锈钢", "双相不锈钢材", "DSS", "duplex stainless steel"]
+    },
+    "20": {
+      "aliases": ["20#", "20＃", "20号钢", "20钢"]
+    },
+    "Q245R": {
+      "aliases": ["Q245R钢", "Q245R钢板", "Q245R容器钢板"]
+    },
+    "Q345R": {
+      "aliases": ["Q345R钢", "Q345R钢板", "Q345R容器钢板"]
+    },
+    "15CrMo": {
+      "aliases": ["15CrMo钢", "15CrMo合金钢"]
+    },
+    "15CrMoR": {
+      "aliases": ["15CrMoR钢", "15CrMoR钢板"]
+    },
+    "12Cr2Mo1": {
+      "aliases": ["12Cr2Mo1钢", "12Cr2Mo1合金钢"]
+    },
+    "12Cr2Mo1R": {
+      "aliases": ["12Cr2Mo1R钢", "12Cr2Mo1R钢板"]
+    },
+    "12Cr5Mo": {
+      "aliases": ["12Cr5Mo钢", "12Cr5Mo合金钢"]
+    },
+    "06Cr19Ni10": {
+      "aliases": ["S30408", "06Cr19Ni10不锈钢"]
+    },
+    "022Cr19Ni10": {
+      "aliases": ["S30403", "022Cr19Ni10不锈钢"]
+    },
+    "06Cr17Ni12Mo2": {
+      "aliases": ["S31608", "06Cr17Ni12Mo2不锈钢"]
+    },
+    "022Cr17Ni12Mo2": {
+      "aliases": ["S31603", "022Cr17Ni12Mo2不锈钢"]
+    },
+    "06Cr18Ni11Ti": {
+      "aliases": ["S32168", "06Cr18Ni11Ti不锈钢"]
+    },
+    "S22053": {
+      "aliases": ["022Cr23Ni5Mo3N", "S22053双相不锈钢"]
+    }
+  },
+  "medium": {
+    "湿硫化氢": {
+      "aliases": ["湿H2S", "湿H₂S", "湿硫化氢环境", "含水硫化氢环境", "硫化氢", "H2S", "H₂S", "含硫化氢湿环境"]
+    },
+    "氯化氢": {
+      "aliases": ["HCl", "氯化氢气体", "盐酸", "氯化氢水溶液", "HCl(aq)"]
+    },
+    "有机氯化物": {
+      "aliases": ["有机氯", "organic chloride"]
+    },
+    "氯化铵": {
+      "aliases": ["NH4Cl", "NH₄Cl"]
+    },
+    "硫氢化铵": {
+      "aliases": ["NH4HS", "NH₄HS", "硫化氢铵"]
+    },
+    "环烷酸": {
+      "aliases": ["石油环烷酸", "naphthenic acid"]
+    },
+    "高温硫化物腐蚀介质": {
+      "aliases": ["高温硫介质", "高温含硫介质", "硫化物", "硫化物介质", "sulfides", "高温硫"]
+    },
+    "连多硫酸": {
+      "aliases": ["polythionic acid", "polythionic acids"]
+    },
+    "氰化物": {
+      "aliases": ["氰化物介质", "cyanide", "cyanides"]
+    },
+    "氢氧化钠": {
+      "aliases": ["NaOH", "烧碱", "苛性钠", "碱（氢氧化钠）", "碱(氢氧化钠)", "碱"]
+    },
+    "胺液": {
+      "aliases": ["胺溶液", "胺类溶液"]
+    },
+    "二氧化碳": {
+      "aliases": ["CO2", "CO₂"]
+    },
+    "氯离子": {
+      "aliases": ["Cl-", "Cl⁻", "氯化物", "氯化物介质", "chlorides"]
+    },
+    "氧气": {
+      "aliases": ["O2", "O₂"]
+    },
+    "循环水": {
+      "aliases": ["循环冷却水", "循环冷却用水", "circulating cooling water", "冷却水", "冷却用水", "CW", "cooling water"]
+    },
+    "酸式酸性水": {
+      "aliases": ["酸性水（酸式）", "酸性水(酸式)", "sour water"]
+    },
+    "碱式酸性水": {
+      "aliases": ["酸性水（碱式）", "酸性水(碱式)"]
+    },
+    "氨": {
+      "aliases": ["NH3", "NH₃", "氨气"]
+    },
+    "含盐水": {
+      "aliases": ["盐水", "含盐水介质"]
+    }
+  },
+  "stream_type": {
+    "原油": {
+      "aliases": ["原料原油", "crude oil"]
+    },
+    "石脑油": {
+      "aliases": ["naphtha"]
+    },
+    "煤油": {
+      "aliases": ["煤油馏分", "kerosene"]
+    },
+    "柴油": {
+      "aliases": ["柴油馏分", "diesel oil"]
+    },
+    "常压重油": {
+      "aliases": ["常压渣油", "常渣", "atmospheric residue"]
+    },
+    "减压轻蜡油": {
+      "aliases": ["轻减压蜡油", "LVGO"]
+    },
+    "减压重蜡油": {
+      "aliases": ["重减压蜡油", "HVGO"]
+    },
+    "减压渣油": {
+      "aliases": ["减渣", "vacuum residue"]
+    },
+    "燃料气": {
+      "aliases": ["燃料用气", "fuel gas"]
+    },
+    "水": {
+      "aliases": ["液态水", "液相水"]
+    },
+    "水蒸气": {
+      "aliases": ["蒸汽", "水蒸汽", "H2O(g)", "H₂O(g)"]
+    },
+    "空气": {
+      "aliases": ["空气介质", "air"]
+    }
+  },
+  "equipment_type": {
+    "塔": {
+      "aliases": ["塔器", "塔设备"]
+    },
+    "换热器": {
+      "aliases": ["热交换器", "换热设备", "空冷器", "空气冷却器", "冷凝器", "冷却器"]
+    },
+    "管道": {
+      "aliases": ["管线", "工艺管道"]
+    },
+    "容器": {
+      "aliases": ["压力容器", "承压容器", "回流罐", "电脱盐罐", "分液罐", "缓冲罐"]
+    },
+    "加热炉": {
+      "aliases": ["工艺加热炉", "管式加热炉"]
+    },
+    "储罐": {
+      "aliases": ["贮罐", "储存罐", "贮存罐"]
+    }
+  }
+}

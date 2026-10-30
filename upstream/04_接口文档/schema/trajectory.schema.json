@@ -1,0 +1,429 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "工具调用轨迹",
+  "$comment": "依据规格说明 3.2、3.3 和最新工具接口规范。result 通过相对引用复用统一外壳；失败或超范围返回也必须符合外壳。护栏对抗用例另交 guardrail_cases.jsonl，本 Schema 不为对抗用例放宽正式工具参数定义。basis 的跨记录存在性由 validate.py 比对条款库。special_type 为可选的特殊轨迹类型标识，与 task_type 独立；三类各至少 15 条的批量配额由 validate.py 统计。仅 special_type=out_of_domain 时允许 basis 为空。",
+  "type": "object",
+  "description": "规格说明第 3.2 节的一条工具调用轨迹。",
+  "properties": {
+    "traj_id": {
+      "type": "string",
+      "description": "轨迹的唯一标识。"
+    },
+    "task_type": {
+      "type": "string",
+      "description": "轨迹任务类型（v0.3 起只有两个取值）：调用次数 ≥3 为 multi_step，少于 3 次为 single_step；同一工具多次调用也计入次数。一致性由 validate.py 检查。",
+      "enum": [
+        "single_step",
+        "multi_step"
+      ]
+    },
+    "special_type": {
+      "type": "string",
+      "description": "可选的特殊轨迹类型：exclusion 为排除型，insufficient_info 为信息不足型，out_of_domain 为超范围型。普通轨迹省略此字段；与 task_type 独立，每条轨迹最多填写一种特殊类型。",
+      "enum": [
+        "exclusion",
+        "insufficient_info",
+        "out_of_domain"
+      ]
+    },
+    "input": {
+      "type": "object",
+      "description": "用户提供的设备、工况、证据和问题，保留原始输入文本。",
+      "properties": {
+        "equipment": {
+          "type": "string",
+          "description": "设备或部位名称，例如常压塔顶空冷器。"
+        },
+        "material": {
+          "type": "string",
+          "description": "输入的材质描述；工具参数中的材质另按枚举表校验和归一化。"
+        },
+        "medium": {
+          "type": "array",
+          "description": "输入的介质描述列表；工具参数中的介质另按枚举表校验和归一化。",
+          "items": {
+            "type": "string",
+            "description": "原始输入中的一种介质。"
+          }
+        },
+        "operating_condition": {
+          "type": "string",
+          "description": "操作工况；可记录物流名称及复合板或堆焊层结构的基材信息。"
+        },
+        "field_evidence": {
+          "type": "string",
+          "description": "现场检测、取样、测厚或检验等证据描述。"
+        },
+        "question": {
+          "type": "string",
+          "description": "需要通过工具调用回答的问题。"
+        }
+      },
+      "required": [
+        "equipment",
+        "material",
+        "medium",
+        "operating_condition",
+        "field_evidence",
+        "question"
+      ],
+      "additionalProperties": false
+    },
+    "steps": {
+      "type": "array",
+      "description": "按调用先后顺序记录每一步；multi_step 至少包含三步。",
+      "items": {
+        "type": "object",
+        "description": "一次工具调用记录，字段按规格说明 3.2 保留。",
+        "properties": {
+          "step": {
+            "type": "integer",
+            "description": "工具调用步骤编号。"
+          },
+          "thought": {
+            "type": "string",
+            "description": "选择本次工具调用的思考与理由。"
+          },
+          "tool": {
+            "type": "string",
+            "description": "本次调用的工具名。",
+            "enum": [
+              "damage_mechanism_query",
+              "rbi_lookup",
+              "standard_clause_search"
+            ]
+          },
+          "args": {
+            "type": "object",
+            "description": "实际调用入参；按 tool 对应的接口定义校验。"
+          },
+          "result": {
+            "description": "工具真实返回的完整外壳；规格示例中的空对象不能代替正式返回。",
+            "allOf": [
+              {
+                "$ref": "tool_response.schema.json"
+              }
+            ]
+          },
+          "observation": {
+            "type": "string",
+            "description": "对本次返回的观察及下一步判断。"
+          }
+        },
+        "required": [
+          "step",
+          "thought",
+          "tool",
+          "args",
+          "result",
+          "observation"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "tool": {
+                  "const": "damage_mechanism_query"
+                }
+              },
+              "required": [
+                "tool"
+              ]
+            },
+            "then": {
+              "properties": {
+                "args": {
+                  "$ref": "#/definitions/damage_mechanism_query_args"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "tool": {
+                  "const": "rbi_lookup"
+                }
+              },
+              "required": [
+                "tool"
+              ]
+            },
+            "then": {
+              "properties": {
+                "args": {
+                  "$ref": "#/definitions/rbi_lookup_args"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "tool": {
+                  "const": "standard_clause_search"
+                }
+              },
+              "required": [
+                "tool"
+              ]
+            },
+            "then": {
+              "properties": {
+                "args": {
+                  "$ref": "#/definitions/standard_clause_search_args"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "final_answer": {
+      "type": "object",
+      "description": "最终结论及其条款依据。",
+      "properties": {
+        "conclusion": {
+          "type": "string",
+          "description": "最终结论正文，每条断言后标注依据。"
+        },
+        "basis": {
+          "type": "array",
+          "description": "结论引用的条款主键列表；仅 special_type=out_of_domain 时允许为空，其余类型及未填写 special_type 的普通轨迹均不得为空。只要列出主键，每个主键都必须存在于 clauses.jsonl。",
+          "items": {
+            "type": "string",
+            "description": "一个被最终结论引用的 clause_id。"
+          }
+        }
+      },
+      "required": [
+        "conclusion",
+        "basis"
+      ],
+      "additionalProperties": false
+    },
+    "annotator": {
+      "type": "string",
+      "description": "轨迹标注者标识，例如学号与姓名。"
+    },
+    "checked": {
+      "type": "boolean",
+      "description": "该轨迹是否已经复核。"
+    }
+  },
+  "required": [
+    "traj_id",
+    "task_type",
+    "input",
+    "steps",
+    "final_answer",
+    "annotator",
+    "checked"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "task_type": {
+            "const": "multi_step"
+          }
+        },
+        "required": [
+          "task_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "steps": {
+            "minItems": 3
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "special_type": {
+            "const": "out_of_domain"
+          }
+        },
+        "required": [
+          "special_type"
+        ]
+      },
+      "else": {
+        "properties": {
+          "final_answer": {
+            "properties": {
+              "basis": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "damage_mechanism_query_args": {
+      "type": "object",
+      "description": "damage_mechanism_query 入参，必填 material、medium。",
+      "properties": {
+        "material": {
+          "description": "材质；允许已登记别名，由 Guardrail 在调用时归一化。",
+          "allOf": [
+            {
+              "$ref": "clause.schema.json#/definitions/material_input"
+            }
+          ]
+        },
+        "medium": {
+          "type": "array",
+          "description": "腐蚀性介质列表；允许已登记别名，不用物流名称代替。",
+          "items": {
+            "description": "一种腐蚀性介质输入值。",
+            "allOf": [
+              {
+                "$ref": "clause.schema.json#/definitions/medium_input"
+              }
+            ]
+          }
+        },
+        "temperature_c": {
+          "type": "number",
+          "description": "操作温度，单位 ℃。"
+        },
+        "equipment_type": {
+          "description": "设备类型；允许已登记别名，由 Guardrail 归并到六个标准大类。",
+          "allOf": [
+            {
+              "$ref": "clause.schema.json#/definitions/equipment_type_input"
+            }
+          ]
+        },
+        "evidence": {
+          "type": "object",
+          "description": "现场证据对象；子字段均可选，缺失证据不能用 false 代替。",
+          "properties": {
+            "ph": {
+              "type": "number",
+              "description": "塔顶水或工艺水的 pH。"
+            },
+            "cl_ppm": {
+              "type": "number",
+              "description": "氯离子含量，单位 mg/L。"
+            },
+            "fe_ppm": {
+              "type": "number",
+              "description": "铁离子含量，单位 mg/L。"
+            },
+            "h2s_ppm": {
+              "type": "number",
+              "description": "硫化氢含量。"
+            },
+            "wall_thinning": {
+              "type": "boolean",
+              "description": "测厚是否发现减薄。"
+            },
+            "crack_found": {
+              "type": "boolean",
+              "description": "是否发现裂纹。"
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "material",
+        "medium"
+      ],
+      "additionalProperties": false
+    },
+    "rbi_lookup_args": {
+      "type": "object",
+      "description": "rbi_lookup 入参，必填 equipment_type、material。",
+      "properties": {
+        "equipment_type": {
+          "description": "设备类型；允许已登记别名，由 Guardrail 归并到六个标准大类。",
+          "allOf": [
+            {
+              "$ref": "clause.schema.json#/definitions/equipment_type_input"
+            }
+          ]
+        },
+        "material": {
+          "description": "材质；允许已登记别名，由 Guardrail 在调用时归一化。",
+          "allOf": [
+            {
+              "$ref": "clause.schema.json#/definitions/material_input"
+            }
+          ]
+        },
+        "mechanism": {
+          "type": "string",
+          "description": "已识别的损伤机理名称，使用标准原文叫法。"
+        },
+        "medium": {
+          "type": "array",
+          "description": "腐蚀性介质列表；允许已登记别名，不用物流名称代替。",
+          "items": {
+            "description": "一种腐蚀性介质输入值。",
+            "allOf": [
+              {
+                "$ref": "clause.schema.json#/definitions/medium_input"
+              }
+            ]
+          }
+        },
+        "temperature_c": {
+          "type": "number",
+          "description": "操作温度，单位 ℃。"
+        },
+        "pressure_mpa": {
+          "type": "number",
+          "description": "操作压力，单位 MPa。"
+        },
+        "service_years": {
+          "type": "number",
+          "description": "已投用年限，单位为年。"
+        }
+      },
+      "required": [
+        "equipment_type",
+        "material"
+      ],
+      "additionalProperties": false
+    },
+    "standard_clause_search_args": {
+      "type": "object",
+      "description": "standard_clause_search 入参，仅 keyword 必填。",
+      "properties": {
+        "keyword": {
+          "type": "string",
+          "description": "检索关键词或现象描述。"
+        },
+        "knowledge_type": {
+          "type": "string",
+          "description": "可选的知识类别筛选条件。",
+          "enum": [
+            "rbi",
+            "damage_mechanism"
+          ]
+        },
+        "top_k": {
+          "type": "number",
+          "description": "返回条数上限，默认 5，最大 20；按接口表保留 number 类型。",
+          "default": 5,
+          "maximum": 20
+        }
+      },
+      "required": [
+        "keyword"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

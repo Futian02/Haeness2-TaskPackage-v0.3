@@ -1,0 +1,2656 @@
+[
+ {
+  "clause_id": "GBT30579-2022-5.12",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "5.12",
+  "page": 17,
+  "knowledge_type": "damage_mechanism",
+  "title": "冷却水腐蚀",
+  "content_raw": "5.12.1 损伤描述及损伤机理：冷却水中由溶解盐、气体、有机化合物或微生物活动引起的碳钢和其他金属的腐蚀。5.12.2 损伤形态：a) 冷却水中存在溶解氧时，冷却水对碳钢的腐蚀多为均匀腐蚀；b) 若冷却水腐蚀以垢下腐蚀、缝隙腐蚀、电偶腐蚀或微生物腐蚀为主时，多表现为局部腐蚀；c) 冷却水在管嘴的出入口或管道入口处易形成冲蚀或磨损，形成波纹状或光滑腐蚀；d) 在电阻焊制造设备或管道的焊接区域，冷却水腐蚀多沿焊缝熔合线形成腐蚀沟槽。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "换热器",
+    "容器",
+    "管道"
+   ],
+   "material": [
+    "碳钢",
+    "300系列不锈钢"
+   ],
+   "medium": [
+    "循环水"
+   ],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "所有水冷换热器和冷却塔设备；冷却水入口设计温度不宜高于57℃；铜、铝、钛、镍基合金也受影响（不在material枚举）"
+  },
+  "mechanism_detail": {
+   "description": "冷却水中由溶解盐、气体、有机化合物或微生物活动引起的碳钢和其他金属的腐蚀",
+   "morphology": [
+    "存在溶解氧时对碳钢多为均匀腐蚀",
+    "以垢下腐蚀、缝隙腐蚀、电偶腐蚀或微生物腐蚀为主时多表现为局部腐蚀",
+    "管嘴出入口或管道入口处易形成波纹状或光滑腐蚀",
+    "电阻焊设备或管道的焊接区域多沿焊缝熔合线形成腐蚀沟槽"
+   ],
+   "affected_materials": [
+    "碳钢、所有不锈钢、铜、铝、钛和镍基合金"
+   ],
+   "influencing_factors": [
+    "温度：冷却水出口温度和/或工艺物料侧入口温度升高会增加腐蚀速度和结垢倾向，工艺物料侧温度高于60℃时新鲜水存在结垢倾向，半咸水或盐水/海水出口温度高于46℃时结垢严重，超过80℃后腐蚀逐渐下降",
+    "氧含量：随冷却水含氧量升高碳钢腐蚀速率增大",
+    "结垢：矿物沉淀、淤泥、悬浮有机材料、腐蚀产物、氧化皮、海水和微生物形成的垢层造成垢下腐蚀",
+    "流速：流速足够高可减少结垢并冲出沉积物，但不能过高以致引发冲刷腐蚀，低于1 m/s易导致结垢、沉积，壳程介质流动死区或滞留区腐蚀加剧",
+    "水质：300系列不锈钢在新鲜水、半咸水、盐水/海水中可产生点蚀、缝隙腐蚀和应力腐蚀开裂，铜/锌合金会发生脱锌腐蚀，含氨或铵化合物冷却水中发生应力腐蚀开裂，电阻焊碳钢设备焊缝或热影响区在新鲜水、半咸水中严重腐蚀",
+    "钛和其他阳极材料连接可能发生严重的钛氢化（温度高于82℃常见）"
+   ],
+   "susceptible_locations": [
+    "所有水冷换热器和冷却塔设备"
+   ],
+   "prevention": [
+    "系统改进：设计改进、运行优化和化学处理防护，冷换设备设计时冷却水走管程以尽量减少滞流区",
+    "温度：入口设计温度不宜高于57℃",
+    "流速：应有最小和最大流速范围限制，尤其使用盐水/海水时",
+    "材质选用：选用耐蚀性好的材质，尤其在高含氯、低流速、高温度和/或水处理不当的冷却水系统中的换热设备，同时避免电偶腐蚀",
+    "清洁：对换热管内外表面进行定期清洗"
+   ],
+   "detection_methods": [
+    "水质监测：对pH值、氧含量、残存药剂量、微生物活性、冷却水出口温度、工艺物料泄漏或污染程度进行监控",
+    "换热性能测算：定期测算热交换器换热性能，掌握结垢和沉积状况",
+    "流速监测：用超声波流速仪检测冷却水流速",
+    "采用涡流检测、漏磁检测、导波检测或内旋转检测系统对热交换器管束进行检查",
+    "取样分析：对有代表性的管子进行取样剖管分析"
+   ],
+   "related_damages": [
+    "微生物腐蚀、氯化物应力腐蚀开裂"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-5.15",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "5.15",
+  "page": 21,
+  "knowledge_type": "damage_mechanism",
+  "title": "锅炉冷凝水腐蚀",
+  "content_raw": "5.15.1 损伤描述及损伤机理：锅炉系统和蒸汽冷凝水回水管道上发生的均匀腐蚀和点蚀，多与溶解的氧气、二氧化碳有关。5.15.2 损伤形态：a) 除氧系统工作不正常时，很少的氧气就可引发锅炉冷凝水腐蚀，多表现为点蚀，呈溃疡状，在金属表面形成黄褐色或砖红色的腐蚀产物鼓包，直径从1 mm~30 mm不等，由各种腐蚀产物组成，腐蚀产物去除后，可见金属表面的腐蚀坑；b) 冷凝水回水系统的腐蚀多由二氧化碳引起，腐蚀后管壁形成平滑凹槽。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "管道",
+    "换热器",
+    "容器"
+   ],
+   "material": [
+    "碳钢",
+    "低合金钢",
+    "300系列不锈钢"
+   ],
+   "medium": [
+    "二氧化碳",
+    "氧气"
+   ],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "锅炉系统和蒸汽冷凝水回水管道；除氧系统工作不正常时氧气引发溃疡状点蚀；铜锌合金避免接触含联氨、中和胺或氨化合物的锅炉冷凝水"
+  },
+  "mechanism_detail": {
+   "description": "锅炉系统和蒸汽冷凝水回水管道上发生的均匀腐蚀和点蚀，多与溶解的氧气、二氧化碳有关",
+   "morphology": [
+    "除氧系统工作不正常时少量氧气即可引发，多表现为溃疡状点蚀，金属表面形成黄褐色或砖红色腐蚀产物鼓包（直径1 mm～30 mm），去除后可见腐蚀坑",
+    "冷凝水回水系统的腐蚀多由二氧化碳引起，腐蚀后管壁形成平滑凹槽"
+   ],
+   "affected_materials": [
+    "主要为碳钢，以及一些低合金钢、300系列不锈钢和铜合金"
+   ],
+   "influencing_factors": [
+    "关键因素为溶解的气体浓度（氧气和二氧化碳）、pH值、温度、给水水质和给水处理专用系统",
+    "生成连续的四氧化三铁保护层并保持完好，足以实现对锅炉的腐蚀防护",
+    "用来除锈垢和沉淀的化学处理应与专用水设施和锅炉给水处理系统的除氧剂相匹配",
+    "铜锌合金应避免接触有联氨、中和胺或含氨化合物的锅炉冷凝水"
+   ],
+   "susceptible_locations": [
+    "锅炉外部处理系统、除氧设备、给水管道、泵、冷凝水回水系统，以及级间加热器、省煤器或蒸汽发生系统的水侧和受火侧"
+   ],
+   "prevention": [
+    "除氧处理：机械除氧的同时根据系统压力情况进行化学药剂（如催化亚硫酸钠或联氨）除氧，减少系统含氧量，残余除氧剂被夹带进入蒸汽发生系统可除去脱氧器下游混入的氧气",
+    "缓蚀剂：采用结垢或沉积物控制，或者四氧化三铁保护层防护的处理方案",
+    "不能降低冷凝水回流系统的二氧化碳时可能需要添加胺类缓蚀剂"
+   ],
+   "detection_methods": [
+    "水质监测：监测pH值、导电率、氯含量、残余杀菌剂以及检测泄漏的有机固体悬浮颗粒总量",
+    "操作程序：根据经验制定合理的工作程序，在复杂的锅炉水和冷凝水系统中查找即将出现或已出现爆管及冷凝水泄漏的部位",
+    "表面检查：停机状态湿荧光磁粉检测可有效检测出除氧器发生的开裂"
+   ],
+   "related_damages": [
+    "二氧化碳腐蚀、腐蚀疲劳、冲蚀、冲刷"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-5.20",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "5.20",
+  "page": 28,
+  "knowledge_type": "damage_mechanism",
+  "title": "胺腐蚀",
+  "content_raw": "5.20.1 损伤描述及损伤机理：胺处理工艺中碳钢发生的均匀腐蚀和/或局部腐蚀，胺腐蚀并非胺本身直接产生腐蚀，而是由胺液中溶解的酸性气体（二氧化碳和硫化氢）、胺降解产物、耐热胺盐（HSAS）和其他腐蚀性杂质引起的。5.20.2 损伤形态：a) 碳钢和低合金钢发生胺腐蚀时可表现为均匀腐蚀或局部腐蚀，沉积物处表现为垢下腐蚀；b) 介质流速较低时，多为均匀腐蚀，介质流速高并伴有紊流时，多为局部腐蚀。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "塔",
+    "换热器",
+    "容器",
+    "管道"
+   ],
+   "material": [
+    "碳钢",
+    "低合金钢"
+   ],
+   "medium": [
+    "胺液"
+   ],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "胺处理系统（脱除硫化氢、二氧化碳或硫醇）；耐热胺盐（HSAS）浓度超过2%（质量分数）腐蚀显著；温度高于104℃左右酸性气体可能闪蒸产生严重局部腐蚀；碳钢富液流速不宜超过1.8 m/s"
+  },
+  "mechanism_detail": {
+   "description": "胺处理工艺中碳钢发生的均匀腐蚀和/或局部腐蚀，并非胺本身直接产生腐蚀，而是由胺液中溶解的酸性气体（二氧化碳和硫化氢）、胺降解产物、耐热胺盐（HSAS）和其他腐蚀性杂质引起",
+   "morphology": [
+    "碳钢和低合金钢可表现为均匀腐蚀或局部腐蚀，沉积物处表现为垢下腐蚀",
+    "介质流速较低时多为均匀腐蚀，流速高并伴有紊流时多为局部腐蚀"
+   ],
+   "affected_materials": [
+    "碳钢、低合金钢"
+   ],
+   "influencing_factors": [
+    "介质：对碳钢和低合金钢的侵蚀性从大到小为单乙醇胺（MEA）、二甘醇胺（DGA）、二异丙胺（DIPA）、二乙醇胺（DEA）和甲基二乙醇胺（MDEA）",
+    "胺液浓度：贫胺液导电性差和/或pH值高一般没有腐蚀性，耐热胺盐（HSAS）浓度超过2%（质量分数）时腐蚀速率显著增大",
+    "杂质：氨、硫化氢和氰化氢等杂质会加速腐蚀，多发生于再生塔塔顶冷凝器、出口管道以及回流管道、阀和泵处",
+    "温度：随温度升高腐蚀速率增大，富胺环境中压力降足够大且温度高于104℃左右时酸性气体可能闪蒸产生严重局部腐蚀",
+    "流速：低流速区一般均匀腐蚀，高流速并存在紊流时造成局部腐蚀"
+   ],
+   "susceptible_locations": [
+    "各类胺处理系统（常减压、焦化、流化床催化裂化、重整加氢、加氢裂化和尾气处理装置中的胺处理系统）",
+    "再生塔塔底再沸器和再生器（胺液温度最高且介质紊流最强区域）",
+    "贫胺/富胺溶液热交换器的富胺侧、高温贫胺管道、高温富胺管道、胺液泵以及回收设备"
+   ],
+   "prevention": [
+    "处理量：控制合适的处理量避免胺液中腐蚀性杂质浓度过高",
+    "温度：控制再沸器温度和流量并控制再生塔塔顶温度避免胺高温降解产生腐蚀性产物",
+    "压力：控制高温部位局部压力降低闪蒸程度",
+    "材质：无法避免闪蒸时采用300系列不锈钢或其他耐蚀合金，吸收塔和汽提塔宜采用410不锈钢塔盘和内件",
+    "耐热胺盐浓度：控制在可接受范围内，防止氧气窜入减少耐热胺盐形成，胺储罐和物料缓冲罐充惰性气体保护",
+    "设计和操作：设计合理操作正确时大多数部件可用碳钢，过滤和工艺控制可除去胺液中固体颗粒和烃组分（富胺液过滤效果更佳）",
+    "流速：碳钢输送富液流速不宜超过1.8 m/s，输送贫胺液可放宽至6 m/s",
+    "缓蚀剂：可添加合适的缓蚀剂"
+   ],
+   "detection_methods": [
+    "设备内部目视检测和腐蚀部位壁厚测定",
+    "只能从外部检测时用超声波自动扫查、导波检测或射线成像查找减薄部位并测厚",
+    "腐蚀探针或挂片：监控实时腐蚀速率（尤其温度较高部位，如再沸器进料管道和回流管道、高温贫胺/富胺管道、汽提塔塔顶冷凝器的管道）"
+   ],
+   "related_damages": [
+    "胺应力腐蚀开裂"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-5.24",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "5.24",
+  "page": 34,
+  "knowledge_type": "damage_mechanism",
+  "title": "酸性水腐蚀(酸式酸性水)",
+  "content_raw": "5.24.1 损伤描述及损伤机理：含有硫化氢且pH值介于4.5~7.0的酸性水引起的金属腐蚀，介质中也可能含有二氧化碳。5.24.2 损伤形态：a) 酸式酸性水腐蚀一般为均匀腐蚀，有氧存在时易发生局部腐蚀或沉积垢下局部腐蚀，含有二氧化碳的环境还可能同时出现碳酸盐应力腐蚀；b) 300系列不锈钢易发生点蚀，还可能出现缝隙腐蚀，以及氯化物应力腐蚀开裂。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "塔",
+    "换热器",
+    "容器",
+    "管道"
+   ],
+   "material": [
+    "碳钢",
+    "300系列不锈钢"
+   ],
+   "medium": [
+    "酸式酸性水"
+   ],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "硫化氢且pH值4.5～7.0的酸性水；温度低于60℃可用300系列不锈钢；铝合金和镍基合金不敏感（部分不在material枚举）"
+  },
+  "mechanism_detail": {
+   "description": "含有硫化氢且pH值介于4.5～7.0的酸性水引起的金属腐蚀，介质中也可能含有二氧化碳",
+   "morphology": [
+    "一般为均匀腐蚀，有氧存在时易发生局部腐蚀或沉积垢下局部腐蚀，含二氧化碳环境还可能同时出现碳酸盐应力腐蚀开裂",
+    "300系列不锈钢易发生点蚀、缝隙腐蚀，以及氯化物应力腐蚀开裂"
+   ],
+   "affected_materials": [
+    "碳钢耐酸性水腐蚀能力较低",
+    "300系列不锈钢、铝合金和镍基合金对酸性水腐蚀不敏感"
+   ],
+   "influencing_factors": [
+    "硫化氢浓度：升高则腐蚀速率增大，取决于气相中硫化氢分压、温度和pH值，一定压力下随温度升高而降低",
+    "pH值：硫化氢浓度增加降低pH值（最低可达4.5）形成较弱的酸性环境腐蚀明显，pH值高于4.5时可能形成硫化亚铁保护膜减少腐蚀速率，但有时形成多孔硫化亚铁膜反而促进垢下腐蚀",
+    "杂质：氰化氢和二氧化碳降低pH值（酸性变强），氨使pH值升高且可能形成碱式酸性水腐蚀，空气或氧化剂存在会增加腐蚀（常形成点蚀或垢下腐蚀）",
+    "流速：高流速或湍流易使硫化亚铁保护膜被破坏，腐蚀速率增大"
+   ],
+   "susceptible_locations": [
+    "流化床催化裂化装置和焦化装置气体分馏系统中塔顶硫化氢含量高、氨含量低的部位",
+    "乙烯裂解装置急冷部分：急冷水塔顶裂解气至压缩部分的裂解气压缩机入口流程、汽油分馏塔塔顶裂解气至急冷水塔进料流程",
+    "乙烯裂解装置压缩系统：裂解气自急冷水塔顶至裂解气压缩机1～4段流程及相连管道、分离罐底部冷凝的裂解汽油至汽油汽提塔流程、冷凝水至急冷水塔入口流程、汽油汽提塔相关流程"
+   ],
+   "prevention": [
+    "温度低于60℃可用300系列不锈钢，且基本不用考虑氯化物应力腐蚀开裂问题",
+    "铜合金和镍基合金一般不易发生酸式酸性水腐蚀，但当存在氨时铜合金易发生腐蚀"
+   ],
+   "detection_methods": [
+    "壁厚测定：碳钢一般为均匀腐蚀，高流速或湍流区域（尤其水汽凝结部位）会发生局部腐蚀，可采用超声波检测或射线成像检测确定减薄状况",
+    "工艺防腐和腐蚀监测：定期对塔顶贮罐中水采样进行pH值监测",
+    "探针或挂片：设置探针或挂片，监控腐蚀程度"
+   ],
+   "related_damages": [
+    "湿硫化氢破坏、碳酸盐应力腐蚀开裂"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-5.27",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "5.27",
+  "page": 38,
+  "knowledge_type": "damage_mechanism",
+  "title": "含盐水腐蚀",
+  "content_raw": "5.27.1 损伤描述及损伤机理：含有溶解盐（通常是氯化物或其他卤化物盐）的水溶液，可造成设备表面局部或大范围点蚀。含盐水腐蚀常与其他腐蚀（如电偶腐蚀、微生物腐蚀）同时出现。不锈钢在氯化物盐水中发生腐蚀时，钝化层被氯化物破坏的部位会形成点蚀坑，随着氯化物在电泳作用下向坑内迁移，水解产生的酸性物质降低坑中溶液pH值，形成自催化，加速腐蚀。缝隙部位也容易产生这样的自催化腐蚀过程。类似的过程也会发生在裂缝中。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "换热器",
+    "管道",
+    "容器"
+   ],
+   "material": [
+    "碳钢",
+    "低合金钢",
+    "300系列不锈钢",
+    "双相不锈钢"
+   ],
+   "medium": [
+    "含盐水"
+   ],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "含溶解盐（通常为氯化物等卤化物盐）的水溶液；原油常减压脱盐及脱盐废水系统、污水处理系统、盐产品脱水干燥器、海水（消防用水）系统、软化水再生系统；铝合金、铜合金、Ni-Cr-Mo合金、镍基合金也受影响（部分不在material枚举）；海水中合金一般要求PRE不低于40；氯气浓度超过0.5×10⁻⁶时腐蚀加速"
+  },
+  "mechanism_detail": {
+   "description": "含有溶解盐（通常是氯化物或其他卤化物盐）的水溶液，可造成设备表面局部或大范围点蚀；含盐水腐蚀常与其他腐蚀（如电偶腐蚀、微生物腐蚀）同时出现；不锈钢点蚀坑内氯化物在电泳作用下迁移、水解产酸形成自催化加速腐蚀，缝隙部位也存在自催化腐蚀；硝酸盐、硫酸盐等其他阴离子也会在蚀坑和缝隙中水解降低pH值，但流动性比氯化物小，影响不大明显",
+   "morphology": [
+    "碳钢腐蚀部位常结垢严重，垢层去除后可见宽大凹坑，腐蚀速率可达0.3 mm/年",
+    "硫酸盐还原菌作用下碳钢管道顶部或底部可出现严重点蚀、沟槽",
+    "碳钢焊缝和热影响区有时会先生成腐蚀",
+    "不锈钢在氯化物盐水中常形成分散的点蚀坑，发生缝隙腐蚀时形态类似",
+    "敏感温度范围内还可能同时出现氯化物应力腐蚀开裂"
+   ],
+   "affected_materials": [
+    "碳钢最常见，低合金钢和不锈钢也可能发生腐蚀",
+    "铝合金对含盐水腐蚀较敏感，Ni-Cr-Mo合金耐腐蚀性能较好",
+    "铜合金通常比不锈钢、碳钢更耐含盐水点蚀，但保护膜可靠性受溶液中硫化物、氨等杂质影响",
+    "纤维增强塑料管道可免受含盐水腐蚀影响"
+   ],
+   "influencing_factors": [
+    "温度：腐蚀速率随温度升高而增大",
+    "氧浓度：随氧浓度升高增大",
+    "pH值：pH降低溶液腐蚀性增强，并破坏钝化膜稳定性，增大不锈钢点蚀和缝隙腐蚀速率",
+    "盐浓度：随盐浓度升高增大，卤化物浓度高时不锈钢和镍基合金的临界点蚀/缝隙腐蚀温度均降低",
+    "盐类型：氯化物盐水溶液最常见，溴化物等其他卤化物也可引起类似腐蚀，氯盐、硫酸盐和硝酸盐均会向有氧腐蚀坑中迁移，水解产酸加速碳钢腐蚀",
+    "流速：高流速引起冲蚀（有微生物时尤明显），流速过慢呈滞流状态易结垢加剧垢下腐蚀，铜合金、碳钢耐冲蚀能力比不锈钢低",
+    "化学成分：N和Mo可显著提高不锈钢耐点蚀能力，PRE=Cr+3.3×(Mo+0.5×W)+16×N，海水中使用的合金一般要求PRE不低于40，但因氯化物自催化作用，PRE高的不锈钢点蚀速率可比PRE低的碳钢高得多",
+    "杂质：氯气浓度超过0.5×10⁻⁶（如经杀菌处理的海水系统）会增大碳钢、不锈钢腐蚀速率，含硫化合物影响铜基合金保护膜钝化作用，硫化氢电离产酸加速腐蚀并与铜材生成疏松多孔无保护作用的硫化物锈垢"
+   ],
+   "susceptible_locations": [
+    "原油常减压装置脱盐和脱盐废水系统",
+    "污水处理系统（蓄水池之间的输送管道、盐水分离器出口管道、间歇运行的管道是高腐蚀率常见部位）",
+    "用于盐产品脱水的干燥器",
+    "海水系统（如消防用水）",
+    "软化水设备的再生系统"
+   ],
+   "prevention": [
+    "除氧：查明溶解氧来源并采取有效除氧措施，脱盐设备冲洗水使用除氧水，采用真空除氧、化学除氧（如焦亚硫酸钠），露天或敞开式蓄水器进出口密闭防氧气混入，检查含盐水系统泵出口和脱盐设备出口物料的O₂含量",
+    "工艺：热交换器在合理工艺条件（温度、流速等）内使用，防止含盐水蒸发或积垢",
+    "杂质：可能发生微生物腐蚀的含盐水中控制Cl含量（碳钢设备小于0.5×10⁻⁶，双相不锈钢0.7×10⁻⁶～5×10⁻⁶，铜镍合金小于5×10⁻⁶），监测硫酸盐还原菌",
+    "材质：升级为耐腐蚀性更强的合金（如镍铬钼合金）或非金属材料（如玻璃钢、聚氯乙烯）",
+    "涂层：碳钢设备内表面设置环氧酚醛和煤焦油环氧等涂层或采用内衬聚丙烯钢管，注意保持涂层完整性，防止气孔附近产生电偶腐蚀"
+   ],
+   "detection_methods": [
+    "超声检测（包括超声自动扫查）可从外部进行厚度测量，管道尺寸合适部位可使用射线检测",
+    "超声波检测可用于长管段筛查、确定重点区域，但对单个点蚀可能不敏感",
+    "设置腐蚀挂片或电偶探针确定短期、长期腐蚀速率",
+    "监测溶解氧含量",
+    "设置传感器对厚度进行实时在线监测"
+   ],
+   "related_damages": [
+    "微生物腐蚀、冲蚀、氯化物应力腐蚀开裂、冷却水腐蚀、电偶腐蚀、含氧工艺水腐蚀"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-5.5",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "5.5",
+  "page": 7,
+  "knowledge_type": "damage_mechanism",
+  "title": "二氧化碳腐蚀",
+  "content_raw": "5.5.1 损伤描述及损伤机理：金属在潮湿的二氧化碳环境（碳酸）中发生的腐蚀：H₂O+CO₂+Fe→FeCO₃+H₂。5.5.2 损伤形态：形成液相的部位会发生腐蚀，二氧化碳从气相中冷凝出来的部位容易发生腐蚀；腐蚀区域壁厚减薄，可能形成蚀坑或蚀孔；在紊流区，碳钢发生腐蚀时可能形成较深的点蚀坑和沟槽；腐蚀一般发生在紊流和液体冲击区域，有时也会发生在管道焊缝根部。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "换热器",
+    "管道",
+    "容器"
+   ],
+   "material": [
+    "碳钢",
+    "低合金钢"
+   ],
+   "medium": [
+    "二氧化碳"
+   ],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "潮湿的二氧化碳（碳酸）环境；气相冷凝形成液相的部位；紊流和液体冲击区加剧腐蚀"
+  },
+  "mechanism_detail": {
+   "description": "金属在潮湿的二氧化碳环境（碳酸）中发生的腐蚀（H₂O+CO₂+Fe→FeCO₃+H₂）",
+   "morphology": [
+    "形成液相的部位发生腐蚀，二氧化碳从气相冷凝出来的部位易腐蚀",
+    "腐蚀区域壁厚减薄，形成蚀坑或蚀孔",
+    "紊流区碳钢形成较深点蚀坑和沟槽",
+    "发生在紊流和液体冲击区域，有时在管道焊缝根部"
+   ],
+   "affected_materials": [
+    "碳钢、低合金钢"
+   ],
+   "influencing_factors": [
+    "二氧化碳分压：分压增高，pH值下降，腐蚀性增强",
+    "温度：温度未达到溶液中二氧化碳气体逸出温度前，随温度升高腐蚀速率增大",
+    "铬含量：铬含量未达到12%以上时，增加钢中铬含量不能明显提高耐腐蚀能力",
+    "杂质：存在其他腐蚀杂质导致pH值下降时腐蚀速率增大，氧浓度大于10×10⁻⁶会导致腐蚀加剧",
+    "流态：高速和湍流导致局部腐蚀加剧"
+   ],
+   "susceptible_locations": [
+    "所有锅炉给水和蒸汽冷凝系统",
+    "制氢装置变换器排出气系统（排出气流降至露点约149℃以下时腐蚀常见，腐蚀速率可高达25.4 mm/年）",
+    "二氧化碳脱除装置再生气脱气系统的低点凝液部位",
+    "空分装置压缩空气经冷却后的低温凝液部位",
+    "煤气化装置粗合成气系统",
+    "油气田集输的油气管道"
+   ],
+   "prevention": [
+    "缓蚀剂：在蒸汽冷凝水系统中加入缓蚀剂",
+    "pH值：液相pH提高到6.0以上可有效降低蒸汽冷凝系统的腐蚀速率",
+    "选材：300系列不锈钢可有效抵抗二氧化碳腐蚀（注意避免现场焊接施工造成敏化），400系列不锈钢和双相不锈钢也具有良好的耐腐蚀性"
+   ],
+   "detection_methods": [
+    "目视检测和腐蚀部位壁厚测定，焊缝腐蚀用目视检测和焊缝尺检测",
+    "腐蚀在内壁只能从外部检测时用超声波自动扫查、导波检测或射线成像找减薄部位并测厚",
+    "重点检测管道底部表面（预计湿气系统）、管道顶部表面（存在凝液时）以及弯头和三通的紊流区",
+    "水质监测分析（pH、Fe离子等）确定操作工况变化"
+   ],
+   "related_damages": [
+    "锅炉冷凝水腐蚀",
+    "碳酸盐应力腐蚀开裂"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-6.1",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "6.1",
+  "page": 43,
+  "knowledge_type": "damage_mechanism",
+  "title": "氯化物应力腐蚀开裂",
+  "content_raw": "6.1.1 损伤描述及损伤机理：处于氯化物水溶液环境中的300系列不锈钢或部分镍基合金在拉应力、温度和氯化物水溶液的共同作用下产生起源于表面的开裂。6.1.2 损伤形态：裂纹起源于表面，无明显的腐蚀减薄；裂纹多呈树枝状，有分支；裂纹一般穿晶扩展，但发生敏化的300系列不锈钢应力腐蚀断口也可能呈沿晶特征；断口常为脆性断口。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "塔",
+    "换热器",
+    "容器",
+    "管道"
+   ],
+   "material": [
+    "300系列不锈钢"
+   ],
+   "medium": [
+    "氯离子"
+   ],
+   "temperature_c": [
+    38,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "拉应力、温度和氯化物水溶液共同作用；金属温度通常不低于38℃；氯离子局部浓缩部位（保温层下、伴热、蒸发条件、流动死角）敏感"
+  },
+  "mechanism_detail": {
+   "description": "处于氯化物水溶液环境中的300系列不锈钢或部分镍基合金在拉应力、温度和氯化物水溶液共同作用下产生起源于表面的开裂",
+   "morphology": [
+    "裂纹起源于表面，无明显腐蚀减薄",
+    "多呈树枝状有分支",
+    "一般穿晶扩展，敏化的300系列不锈钢断口可能呈沿晶特征",
+    "断口常为脆性断口",
+    "焊缝组织含铁素体形成双相组织时开裂可能性通常小一些"
+   ],
+   "affected_materials": [
+    "300系列不锈钢属敏感材料",
+    "双相不锈钢耐氯化物开裂能力比300系列不锈钢强",
+    "镍基合金有极强的耐氯化物应力腐蚀开裂能力"
+   ],
+   "influencing_factors": [
+    "温度：随温度升高敏感性升高，开裂时金属温度通常不低于38℃",
+    "浓度：随氯化物浓度升高而升高，氯离子局部浓集时即使介质含量很低也可能开裂",
+    "伴热或蒸发条件：导致氯化物局部浓缩聚集，干湿、水-汽交替环境有类似作用",
+    "pH值：发生开裂时pH通常大于2.0，低于此值多发生均匀腐蚀，接近碱性区域时可能性降低",
+    "应力：残余或外加应力越大越敏感，高应力或冷加工构件（如膨胀节）开裂敏感性高",
+    "选材：镍含量8%～12%最敏感，高于35%有较强耐力，高于45%基本不开裂，双相不锈钢比300系列强，碳钢、低合金钢、400系列不锈钢不敏感",
+    "溶解氧加速开裂，氧含量阈值尚未确定"
+   ],
+   "susceptible_locations": [
+    "所有由300系列不锈钢制成的管道及设备",
+    "水冷器以及常压塔顶冷凝器工艺侧",
+    "加氢反应后物料储运的管道和设备（停车后未针对性清洗时开车或停车期间易开裂）",
+    "保温棉等隔热材料被水或其他液体浸泡后的材料外表面层下开裂",
+    "聚丙烯（聚乙烯）装置（催化剂含氯化物如三氯化钛，与水蒸气或水接触的300系列不锈钢设备和管道）",
+    "锅炉排水管"
+   ],
+   "prevention": [
+    "选材：使用耐氯化物应力腐蚀开裂能力较强的材料",
+    "水压试验：使用氯含量低的水（至少使氯离子含量小于25×10⁻⁶），试验后及时彻底干燥",
+    "涂层或衬里：表面敷涂层避免直接接触介质流体",
+    "结构设计：尽量避免导致氯化物集中或沉积，避免介质流动死角或低流速区",
+    "消除应力：300系列不锈钢部件固溶处理，稳定化奥氏体不锈钢可稳定化处理消除残余应力（注意热处理可能增大连多硫酸应力腐蚀开裂敏感性和变形问题、再热裂纹）",
+    "表面要求：降低表面粗糙度，防止机械划痕、擦伤和麻点坑，减少氯化物积聚"
+   ],
+   "detection_methods": [
+    "材料表面目视检测和可疑部位渗透检测",
+    "管道、热交换器管束和设备表面涡流检测法",
+    "极细微裂纹检测主要采用金相分析方法"
+   ],
+   "related_damages": [
+    "碱应力腐蚀开裂",
+    "连多硫酸应力腐蚀开裂"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-7.16",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "7.16",
+  "page": 83,
+  "knowledge_type": "damage_mechanism",
+  "title": "金属热老化",
+  "content_raw": "7.16.1 损伤描述及损伤机理：双相钢或铸态奥氏体不锈钢在280℃以上长期服役，材料组织发生变化，可能引起铁素体调幅分解，析出G相及碳化物，造成材料脆化。7.16.2 损伤形态：金属热老化的损伤形态为：a) 热老化过程中材料组织结构变化主要集中在铁素体相内；b) 经长期热老化后的材料，在冲击载荷下会发生脆性断裂。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "加热炉",
+    "管道",
+    "容器"
+   ],
+   "material": [
+    "奥氏体不锈钢",
+    "双相不锈钢"
+   ],
+   "medium": [],
+   "temperature_c": [
+    280,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "组织劣化型损伤，无特定介质环境；含碳量较高（≥0.05%）且不含Mo的铸造奥氏体不锈钢及其焊缝最敏感；双相不锈钢一般不得超过280℃；核电压水堆主回路压力边界不锈钢构件也易发生（核电设备不在equipment_type枚举）"
+  },
+  "mechanism_detail": {
+   "description": "双相钢或铸态奥氏体不锈钢在280℃以上长期服役，材料组织发生变化，可能引起铁素体调幅分解，析出G相及碳化物，造成材料脆化",
+   "morphology": [
+    "热老化过程中材料组织结构变化主要集中在铁素体相内",
+    "经长期热老化后的材料，在冲击载荷下会发生脆性断裂"
+   ],
+   "affected_materials": [
+    "奥氏体不锈钢、双相不锈钢"
+   ],
+   "influencing_factors": [
+    "材料成分：含碳量较高（一般不小于0.05%，质量分数）且不含Mo的铸造奥氏体不锈钢，或奥氏体不锈钢的焊缝，在热老化过程中还会发生M23C6在铁素体内或铁素体-奥氏体相界上的析出，加速金属热老化",
+    "析出相：G相、M23C6、Nb(C,N)在铁素体内或铁素体-奥氏体相界上的析出，均对金属热老化有促进作用",
+    "服役时间：随着服役时间的延长，金属热老化加剧",
+    "温度：通常情况下温度越高，脆化越严重"
+   ],
+   "susceptible_locations": [
+    "核电压水堆反应堆冷却剂泵、主回路压力边界的重要不锈钢构件，如主管道直管与弯头、稳压器喷嘴、压力容器接管安全端焊缝、主泵壳、阀门等",
+    "制氢装置制氢转化炉炉管",
+    "乙烯裂解装置裂解炉辐射段炉管"
+   ],
+   "prevention": [
+    "选材：选用超低碳、含钼的铸造奥氏体不锈钢",
+    "控制温度：服役过程中避免较长时间的超温运行，如双相不锈钢一般不得超过280℃"
+   ],
+   "detection_methods": [
+    "直接测试法：在设备上取样进行冲击试验和/或显微硬度测试",
+    "间接测试法：设置相同材质的挂片，定期取出一部分制样进行冲击试验和/或显微硬度测试",
+    "或者以与材料性能相关联的电化学参数测试法来确定热老化程度"
+   ],
+   "related_damages": [
+    "475℃脆化、σ相脆化、蠕变"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-9.4",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "9.4",
+  "page": 104,
+  "knowledge_type": "damage_mechanism",
+  "title": "蒸汽阻滞",
+  "content_raw": "9.4.1 损伤描述及损伤机理：蒸汽发生设备运行过程中燃料不断消耗，使水冷壁或蒸汽管内产生稳定的蒸汽。热能流经管壁使管道内壁表面产生不连续的蒸汽泡，即泡沫沸腾，流体流动时将气泡带走。当热能传递受到干扰失去平衡时，比如热通量过大或水侧流速过低，单个气泡会连接形成蒸汽膜（即形成蒸汽阻滞）。一旦蒸汽膜形成，管道因短时过热，通常几分钟内就会发生快速破裂。9.4.3 受影响的材料：碳钢、低合金钢。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "加热炉",
+    "换热器"
+   ],
+   "material": [
+    "碳钢",
+    "低合金钢"
+   ],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "所有蒸汽发生装置（燃料锅炉、制硫装置废热锅炉）及加氢重整、流化床催化裂化装置的过热器和再热器开车工况；介质为锅炉水/水蒸气（水侧），水蒸气不在enums.json medium枚举中；流体流量降低、热通量过大或水侧流动阻力增大时易发生"
+  },
+  "mechanism_detail": {
+   "description": "蒸汽发生设备运行过程中燃料不断消耗，使水冷壁或蒸汽管内产生稳定的蒸汽；热能流经管壁使管道内壁表面产生不连续的蒸汽泡（泡沫沸腾），流体流动时将气泡带走；当热能传递受到干扰失去平衡时（如热通量过大或水侧流速过低），单个气泡会连接形成蒸汽膜（即形成蒸汽阻滞）；一旦蒸汽膜形成，管道因短时过热，通常几分钟内就会发生快速破裂",
+   "morphology": [
+    "瞬时高温失效的部位通常会出现一个爆破开裂缺口，断口边缘呈刀刃状",
+    "由于失效时发生严重的塑性变形，材料的晶粒会被极度拉长"
+   ],
+   "affected_materials": [
+    "碳钢、低合金钢"
+   ],
+   "influencing_factors": [
+    "流体流量：流体流量降低时（例如针孔泄漏会降低蒸汽回流量），容易引发蒸汽阻滞损伤",
+    "热通量：火焰方向有误或烧嘴受损时形成火焰冲击，产生的热通量会超过蒸汽产生管的负荷",
+    "流动阻力：在水侧如存在阻碍流体流动的情况（例如夹渣堵塞形成的管道表面凹陷会增加流动阻力），可能导致局部温度升高并达到蒸汽阻滞的条件"
+   ],
+   "susceptible_locations": [
+    "所有蒸汽发生装置，包括燃料锅炉、制硫装置中的废热锅炉",
+    "加氢重整及流化床催化裂化装置的过热器和再热器在装置开车时如冷凝水阻碍蒸汽流动，容易发生蒸汽阻滞"
+   ],
+   "prevention": [
+    "烧嘴管理得当可减少火焰冲击情况的发生",
+    "优化锅炉给水设施，防止流体流动受阻",
+    "如目视测量检查管道有鼓胀应及时处理"
+   ],
+   "detection_methods": [
+    "目视检测",
+    "检查烧嘴有无变形或受损",
+    "蒸汽流量监控"
+   ],
+   "related_damages": [
+    "短期过热、碱腐蚀"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT30579-2022-9.6",
+  "standard_code": "GB/T 30579-2022",
+  "standard_name": "承压设备损伤模式识别",
+  "clause_no": "9.6",
+  "page": 107,
+  "knowledge_type": "damage_mechanism",
+  "title": "过热",
+  "content_raw": "9.6.1 损伤描述及损伤机理：设备在运行过程中，由于冷却条件恶化等因素，壁温在短时间内快速上升，使钢材的屈服强度急剧下降，在相对较低的应力作用下发生永久变形。9.6.2 损伤形态：a) 局部鼓胀、伸长等明显变形；b) 壁厚减薄；c) 因损伤导致失效而产生的破裂口呈张开的\"鱼嘴\"状。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "加热炉",
+    "容器"
+   ],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "壁温在短时间内快速上升并超过设计温度；原文受影响材料为\"所有燃烧器管子建造用材、普通建材\"，未限定具体牌号，故适用材质置空；常见于加热炉炉管（结焦）、冷壁加氢反应器（飞温）、有耐火衬里的设备、乙烯裂解炉辐射段炉管及加氢反应器（再生工况）"
+  },
+  "mechanism_detail": {
+   "description": "设备在运行过程中，由于冷却条件恶化等因素，壁温在短时间内快速上升，使钢材的屈服强度急剧下降，在相对较低的应力作用下发生永久变形",
+   "morphology": [
+    "局部鼓胀、伸长等明显变形",
+    "壁厚减薄",
+    "因损伤导致失效而产生的破裂口呈张开的\"鱼嘴\"状"
+   ],
+   "affected_materials": [
+    "所有燃烧器管子建造用材、普通建材"
+   ],
+   "influencing_factors": [
+    "温度：火焰冲击、局部受热、设备局部导热或冷却能力下降等因素会使壁温超过设计温度",
+    "应力：损伤程度随介质压力或外加载荷的增加而增大，但高温下即使是处于低应力状态，鼓胀变形也可能非常明显",
+    "腐蚀：腐蚀引起的壁厚减薄可导致应力升高，失效时间缩短"
+   ],
+   "susceptible_locations": [
+    "所有锅炉和燃烧器管",
+    "常减压装置、加氢裂化装置及延迟焦化装置加热炉炉管（存在结焦倾向，易发生局部过热）",
+    "冷壁加氢反应器强制冷却供氢量不足或分布不均时，反应器床层及器壁可能发生局部飞温",
+    "流化床催化裂化装置、制硫装置及其他装置中有耐火衬里的设备（耐火材料损坏或过度燃烧时易导致局部过热）",
+    "乙烯裂解装置裂解炉辐射段炉管，以及乙炔加氢反应器、丙炔或丙二烯加氢反应器（再生工况）"
+   ],
+   "prevention": [
+    "监测温度：使局部可能达到的最高温度不超过设计温度，如在冷壁加氢反应器中安装床层热电偶，温度升高时快速注入冷氢，避免局部飞温",
+    "对燃烧器烧嘴进行良好的维护管理，控制积灰以减少局部过热",
+    "优化火焰燃烧器结构，使火焰分布更均匀",
+    "对耐火衬里进行定期维护、保养和更换，保持耐火材料的良好性能"
+   ],
+   "detection_methods": [
+    "目视检测、管道红外热成像检测，以及管壁热电偶监测都是燃烧器温度监测的常用方法",
+    "有耐火衬里的设备使用变色漆和定期红外热成像检测过热情况，停机期间检查耐火材料是否有损坏",
+    "对反应器床层热电偶和反应器器壁热电偶进行良好的维护，并对检测结果进行监控"
+   ],
+   "related_damages": [
+    "蠕变"
+   ]
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-6.3",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "6.3",
+  "page": 3,
+  "knowledge_type": "rbi",
+  "title": "在线检验的选用原则",
+  "content_raw": "如果不具备停机检验的条件,且在线检测方法的有效性能达到检验策略提出的有效性级别要求,可以选用在线检验。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "不具备停机条件且在线检测有效性达标时，可选用在线检验"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-7.2.1.2",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "7.2.1.2",
+  "page": 4,
+  "knowledge_type": "rbi",
+  "title": "检验有效性分级",
+  "content_raw": "检验有效性分为 5 个级别,见表1。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "检验有效性分 5 级：高度有效、中高度有效、中度有效、低度有效、无效"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-A.2.1",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "A.2.1",
+  "page": 9,
+  "knowledge_type": "rbi",
+  "title": "安全泄放装置检验方法",
+  "content_raw": "安全阀在线检验方法包括：a) 目视检查；b) 采用实际工艺流体进行在线试验；c) 采用其他压力源进行在线试验；d) 采用辅助开启装置进行在线试验。爆破片在线检验方法为对爆破片和安全阀之间的空间进行介质泄漏检测(仅适用于爆破片和安全阀串联的情况)。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "安全阀在线检验 4 法：目视、实际工艺流体在线试验、其他压力源在线试验、辅助开启装置在线试验；爆破片在线检验为两者之间空间介质泄漏检测（仅串联时适用）"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表2-a",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表2",
+  "page": 5,
+  "knowledge_type": "rbi",
+  "title": "停机检测方法及检验有效性",
+  "content_raw": "表2 停机检测方法及检验有效性中，目视检测的检验有效性为：局部减薄 1,2,3、均匀减薄 3,X、点蚀/孔蚀 1,2,3、表面裂纹 3,X、尺寸变化 1,2,3、隔热衬里脱落 1,2,3、氢致泡或高温氢腐蚀造成的鼓泡 2,3（其余损伤形态为 X，即低度有效或无效）。注：1 为高度有效，2 为中高度有效，3 为中度有效，X 为低度有效或无效；a 应用时应注意扫查盲区的大小和方位；b 仅对活动性缺陷；c 仅对高温氢腐蚀造成的鼓泡。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表2 检验有效性：目视检测 → 局部减薄 1,2,3、均匀减薄 3,X、点蚀/孔蚀 1,2,3、表面裂纹 3,X、尺寸变化 1,2,3、隔热衬里脱落 1,2,3、氢致泡或高温氢腐蚀造成的鼓泡 2,3"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "目视检测"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表2-e",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表2",
+  "page": 5,
+  "knowledge_type": "rbi",
+  "title": "停机检测方法及检验有效性",
+  "content_raw": "表2 停机检测方法及检验有效性中，电磁超声检测的检验有效性为：局部减薄 2,3、均匀减薄 1,2,3（其余损伤形态为 X，即低度有效或无效）。注：1 为高度有效，2 为中高度有效，3 为中度有效，X 为低度有效或无效；a 应用时应注意扫查盲区的大小和方位；b 仅对活动性缺陷；c 仅对高温氢腐蚀造成的鼓泡。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表2 检验有效性：电磁超声检测 → 局部减薄 2,3、均匀减薄 1,2,3"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "电磁超声检测"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表3-e",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表3",
+  "page": 6,
+  "knowledge_type": "rbi",
+  "title": "在线检测方法及检验有效性",
+  "content_raw": "表3 在线检测方法及检验有效性中，高温磁粉检测的检验有效性为：表面裂纹 2,3、近表面裂纹 3,X（其余损伤形态为 X，即低度有效或无效）。注：1 为高度有效，2 为中高度有效，3 为中度有效，X 为低度有效或无效；a 操作温度在 10℃~60℃ 的设备可以选用表2 中的检测方法进行在线检测，但需要考虑设备内介质对检验有效性的影响；b 应用时应注意扫查盲区的大小和方位；c 针对活性裂纹。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表3 在线检验有效性：高温磁粉检测 → 表面裂纹 2,3、近表面裂纹 3,X"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "高温磁粉检测"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表4-a",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表4",
+  "page": 7,
+  "knowledge_type": "rbi",
+  "title": "在线监测方法及检验有效性",
+  "content_raw": "表4 在线监测方法及检验有效性中，腐蚀挂片的检验有效性为：局部减薄 3,X、均匀减薄 2,3、点蚀/孔蚀 3,X（其余损伤形态为 X，即低度有效或无效）。注：1 为高度有效，2 为中高度有效，3 为中度有效，X 为低度有效或无效；b 仅对环烷酸腐蚀；c 针对活性裂纹；d 仅适用于高温氢腐蚀引起的鼓包。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表4 在线监测有效性：腐蚀挂片 → 局部减薄 3,X、均匀减薄 2,3、点蚀/孔蚀 3,X"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "腐蚀挂片"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表A.3-h",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表A.3",
+  "page": 10,
+  "knowledge_type": "rbi",
+  "title": "安全阀检验时间调整表",
+  "content_raw": "表A.3 安全阀检验时间调整表中，序号 5 的问题「密封压力达不到试验要求」，处理方式为更换。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表A.3 安全阀：序号5「密封压力达不到试验要求」→ 更换"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表B.1-b",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表B.1",
+  "page": 14,
+  "knowledge_type": "rbi",
+  "title": "管束延寿方法",
+  "content_raw": "表B.1 管束延寿方法中，延寿方法「管束旋转180°」对应的管束预期服役年限延寿因子(LEF)为 0.50。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表B.1 管束延寿：管束旋转180° → LEF=0.50"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表B.2-a",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表B.2",
+  "page": 17,
+  "knowledge_type": "rbi",
+  "title": "管束检测方法和检验有效性",
+  "content_raw": "表B.2 管束检测方法和检验有效性中，目视检测(VT)对减薄为 3、对裂纹为 X、对微振磨损为 1,2；适用材料为铁磁性材料和非铁磁性材料(管接头、U形管段、折流板位置)。注：1 为高度有效，2 为中高度有效，3 为中度有效，X 为低度有效或无效。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表B.2 管束检测：目视检测(VT)（减薄 3 / 裂纹 X / 微振磨损 1,2），适用于铁磁性材料和非铁磁性材料(管接头、U形管段、折流板位置)"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "目视检测(VT)"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表B.2-d",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表B.2",
+  "page": 17,
+  "knowledge_type": "rbi",
+  "title": "管束检测方法和检验有效性",
+  "content_raw": "表B.2 管束检测方法和检验有效性中，漏磁(MFL)对减薄为 1,2,3、对裂纹为 3,X、对微振磨损为 1,2,3；适用材料为铁磁性材料。注：1 为高度有效，2 为中高度有效，3 为中度有效，X 为低度有效或无效。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表B.2 管束检测：漏磁(MFL)（减薄 1,2,3 / 裂纹 3,X / 微振磨损 1,2,3），适用于铁磁性材料"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "漏磁(MFL)"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表C.2-a",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表C.2",
+  "page": 18,
+  "knowledge_type": "rbi",
+  "title": "管道的检验范围",
+  "content_raw": "表C.2 管道的检验范围中，本次停机检修时间点的风险等级为「高风险」时，一般保守程度的检验范围为 100%，较高保守程度的检验范围为 100%。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表C.2 管道检验范围：高风险 → 一般 100% / 较高 100%"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表D.1-h",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表D.1",
+  "page": 19,
+  "knowledge_type": "rbi",
+  "title": "隔热层吸湿性表",
+  "content_raw": "表D.1 隔热层吸湿性表中，序号 8 的隔热层种类为「泡沫类」、类型为「聚异氰脲酸酯泡沫」，吸湿性为「小」。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表D.1：泡沫类 / 聚异氰脲酸酯泡沫 → 吸湿性小"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.2-2022-表D.1-j",
+  "standard_code": "GB/T 26610.2-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第2部分：基于风险的检验策略",
+  "clause_no": "表D.1",
+  "page": 19,
+  "knowledge_type": "rbi",
+  "title": "隔热层吸湿性表",
+  "content_raw": "表D.1 隔热层吸湿性表中，序号 10 的隔热层种类为「泡沫类」、类型为「聚乙烯泡沫」，吸湿性为「小」。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表D.1：泡沫类 / 聚乙烯泡沫 → 吸湿性小"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-5.1.2-c",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "5.1.2",
+  "page": 4,
+  "knowledge_type": "rbi",
+  "title": "失效可能性等级",
+  "content_raw": "将上述6个因子的值相加,计算失效可能性因子,按表1确定失效可能性等级(即图1风险矩阵图的纵轴)。表1 中，失效可能性因子 26~35 对应失效可能性等级 3。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表1 失效可能性等级：失效可能性因子区间 26~35 → 等级 3"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": "3",
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.3.1.2-a",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.3.1.2",
+  "page": 7,
+  "knowledge_type": "rbi",
+  "title": "燃烧与爆炸后果等级",
+  "content_raw": "将上述6个因子的值相加,计算燃烧与爆炸后果因子,按表2确定燃烧与爆炸后果等级。表2 中，燃烧与爆炸后果因子 0~19 对应燃烧与爆炸后果等级 A。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表2 燃烧与爆炸后果等级：后果因子 0~19 → 等级 A"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": "A",
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.3.1.2-e",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.3.1.2",
+  "page": 7,
+  "knowledge_type": "rbi",
+  "title": "燃烧与爆炸后果等级",
+  "content_raw": "将上述6个因子的值相加,计算燃烧与爆炸后果因子,按表2确定燃烧与爆炸后果等级。表2 中，燃烧与爆炸后果因子 >79 对应燃烧与爆炸后果等级 E。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表2 燃烧与爆炸后果等级：后果因子 >79 → 等级 E"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": "E",
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.3.2.1.3-k",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.3.2.1.3",
+  "page": 8,
+  "knowledge_type": "rbi",
+  "title": "化学因子(CF)",
+  "content_raw": "根据可燃因子和反应因子,按表5确定化学因子(CF)。若 FF=0 或 RF=0,取 CF=0。表5 中，可燃因子 FF=3、反应因子 RF=3 对应化学因子 CF=18。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表5 化学因子CF：可燃因子FF=3、反应因子RF=3 → CF=18"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.3.2.2-c",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.3.2.2",
+  "page": 8,
+  "knowledge_type": "rbi",
+  "title": "损伤量值因子(DQF)",
+  "content_raw": "根据在单一失效事件中可能泄漏的可燃介质最大存量,对损伤量值因子(DQF)进行赋值,见表6。表6 中，被泄放的介质量 901~4 500 kg 对应损伤量值因子 DQF=25。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表6 损伤量值因子DQF：被泄放的介质量 901~4 500 kg → DQF=25"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.3.2.3-d",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.3.2.3",
+  "page": 8,
+  "knowledge_type": "rbi",
+  "title": "状态因子(SF)",
+  "content_raw": "根据介质标准大气压下的沸点温度,对状态因子(SF)进行赋值,见表7。表7 中，沸腾温度 122~204 ℃ 对应状态因子 SF=1。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表7 状态因子SF：沸腾温度 122~204 ℃ → SF=1"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.3.2.6-b",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.3.2.6",
+  "page": 9,
+  "knowledge_type": "rbi",
+  "title": "安全防护因子(CRF)",
+  "content_raw": "根据以下条件对 CRF1～CRF10 进行赋值：b) 如果设备在惰性气氛内正常运行,取 CRF2=-1；否则取 CRF2=0。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "CRF2：满足条件取 -1，否则取 0（CRF7 另有 0.95 档）"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.3.2.6-h",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.3.2.6",
+  "page": 9,
+  "knowledge_type": "rbi",
+  "title": "安全防护因子(CRF)",
+  "content_raw": "根据以下条件对 CRF1～CRF10 进行赋值：h) 如果消防水持续供给能力超过 4 h,取 CRF8=-1,否则 CRF8=0。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "CRF8：满足条件取 -1，否则取 0（CRF7 另有 0.95 档）"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-6.4.3.4-c",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "6.4.3.4",
+  "page": 11,
+  "knowledge_type": "rbi",
+  "title": "人口因子(PPF)",
+  "content_raw": "根据距泄漏点 400 m 半径范围内的日间平均人数,对人口因子(PPF)进行赋值,见表13。表13 中，400 m 半径范围内日间平均人数 101~1 000 人对应人口因子 PPF=15。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表13 人口因子PPF：日间平均人数 101~1 000 人 → PPF=15"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-7-c",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "7",
+  "page": 11,
+  "knowledge_type": "rbi",
+  "title": "风险等级的确定",
+  "content_raw": "当被评估装置(单元或工段)的失效可能性等级和失效后果等级确定后,将其组合在一个5×5的风险矩阵图(见图1)中确定被评估装置的风险级别。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "图1风险矩阵共25格，按可能性1～5、后果A～E逐格拆行，按可能性1A、1B…5E的顺序加后缀 -a 至 -y；本行为1C，对应 -c"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": "1",
+   "consequence": "C",
+   "risk_level": "中风险",
+   "risk_level_unified": "L2",
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.3-2014-7-d",
+  "standard_code": "GB/T 26610.3-2014",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第3部分：风险的定性分析方法",
+  "clause_no": "7",
+  "page": 11,
+  "knowledge_type": "rbi",
+  "title": "风险等级的确定",
+  "content_raw": "当被评估装置(单元或工段)的失效可能性等级和失效后果等级确定后,将其组合在一个5×5的风险矩阵图(见图1)中确定被评估装置的风险级别。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "图1风险矩阵共25格，按可能性1～5、后果A～E逐格拆行，按可能性1A、1B…5E的顺序加后缀 -a 至 -y；本行为1D，对应 -d"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": "1",
+   "consequence": "D",
+   "risk_level": "中风险",
+   "risk_level_unified": "L2",
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-6-i",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "6",
+  "page": 3,
+  "knowledge_type": "rbi",
+  "title": "推荐的同类设备平均失效概率",
+  "content_raw": "根据被评价设备的类型,按照表2选取同类设备平均失效概率。表2 中，设备类型「管道 DN25 mm」在各破裂口尺寸（>0mm~6mm、>6mm~25mm、>25mm~100mm、>100mm）下对应的失效概率分别为 2.8×10⁻⁵、0、0、2.6×10⁻⁶，总失效概率(F_G)为 3.06×10⁻⁵。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表2 推荐的同类设备平均失效概率：管道 DN25 mm → >0mm~6mm 2.8×10⁻⁵、>6mm~25mm 0、>25mm~100mm 0、>100mm 2.6×10⁻⁶，总失效概率 3.06×10⁻⁵"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-表10-d",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "表10",
+  "page": 9,
+  "knowledge_type": "rbi",
+  "title": "寿命周期次因子",
+  "content_raw": "按照表10对寿命周期次因子进行赋值。表10 中，已服役年限与设计使用年限的比值 >100% 对应赋值 4.0。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表10 寿命周期次因子：已服役/设计使用年限 = >100% → 4.0"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-表16-d",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "表16",
+  "page": 12,
+  "knowledge_type": "rbi",
+  "title": "工艺稳定性次因子",
+  "content_raw": "按照表16对工艺稳定性次因子进行赋值。表16 中，稳定性评价「明显低于平均工艺稳定性」对应赋值 2.0。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表16 工艺稳定性次因子：明显低于平均工艺稳定性 → 2.0"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-表21-a",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "表21",
+  "page": 14,
+  "knowledge_type": "rbi",
+  "title": "设备在服役过程中存在与时间相关的退化机理时的超标缺陷影响系数",
+  "content_raw": "根据服役条件、可能存在的损伤模式、拟服役时间(T_n)(单位为小时)和剩余寿命(T_SL)(单位为小时)的比值(Q),按照表21对超标缺陷影响系数进行赋值。表21 中，服役条件为「高温、疲劳、特殊介质作用环境」、损伤模式为「常温疲劳、常温疲劳+腐蚀、常温特殊介质SCC」、Q 满足 Q≤0.5 时，F_L=1。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表21：损伤模式「常温疲劳、常温疲劳+腐蚀、常温特殊介质SCC」，Q≤0.5 → F_L=1"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-表21-h",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "表21",
+  "page": 14,
+  "knowledge_type": "rbi",
+  "title": "设备在服役过程中存在与时间相关的退化机理时的超标缺陷影响系数",
+  "content_raw": "根据服役条件、可能存在的损伤模式、拟服役时间(T_n)(单位为小时)和剩余寿命(T_SL)(单位为小时)的比值(Q),按照表21对超标缺陷影响系数进行赋值。表21 中，服役条件为「高温、疲劳、特殊介质作用环境」、损伤模式为「高温蠕变、高温疲劳、高温材质劣化」、Q 满足 Q>1 时，F_L=500。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表21：损伤模式「高温蠕变、高温疲劳、高温材质劣化」，Q>1 → F_L=500"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-表7-b",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "表7",
+  "page": 8,
+  "knowledge_type": "rbi",
+  "title": "设备复杂性子因子",
+  "content_raw": "设备复杂性子因子根据设备上的接管数量来确定。所有在用和停用的外径不小于 50 mm 的接管和人孔都应计算在内。根据设备的接管数量,按照表7对设备复杂性子因子进行赋值。表7 中，设备类型「塔——一半」，接管数量 <10 个对应 -1.0，10～17 个对应 0，18～23 个对应 1.0，>23 个对应 2.0。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表7 设备复杂性子因子：塔——一半 → <10 个对应 -1.0；10～17 个对应 0；18～23 个对应 1.0；>23 个对应 2.0"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-表7-d",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "表7",
+  "page": 8,
+  "knowledge_type": "rbi",
+  "title": "设备复杂性子因子",
+  "content_raw": "设备复杂性子因子根据设备上的接管数量来确定。所有在用和停用的外径不小于 50 mm 的接管和人孔都应计算在内。根据设备的接管数量,按照表7对设备复杂性子因子进行赋值。表7 中，设备类型「热交换器——壳程」，接管数量 <7 个对应 -1.0，7～12 个对应 0，13～16 个对应 1.0，>16 个对应 2.0。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表7 设备复杂性子因子：热交换器——壳程 → <7 个对应 -1.0；7～12 个对应 0；13～16 个对应 1.0；>16 个对应 2.0"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.4-2022-表9-a",
+  "standard_code": "GB/T 26610.4-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第4部分：失效可能性定量分析方法",
+  "clause_no": "表9",
+  "page": 9,
+  "knowledge_type": "rbi",
+  "title": "建造规范次因子",
+  "content_raw": "根据表9对设备的建造规范次因子进行赋值。表9 中，所依据规范的状况「设备满足规范的最新版本」对应类别 A，赋值 0。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表9 建造规范次因子：设备满足规范的最新版本（A类）→ 0"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.5-2022-表2-b",
+  "standard_code": "GB/T 26610.5-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第5部分：失效后果定量分析方法",
+  "clause_no": "表2",
+  "page": 6,
+  "knowledge_type": "rbi",
+  "title": "面积后果等级划分",
+  "content_raw": "面积后果等级划分见表2。表2 中，等级 B 对应最终的后果面积(CA)范围 9.29<CA≤92.9。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表2 面积后果等级：等级 B → 9.29<CA≤92.9（单位 m²）"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": "B",
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.5-2022-表3-b",
+  "standard_code": "GB/T 26610.5-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第5部分：失效后果定量分析方法",
+  "clause_no": "表3",
+  "page": 7,
+  "knowledge_type": "rbi",
+  "title": "热交换器管束的经济后果等级划分",
+  "content_raw": "热交换器管束的经济后果等级划分见表3。表3 中，等级 B 对应经济损失(COF)范围 50 000<COF≤250 000。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表3 热交换器管束经济后果等级：等级 B → 50 000<COF≤250 000（单位 元）"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": "B",
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "GBT26610.5-2022-表6-d",
+  "standard_code": "GB/T 26610.5-2022",
+  "standard_name": "承压设备系统基于风险的检验实施导则 第5部分：失效后果定量分析方法",
+  "clause_no": "表6",
+  "page": 12,
+  "knowledge_type": "rbi",
+  "title": "后果分析中采用的泄漏孔",
+  "content_raw": "本文件规定了介质泄漏分析计算所采用的 4 种泄漏孔规格、直径范围以及直径(dₙ),见表6,最大泄漏孔直径限定为 400 mm。表6 中，泄漏孔编号4、规格「破裂」的直径范围 >150 mm，泄漏孔直径 d₄=min(D,400)。",
+  "applicable_conditions": {
+   "equipment_type": [],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "表6 泄漏孔：编号4 规格「破裂」直径范围 >150 mm → d₄=min(D,400)"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "TSG21-2016-8.3.14",
+  "standard_code": "TSG 21-2016",
+  "standard_name": "固定式压力容器安全技术监察规程",
+  "clause_no": "8.3.14",
+  "page": 79,
+  "knowledge_type": "rbi",
+  "title": "泄漏试验",
+  "content_raw": "对于介质毒性危害程度为极度、高度危害，或者设计上不允许有微量泄漏的压力容器，应当进行泄漏试验。泄漏试验包括气密性试验和氨、卤素、氦检漏试验。试验方法的选择，按照压力容器设计图样的要求执行。泄漏试验由使用单位负责实施，检验机构负责检验。泄漏试验按照以下要求进行：(1)气密性试验，气密性试验压力为本次定期检验确定的允许(监控)使用压力，其准备工作、安全防护、试验温度、试验介质、试验过程、合格要求等按照本规程的相关规定执行；如果本次定期检验需要进行气压试验，则气密性试验可以和气压试验合并进行；对大型成套装置中的压力容器，可以用系统密封试验代替气密性试验；",
+  "applicable_conditions": {
+   "equipment_type": [
+    "容器"
+   ],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "适用对象：介质毒性危害程度为极度、高度危害，或设计上不允许有微量泄漏的压力容器"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "气密性试验",
+    "泄漏试验"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "TSG21-2016-8.3.4",
+  "standard_code": "TSG 21-2016",
+  "standard_name": "固定式压力容器安全技术监察规程",
+  "clause_no": "8.3.4",
+  "page": 76,
+  "knowledge_type": "rbi",
+  "title": "真空绝热压力容器检验",
+  "content_raw": "真空绝热压力容器除进行外部宏观检验外，还应当进行以下补充检验：(1)夹层上装有真空测试装置的，检验夹层的真空度；(2)夹层上未装真空测试装置的，必要时进行压力容器日蒸发率测量。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "容器"
+   ],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "适用对象：真空绝热压力容器"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "真空度检测",
+    "日蒸发率测量"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "TSG21-2016-8.3.9",
+  "standard_code": "TSG 21-2016",
+  "standard_name": "固定式压力容器安全技术监察规程",
+  "clause_no": "8.3.9",
+  "page": 78,
+  "knowledge_type": "rbi",
+  "title": "无法进行内部检验的压力容器",
+  "content_raw": "无法进行内部检验的压力容器，应当采用可靠的检测技术(例如内窥镜、声发射、超声检测等)从外部进行检测(注8-5)。注8-5：例如超高压水晶釜，可以采用外部检测方法检测其筒体，其堵底螺栓一般也可以不打开，采用外部检测方法检测。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "容器"
+   ],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "适用对象：无法进行内部检验的压力容器；采用内窥镜、声发射、超声检测等外部检测技术"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": [
+    "内窥镜检测",
+    "声发射检测",
+    "超声检测"
+   ]
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ },
+ {
+  "clause_id": "TSG21-2016-8.7.1.1",
+  "standard_code": "TSG 21-2016",
+  "standard_name": "固定式压力容器安全技术监察规程",
+  "clause_no": "8.7.1.1",
+  "page": 90,
+  "knowledge_type": "rbi",
+  "title": "金属压力容器检验结论",
+  "content_raw": "综合评定安全状况等级为1级至3级的金属压力容器，检验结论为符合要求，可以继续使用；安全状况等级为4级的，检验结论为基本符合要求，有条件的监控使用；安全状况等级为5级的，检验结论为不符合要求，不得继续使用。",
+  "applicable_conditions": {
+   "equipment_type": [
+    "容器"
+   ],
+   "material": [],
+   "medium": [],
+   "temperature_c": [
+    null,
+    null
+   ],
+   "pressure_mpa": [
+    null,
+    null
+   ],
+   "other": "适用对象：金属压力容器；综合评定安全状况等级1级至3级为符合要求，4级监控使用，5级判为不符合要求"
+  },
+  "mechanism_detail": {
+   "description": "",
+   "morphology": [],
+   "affected_materials": [],
+   "influencing_factors": [],
+   "susceptible_locations": [],
+   "prevention": [],
+   "detection_methods": [],
+   "related_damages": []
+  },
+  "rbi_detail": {
+   "likelihood": null,
+   "consequence": null,
+   "risk_level": null,
+   "risk_level_unified": null,
+   "inspection_interval_year": null,
+   "inspection_methods": []
+  },
+  "extractor": "代航",
+  "verified_by": "",
+  "version": "v1"
+ }
+]

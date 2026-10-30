@@ -1,0 +1,350 @@
+================================================================================
+ID: GBT26610.2-2022-6.3
+TYPE: rbi  PAGE: 8  TITLE: 在线检验的选用原则
+content_raw: 如果不具备停机检验的条件，且在线检测方法的有效性能达到检验策略提出的有效性级别要求，可以选用在线检验。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第8页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["在线检验"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-8.3
+TYPE: rbi  PAGE: 12  TITLE: 检验后的数据更新与再评估
+content_raw: 检验机构在完成现场检验后，应根据检验检测结果、返修结果、合于使用评价结果，更新评估数据，进行再评估。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第12页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-8.4
+TYPE: rbi  PAGE: 12  TITLE: 下次检验时间的给出
+content_raw: 检验机构按照再评估结果，依据使用单位提供的风险可接受水平，给出推荐的下次检验时间。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第12页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-D.2.2
+TYPE: rbi  PAGE: 24  TITLE: 非金属衬里拆除原则
+content_raw: 非金属内部隔热耐磨衬里完好则不必拆除，若发现开裂、剥离、脱落，则应拆除怀疑部位的衬里检查容器表面状况。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第24页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-表2-h
+TYPE: rbi  PAGE: 10  TITLE: 表2 停机检测方法及检验有效性(磁粉检测)
+content_raw: 磁粉检测：局部减薄X；均匀减薄X；点蚀/孔蚀X；表面裂纹1,2；近表面裂纹3,X；埋藏裂纹X；金相组织变化X；尺寸变化X；隔热衬里脱落X；氢鼓泡或高温氢腐蚀造成的鼓泡X。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第10页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["磁粉检测"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-表3-a
+TYPE: rbi  PAGE: 11  TITLE: 表3 在线检测方法及检验有效性(目视检测)
+content_raw: 目视检测：局部减薄3,X；均匀减薄X；点蚀/孔蚀3,X；表面裂纹3,X；近表面裂纹X；埋藏裂纹X；尺寸变化2,3；氢鼓泡或高温氢腐蚀造成的鼓泡X。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第11页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["目视检测"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-表A.1-d
+TYPE: rbi  PAGE: 14  TITLE: 表A.1 安全阀检验方法检验有效性(低度有效或无效)
+content_raw: 低度有效或无效：a)目视检查，且未检查出入口管道堵塞和结垢情况(易结垢介质)；b)无启跳试验。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第14页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["目视检查"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-表A.3-k
+TYPE: rbi  PAGE: 15  TITLE: 表A.3 安全阀检验时间调整(出口堵死无法清除)
+content_raw: 出口堵死，无法清除：更换。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第15页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-表A.4-e
+TYPE: rbi  PAGE: 16  TITLE: 表A.4 爆破片检验时间调整(安装质量差)
+content_raw: 安装质量差(安装力矩不准确、机械损伤等)：视其严重程度缩短检验时间或更换。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第16页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["目视检查"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.2-2022-表B.2-i
+TYPE: rbi  PAGE: 22  TITLE: 表B.2 管束检测方法和检验有效性(渗透检测PT)
+content_raw: 渗透检测：减薄X；裂纹1,2,3；微振磨损X；适用材料为铁磁性材料和非铁磁性材料(管接头)。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.2-2022 第22页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["渗透检测(PT)"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-5.1.2-c
+TYPE: rbi  PAGE: 4  TITLE: 失效可能性等级
+content_raw: 按表1，失效可能性因子为26~35时，失效可能性等级为3。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第5.1.2条 表1"}
+rbi_detail: {"likelihood": "3", "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-5.2.2-c
+TYPE: rbi  PAGE: 4  TITLE: 损伤因子(DF)赋值
+content_raw: 存在热疲劳或机械疲劳的可能性，取DF3=4。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第5.2.2条"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-5.2.3-c
+TYPE: rbi  PAGE: 5  TITLE: 检验因子(IF)赋值
+content_raw: 检验方案：已识别全部损伤机理并全部制定针对性方案取IF3=-5；仅对部分制定取IF3=-2；不满足取IF3=0。IF1~IF3相加得IF，最小值-15且其绝对值不超过DF。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第5.2.3.3~4条 检验因子IF3"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.3.1.2-e
+TYPE: rbi  PAGE: 7  TITLE: 燃烧与爆炸后果等级
+content_raw: 按表2，燃烧与爆炸后果因子>79时，后果等级为E。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.3.1.2条 表2"}
+rbi_detail: {"likelihood": null, "consequence": "E", "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.3.2.1.2-c
+TYPE: rbi  PAGE: 7  TITLE: 反应因子(RF)赋值
+content_raw: 反应危害：加热加压下发生剧烈化学变化或与水剧烈反应、可能混合爆炸，RF=2。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.3.2.1.2条 表4"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.3.2.1.2-e
+TYPE: rbi  PAGE: 7  TITLE: 反应因子(RF)赋值
+content_raw: 反应危害：常温常压下迅速发生爆炸，RF=4。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.3.2.1.2条 表4"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.3.2.1.3-g
+TYPE: rbi  PAGE: 8  TITLE: 化学因子(CF)矩阵
+content_raw: 按表5，可燃因子FF=2、反应因子RF=3时，化学因子CF=15（若FF=0或RF=0则CF=0）。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.3.2.1.3条 表5 化学因子CF矩阵（4×4）"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.3.2.3-c
+TYPE: rbi  PAGE: 8  TITLE: 状态因子(SF)赋值
+content_raw: 沸点39℃~121℃，SF=5。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.3.2.3条 表7"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.3.2.6-a
+TYPE: rbi  PAGE: 9  TITLE: 安全防护因子(CRF)赋值(燃烧爆炸)
+content_raw: 按规范设置气体泄漏探测报警装置，CRF1=-1；否则0。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.3.2.6条 安全防护因子CRF1"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.3.2.6-g
+TYPE: rbi  PAGE: 9  TITLE: 安全防护因子(CRF)赋值(燃烧爆炸)
+content_raw: 结构与电缆均敷设耐火材料且等级合规，CRF7=-1；仅其一敷设CRF7=0.95；否则0。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.3.2.6条 CRF7"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.4.2.2-b
+TYPE: rbi  PAGE: 10  TITLE: 中毒后果等级
+content_raw: 中毒后果因子10~19时，等级为B。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.4.2.2条 表9"}
+rbi_detail: {"likelihood": null, "consequence": "B", "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-6.4.3.4-b
+TYPE: rbi  PAGE: 11  TITLE: 人口因子(PPF)赋值
+content_raw: 人数10人~100人，PPF=7。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第6.4.3.4条 表13"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.3-2014-7-e
+TYPE: rbi  PAGE: 11  TITLE: 风险等级的确定
+content_raw: 第7章图1风险矩阵（可能性×后果）中，失效可能性等级为1、失效后果等级为E时，对应的风险等级为中高风险（统一等级L3）。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "GB/T 26610.3-2014 第7章 图1 风险矩阵25格之一"}
+rbi_detail: {"likelihood": "1", "consequence": "E", "risk_level": "中高风险", "risk_level_unified": "L3", "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-7.2
+TYPE: rbi  PAGE: 9  TITLE: 管理系统评价系数的适用性
+content_raw: 一般情况下，同一个企业不同装置的管理系统评价系数是相同的。该系数对被评估的所有设备作用相同，不改变各设备间的相对风险排序。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第9页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-8.4.4
+TYPE: rbi  PAGE: 12  TITLE: 地震活动次因子
+content_raw: 地震活动次因子可按GB 18306中装置所在地的地震反应谱特征周期分区确定。按照表6对地震活动次因子进行赋值。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第12页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-8.5.1
+TYPE: rbi  PAGE: 12  TITLE: 机械因子的组成
+content_raw: 机械因子由以下5个次因子组成：a)结构复杂性次因子；b)建造规范次因子；c)寿命周期次因子；d)安全系数次因子；e)振动监测次因子。将上述5个次因子相加，即为机械因子。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第12页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["振动监测"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-8.5.4
+TYPE: rbi  PAGE: 14  TITLE: 寿命周期次因子
+content_raw: 根据设备的已服役年限与设计使用年限的比值，按照表10对寿命周期次因子进行赋值。设计时未给出设计使用年限的设备，设计使用年限一般设为20年。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第14页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-8.6.2
+TYPE: rbi  PAGE: 16  TITLE: 工艺连续性次因子
+content_raw: 工艺连续性次因子的组成为：a)计划停车子因子；b)非计划停车子因子。将上述2个子因子数值相加，即为工艺连续性次因子。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第16页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-8.6.3-a
+TYPE: rbi  PAGE: 16  TITLE: 工艺稳定性次因子
+content_raw: 根据以下6方面评价装置工艺稳定性，并按表16对工艺稳定性次因子赋值：a)化学工艺是否特别复杂；b)该工艺是否包括放热反应或异常苛刻的操作温度或压力；c)该工艺是否在本厂或其他企业引发过重大事故。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第16页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-8.6.4.2
+TYPE: rbi  PAGE: 17  TITLE: 维护程序子因子
+content_raw: 根据安全阀实际的维护状态，按照表17对维护程序子因子进行赋值。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第17页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["安全阀维护（定期校验/延期维护管理）"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表10-d
+TYPE: rbi  PAGE: 14  TITLE: 表10 寿命周期次因子(>100)
+content_raw: 已服役年限与设计使用年限的比值/%：>100；赋值：4.0。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第14页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表13
+TYPE: rbi  PAGE: 15  TITLE: 泵与压缩机的振动监测
+content_raw: 监测状态——无振动监控程序：泵0.5、压缩机1.0；定期振动监控：泵−2.0、压缩机0；在线振动监控：泵−4.0、压缩机−2.0。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第15页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": ["定期振动监控、在线振动监控"]}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表16
+TYPE: rbi  PAGE: 17  TITLE: 工艺稳定性次因子
+content_raw: 稳定性评价：比平均工艺更稳定赋值−1.0；与平均工艺稳定性相当赋值0；比平均工艺稳定性低赋值1.0；明显低于平均工艺稳定性赋值2.0。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第17页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表4-b
+TYPE: rbi  PAGE: 11  TITLE: 工厂条件次因子赋值(B级)
+content_raw: 装置条件：满足现行工业标准大致要求；级别：B；赋值：0。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第11页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表7-b
+TYPE: rbi  PAGE: 13  TITLE: 设备复杂性子因子(塔—一半)
+content_raw: 设备类型：塔——一半；接管数量/个：<10、10~17、18~23、>23（分别赋值−1.0、0、1.0、2.0）。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第13页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表7-c
+TYPE: rbi  PAGE: 13  TITLE: 设备复杂性子因子(压缩机)
+content_raw: 设备类型：压缩机；接管数量/个：2、3~6、7~10、>10（分别赋值−1.0、0、1.0、2.0）。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第13页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表8-b
+TYPE: rbi  PAGE: 13  TITLE: 管道复杂性子因子(0.1<n/L≤0.5)
+content_raw: n/L(m⁻¹)：0.1<n/L≤0.5；赋值：−2.0。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第13页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.4-2022-表9
+TYPE: rbi  PAGE: 14  TITLE: 建造规范次因子
+content_raw: A类：设备满足规范的最新版本，赋值0；B类：设备制造后有关规范已进行重大修改，赋值1.0；C类：制造该设备时还没有正式规范，或未按当时规范制造这类设备，赋值5.0。注：C类设备的赋值可根据可靠的行业实践经验在2.0~10.0范围内调整。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.4-2022 第14页"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT26610.5-2022-表2-a
+TYPE: rbi  PAGE: 11  TITLE: 面积后果等级划分(A)
+content_raw: 面积后果等级A：最终的后果面积(CA)≤9.29m²。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 GB/T 26610.5-2022 第11页"}
+rbi_detail: {"likelihood": null, "consequence": "A", "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}
+================================================================================
+ID: GBT30579-2022-5.23
+TYPE: damage_mechanism  PAGE: 32  TITLE: 酸性水腐蚀(碱式酸性水)
+content_raw: 5.23.1 损伤描述及损伤机理：金属材料在存在硫氢化铵(NH₄HS)的酸性水中发生的腐蚀：NH₄HS+H₂O+Fe→FeS+NH₃·H₂O+H₂。5.23.2 损伤形态：介质流动方向发生改变的部位，或硫氢化铵浓度超过2%（质量分数）的紊流区，易形成严重局部腐蚀；介质注水不足以溶解析出的硫氢化铵时，低流速区可能出现结垢，发生垢下局部腐蚀；硫氢化铵会迅速腐蚀海军黄铜和其他铜合金。
+applicable_conditions: {"equipment_type": ["换热器", "容器", "塔", "管道"], "material": ["碳钢", "300系列不锈钢", "双相不锈钢"], "medium": ["碱式酸性水", "硫氢化铵"], "temperature_c": [49, 66], "pressure_mpa": [null, null], "other": "碱式酸性水（pH偏碱、主导组分为硫氢化铵）；硫氢化铵浓度超过2%（质量分数）腐蚀显著；49℃～66℃硫氢化铵从气相析出；紊流区严重局部腐蚀"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "金属材料在存在硫氢化铵(NH₄HS)的酸性水中发生的腐蚀（NH₄HS+H₂O+Fe→FeS+NH₃·H₂O+H₂）", "morphology": ["介质流动方向改变部位或硫氢化铵浓度超过2%（质量分数）的紊流区形成严重局部腐蚀", "注水不足时低流速区结垢发生垢下局部腐蚀，热交换器管束结垢还会堵塞和降低换热效率", "硫氢化铵迅速腐蚀海军黄铜和其他铜合金"], "affected_materials": ["碳钢耐酸性水腐蚀(碱式酸性水)能力较弱", "300系列不锈钢、双相不锈钢、铝合金和镍基合金耐腐蚀性较强，具体腐蚀速率与硫氢化铵浓度、流速有关"], "influencing_factors": ["pH值：接近中性时腐蚀性较低", "浓度：硫氢化铵低于2%（质量分数）几乎无腐蚀性，超过2%腐蚀性越来越强", "流速：随流速加快腐蚀速率增大，低流速区硫氢化铵结垢出现垢下腐蚀，高流速区尤其紊流时发生冲蚀", "紊流状态：紊流易发生腐蚀", "温度：低于66℃时加氢反应器、催化裂化和焦化炉反应产物气相析出硫氢化铵，不注水冲洗会积垢堵塞", "杂质：洗涤水含氧和铁元素加剧腐蚀积垢，氰化物破坏硫化物保护膜", "合金成分：碳钢耐蚀差，300系列不锈钢、双相不锈钢、铝合金和镍基合金耐蚀较强"], "susceptible_locations": ["加氢装置：反应产物出料温度降到49℃～66℃时硫氢化铵从气相析出，空气冷却器管箱、进出口管道及管束、反应产物分离器出口管道、酸性水排出管（控制阀下游注意闪蒸严重冲蚀）、高压分离器气相管道、汽提塔顶部酸性水部位", "流化床催化裂化装置：浓度通常小于2%，但流速高和/或存在氰化物时保护膜被破坏促进腐蚀", "酸性水汽提塔：浓度高及可能含氯化物部位（塔顶管道、冷凝器、回流罐和回流管道）", "脱硫装置：再生塔塔顶设备和回流管道高浓度", "延迟焦化装置：分馏塔下游气体提浓装置", "乙烯裂解装置裂解与急冷系统：汽油分馏塔塔顶裂解气至急冷水塔进料流程（注氨）"], "prevention": ["优化设计：空冷器进出物流采用对称结构保持物料压力平衡", "浓度监控：硫氢化铵超过2%（质量分数）尤其达到8%或更高时分析介质流速确定腐蚀倾向，浓度一般不应超过8%，否则碳钢腐蚀严重", "流速：碳钢设备和管道介质流速宜保持3 m/s～6 m/s，超过6 m/s时按浓度选用耐蚀合金（因科镍合金825、双相不锈钢等）", "注水：正确设计并注入适量低温洗涤水稀释硫氢化铵，水量充足确保稀释效果，注水喷嘴注意合金成分及规范操作", "选材：钛或哈氏合金C276用于酸性水汽提装置塔顶冷凝器，存在冲蚀的部位不应使用铝制热交换器管"], "detection_methods": ["筛选腐蚀区：取样和计算硫氢化铵含量（工艺工程师和材料或腐蚀工程师提供数据）确定腐蚀敏感区域", "厚度监测：高流速和低流速部位、高浓度硫氢化铵控制阀下游经常超声波检测、导波检测或射线成像检测", "钢制空冷器管：内旋转检测、远端涡流检测和漏磁检测", "非磁性空冷器管：涡流检测", "注水监控：注水设施规范操作和流量监控"], "related_damages": ["冲蚀", "冲刷"]}
+================================================================================
+ID: GBT30579-2022-5.25
+TYPE: damage_mechanism  PAGE: 36  TITLE: 甲铵腐蚀
+content_raw: 5.25.1 损伤描述及损伤机理：金属与尿素合成过程中的中间产物甲铵接触时发生的腐蚀。甲铵根据其受氧气保护的不同程度可以分为钝化腐蚀、活化腐蚀和过氧腐蚀。Fe→Fe²⁺+2e；NH₂CO₂NH₄→NH₄⁺+CO₂NH₂⁻；O₂+2NH₄⁺+2Fe→2Fe²⁺+2OH⁻+2NH₃。5.25.2 损伤形态：甲铵对碳钢和低合金钢具有强烈的腐蚀性，在较短时间内可以腐蚀穿透金属器壁。甲铵对不锈钢的腐蚀形态可分为晶界优先均匀腐蚀、晶间腐蚀、选择性腐蚀和刀口腐蚀。刀口腐蚀主要发生在含有稳定化元素（如Ti、Nb）的不锈钢焊缝熔合线处，是选择性腐蚀的一种特殊形式。
+applicable_conditions: {"equipment_type": ["塔", "换热器", "容器"], "material": ["碳钢", "低合金钢", "300系列不锈钢"], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "尿素装置高压段（尿素合成塔、甲铵冷凝器等）；通氧钝化抑制腐蚀；介质甲铵不在enums.json medium枚举中"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "金属与尿素合成过程中的中间产物甲铵接触时发生的腐蚀；甲铵根据受氧气保护的不同程度可分为钝化腐蚀、活化腐蚀和过氧腐蚀", "morphology": ["甲铵对碳钢和低合金钢具有强烈腐蚀性，较短时间可腐蚀穿透金属器壁", "对不锈钢的腐蚀形态可分为晶界优先均匀腐蚀、晶间腐蚀、选择性腐蚀和刀口腐蚀", "刀口腐蚀主要发生在含稳定化元素（如Ti、Nb）的不锈钢焊缝熔合线处"], "affected_materials": ["按耐蚀能力递增顺序排列：碳钢、低合金钢、300系列不锈钢"], "influencing_factors": ["氧浓度：介质中氧浓度合适时可缓解甲铵对不锈钢的腐蚀，过高或过低都会加剧腐蚀", "流速：流速越快腐蚀速率较大", "合金含量：按耐蚀能力递增排列为碳钢、低合金钢、奥氏体不锈钢"], "susceptible_locations": ["尿素装置：尿素装置中的高压段，包括尿素合成塔、甲铵冷凝器等"], "prevention": ["采用尿素级不锈钢（如316L mod）并控制碳含量", "在介质中通入适量氧气来抑制甲铵的腐蚀"], "detection_methods": ["目视检测和腐蚀部位壁厚测定"], "related_damages": ["无"]}
+================================================================================
+ID: GBT30579-2022-5.27
+TYPE: damage_mechanism  PAGE: 38  TITLE: 含盐水腐蚀
+content_raw: 5.27.1 损伤描述及损伤机理：含有溶解盐（通常是氯化物或其他卤化物盐）的水溶液，可造成设备表面局部或大范围点蚀。含盐水腐蚀常与其他腐蚀（如电偶腐蚀、微生物腐蚀）同时出现。不锈钢在氯化物盐水中发生腐蚀时，钝化层被氯化物破坏的部位会形成点蚀坑，随着氯化物在电泳作用下向坑内迁移，水解产生的酸性物质降低坑中溶液pH值，形成自催化，加速腐蚀。缝隙部位也容易产生这样的自催化腐蚀过程。类似的过程也会发生在裂缝中。
+applicable_conditions: {"equipment_type": ["换热器", "管道", "容器"], "material": ["碳钢", "低合金钢", "300系列不锈钢", "双相不锈钢"], "medium": ["含盐水"], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "含溶解盐（通常为氯化物等卤化物盐）的水溶液；原油常减压脱盐及脱盐废水系统、污水处理系统、盐产品脱水干燥器、海水（消防用水）系统、软化水再生系统；铝合金、铜合金、Ni-Cr-Mo合金、镍基合金也受影响（部分不在material枚举）；海水中合金一般要求PRE不低于40；氯气浓度超过0.5×10⁻⁶时腐蚀加速"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "含有溶解盐（通常是氯化物或其他卤化物盐）的水溶液，可造成设备表面局部或大范围点蚀；含盐水腐蚀常与其他腐蚀（如电偶腐蚀、微生物腐蚀）同时出现；不锈钢点蚀坑内氯化物在电泳作用下迁移、水解产酸形成自催化加速腐蚀，缝隙部位也存在自催化腐蚀；硝酸盐、硫酸盐等其他阴离子也会在蚀坑和缝隙中水解降低pH值，但流动性比氯化物小，影响不大明显", "morphology": ["碳钢腐蚀部位常结垢严重，垢层去除后可见宽大凹坑，腐蚀速率可达0.3 mm/年", "硫酸盐还原菌作用下碳钢管道顶部或底部可出现严重点蚀、沟槽", "碳钢焊缝和热影响区有时会先生成腐蚀", "不锈钢在氯化物盐水中常形成分散的点蚀坑，发生缝隙腐蚀时形态类似", "敏感温度范围内还可能同时出现氯化物应力腐蚀开裂"], "affected_materials": ["碳钢最常见，低合金钢和不锈钢也可能发生腐蚀", "铝合金对含盐水腐蚀较敏感，Ni-Cr-Mo合金耐腐蚀性能较好", "铜合金通常比不锈钢、碳钢更耐含盐水点蚀，但保护膜可靠性受溶液中硫化物、氨等杂质影响", "纤维增强塑料管道可免受含盐水腐蚀影响"], "influencing_factors": ["温度：腐蚀速率随温度升高而增大", "氧浓度：随氧浓度升高增大", "pH值：pH降低溶液腐蚀性增强，并破坏钝化膜稳定性，增大不锈钢点蚀和缝隙腐蚀速率", "盐浓度：随盐浓度升高增大，卤化物浓度高时不锈钢和镍基合金的临界点蚀/缝隙腐蚀温度均降低", "盐类型：氯化物盐水溶液最常见，溴化物等其他卤化物也可引起类似腐蚀，氯盐、硫酸盐和硝酸盐均会向有氧腐蚀坑中迁移，水解产酸加速碳钢腐蚀", "流速：高流速引起冲蚀（有微生物时尤明显），流速过慢呈滞流状态易结垢加剧垢下腐蚀，铜合金、碳钢耐冲蚀能力比不锈钢低", "化学成分：N和Mo可显著提高不锈钢耐点蚀能力，PRE=Cr+3.3×(Mo+0.5×W)+16×N，海水中使用的合金一般要求PRE不低于40，但因氯化物自催化作用，PRE高的不锈钢点蚀速率可比PRE低的碳钢高得多", "杂质：氯气浓度超过0.5×10⁻⁶（如经杀菌处理的海水系统）会增大碳钢、不锈钢腐蚀速率，含硫化合物影响铜基合金保护膜钝化作用，硫化氢电离产酸加速腐蚀并与铜材生成疏松多孔无保护作用的硫化物锈垢"], "susceptible_locations": ["原油常减压装置脱盐和脱盐废水系统", "污水处理系统（蓄水池之间的输送管道、盐水分离器出口管道、间歇运行的管道是高腐蚀率常见部位）", "用于盐产品脱水的干燥器", "海水系统（如消防用水）", "软化水设备的再生系统"], "prevention": ["除氧：查明溶解氧来源并采取有效除氧措施，脱盐设备冲洗水使用除氧水，采用真空除氧、化学除氧（如焦亚硫酸钠），露天或敞开式蓄水器进出口密闭防氧气混入，检查含盐水系统泵出口和脱盐设备出口物料的O₂含量", "工艺：热交换器在合理工艺条件（温度、流速等）内使用，防止含盐水蒸发或积垢", "杂质：可能发生微生物腐蚀的含盐水中控制Cl含量（碳钢设备小于0.5×10⁻⁶，双相不锈钢0.7×10⁻⁶～5×10⁻⁶，铜镍合金小于5×10⁻⁶），监测硫酸盐还原菌", "材质：升级为耐腐蚀性更强的合金（如镍铬钼合金）或非金属材料（如玻璃钢、聚氯乙烯）", "涂层：碳钢设备内表面设置环氧酚醛和煤焦油环氧等涂层或采用内衬聚丙烯钢管，注意保持涂层完整性，防止气孔附近产生电偶腐蚀"], "detection_methods": ["超声检测（包括超声自动扫查）可从外部进行厚度测量，管道尺寸合适部位可使用射线检测", "超声波检测可用于长管段筛查、确定重点区域，但对单个点蚀可能不敏感", "设置腐蚀挂片或电偶探针确定短期、长期腐蚀速率", "监测溶解氧含量", "设置传感器对厚度进行实时在线监测"], "related_damages": ["微生物腐蚀、冲蚀、氯化物应力腐蚀开裂、冷却水腐蚀、电偶腐蚀、含氧工艺水腐蚀"]}
+================================================================================
+ID: GBT30579-2022-5.8
+TYPE: damage_mechanism  PAGE: 11  TITLE: 低分子有机酸腐蚀
+content_raw: 5.8.1 损伤描述及损伤机理：金属与低分子有机酸（如甲酸、乙酸、乙二酸、苯甲酸等，不含本文件中单独列明的环烷酸等其他有机酸）接触时发生的均匀腐蚀或局部腐蚀。以甲酸为例，腐蚀过程为：Fe+2HCOOH→Fe(HCOO)₂+H₂。5.8.2 损伤形态：碳钢、低合金钢、300系列不锈钢发生甲酸腐蚀、乙酸腐蚀或乙二酸腐蚀时可表现为均匀腐蚀，介质局部浓缩或露点腐蚀时表现为局部腐蚀或沉积物下腐蚀。
+applicable_conditions: {"equipment_type": ["塔", "换热器", "管道", "容器"], "material": ["碳钢", "低合金钢", "300系列不锈钢", "400系列不锈钢"], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "介质甲酸、乙酸、乙二酸、苯甲酸等低分子有机酸不在enums.json medium枚举中；甲酸浓度50%（质量分数）左右腐蚀性最强"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "金属与低分子有机酸（如甲酸、乙酸、乙二酸、苯甲酸等，不含环烷酸等其他有机酸）接触时发生的均匀腐蚀或局部腐蚀；以甲酸为例：Fe+2HCOOH→Fe(HCOO)₂+H₂", "morphology": ["碳钢、低合金钢、300系列不锈钢发生甲酸腐蚀、乙酸腐蚀或乙二酸腐蚀时可表现为均匀腐蚀，介质局部浓缩或露点腐蚀时表现为局部腐蚀或沉积物下腐蚀"], "affected_materials": ["碳钢、低合金钢、300系奥氏体不锈钢、400系铁素体不锈钢", "钛和钛合金、镍和镍合金对有机酸有较好的耐腐蚀能力"], "influencing_factors": ["酸类型：浓度相同时一级电离常数越高酸性越强，常见低分子有机酸由高到低为乙二酸（草酸）、邻苯二甲酸、水杨酸、柠檬酸、甲酸、乳酸、苯甲酸、乙酸、丙酸", "浓度或pH值：甲酸浓度在50%（质量分数）左右腐蚀性最强，低分子有机酸可溶于烃并在接触水相时被水相萃取形成局部高浓度酸液", "温度：随温度升高腐蚀速率增大", "合金成分：按耐蚀性从弱到强为碳钢、低合金钢、300系奥氏体不锈钢/400系铁素体不锈钢、双相不锈钢", "杂质元素：氨及氧化剂、氯、溴、碘等卤族元素和其他强酸根离子（如SO₄²⁻、NO₃⁻）有促进作用，不锈钢在含溴醋酸环境下腐蚀非常严重"], "susceptible_locations": ["甲酸：甲醇装置甲醇合成塔后含醇物料系统、二甲醚装置甲醇原料系统、聚甲醛装置三聚提炼塔前后含甲醛物料系统、煤化工装置汽提塔顶冷凝换热器及相连管道和煤液化装置重质蜡分离罐等，以及其他储存甲醇、甲醛或甲酸的设备及管道（温度越高越明显）", "乙酸：醋酸装置合成/分离系统及储运系统、乙酸乙酯装置、氯乙烯装置、精对苯二甲酸装置的乙酸回收系统，以及其他储存或输运乙酸的设备及管道", "乙二酸：乙二醇装置乙二醇输运系统、草酸装置反应和分离系统", "苯甲酸：氧化反应器及其出口管道、氧化塔、甲苯生产苯甲酸的副产品设备及管道", "其他：精对苯二甲酸(PTA)装置含溴醋酸的容器和管道、芳烃抽提装置溶剂(环丁砜)再生塔及塔底再沸器的换热器和管道、甲基叔丁基醚(MTBE)装置催化反应及下游工艺设备"], "prevention": ["选材：采用含钼奥氏体不锈钢、镍基合金或钛，也可采用衬四氟乙烯的复合钢材或设置陶瓷衬里", "加中和剂：炼油装置可添加中和剂降低介质中有机酸含量，但需适量，避免引起其他损伤", "工艺优化：输送醇、醛、醚等有机物的设备和管道应避免因系统密封问题混入空气，造成有机酸浓度升高"], "detection_methods": ["目视检测和腐蚀部位壁厚测定", "只能从外部检测时用超声波自动扫查、导波检测或射线成像查找减薄部位并测厚", "介质的pH值测定和监控", "设置腐蚀探针、腐蚀挂片或在线壁厚监测系统监控腐蚀速率"], "related_damages": ["湿硫化氢破坏"]}
+================================================================================
+ID: GBT30579-2022-5.9
+TYPE: damage_mechanism  PAGE: 13  TITLE: 高温氧化
+content_raw: 5.9.1 损伤描述及损伤机理：高温下金属与氧气发生反应生成金属氧化物的过程：a) 在高温下，氧气和金属反应生成氧化物膜；b) 通常发生在加热炉和锅炉燃烧的含氧环境中。5.9.2 损伤形态：高温氧化的损伤形态为：a) 多数合金，包括碳钢和低合金钢，氧化发生后在金属表面生成氧化物膜，造成金属均匀减薄；b) 300系列不锈钢和镍基合金在高温氧化作用下易形成暗色的氧化物薄膜。
+applicable_conditions: {"equipment_type": ["加热炉", "管道", "容器"], "material": ["碳钢", "低合金钢", "300系列不锈钢", "400系列不锈钢"], "medium": ["氧气"], "temperature_c": [538, null], "pressure_mpa": [null, null], "other": "加热炉和锅炉燃烧的含氧环境；538℃以上碳钢氧化腐蚀严重；300系列不锈钢816℃以下耐蚀性良好；镍基合金也受影响（不在material枚举）"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "高温下金属与氧气发生反应生成金属氧化物的过程；通常发生在加热炉和锅炉燃烧的含氧环境中", "morphology": ["多数合金（包括碳钢和低合金钢）氧化后在金属表面生成氧化物膜，造成金属均匀减薄", "300系列不锈钢和镍基合金易形成暗色的氧化物薄膜"], "affected_materials": ["碳钢、低合金钢、300系列不锈钢、400系列不锈钢和镍基合金"], "influencing_factors": ["温度：碳钢随温度升高腐蚀加剧，538℃以上时碳钢的氧化腐蚀严重", "合金成分：铬元素可形成保护性氧化物膜，耐蚀性通常取决于材料的铬元素含量", "300系列不锈钢在816℃以下有良好的耐蚀性"], "susceptible_locations": ["加热炉、锅炉和其他火焰加热设备等高温环境中运行的设备，尤其是温度超过538℃的设备和管道"], "prevention": ["材质选用：使用温度大于538℃时材料不宜选择碳钢，通过材质升级可减缓高温氧化", "铬是影响氧化能力的主要合金元素，硅和铝等也有同样效果但添加量应控制", "保护层：敷设耐氧化的表面保护层"], "detection_methods": ["监测工艺条件：温度监测，如使用炉管表面热电偶和/或红外热成像仪对温度进行监测，防止运行超温", "厚度测量：超声波测厚"], "related_damages": ["无"]}
+================================================================================
+ID: GBT30579-2022-6.13
+TYPE: damage_mechanism  PAGE: 59  TITLE: 液体金属脆断
+content_raw: 6.13.1 损伤描述及损伤机理：某些熔融金属和特定固体合金材料接触时，液体金属吸附在固体金属材料表面后能促进固体材料位错的发生、增殖和运动，当位错发生和运动达到临界状态时，脆性微裂纹就在原裂纹顶端或在无位错区中形核并解理扩展。6.13.2 损伤形态：形成沿晶裂纹，裂纹内充满低熔点金属。
+applicable_conditions: {"equipment_type": ["换热器", "管道", "容器"], "material": ["碳钢", "低合金钢", "300系列不锈钢"], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "低熔点金属为锌、汞、镉、铝、铜、锡；镍基合金、铜合金、铝合金、钛合金也受影响（不在material枚举）；介质为液态低熔点金属，不在enums.json medium枚举中；温度需达到低熔点金属熔点才会开裂"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "某些熔融金属和特定固体合金材料接触时，液体金属吸附在固体金属材料表面后能促进固体材料位错的发生、增殖和运动，当位错发生和运动达到临界状态时，脆性微裂纹就在原裂纹顶端或在无位错区中形核并解理扩展", "morphology": ["形成沿晶裂纹，裂纹内充满低熔点金属"], "affected_materials": ["碳钢、低合金钢、300系列不锈钢、镍基合金、铜合金、铝合金和钛合金"], "influencing_factors": ["发生在特定的金属与低熔点金属（如锌、汞、镉、铝、铜和锡）的组合中，如300系列不锈钢与锌、铜合金与汞、蒙乃尔合金400与汞、铝合金与汞、高强度钢与镉、高强度钢与铅", "敏感合金与熔化金属接触即可发生开裂，极少的低熔点金属就足以引起液体金属脆断", "拉伸应力控制裂纹生长速度，高拉伸应力可促进开裂，甚至造成敏感金属在与熔化金属接触后数秒内裂纹穿透壁厚", "受污染的金属表面长时间接触液体金属可发生开裂", "低温下敏感金属和非液态低熔点金属接触一般不发生开裂，只有温度升高到低熔点合金的熔点后才会发生开裂"], "susceptible_locations": ["任何有液体金属脆断配对存在的场合，典型情况有300系列不锈钢与液态锌、铜合金与液态汞、镍基合金与液态汞、铝合金与液态汞、高强度钢与液态镉或铅", "常压塔顶冷凝系统的黄铜、镍基合金、钛或铝制热交换器部件", "装置中使用液体汞的工艺仪表", "天然气工厂低温气体装置的铝制部件"], "prevention": ["采取隔离措施防止金属与低熔点金属接触", "选用非敏感匹配的材料组合", "降低服役温度至低熔点金属的熔点以下"], "detection_methods": ["目视检测、磁粉检测、渗透检测"], "related_damages": ["无"]}
+================================================================================
+ID: GBT30579-2022-6.4
+TYPE: damage_mechanism  PAGE: 47  TITLE: 碱应力腐蚀开裂
+content_raw: 6.4.1 损伤描述及损伤机理：与碱溶液接触的设备和管道表面发生的应力腐蚀开裂，多出现在未进行消除应力热处理的焊缝附近，它可在几小时或几天内穿透整个设备或管道的壁厚。碳钢在高温下与水蒸汽产生如下的化学反应：3Fe+4H₂O→Fe₃O₄+4H₂。在这个反应中，如存在氢氧化钠，可起催化作用，反应生成的四氧化三铁(Fe₃O₄)覆盖在钢材表面，形成一层保护膜。局部拉应力过高时会破坏保护膜，在金属表面形成最初的腐蚀裂纹。
+applicable_conditions: {"equipment_type": ["塔", "换热器", "容器", "管道"], "material": ["碳钢", "低合金钢", "300系列不锈钢"], "medium": ["氢氧化钠"], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "碱浓度超过5%（质量分数）或存在干湿交替浓缩条件（50×10⁻⁴～100×10⁻⁴即可引发）；多发生在未消除应力热处理的焊缝附近；蒸汽吹扫和伴热部位风险高"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "与碱溶液接触的设备和管道表面发生的应力腐蚀开裂，多出现在未进行消除应力热处理的焊缝附近，可在几小时或几天内穿透壁厚；碳钢高温下与水蒸汽反应（3Fe+4H₂O→Fe₃O₄+4H₂）生成四氧化三铁保护膜，氢氧化钠起催化作用，局部拉应力过高破坏保护膜形成初始腐蚀裂纹，氢氧化钠在裂纹中富集形成电偶腐蚀（裂纹尖端为阳极、周围保护层为阴极），加上拉应力作用裂纹迅速扩展最终断裂", "morphology": ["开裂通常出现在靠近焊缝的母材上，沿与焊缝平行方向扩展，也可能出现在焊缝和热影响区", "裂纹细小多呈蜘蛛网状，起源于局部应力集中的焊接缺陷处", "碳钢和低合金钢开裂呈沿晶扩展，裂纹内常充满氧化物", "300系列不锈钢开裂呈穿晶扩展，与氯化物应力腐蚀开裂形貌相似难以区分"], "affected_materials": ["碳钢、低合金钢、300系列不锈钢较为敏感，镍基合金耐碱应力腐蚀开裂能力较强"], "influencing_factors": ["浓度：碱浓度超过5%（质量分数）时开裂可能发生，随浓度升高敏感性升高", "存在介质浓缩条件（干湿交替、局部加热或高温蒸汽吹扫）时碱浓度达50×10⁻⁴～100×10⁻⁴即足以引发开裂", "温度：随温度缓慢升高开裂敏感性增高", "残余应力：焊接或冷加工（如弯曲和成型）残余应力均可成为应力条件，通常应力达到屈服应力时开裂才发生", "伴热：有伴热的管道或未经焊后热处理的碳钢管道和设备蒸汽吹扫时开裂可能性较高"], "susceptible_locations": ["苛性碱处理的设备和管道：脱氯化氢和脱硫醇装置、硫酸烷基化和氢氟酸烷基化装置的碱和设备，常减压装置常压塔进料有时注入苛性碱控制氮化物含量", "伴热设置不合理的设备和管道以及加热盘管和其他传热设备", "在苛性碱环境中使用后进行蒸汽吹扫的设备", "锅炉中锅炉水过热、使用锅炉局部出现干湿交替产生碱液浓缩的部位", "乙烯装置工艺系统：急冷水塔的急冷水回流流程（急冷水塔釜及相连管道）、工艺水汽提塔釜至工艺水部分回流和部分去稀释蒸汽发生系统流程（工艺水汽提塔釜、蒸汽发生器底部、凝液分离罐底部、热交换器管程及流程中的管道）"], "prevention": ["合理选材", "消除应力处理", "未消除应力处理的碳钢管道和设备不能直接进行蒸汽吹扫，应在蒸汽吹扫前水洗，无法水洗只能用低压蒸汽短时间吹扫", "常减压装置高温原油预热流程注碱系统通过优化设计、合理注碱使碱与原油在到达预热段前充分混合", "尽可能不设伴热线，如设伴热线不能间歇使用"], "detection_methods": ["目视检测、磁粉检测、射线成像检测、涡流检测或漏磁检测等技术检查裂纹（检测前应对检测表面先清理）", "裂纹中多充满积垢不宜采用渗透检测", "超声波端点衍射技术等测量裂纹自身高度", "声发射检测技术监视裂纹是否扩展"], "related_damages": ["胺应力腐蚀开裂", "碳酸盐应力腐蚀开裂"]}
+================================================================================
+ID: GBT30579-2022-7.3
+TYPE: damage_mechanism  PAGE: 66  TITLE: 球化
+content_raw: 7.3.1 损伤描述及损伤机理：在高温（440℃～760℃）长期使用过程中，钢材中珠光体中渗碳体（碳化物）不稳定，其形态会由最初的层片状逐渐转变成球状，这一过程称为球化。钢材球化会使其抗拉强度和/或抗蠕变能力降低。7.3.2 损伤形态：a) 球化损伤部位一般外观无明显变化，可通过金相组织分析判断；d) 球化引起的材料强度下降最大降幅可达30%，但若无外加高应力，或球化部位不在应力集中区域，或没有其他损伤联合作用，也很少发生失效。
+applicable_conditions: {"equipment_type": ["管道", "容器", "加热炉"], "material": ["碳钢", "低合金钢"], "medium": [], "temperature_c": [440, 760], "pressure_mpa": [null, null], "other": "高温（440℃～760℃）长期使用；服役温度高于454℃即可能发生；具体钢牌号C-0.5Mo、1.25Cr-0.5Mo、2.25Cr-0.5Mo、2.25Cr-1Mo、3Cr-1Mo、5Cr-0.5Mo、9Cr-1Mo不在material枚举，归入碳钢/低合金钢类别；无特定介质要求"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "在高温（440℃～760℃）长期使用过程中，钢材中珠光体中渗碳体（碳化物）不稳定，其形态由最初的层片状逐渐转变成球状的过程；片状渗碳体高温下局部溶解、断开为点状渗碳体弥散分布，并以未溶解碳化物质点或富碳区新产生碳化物为核心形成颗粒状碳化物，保温或缓冷中聚集长大向球状渗碳体转化；钢材球化会使其抗拉强度和/或抗蠕变能力降低", "morphology": ["球化损伤部位一般外观无明显变化，可通过金相组织分析判断", "碳钢中片状碳化物形成球状碳化物，铬含量5%～9%的低合金钢中弥散细小碳化物相聚形成较大球状碳化物", "材料强度降低的同时延展性一般会增大，应力集中区域会发生变形", "强度下降最大降幅可达30%，但若无外加高应力或不在应力集中区域或无其他损伤联合作用，很少发生失效"], "affected_materials": ["所有常用牌号的碳钢和低合金钢，包括C-0.5Mo、1.25Cr-0.5Mo、2.25Cr-0.5Mo、2.25Cr-1Mo、3Cr-1Mo、5Cr-0.5Mo和9Cr-1Mo钢"], "influencing_factors": ["温度：随温度升高球化加速，如454℃时发生球化需数年，552℃时发生球化仅需几小时", "微观组织：退火钢的抗球化性能比正火钢强，粗晶粒钢的抗球化性能比细晶粒钢强，硅镇静钢的抗球化性能比铝镇静钢强"], "susceptible_locations": ["催化裂化装置、催化重整装置和焦化装置中的高温管道及设备，锅炉或加热炉炉管", "其他服役温度高于454℃的所有碳钢、低合金钢制管道和装备"], "prevention": ["减少在高温环境中的保温或使用时间"], "detection_methods": ["金相检测可辨别球化损伤", "对材料进行抗拉强度测试和/或硬度测定，若数值较低则可能已出现球化"], "related_damages": ["石墨化"]}
+================================================================================
+ID: GBT30579-2022-8.2
+TYPE: damage_mechanism  PAGE: 86  TITLE: 热疲劳
+content_raw: 8.2.1 损伤描述及损伤机理：热疲劳是温度变化致循环应力作用引发的损伤。温度变化导致零件截面存在温度梯度，厚壁件尤为明显，在温度梯度最大处可能造成应力集中，应变最大处发生局部开裂，受温度变化引起的周期应力作用不断扩展。热棘轮效应是热疲劳的一种特殊形式，在热应力作用下材料或结构可能产生逐次递增的非弹性变形，经一定循环周次后，棘轮变形不断累积，可能导致零件、构件发生永久变形而无法继续使用，或者引起延性破坏。8.2.2 损伤形态：热疲劳裂纹始于受热表面热应变最大区域，裂纹垂直于应力方向从表面向壁厚深度方向发展，受热表面产生特有的龟裂裂纹，裂纹通常短而宽呈匕首状，裂隙多充满高温氧化物。
+applicable_conditions: {"equipment_type": ["塔", "换热器", "管道", "容器", "加热炉"], "material": ["碳钢", "低合金钢", "不锈钢"], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "温度循环变化工况；一般温度变化范围超过大约110℃～165℃时裂纹就有可能发生（经验区间，非严格边界）；热棘轮效应为热疲劳的特殊形式；快堆型反应堆部件也易发生（核电设备不在equipment_type枚举）；介质为温度循环载荷环境，不在enums.json medium枚举中"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "热疲劳是温度变化致循环应力作用引发的损伤；温度变化导致零件截面上存在温度梯度，厚壁件尤为明显，在温度梯度最大处可能造成应力集中，应变最大处发生局部开裂，受温度变化引起的周期应力作用不断扩展；热棘轮效应是热疲劳的一种特殊形式，在热应力作用下材料或结构产生逐次递增的非弹性变形，棘轮变形不断累积，可能导致零件、构件发生永久变形而无法继续使用，或引起延性破坏", "morphology": ["热疲劳裂纹始于受热表面热应变最大区域，一般有若干个疲劳裂纹源，裂纹垂直于应力方向从表面向壁厚深度方向发展，受热表面产生特有的龟裂裂纹，裂纹通常既短且宽呈匕首状，分支少，穿晶型为主，裂隙多充满高温氧化物", "蒸汽发生器的截面厚度变化处多有应力集中，裂纹易在此类部位及角焊缝根部发生", "吹灰器中的水可引起热疲劳龟裂，以周向裂纹为主，轴向裂纹为辅", "出现热棘轮效应时先在局部出现塑性变形并不断累积，最后发生延性断裂"], "affected_materials": ["所有金属材料"], "influencing_factors": ["循环温差：温度变化幅度和频率", "应力及偏移：零件表面缺口、角焊缝等截面变化处的应力集中部都可能成为裂纹萌生部位，随应力升高，应力幅值增大，失效时间缩短", "循环次数：失效时间随着循环次数的增加而缩短，设备的开车和停车会增加热疲劳损伤的可能性，一般温度变化范围超过大约110℃～165℃时，裂纹就有可能发生", "温度：表面温度的快速变化，会在零件厚度或奥氏体部件长度方向产生温度梯度，加快热疲劳损伤，此外环境温度越高，合金成分蠕变抗力越低", "热疲劳与材料导热性、比热等热力学性质有关，且与弹性模量、屈服极限等力学性能有关", "缺口（如焊脚）和锐角（如接管与容器壳体的连接处）以及其他应力集中部件都可能成为裂纹源", "热处理：适当的热处理工艺，可提高材料的构件抗棘轮变形的能力"], "susceptible_locations": ["冷、热流体的混合点，如冷凝水和蒸汽系统接触的部位，减温器或调温设备", "承受温度循环的承压设备，容易产生热棘轮效应，如快堆型反应堆的反应堆容器、压力管道，以及焦化装置的焦炭塔壳体、焦炭塔入口管道，压力容器的焊接喷嘴、减压阀等", "产蒸汽的过热器及再热器换热管之间的刚性连接件，以及被灰垢等堵塞失去滑动能力成为刚性连接的滑动隔离块", "高温过热器或再热器中韧性较差的水冷壁管", "乙烯裂解装置的裂解炉管，以及急冷部分急冷锅炉集箱与换热管连接处", "用含冷凝水的蒸汽驱动吹灰器可能会造成热疲劳损伤，液态水对管子的快速冷却会加快热疲劳损伤（如使用水枪或水炮对水冷壁进行强制冷却）"], "prevention": ["优化设计：减少应力集中点和热循环次数、焊缝打磨平滑过渡、设备开车和停车时控制加热和冷却速度、减少不同材料连接件之间的不均匀热膨胀、增加不均匀热膨胀区域结构柔性", "对可能产生棘轮效应的设备，尽量减少反向塑性变形产生，并最大限度地避免应力集中，并确定材料的棘轮边界，对特定构件选材时，判定材料在构件服役工况下是否满足棘轮边界要求，选择处于弹性、弹性安定或塑性安定范围内的材料", "蒸汽发生设备中避免使用刚性连接件，并保持滑动隔离块的滑动能力", "增设吹灰器吹灰循环启动阶段的冷凝水排水管路", "温差较大的冷热流体接触部位增设衬里或套管"], "detection_methods": ["目视检测，观察结构是否发生明显变形，对于热棘轮效应，可采用激光全站仪、激光自动扫描三维成像等技术进行变形量测定", "尺寸测量，检查构件尺寸是否发生持续变化", "表面磁粉检测或渗透检测", "无法进行表面检测的，从另一侧进行超声波横波检测", "采用特殊的超声波检测方法检测厚壁反应器的焊接接头"], "related_damages": ["腐蚀疲劳"]}
+================================================================================
+ID: GBT30579-2022-9.3
+TYPE: damage_mechanism  PAGE: 103  TITLE: 冲蚀
+content_raw: 9.3.1 损伤描述及损伤机理：冲蚀是指腐蚀产物因流体冲刷而离开表面，暴露的新鲜金属表面在冲刷和腐蚀的反复作用下发生的损伤，冲蚀流体可分为单相流、两相流或多相流。9.3.2 损伤形态：冲蚀可以在很短的时间内造成局部严重腐蚀，形成坑、凹槽、犁沟和凹谷状形貌，且具有一定的方向性。9.3.3 受影响的材料：所有金属、合金和耐火材料。
+applicable_conditions: {"equipment_type": ["管道", "换热器", "容器"], "material": ["碳钢", "低合金钢", "不锈钢"], "medium": ["硫氢化铵", "环烷酸"], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "一般介质为流动腐蚀性流体（单相流、两相流或多相流，可夹带颗粒），其他腐蚀性介质不在enums.json medium枚举中；弯管、弯头、三通、异径管及减压阀/截止阀下游等高流速部位；流化床催化裂化再生系统催化剂输送管道；常减压装置环烷酸冲蚀程度取决于流体温度、速度、硫含量及总酸值；泵、风机、叶轮等动设备及耐火材料也受影响（不在枚举）"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "冲蚀是指腐蚀产物因流体冲刷而离开表面，暴露的新鲜金属表面在冲刷和腐蚀的反复作用下发生的损伤，冲蚀流体可分为单相流、两相流或多相流", "morphology": ["冲蚀可以在很短的时间内造成局部严重腐蚀，形成坑、凹槽、犁沟和凹谷状形貌，且具有一定的方向性"], "affected_materials": ["所有金属、合金和耐火材料"], "influencing_factors": ["介质：强腐蚀性介质会降低表面保护膜的稳定性，使冲蚀敏感性增大，不同腐蚀介质的腐蚀速率或对耐冲刷层的破坏能力不一样，发生失效的时间也差别较大，冲蚀造成的损伤通常要远高于冲刷，介质的流速、湍流、夹带颗粒的尺寸、硬度和密度、冲击角度都对冲蚀有影响", "材质：提高材料的硬度一般能提高材料耐冲刷性能，但在腐蚀占主导的冲蚀损伤中，应优先考虑材料的耐腐蚀性能"], "susceptible_locations": ["输送流动腐蚀性介质的所有设备，多见于腐蚀环境下的管道系统，尤其是弯管、弯头、三通和异径管部位，以及减压阀和截止阀的下游管道系统", "设备系统常见如泵、风机、螺旋桨叶、叶轮、搅拌器、搅拌釜、热交换器管束、测量装置孔口、透平叶片、接管、风道和烟道、刮料器、切刀及防冲板等", "流化床催化裂化装置再生系统中催化剂处理设备（阀门、旋分器、管道和反应器）和输送管道因催化剂流动而发生损伤，延迟焦化装置和流化床焦化装置中除焦系统以及炼油厂其他会发生磨损的泵、压缩机及动设备", "加氢反应器出料管道可能发生硫氢化铵冲蚀，金属损失量取决于硫氢化铵浓度、速度及合金的耐腐蚀能力", "常减压装置原油中的环烷酸可对容器和管道产生冲蚀，冲蚀程度取决于流体温度、速度、硫含量及总酸值水平"], "prevention": ["设计优化：以冲刷为主的场合，所有可缓解冲刷的措施均可考虑，如设计形状和几何结构改进、增加管道直径以降低介质流速、采用流线型弯头、增加冲蚀部位壁厚、设置更厚的防冲板等", "选材：以腐蚀为主导损伤的场合，仅提高金属的硬度、耐冲蚀能力不一定能得到明显提升，可采用耐蚀金属或合金，降低介质的腐蚀性（例如除氧、注入冷凝剂或添加缓蚀剂），以冲刷为主导损伤的场合可采用硬度值高的材质、增设耐磨衬里或进行表面强化处理等", "热交换设备设置防冲板，必要时用管形护套来减缓冲蚀", "面临烟气冲蚀环境时选用铝元素含量高的合金"], "detection_methods": ["壁厚测定：对高流速部位或怀疑部位采用超声检测或射线成像进行壁厚测定", "探针或挂片：采用在线电阻探针或使用专门的冲蚀试块进行腐蚀监测", "红外检测：设备服役过程中检测耐火衬里有无减薄等损坏"], "related_damages": ["冲刷、汽蚀"]}
+================================================================================
+ID: TSG21-2016-8.3.1
+TYPE: rbi  PAGE: 80  TITLE: 检验项目
+content_raw: 金属压力容器定期检验项目，以宏观检验、壁厚测定、表面缺陷检测、安全附件检验为主，必要时增加埋藏缺陷检测、材料分析、密封紧固件检验、强度校核、耐压试验、泄漏试验等项目。设计文件对压力容器定期检验项目、方法和要求有专门规定的，还应当从其规定。
+applicable_conditions: {"equipment_type": [], "material": [], "medium": [], "temperature_c": [null, null], "pressure_mpa": [null, null], "other": "依据 TSG 21—2016 第80页 第8.3.1条"}
+rbi_detail: {"likelihood": null, "consequence": null, "risk_level": null, "risk_level_unified": null, "inspection_interval_year": null, "inspection_methods": []}
+mechanism_detail: {"description": "", "morphology": [], "affected_materials": [], "influencing_factors": [], "susceptible_locations": [], "prevention": [], "detection_methods": [], "related_damages": []}

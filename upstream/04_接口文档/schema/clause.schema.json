@@ -1,0 +1,597 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "条款结构化记录",
+  "$comment": "依据规格说明 3.1；mechanism_detail 按工具接口规范采用八段式。所有示例字段均保留，未使用详情区沿用示例的空值结构。definitions 中的枚举为当前 enums.json 的快照；修改枚举表时须同步规范值和别名。跨记录主键唯一性由 validate.py 检查。",
+  "type": "object",
+  "description": "规格说明第 3.1 节的一条条款结构化记录。",
+  "properties": {
+    "clause_id": {
+      "type": "string",
+      "description": "全局唯一的条款主键，由去符号的标准号、年份和条款号组成。"
+    },
+    "standard_code": {
+      "type": "string",
+      "description": "带年份的标准编号，例如 GB/T 30579-2022。"
+    },
+    "standard_name": {
+      "type": "string",
+      "description": "标准名称，使用标准原文。"
+    },
+    "clause_no": {
+      "type": "string",
+      "description": "标准中的条款编号。"
+    },
+    "page": {
+      "type": "integer",
+      "description": "条款所在的标准正文页码。"
+    },
+    "knowledge_type": {
+      "type": "string",
+      "description": "条款知识类别，决定填写哪一个详情区。",
+      "enum": [
+        "damage_mechanism",
+        "rbi"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "description": "条款标题；损伤模式名称必须使用 GB/T 30579 原文叫法。"
+    },
+    "content_raw": {
+      "type": "string",
+      "description": "标准原文摘录，不得改写，最多 300 字。",
+      "maxLength": 300
+    },
+    "applicable_conditions": {
+      "type": "object",
+      "description": "条款适用条件；枚举字段仅填写规范值，物流名称写入 other。",
+      "properties": {
+        "equipment_type": {
+          "type": "array",
+          "description": "适用设备类型列表。",
+          "items": {
+            "description": "一种适用设备类型。",
+            "allOf": [
+              {
+                "$ref": "#/definitions/equipment_type"
+              }
+            ]
+          }
+        },
+        "material": {
+          "type": "array",
+          "description": "适用材质列表；复合板或堆焊层只填接触介质的复层材质。",
+          "items": {
+            "description": "一种适用材质的规范值。",
+            "allOf": [
+              {
+                "$ref": "#/definitions/material"
+              }
+            ]
+          }
+        },
+        "medium": {
+          "type": "array",
+          "description": "腐蚀性介质列表，不填写原油等物流名。",
+          "items": {
+            "description": "一种腐蚀性介质的规范值。",
+            "allOf": [
+              {
+                "$ref": "#/definitions/medium"
+              }
+            ]
+          }
+        },
+        "temperature_c": {
+          "type": "array",
+          "description": "适用温度区间，单位 ℃，顺序为 [下限, 上限]，开区间端点用 null。",
+          "items": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "区间端点；null 表示该端不限定。"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "pressure_mpa": {
+          "type": "array",
+          "description": "适用压力区间，单位 MPa，顺序为 [下限, 上限]，开区间端点用 null。",
+          "items": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "区间端点；null 表示该端不限定。"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "other": {
+          "type": "string",
+          "description": "其他适用条件；复合板或堆焊层结构的基材信息也记录于此。"
+        }
+      },
+      "required": [
+        "equipment_type",
+        "material",
+        "medium",
+        "temperature_c",
+        "pressure_mpa",
+        "other"
+      ],
+      "additionalProperties": false
+    },
+    "mechanism_detail": {
+      "type": "object",
+      "description": "损伤机理详情，固定八段式；未使用时保留字段，description 填空字符串，其余字段填空数组。",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "损伤描述及损伤机理，对应 GB/T 30579 的同名子条款。"
+        },
+        "morphology": {
+          "type": "array",
+          "description": "损伤形态。",
+          "items": {
+            "type": "string",
+            "description": "标准记载的一种损伤形态。"
+          }
+        },
+        "affected_materials": {
+          "type": "array",
+          "description": "受影响的材料；材质适用性判定的根据。",
+          "items": {
+            "type": "string",
+            "description": "标准原文中的受影响材料。"
+          }
+        },
+        "influencing_factors": {
+          "type": "array",
+          "description": "主要影响因素。",
+          "items": {
+            "type": "string",
+            "description": "一项主要影响因素。"
+          }
+        },
+        "susceptible_locations": {
+          "type": "array",
+          "description": "易发生的装置或设备。",
+          "items": {
+            "type": "string",
+            "description": "一处易发生损伤的装置、设备或部位。"
+          }
+        },
+        "prevention": {
+          "type": "array",
+          "description": "主要预防措施。",
+          "items": {
+            "type": "string",
+            "description": "一项主要预防措施。"
+          }
+        },
+        "detection_methods": {
+          "type": "array",
+          "description": "检测或监测方法。",
+          "items": {
+            "type": "string",
+            "description": "一种检测或监测方法。"
+          }
+        },
+        "related_damages": {
+          "type": "array",
+          "description": "相关或伴随的其他损伤，可用于串联相关机理、生成多步轨迹。",
+          "items": {
+            "type": "string",
+            "description": "损伤模式名称，必须使用 GB/T 30579 原文叫法。"
+          }
+        }
+      },
+      "required": [
+        "description",
+        "morphology",
+        "affected_materials",
+        "influencing_factors",
+        "susceptible_locations",
+        "prevention",
+        "detection_methods",
+        "related_damages"
+      ],
+      "additionalProperties": false
+    },
+    "rbi_detail": {
+      "type": "object",
+      "description": "RBI 条款详情；未使用时保留字段，标量填 null，inspection_methods 填空数组。",
+      "properties": {
+        "likelihood": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "原标准中的失效可能性等级；未填写时为 null。"
+        },
+        "consequence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "原标准中的后果等级；未填写时为 null。"
+        },
+        "risk_level": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "原标准中的风险等级；未填写时为 null。"
+        },
+        "risk_level_unified": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "按给定映射表换算的统一风险等级 L1～L5；未填写时为 null。",
+          "enum": [
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "L5",
+            null
+          ]
+        },
+        "inspection_interval_year": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "建议检验周期，单位为年；未填写时为 null。"
+        },
+        "inspection_methods": {
+          "type": "array",
+          "description": "推荐检验方法；未填写时为空数组。",
+          "items": {
+            "type": "string",
+            "description": "一种推荐检验方法。"
+          }
+        }
+      },
+      "required": [
+        "likelihood",
+        "consequence",
+        "risk_level",
+        "risk_level_unified",
+        "inspection_interval_year",
+        "inspection_methods"
+      ],
+      "additionalProperties": false
+    },
+    "extractor": {
+      "type": "string",
+      "description": "条款摘录者标识，例如学号与姓名。"
+    },
+    "verified_by": {
+      "type": "string",
+      "description": "复核者标识；尚未复核时为空字符串。"
+    },
+    "version": {
+      "type": "string",
+      "description": "本条结构化记录的版本号。"
+    }
+  },
+  "required": [
+    "clause_id",
+    "standard_code",
+    "standard_name",
+    "clause_no",
+    "page",
+    "knowledge_type",
+    "title",
+    "content_raw",
+    "applicable_conditions",
+    "mechanism_detail",
+    "rbi_detail",
+    "extractor",
+    "verified_by",
+    "version"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "knowledge_type": {
+            "const": "damage_mechanism"
+          }
+        },
+        "required": [
+          "knowledge_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "rbi_detail": {
+            "const": {
+              "likelihood": null,
+              "consequence": null,
+              "risk_level": null,
+              "risk_level_unified": null,
+              "inspection_interval_year": null,
+              "inspection_methods": []
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "mechanism_detail": {
+            "const": {
+              "description": "",
+              "morphology": [],
+              "affected_materials": [],
+              "influencing_factors": [],
+              "susceptible_locations": [],
+              "prevention": [],
+              "detection_methods": [],
+              "related_damages": []
+            }
+          }
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "material": {
+      "type": "string",
+      "description": "材质规范值；取自 ../enums.json 的 material 表键。",
+      "enum": [
+        "碳钢",
+        "低合金钢",
+        "不锈钢",
+        "300系列不锈钢",
+        "400系列不锈钢",
+        "奥氏体不锈钢",
+        "铁素体不锈钢",
+        "双相不锈钢",
+        "20",
+        "Q245R",
+        "Q345R",
+        "15CrMo",
+        "15CrMoR",
+        "12Cr2Mo1",
+        "12Cr2Mo1R",
+        "12Cr5Mo",
+        "06Cr19Ni10",
+        "022Cr19Ni10",
+        "06Cr17Ni12Mo2",
+        "022Cr17Ni12Mo2",
+        "06Cr18Ni11Ti",
+        "S22053"
+      ]
+    },
+    "material_input": {
+      "description": "材质输入值；允许规范值及 enums.json 已列出的别名，工具调用前由 Guardrail 归一化。",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/material"
+        },
+        {
+          "type": "string",
+          "description": "材质已登记的别名。",
+          "enum": [
+            "碳素钢",
+            "CS",
+            "carbon steel",
+            "低合金钢材",
+            "LAS",
+            "low alloy steel",
+            "不锈钢材",
+            "SS",
+            "stainless steel",
+            "300系不锈钢",
+            "300 系列不锈钢",
+            "300 series stainless steel",
+            "400系不锈钢",
+            "400 系列不锈钢",
+            "400 series stainless steel",
+            "奥氏体型不锈钢",
+            "奥氏体不锈钢材",
+            "austenitic stainless steel",
+            "铁素体型不锈钢",
+            "铁素体不锈钢材",
+            "ferritic stainless steel",
+            "双相型不锈钢",
+            "双相不锈钢材",
+            "DSS",
+            "duplex stainless steel",
+            "20#",
+            "20＃",
+            "20号钢",
+            "20钢",
+            "Q245R钢",
+            "Q245R钢板",
+            "Q245R容器钢板",
+            "Q345R钢",
+            "Q345R钢板",
+            "Q345R容器钢板",
+            "15CrMo钢",
+            "15CrMo合金钢",
+            "15CrMoR钢",
+            "15CrMoR钢板",
+            "12Cr2Mo1钢",
+            "12Cr2Mo1合金钢",
+            "12Cr2Mo1R钢",
+            "12Cr2Mo1R钢板",
+            "12Cr5Mo钢",
+            "12Cr5Mo合金钢",
+            "S30408",
+            "06Cr19Ni10不锈钢",
+            "S30403",
+            "022Cr19Ni10不锈钢",
+            "S31608",
+            "06Cr17Ni12Mo2不锈钢",
+            "S31603",
+            "022Cr17Ni12Mo2不锈钢",
+            "S32168",
+            "06Cr18Ni11Ti不锈钢",
+            "022Cr23Ni5Mo3N",
+            "S22053双相不锈钢"
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "type": "string",
+      "description": "腐蚀性介质规范值；取自 ../enums.json 的 medium 表键。",
+      "enum": [
+        "湿硫化氢",
+        "氯化氢",
+        "有机氯化物",
+        "氯化铵",
+        "硫氢化铵",
+        "环烷酸",
+        "高温硫化物腐蚀介质",
+        "连多硫酸",
+        "氰化物",
+        "氢氧化钠",
+        "胺液",
+        "二氧化碳",
+        "氯离子",
+        "氧气",
+        "循环水",
+        "酸式酸性水",
+        "碱式酸性水",
+        "氨",
+        "含盐水"
+      ]
+    },
+    "medium_input": {
+      "description": "腐蚀性介质输入值；允许规范值及 enums.json 已列出的别名，工具调用前由 Guardrail 归一化。",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/medium"
+        },
+        {
+          "type": "string",
+          "description": "腐蚀性介质已登记的别名。",
+          "enum": [
+            "湿H2S",
+            "湿H₂S",
+            "湿硫化氢环境",
+            "含水硫化氢环境",
+            "硫化氢",
+            "H2S",
+            "H₂S",
+            "含硫化氢湿环境",
+            "HCl",
+            "氯化氢气体",
+            "盐酸",
+            "氯化氢水溶液",
+            "HCl(aq)",
+            "有机氯",
+            "organic chloride",
+            "NH4Cl",
+            "NH₄Cl",
+            "NH4HS",
+            "NH₄HS",
+            "硫化氢铵",
+            "石油环烷酸",
+            "naphthenic acid",
+            "高温硫介质",
+            "高温含硫介质",
+            "硫化物",
+            "硫化物介质",
+            "sulfides",
+            "高温硫",
+            "polythionic acid",
+            "polythionic acids",
+            "氰化物介质",
+            "cyanide",
+            "cyanides",
+            "NaOH",
+            "烧碱",
+            "苛性钠",
+            "碱（氢氧化钠）",
+            "碱(氢氧化钠)",
+            "碱",
+            "胺溶液",
+            "胺类溶液",
+            "CO2",
+            "CO₂",
+            "Cl-",
+            "Cl⁻",
+            "氯化物",
+            "氯化物介质",
+            "chlorides",
+            "O2",
+            "O₂",
+            "循环冷却水",
+            "循环冷却用水",
+            "circulating cooling water",
+            "冷却水",
+            "冷却用水",
+            "CW",
+            "cooling water",
+            "酸性水（酸式）",
+            "酸性水(酸式)",
+            "sour water",
+            "酸性水（碱式）",
+            "酸性水(碱式)",
+            "NH3",
+            "NH₃",
+            "氨气",
+            "盐水",
+            "含盐水介质"
+          ]
+        }
+      ]
+    },
+    "equipment_type": {
+      "type": "string",
+      "description": "设备类型规范值；取自 ../enums.json 的 equipment_type 表键。",
+      "enum": [
+        "塔",
+        "换热器",
+        "管道",
+        "容器",
+        "加热炉",
+        "储罐"
+      ]
+    },
+    "equipment_type_input": {
+      "description": "设备类型输入值；允许规范值及 enums.json 已列出的别名，工具调用前由 Guardrail 归一化。",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/equipment_type"
+        },
+        {
+          "type": "string",
+          "description": "设备类型已登记的别名。",
+          "enum": [
+            "塔器",
+            "塔设备",
+            "热交换器",
+            "换热设备",
+            "空冷器",
+            "空气冷却器",
+            "冷凝器",
+            "冷却器",
+            "管线",
+            "工艺管道",
+            "压力容器",
+            "承压容器",
+            "回流罐",
+            "电脱盐罐",
+            "分液罐",
+            "缓冲罐",
+            "工艺加热炉",
+            "管式加热炉",
+            "贮罐",
+            "储存罐",
+            "贮存罐"
+          ]
+        }
+      ]
+    }
+  }
+}

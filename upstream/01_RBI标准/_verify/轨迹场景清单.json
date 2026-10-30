@@ -1,0 +1,6854 @@
+[
+ {
+  "sid": "SC-C01",
+  "kind": "multi",
+  "plant": "加氢裂化装置",
+  "equipment": "高压分离器器壁",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 72,
+  "field_evidence": "超声检测发现器壁存在分层缺陷，测厚减薄 2.8mm",
+  "question": "该缺陷的成因与是否需要立即处理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "氢脆",
+  "actual_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.10",
+   "GBT30579-2022-5.3"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-C02",
+  "kind": "multi",
+  "plant": "加氢精制装置",
+  "equipment": "反应器出口管线",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 72,
+  "field_evidence": "管线焊缝附近发现多条平行于焊缝的裂纹",
+  "question": "该裂纹属于哪类损伤，依据是什么？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "燃灰腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "氢脆",
+  "actual_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "燃灰腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.10",
+   "GBT30579-2022-5.3"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-C03",
+  "kind": "multi",
+  "plant": "制氢装置",
+  "equipment": "净化器入口",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "氰化物"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "取样分析发现游离氰化物 120mg/L；器壁有点蚀",
+  "question": "氰化物环境下该部位的主要风险？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氢氰酸致氢应力开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "氢氰酸致氢应力开裂",
+  "actual_mechs": [
+   "氢氰酸致氢应力开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.9"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C04",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "塔顶碱液管线弯头",
+  "equipment_type": "容器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管线弯头处测厚减薄 1.4mm，水样 pH 8.7",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "碱应力腐蚀开裂",
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.4",
+   "GBT30579-2022-6.2",
+   "GBT30579-2022-6.6",
+   "GBT30579-2022-6.11"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C05",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "塔顶碱液排放管线",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管线测厚减薄 1.5mm，水样 pH 8.8",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "碱应力腐蚀开裂",
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.4",
+   "GBT30579-2022-6.2",
+   "GBT30579-2022-6.6",
+   "GBT30579-2022-6.11"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C06",
+  "kind": "multi",
+  "plant": "加氢装置",
+  "equipment": "循环氢管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "氰化物"
+  ],
+  "temperature_c": 120,
+  "field_evidence": "管线出现点蚀并伴随氢鼓泡",
+  "question": "该部位的主要损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氢氰酸致氢应力开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "氢氰酸致氢应力开裂",
+  "actual_mechs": [
+   "氢氰酸致氢应力开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.9"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C07",
+  "kind": "multi",
+  "plant": "硫酸装置",
+  "equipment": "硫酸装置干燥塔",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "酸式酸性水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "塔体测厚减薄 2.1mm，水样硫酸根 750mg/L",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(酸式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "硫酸盐应力腐蚀开裂",
+  "actual_mechs": [
+   "酸性水腐蚀(酸式酸性水)"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.15"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C08",
+  "kind": "multi",
+  "plant": "胺液系统",
+  "equipment": "胺液换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "胺液"
+  ],
+  "temperature_c": 120,
+  "field_evidence": "管束测厚减薄 1.9mm，胺液浓度 22%",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "胺腐蚀",
+   "胺应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "胺应力腐蚀开裂",
+  "actual_mechs": [
+   "胺腐蚀",
+   "胺应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.6"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C09",
+  "kind": "multi",
+  "plant": "胺液系统",
+  "equipment": "胺液储罐",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "胺液"
+  ],
+  "temperature_c": 45,
+  "field_evidence": "罐壁减薄 2.4mm，检测出硫化氢 35mg/L",
+  "question": "该部位的损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "胺腐蚀",
+   "胺应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "胺应力腐蚀开裂",
+  "actual_mechs": [
+   "胺腐蚀",
+   "胺应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.6"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C10",
+  "kind": "multi",
+  "plant": "锅炉给水系统",
+  "equipment": "酸性水换热器管板",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "酸式酸性水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管板测厚减薄 1.8mm，水样硫酸根 620mg/L",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(酸式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "酸性水腐蚀(酸式酸性水)",
+  "actual_mechs": [
+   "酸性水腐蚀(酸式酸性水)"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.24",
+   "GBT30579-2022-5.23"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C11",
+  "kind": "multi",
+  "plant": "锅炉给水系统",
+  "equipment": "省煤器出口给水管",
+  "equipment_type": "换热器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "酸式酸性水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管道测厚减薄 1.3mm，溶解氧 95μg/L",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(酸式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "酸性水腐蚀(酸式酸性水)",
+  "actual_mechs": [
+   "酸性水腐蚀(酸式酸性水)"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.24",
+   "GBT30579-2022-5.23"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C12",
+  "kind": "multi",
+  "plant": "加氢装置",
+  "equipment": "高压换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 72,
+  "field_evidence": "管束外壁测厚减薄 1.3mm，内侧未见减薄",
+  "question": "该部位是否存在湿硫化氢破坏？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "氢脆",
+  "actual_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.10",
+   "GBT30579-2022-5.3"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-C13",
+  "kind": "multi",
+  "plant": "水处理系统",
+  "equipment": "阳离子交换器出口",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管道测厚减薄 1.1mm，出水电导率异常偏高",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "碱腐蚀",
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.16"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C14",
+  "kind": "multi",
+  "plant": "裂解装置",
+  "equipment": "急冷换热器",
+  "equipment_type": "换热器",
+  "material": "12Cr5Mo",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 400,
+  "field_evidence": "换热器壳程测厚减薄 2.1mm",
+  "question": "该减薄是否属高温硫化氢腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "高温硫化物腐蚀(氢气环境)",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.22",
+   "GBT30579-2022-5.21"
+  ],
+  "fallback_hit_target": true,
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-C15",
+  "kind": "multi",
+  "plant": "合成氨装置",
+  "equipment": "软水箱内壁",
+  "equipment_type": "换热器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "箱壁测厚减薄 1.0mm，软水 pH 11.5",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "碱应力腐蚀开裂",
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.4",
+   "GBT30579-2022-6.2",
+   "GBT30579-2022-6.6",
+   "GBT30579-2022-6.11"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C16",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔中段",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 200,
+  "field_evidence": "塔壁测厚减薄 4.5mm，未见明显腐蚀产物",
+  "question": "该减薄是否与二氧化碳有关？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "二氧化碳腐蚀",
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.5"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-C17",
+  "kind": "multi",
+  "plant": "高硫装置",
+  "equipment": "塔顶回流管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 72,
+  "field_evidence": "管线焊缝处发现裂纹，湿荧光磁粉显示线性显示；管线保温层下有湿痕",
+  "question": "该裂纹属于哪类损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "氢脆",
+  "actual_mechs": [
+   "氢脆",
+   "湿硫化氢破坏",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.10",
+   "GBT30579-2022-5.3"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-C18",
+  "kind": "multi",
+  "plant": "延迟焦化装置",
+  "equipment": "焦化塔塔顶管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 480,
+  "field_evidence": "管线减薄 1.7mm",
+  "question": "该减薄属于哪类高温腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "target_mech": "高温硫化物腐蚀(无氢气环境)",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.21",
+   "GBT30579-2022-5.22"
+  ],
+  "fallback_hit_target": true,
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-E01",
+  "kind": "exclusion",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶放空管道",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢",
+   "氯化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "渗漏点位于焊缝附近；上下游各 2 米定点测厚壁厚均在原始壁厚范围内；宏观检查未见腐蚀产物堆积",
+  "question": "该渗漏是腐蚀导致的吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-E02",
+  "kind": "exclusion",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢",
+   "氯化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "管束测厚未见减薄，内壁有点蚀；塔顶水 pH 5.1",
+  "question": "该部位存在腐蚀吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-E03",
+  "kind": "exclusion",
+  "plant": "常减压装置",
+  "equipment": "常压炉对流段",
+  "equipment_type": "加热炉",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 450,
+  "field_evidence": "炉管外壁可见积灰，下部有红色锈斑",
+  "question": "该锈斑是高温硫化物腐蚀吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-E04",
+  "kind": "exclusion",
+  "plant": "常减压装置",
+  "equipment": "含硫污水罐",
+  "equipment_type": "储罐",
+  "material": "300系列不锈钢",
+  "medium": [
+   "硫氢化铵"
+  ],
+  "temperature_c": 57,
+  "field_evidence": "罐底沉积物呈灰黑色，有刺激性气味",
+  "question": "该沉积物对应哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)",
+   "冲蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)",
+   "冲蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-E05",
+  "kind": "exclusion",
+  "plant": "常减压装置",
+  "equipment": "常压塔底切线弯头",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "环烷酸"
+  ],
+  "temperature_c": 320,
+  "field_evidence": "弯头背弯处测厚减薄 1.8mm，管内壁有光亮面；弯头外侧有轻微点蚀",
+  "question": "该减薄是环烷酸腐蚀还是冲蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-E06",
+  "kind": "exclusion",
+  "plant": "加氢裂化装置",
+  "equipment": "高压分离器",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 200,
+  "field_evidence": "发现器壁有分层；超声检测壁厚减薄 2.4mm",
+  "question": "该损伤是否与氢有关？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-E07",
+  "kind": "exclusion",
+  "plant": "合成氨装置",
+  "equipment": "变换反应器入口段",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "氨"
+  ],
+  "temperature_c": 326,
+  "field_evidence": "反应器入口段焊缝附近发现裂纹，出口段检测正常",
+  "question": "该裂纹是氨应力腐蚀开裂吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "渗氮",
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "渗氮",
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀",
+   "微生物腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-E08",
+  "kind": "exclusion",
+  "plant": "乙烯裂解装置",
+  "equipment": "急冷器换热管束",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 400,
+  "field_evidence": "管束测厚减薄 1.1mm，壳程法兰处有渗漏痕迹",
+  "question": "该减薄与渗漏是否与高温硫腐蚀有关？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-E09",
+  "kind": "exclusion",
+  "plant": "加氢裂化装置",
+  "equipment": "循环氢压缩机出口弯管",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 180,
+  "field_evidence": "压缩机出口管线焊缝处发现裂纹；弯管外壁有鼓包变形",
+  "question": "该裂纹与鼓包属于哪类损伤？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-E10",
+  "kind": "exclusion",
+  "plant": "罐区",
+  "equipment": "液氨储罐人孔法兰",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "氨"
+  ],
+  "temperature_c": 5,
+  "field_evidence": "人孔法兰密封面发现渗漏，罐壁测厚正常",
+  "question": "该渗漏是应力腐蚀开裂吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-E11",
+  "kind": "exclusion",
+  "plant": "循环水系统",
+  "equipment": "循环水换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管束测厚减薄 0.8mm，循环水 pH 8.4",
+  "question": "该减薄是微生物腐蚀吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-E12",
+  "kind": "exclusion",
+  "plant": "空分装置",
+  "equipment": "氧管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "氧气"
+  ],
+  "temperature_c": 30,
+  "field_evidence": "管线焊缝处有烧蚀痕迹",
+  "question": "该烧蚀属于哪类损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "燃灰腐蚀",
+   "甲铵腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "燃灰腐蚀",
+   "甲铵腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-E13",
+  "kind": "exclusion",
+  "plant": "催化裂化装置",
+  "equipment": "再生器稀相段",
+  "equipment_type": "塔",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "稀相段人孔法兰变形，壁厚未见减薄，法兰螺栓有轻微松动",
+  "question": "该变形是高温硫腐蚀造成的吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-E14",
+  "kind": "exclusion",
+  "plant": "锅炉给水系统",
+  "equipment": "给水换热器管板",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 180,
+  "field_evidence": "管板测厚减薄 1.3mm，管束结垢 3mm",
+  "question": "该减薄与结垢哪个是主因？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-E15",
+  "kind": "exclusion",
+  "plant": "公用工程",
+  "equipment": "软水补水管线",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 57,
+  "field_evidence": "管线测厚减薄 1.3mm，软水 pH 11.2",
+  "question": "该减薄是碱应力腐蚀开裂吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-F01",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "焊接接头",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 450,
+  "field_evidence": "设备温度在启停时反复大幅波动，应力集中部位出现裂纹",
+  "question": "现场发现「设备温度在启停时反复大幅波动，应力集中部位出现裂纹」，涉及焊接接头，判断是否属于热疲劳机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "热疲劳",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.2"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F02",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "法兰根部",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 120,
+  "field_evidence": "设备长期承受周期性振动，应力集中部位出现疲劳裂纹",
+  "question": "现场发现「设备长期承受周期性振动，应力集中部位出现疲劳裂纹」，涉及法兰根部，判断是否属于机械疲劳机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "机械疲劳",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.1"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F03",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "炉管",
+  "equipment_type": "塔",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 500,
+  "field_evidence": "长期高温服役后材料强度下降，晶粒粗化",
+  "question": "现场发现「长期高温服役后材料强度下降，晶粒粗化」，涉及炉管，判断是否属于晶粒长大机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "晶粒长大",
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.1"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F04",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "炉管",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 550,
+  "field_evidence": "高温长期服役部位发生蠕变变形，尺寸增大",
+  "question": "现场发现「高温长期服役部位发生蠕变变形，尺寸增大」，涉及炉管，判断是否属于蠕变机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "蠕变",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.10",
+   "GBT30579-2022-7.1",
+   "GBT30579-2022-7.3",
+   "GBT30579-2022-7.4",
+   "GBT30579-2022-7.5"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F05",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "炉管",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 600,
+  "field_evidence": "长期高温服役后材料韧性下降、硬度降低",
+  "question": "现场发现「长期高温服役后材料韧性下降、硬度降低」，涉及炉管，判断是否属于球化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "球化",
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.3"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F06",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "炉管",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 511,
+  "field_evidence": "高温长期服役的碳钢部件发生石墨化，碳化层变脆",
+  "question": "现场发现「高温长期服役的碳钢部件发生石墨化，碳化层变脆」，涉及炉管，判断是否属于石墨化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "石墨化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.4",
+   "GBT30579-2022-9.8"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F07",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "炉管内壁",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 600,
+  "field_evidence": "高温炉管内壁脱碳层增厚，晶粒长大",
+  "question": "现场发现「高温炉管内壁脱碳层增厚，晶粒长大」，涉及炉管内壁，判断是否属于脱碳机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "脱碳",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.6",
+   "GBT30579-2022-9.1"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F08",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "高温换热器",
+  "equipment_type": "换热器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 731,
+  "field_evidence": "含铬合金钢高温服役后韧性下降",
+  "question": "现场发现「含铬合金钢高温服役后韧性下降」，涉及高温换热器，判断是否属于σ相脆化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "σ相脆化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.8"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F09",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "焊缝热影响区",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 468,
+  "field_evidence": "焊缝热影响区出现脆性断裂",
+  "question": "现场发现「焊缝热影响区出现脆性断裂」，涉及焊缝热影响区，判断是否属于回火脆化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "回火脆化",
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.10"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F10",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "焊缝热影响区",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 550,
+  "field_evidence": "焊缝热影响区出现平行于焊缝的裂纹",
+  "question": "现场发现「焊缝热影响区出现平行于焊缝的裂纹」，涉及焊缝热影响区，判断是否属于再热裂纹机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "再热裂纹",
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.13"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F11",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "双相不锈钢部件",
+  "equipment_type": "容器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 428,
+  "field_evidence": "含铁素体相的合金在 475℃ 附近长期服役后韧性下降",
+  "question": "现场发现「含铁素体相的合金在 475℃ 附近长期服役后韧性下降」，涉及双相不锈钢部件，判断是否属于475℃脆化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "475℃脆化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "note": "",
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.9"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F12",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "厚壁部位",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 250,
+  "field_evidence": "加工硬化部位长期服役后强度升高、韧性下降",
+  "question": "现场发现「加工硬化部位长期服役后强度升高、韧性下降」，涉及厚壁部位，判断是否属于应变时效机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "应变时效",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.11"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F13",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "法兰密封面",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 120,
+  "field_evidence": "往复运动的接触部位出现微沟槽与锈蚀；密封面有咬合痕迹",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "微动腐蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-9.9"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F14",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "泵入口",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 90,
+  "field_evidence": "固体颗粒或摩擦导致表面材料损失",
+  "question": "现场发现「固体颗粒或摩擦导致表面材料损失」，涉及泵入口，判断是否属于机械磨损机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "机械磨损",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.5"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F15",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "弯管",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 200,
+  "field_evidence": "高速流体冲刷部位形成凹坑与犁沟",
+  "question": "现场发现「高速流体冲刷部位形成凹坑与犁沟」，涉及弯管，判断是否属于冲蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "冲蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-9.3",
+   "GBT30579-2022-5.12",
+   "GBT30579-2022-5.21",
+   "GBT30579-2022-9.7"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F16",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "泵叶轮",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 80,
+  "field_evidence": "低压区部位出现蜂窝状点蚀",
+  "question": "现场发现「低压区部位出现蜂窝状点蚀」，涉及泵叶轮，判断是否属于汽蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "汽蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.7"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F17",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "容器封头",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 120,
+  "field_evidence": "设备承受超设计载荷后发生塑性变形",
+  "question": "现场发现「设备承受超设计载荷后发生塑性变形」，涉及容器封头，判断是否属于过载机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "过载",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.8",
+   "GBT30579-2022-9.2"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F18",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "容器裙座",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 200,
+  "field_evidence": "急剧温度变化部位出现发丝状裂纹",
+  "question": "现场发现「急剧温度变化部位出现发丝状裂纹」，涉及容器裙座，判断是否属于热冲击机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "热冲击",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-8.9"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F19",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "钛换热器管束",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 84,
+  "field_evidence": "钛部件吸氢后表面变脆、出现裂纹；管束外壁有白色氧化物",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "钛氢化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.12"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F20",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "高温合金部件",
+  "equipment_type": "加热炉",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 500,
+  "field_evidence": "长期高温服役的合金部件性能退化",
+  "question": "现场发现「长期高温服役的合金部件性能退化」，涉及高温合金部件，判断是否属于金属热老化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "金属热老化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.16"
+  ],
+  "fallback_hit_target": true,
+  "note": "温度按部位工程常识还原（金属热老化 适用 280~None℃）"
+ },
+ {
+  "sid": "SC-F21",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "铜合金换热管",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 80,
+  "field_evidence": "铜合金部件选择性腐蚀脱锌脱铝",
+  "question": "现场发现「铜合金部件选择性腐蚀脱锌脱铝」，涉及铜合金换热管，判断是否属于脱金属腐蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "脱金属腐蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.14"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F22",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "焊缝热影响区",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 620,
+  "field_evidence": "焊接接头热影响区沿晶界发生腐蚀",
+  "question": "现场发现「焊接接头热影响区沿晶界发生腐蚀」，涉及焊缝热影响区，判断是否属于敏化-晶间腐蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "敏化-晶间腐蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.15"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F23",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "反应堆压力容器",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "核电厂压力容器辐照后韧性下降",
+  "question": "现场发现「核电厂压力容器辐照后韧性下降」，涉及反应堆压力容器，判断是否属于辐照脆化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "辐照脆化",
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.11"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F24",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "铝液管道接触的碳钢部件",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 400,
+  "field_evidence": "熔融金属接触部位发生脆性开裂",
+  "question": "现场发现「熔融金属接触部位发生脆性开裂」，涉及铝液管道接触的碳钢部件，判断是否属于液体金属脆断机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "液体金属脆断",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.13"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F25",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "加热炉衬里",
+  "equipment_type": "加热炉",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "耐火衬里在高温下劣化、脱落",
+  "question": "现场发现「耐火衬里在高温下劣化、脱落」，涉及加热炉衬里，判断是否属于耐火材料退化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "耐火材料退化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-9.7"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F26",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "加热炉炉管",
+  "equipment_type": "加热炉",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 400,
+  "field_evidence": "燃油灰分沉积造成炉管减薄",
+  "question": "现场发现「燃油灰分沉积造成炉管减薄」，涉及加热炉炉管，判断是否属于燃灰腐蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "燃灰腐蚀",
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.17"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F27",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "高温管道",
+  "equipment_type": "加热炉",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 548,
+  "field_evidence": "高温设备表面氧化减薄",
+  "question": "现场发现「高温设备表面氧化减薄」，涉及高温管道，判断是否属于高温氧化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "高温氧化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.9",
+   "GBT30579-2022-8.2"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F28",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "不锈钢与碳钢法兰连接处",
+  "equipment_type": "塔",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 100,
+  "field_evidence": "异种金属连接处发生优先腐蚀",
+  "question": "现场发现「异种金属连接处发生优先腐蚀」，涉及不锈钢与碳钢法兰连接处，判断是否属于电偶腐蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "电偶腐蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.26",
+   "GBT30579-2022-5.12",
+   "GBT30579-2022-5.27",
+   "GBT30579-2022-6.3"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F29",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "高温换热器",
+  "equipment_type": "加热炉",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 649,
+  "field_evidence": "高温设备表面金属粉末化",
+  "question": "现场发现「高温设备表面金属粉末化」，涉及高温换热器，判断是否属于金属粉化机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "金属粉化",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-7.7"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F30",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "不锈钢换热管",
+  "equipment_type": "塔",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 48,
+  "field_evidence": "不锈钢部件在含氯环境出现应力腐蚀裂纹",
+  "question": "现场发现「不锈钢部件在含氯环境出现应力腐蚀裂纹」，涉及不锈钢换热管，判断是否属于氯化物应力腐蚀开裂机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "氯化物应力腐蚀开裂",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.1",
+   "GBT30579-2022-5.11",
+   "GBT30579-2022-5.24"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-F31",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "烷基装置镍基合金部件",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 100,
+  "field_evidence": "含氟环境中的镍基合金部件出现裂纹",
+  "question": "现场发现「含氟环境中的镍基合金部件出现裂纹」，涉及烷基装置镍基合金部件，判断是否属于氢氟酸应力腐蚀开裂机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "氢氟酸应力腐蚀开裂",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.16",
+   "GBT30579-2022-5.3"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F32",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "氢氟酸管道",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "含氟环境中的碳钢部件均匀减薄",
+  "question": "现场发现「含氟环境中的碳钢部件均匀减薄」，涉及氢氟酸管道，判断是否属于氢氟酸腐蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "氢氟酸腐蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.3"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F33",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "氢氟酸系统碳钢管件",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "含氟环境中碳钢部件发生氢致开裂",
+  "question": "现场发现「含氟环境中碳钢部件发生氢致开裂」，涉及氢氟酸系统碳钢管件，判断是否属于氢氟酸致氢应力开裂机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "氢氟酸致氢应力开裂",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-6.8",
+   "GBT30579-2022-6.9"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F34",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "含酚工艺水换热器",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 100,
+  "field_evidence": "含酚介质的碳钢设备发生减薄",
+  "question": "现场发现「含酚介质的碳钢设备发生减薄」，涉及含酚工艺水换热器，判断是否属于苯酚腐蚀机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "苯酚腐蚀",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-5.7"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F35",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "锅炉受热面",
+  "equipment_type": "加热炉",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "受热面结垢导致传热恶化、局部过热",
+  "question": "现场发现「受热面结垢导致传热恶化、局部过热」，涉及锅炉受热面，判断是否属于蒸汽阻滞机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "蒸汽阻滞",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-9.4"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F36",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "炉管超温部位",
+  "equipment_type": "加热炉",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 550,
+  "field_evidence": "设备局部超温导致材料劣化",
+  "question": "现场发现「设备局部超温导致材料劣化」，涉及炉管超温部位，判断是否属于过热机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "过热",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-9.6",
+   "GBT30579-2022-7.6",
+   "GBT30579-2022-8.8",
+   "GBT30579-2022-9.4"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-F37",
+  "kind": "multi",
+  "plant": "现场问题检索",
+  "equipment": "氧气管道阀门部件",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 25,
+  "field_evidence": "高含氧环境中金属部件燃烧",
+  "question": "现场发现「高含氧环境中金属部件燃烧」，涉及氧气管道阀门部件，判断是否属于高含氧气体促发的燃烧、爆炸机理，依据是哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "target_mech": "高含氧气体促发的燃烧、爆炸",
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "fallback_hits": [
+   "GBT30579-2022-9.10"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-G01",
+  "kind": "multi",
+  "plant": "锅炉给水系统",
+  "equipment": "锅炉给水管道",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 90,
+  "field_evidence": "给水管道测厚减薄 1.2mm，锅炉给水 pH 9.2",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G02",
+  "kind": "multi",
+  "plant": "锅炉给水系统",
+  "equipment": "锅炉给水箱",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 80,
+  "field_evidence": "给水箱壁面有麻点，测厚未见减薄",
+  "question": "该现象的机理与处理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G03",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压炉炉管",
+  "equipment_type": "加热炉",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 450,
+  "field_evidence": "炉管内壁测厚减薄 1.5mm，外壁有厚积碳",
+  "question": "该减薄属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-G04",
+  "kind": "multi",
+  "plant": "乙烯裂解装置",
+  "equipment": "裂解炉辐射段",
+  "equipment_type": "加热炉",
+  "material": "12Cr5Mo",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 820,
+  "field_evidence": "辐射段炉管内壁测厚减薄 1.3mm",
+  "question": "该减薄的机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-G05",
+  "kind": "multi",
+  "plant": "循环水系统",
+  "equipment": "循环水泵入口",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "环烷酸"
+  ],
+  "temperature_c": 209,
+  "field_evidence": "叶轮表面有点蚀，冲蚀坑约 2mm",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "环烷酸腐蚀",
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "环烷酸腐蚀",
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-G06",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔底切线系统",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "环烷酸"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "弯头背弯处测厚减薄 1.8mm，管内有光亮面",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G07",
+  "kind": "multi",
+  "plant": "锅炉系统",
+  "equipment": "碱液储罐",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "氢氧化钠"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "罐壁测厚减薄 2.4mm，碱液浓度 20%",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "碱腐蚀",
+   "硫酸腐蚀",
+   "碱应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "碱腐蚀",
+   "硫酸腐蚀",
+   "碱应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-G08",
+  "kind": "multi",
+  "plant": "公用工程",
+  "equipment": "磷酸系统管道",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "氯化氢"
+  ],
+  "temperature_c": 70,
+  "field_evidence": "管道测厚减薄 1.1mm，介质 pH 2.1",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G09",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压炉炉膛",
+  "equipment_type": "加热炉",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 450,
+  "field_evidence": "炉膛内构件测厚减薄 2.6mm",
+  "question": "该减薄属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-G10",
+  "kind": "multi",
+  "plant": "压缩机",
+  "equipment": "往复压缩机缸套",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 90,
+  "field_evidence": "缸套与活塞接触部位出现微沟槽",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G11",
+  "kind": "multi",
+  "plant": "加氢装置",
+  "equipment": "高压换热器",
+  "equipment_type": "换热器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "管束测厚减薄 1.4mm，保温层下有湿痕",
+  "question": "该减薄与湿硫化氢破坏是否相关？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-G12",
+  "kind": "multi",
+  "plant": "火炬系统",
+  "equipment": "火炬管",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 800,
+  "field_evidence": "火炬管减薄 1.9mm",
+  "question": "该减薄属于哪类高温腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-G13",
+  "kind": "multi",
+  "plant": "循环水系统",
+  "equipment": "冷却塔填料",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 40,
+  "field_evidence": "填料支架测厚减薄 1.1mm，填料两年需更换",
+  "question": "该减薄的成因？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G14",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "塔顶空冷器管束",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "氯化氢"
+  ],
+  "temperature_c": 95,
+  "field_evidence": "管束穿孔，孔内壁有蜂窝状腐蚀坑",
+  "question": "该穿孔属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G15",
+  "kind": "multi",
+  "plant": "储运系统",
+  "equipment": "液氨储罐内壁",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "氨"
+  ],
+  "temperature_c": 5,
+  "field_evidence": "罐内壁起泡，测厚未见减薄",
+  "question": "该起泡属于哪类损伤？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-G16",
+  "kind": "multi",
+  "plant": "加氢装置",
+  "equipment": "高压分离器",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 190,
+  "field_evidence": "器壁超声检测发现分层，测厚减薄 2.6mm",
+  "question": "该分层属于哪类损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-G17",
+  "kind": "multi",
+  "plant": "锅炉系统",
+  "equipment": "省煤器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 280,
+  "field_evidence": "省煤器管束测厚减薄 1.0mm，管壁结垢 2mm",
+  "question": "该减薄与结垢的关系？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G18",
+  "kind": "multi",
+  "plant": "公用工程",
+  "equipment": "脱盐水管道",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 30,
+  "field_evidence": "管道测厚减薄 1.3mm，脱盐水 pH 6.8",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-G19",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔底",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "环烷酸"
+  ],
+  "temperature_c": 310,
+  "field_evidence": "塔底板测厚减薄 3.5mm",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-G20",
+  "kind": "multi",
+  "plant": "乙烯裂解装置",
+  "equipment": "急冷器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 400,
+  "field_evidence": "急冷器壳程测厚减薄 1.6mm",
+  "question": "该减薄属于哪类高温腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-H01",
+  "kind": "multi",
+  "plant": "低温工况",
+  "equipment": "低温球罐焊缝",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": -20,
+  "field_evidence": "低温球罐焊缝附近发现裂纹，材料为碳钢",
+  "question": "该裂纹属于哪类损伤机理？依据哪一条？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "低温脆断",
+  "fallback_hits": [
+   "GBT30579-2022-9.5"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H02",
+  "kind": "multi",
+  "plant": "低温工况",
+  "equipment": "低温管道法兰",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": -25,
+  "field_evidence": "低温管道法兰面出现脆性断裂，断口呈结晶状",
+  "question": "该断裂的机理与防范措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "低温脆断",
+  "fallback_hits": [
+   "GBT30579-2022-9.5"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H03",
+  "kind": "multi",
+  "plant": "风机系统",
+  "equipment": "风机叶轮",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "叶轮表面出现颗粒冲刷形成的犁沟，材料表面损失明显",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "冲刷",
+  "fallback_hits": [
+   "GBT30579-2022-8.6",
+   "GBT30579-2022-5.7",
+   "GBT30579-2022-9.3",
+   "GBT30579-2022-9.7"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H04",
+  "kind": "multi",
+  "plant": "大气暴露",
+  "equipment": "户外设备",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 25,
+  "field_evidence": "户外设备表面均匀锈蚀，涂层起泡剥落",
+  "question": "该锈蚀属于哪类损伤？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "大气腐蚀(无隔热层)",
+  "fallback_hits": [
+   "GBT30579-2022-5.10",
+   "GBT30579-2022-5.11"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H05",
+  "kind": "multi",
+  "plant": "压缩机系统",
+  "equipment": "往复压缩机",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 90,
+  "field_evidence": "压缩机振动超标，支撑部位出现疲劳裂纹",
+  "question": "该裂纹属于哪类损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "振动疲劳",
+  "fallback_hits": [
+   "GBT30579-2022-8.3"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H06",
+  "kind": "multi",
+  "plant": "压缩机系统",
+  "equipment": "压缩机轴瓦",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 80,
+  "field_evidence": "轴瓦与轴颈接触部位出现塑性沟槽",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "接触疲劳",
+  "fallback_hits": [
+   "GBT30579-2022-8.4"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H07",
+  "kind": "multi",
+  "plant": "加热炉系统",
+  "equipment": "辐射段炉管",
+  "equipment_type": "加热炉",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 603,
+  "field_evidence": "炉管内壁出现渗碳层，碳层厚约 1mm",
+  "question": "该渗碳层的成因与危害？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "target_mech": "渗碳",
+  "fallback_hits": [
+   "GBT30579-2022-7.5",
+   "GBT30579-2022-7.3",
+   "GBT30579-2022-7.7"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-H08",
+  "kind": "multi",
+  "plant": "磷酸装置",
+  "equipment": "磷酸输送管道",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "氯化氢"
+  ],
+  "temperature_c": 70,
+  "field_evidence": "管道均匀减薄，磷酸浓度 85%",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "target_mech": "磷酸腐蚀",
+  "fallback_hits": [
+   "GBT30579-2022-5.4"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H09",
+  "kind": "multi",
+  "plant": "泵系统",
+  "equipment": "往复泵缸套",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 90,
+  "field_evidence": "缸套在交变载荷下出现裂纹，同时有点蚀",
+  "question": "该裂纹属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "腐蚀疲劳",
+  "fallback_hits": [
+   "GBT30579-2022-9.2"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H10",
+  "kind": "multi",
+  "plant": "加氢装置",
+  "equipment": "裂解分离系统",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "连多硫酸"
+  ],
+  "temperature_c": 100,
+  "field_evidence": "不锈钢管道在开停车后出现沿晶界裂纹",
+  "question": "该裂纹属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "连多硫酸应力腐蚀开裂"
+  ],
+  "target_mech": "连多硫酸应力腐蚀开裂",
+  "fallback_hits": [
+   "GBT30579-2022-6.12"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "连多硫酸应力腐蚀开裂"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H11",
+  "kind": "multi",
+  "plant": "锅炉系统",
+  "equipment": "锅炉水冷壁",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "水冷壁管内侧结垢，垢下局部碳化",
+  "question": "该碳化的机理与处理建议？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "锅炉冷凝水腐蚀",
+  "fallback_hits": [
+   "GBT30579-2022-5.15"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H12",
+  "kind": "multi",
+  "plant": "高温水系统",
+  "equipment": "高温换热器",
+  "equipment_type": "换热器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 310,
+  "field_evidence": "高温高压换热器管束出现沿晶界裂纹",
+  "question": "该裂纹属于哪类损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "target_mech": "高温水应力腐蚀开裂",
+  "fallback_hits": [
+   "GBT30579-2022-6.11"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-H13",
+  "kind": "multi",
+  "plant": "乙醇装置",
+  "equipment": "乙醇储罐",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 40,
+  "field_evidence": "乙醇储罐焊缝区出现裂纹，介质为含水乙醇",
+  "question": "该裂纹属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "target_mech": "乙醇应力腐蚀开裂",
+  "fallback_hits": [
+   "GBT30579-2022-6.14"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H14",
+  "kind": "multi",
+  "plant": "铸造设备",
+  "equipment": "铸铁换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 83,
+  "field_evidence": "铸铁换热器管束出现石墨化层，局部减薄",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "铸铁石墨化腐蚀",
+  "fallback_hits": [
+   "GBT30579-2022-9.8"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-H15",
+  "kind": "multi",
+  "plant": "振动设备",
+  "equipment": "往复压缩机支撑",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 70,
+  "field_evidence": "压缩机基础连接处出现裂纹，长期振动",
+  "question": "该裂纹的机理与判断依据？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "机械疲劳",
+  "fallback_hits": [
+   "GBT30579-2022-8.1"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H16",
+  "kind": "multi",
+  "plant": "热设备",
+  "equipment": "再热器管",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 550,
+  "field_evidence": "再热器管出现沿轴向的裂纹，母材长期高温服役",
+  "question": "该裂纹属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "再热裂纹",
+  "fallback_hits": [
+   "GBT30579-2022-7.13"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H17",
+  "kind": "multi",
+  "plant": "热设备",
+  "equipment": "过热器管",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 600,
+  "field_evidence": "过热器管爆管，母材有球化现象",
+  "question": "该爆管的机理与失效模式？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "球化",
+  "fallback_hits": [
+   "GBT30579-2022-7.3"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H18",
+  "kind": "multi",
+  "plant": "热设备",
+  "equipment": "主蒸汽管道",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 468,
+  "field_evidence": "主蒸汽管道弯头外侧出现裂纹，母材有回火脆化迹象",
+  "question": "该裂纹属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "target_mech": "回火脆化",
+  "fallback_hits": [
+   "GBT30579-2022-7.10"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-H19",
+  "kind": "multi",
+  "plant": "热设备",
+  "equipment": "加氢反应器堆焊层",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "反应器堆焊层下母材发生晶粒长大，接头软化",
+  "question": "该现象的机理与危害？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "target_mech": "晶粒长大",
+  "fallback_hits": [
+   "GBT30579-2022-7.1"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "fallback_hit_target": true
+ },
+ {
+  "sid": "SC-H20",
+  "kind": "multi",
+  "plant": "热设备",
+  "equipment": "高温换热器管束",
+  "equipment_type": "换热器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 731,
+  "field_evidence": "管束材质中出现 σ 相，冲击韧性下降",
+  "question": "该现象属于哪类劣化？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "target_mech": "σ相脆化",
+  "fallback_hits": [
+   "GBT30579-2022-7.8"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "fallback_hit_target": true,
+  "note": ""
+ },
+ {
+  "sid": "SC-I01",
+  "kind": "insufficient_info",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶冷凝器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢",
+   "氯化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "巡检发现壳体外壁有渗漏痕迹，尚未取样分析，未做测厚",
+  "question": "是什么腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-I02",
+  "kind": "insufficient_info",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶空冷器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "氯化氢"
+  ],
+  "temperature_c": 105,
+  "field_evidence": "管束有渗漏点，尚未取样",
+  "question": "是盐酸腐蚀吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-I03",
+  "kind": "insufficient_info",
+  "plant": "常减压装置",
+  "equipment": "减压塔底管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "环烷酸"
+  ],
+  "temperature_c": 320,
+  "field_evidence": "管线外壁有油污，未做测厚",
+  "question": "是否存在腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-I04",
+  "kind": "insufficient_info",
+  "plant": "加氢裂化装置",
+  "equipment": "加氢反应器",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "常规巡检未见异常，尚未开展专项检测",
+  "question": "反应器是否需要关注？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-I05",
+  "kind": "insufficient_info",
+  "plant": "常减压装置",
+  "equipment": "常压炉炉管",
+  "equipment_type": "加热炉",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 450,
+  "field_evidence": "巡检见炉管外壁积灰，未测厚",
+  "question": "炉管有无高温硫腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-I06",
+  "kind": "insufficient_info",
+  "plant": "循环水系统",
+  "equipment": "循环水换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 90,
+  "field_evidence": "换热器有渗漏，水样未分析",
+  "question": "是循环水腐蚀吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-I07",
+  "kind": "insufficient_info",
+  "plant": "合成氨装置",
+  "equipment": "氨储罐内壁",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "氨"
+  ],
+  "temperature_c": 5,
+  "field_evidence": "罐壁起泡，未测厚，未做氨浓度检测",
+  "question": "是氨应力腐蚀开裂吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-I08",
+  "kind": "insufficient_info",
+  "plant": "催化裂化装置",
+  "equipment": "再生器",
+  "equipment_type": "塔",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "再生器人孔附近有裂纹，未做金相分析",
+  "question": "该裂纹与高温硫腐蚀有关吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-I09",
+  "kind": "insufficient_info",
+  "plant": "乙烯裂解装置",
+  "equipment": "裂解炉",
+  "equipment_type": "加热炉",
+  "material": "12Cr5Mo",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 820,
+  "field_evidence": "炉管外观未见异常，尚未内窥检查",
+  "question": "炉管是否有损伤？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-I10",
+  "kind": "insufficient_info",
+  "plant": "延迟焦化装置",
+  "equipment": "焦化塔塔底",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 480,
+  "field_evidence": "塔体测厚数据不完整，未做超声检测",
+  "question": "塔体是否存在高温硫腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-I11",
+  "kind": "insufficient_info",
+  "plant": "锅炉给水系统",
+  "equipment": "给水换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 170,
+  "field_evidence": "换热器外壁结垢，尚未查水样",
+  "question": "腐蚀与结垢哪个是主因？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-I12",
+  "kind": "insufficient_info",
+  "plant": "加氢裂化装置",
+  "equipment": "压缩机出口管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 170,
+  "field_evidence": "发现焊缝处有裂纹，尚未做磁粉检测",
+  "question": "该裂纹的成因？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-I13",
+  "kind": "insufficient_info",
+  "plant": "罐区",
+  "equipment": "地下储罐罐底板",
+  "equipment_type": "储罐",
+  "material": "低合金钢",
+  "medium": [
+   "含盐水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "罐底板外观正常，测厚数据未复核",
+  "question": "罐底是否腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "含盐水腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "actual_mechs": [
+   "含盐水腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-I14",
+  "kind": "insufficient_info",
+  "plant": "公用工程",
+  "equipment": "火炬头",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 800,
+  "field_evidence": "火炬头外观可见变形，未测量",
+  "question": "是否发生高温硫腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-I15",
+  "kind": "insufficient_info",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶段",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 220,
+  "field_evidence": "塔壁局部减薄 3mm，未做腐蚀产物分析",
+  "question": "该减薄由什么引起？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-M01",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶空冷器入口",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢",
+   "氯化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "入口段管束测厚未见减薄，出口段测厚减薄 1.2mm；塔顶水 pH 4.8",
+  "question": "为何进出口段差异如此大？主导机理是什么？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-M02",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶空冷器出口",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢",
+   "氯化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "出口段温度 115℃，明显高于设计值；出口段管束测厚减薄 1.5mm",
+  "question": "超温运行对损伤机理有何影响？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-M03",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶回流罐液相",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "氯化氢",
+   "氯化铵"
+  ],
+  "temperature_c": 100,
+  "field_evidence": "罐内壁有白色盐状沉积物；水样氯离子 95mg/L；pH 5.4",
+  "question": "该沉积物对应的腐蚀机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氯化铵腐蚀",
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "氯化铵腐蚀",
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M04",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶回流罐气相",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "氯化氢"
+  ],
+  "temperature_c": 95,
+  "field_evidence": "气相空间点蚀明显；液相部位未见异常",
+  "question": "为何气相部位腐蚀更严重？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "盐酸腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M05",
+  "kind": "multi",
+  "plant": "加氢装置",
+  "equipment": "反应器入口段",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 330,
+  "field_evidence": "入口段超声检测发现密集回波；出口段检测正常",
+  "question": "问题集中在哪一段？依据是什么？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M06",
+  "kind": "multi",
+  "plant": "加氢装置",
+  "equipment": "反应器出口段",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "出口段焊缝附近发现裂纹，入口段未见异常",
+  "question": "该裂纹的成因？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M07",
+  "kind": "multi",
+  "plant": "乙烯裂解装置",
+  "equipment": "裂解炉对流段炉管",
+  "equipment_type": "加热炉",
+  "material": "12Cr5Mo",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 820,
+  "field_evidence": "对流段炉管内壁测厚减薄 1.4mm，内外壁温差 40℃",
+  "question": "对流段炉管的减薄属于哪类高温损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-M08",
+  "kind": "multi",
+  "plant": "乙烯裂解装置",
+  "equipment": "裂解炉对流段",
+  "equipment_type": "加热炉",
+  "material": "12Cr5Mo",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 820,
+  "field_evidence": "对流段炉管外壁有厚积灰，未测厚",
+  "question": "对流段是否存在损伤？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-M09",
+  "kind": "multi",
+  "plant": "催化裂化装置",
+  "equipment": "再生器密相段",
+  "equipment_type": "塔",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "密相段人孔发现裂纹，测厚减薄 1.8mm",
+  "question": "该部位损伤机理与处理建议？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-M10",
+  "kind": "multi",
+  "plant": "催化裂化装置",
+  "equipment": "再生器密相段人孔",
+  "equipment_type": "塔",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "密相段人孔发现裂纹，测厚减薄 1.8mm，人孔法兰螺栓有变形",
+  "question": "该部位损伤机理与处理建议？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-M11",
+  "kind": "multi",
+  "plant": "锅炉给水系统",
+  "equipment": "省煤器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 300,
+  "field_evidence": "省煤器管束外壁结垢 3mm，管温偏差 15℃",
+  "question": "结垢与腐蚀的关系？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M12",
+  "kind": "multi",
+  "plant": "锅炉给水系统",
+  "equipment": "水冷壁",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 350,
+  "field_evidence": "水冷壁管外侧测厚减薄 0.8mm",
+  "question": "该减薄是否属循环水腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M13",
+  "kind": "multi",
+  "plant": "罐区",
+  "equipment": "地下含盐水管线",
+  "equipment_type": "储罐",
+  "material": "低合金钢",
+  "medium": [
+   "含盐水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管线多点测厚发现减薄 1.3mm，沿线土壤潮湿",
+  "question": "该管线的腐蚀机理与防护措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "含盐水腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "含盐水腐蚀"
+  ],
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M14",
+  "kind": "multi",
+  "plant": "罐区",
+  "equipment": "固定顶罐",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 30,
+  "field_evidence": "罐壁中部测厚减薄 1.1mm，顶部气相空间明显",
+  "question": "为何减薄集中在气相空间？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M15",
+  "kind": "multi",
+  "plant": "循环水系统",
+  "equipment": "冷却塔填料框架",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 40,
+  "field_evidence": "框架局部减薄，填料更换后两年即需再次更换",
+  "question": "该减薄的成因与选材建议？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M16",
+  "kind": "multi",
+  "plant": "循环水系统",
+  "equipment": "循环水主管",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 35,
+  "field_evidence": "主管测厚减薄 1.5mm，循环水 pH 8.5",
+  "question": "该减薄是否与循环水 pH 有关？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M17",
+  "kind": "multi",
+  "plant": "含硫污水系统",
+  "equipment": "含硫污水罐区管线",
+  "equipment_type": "储罐",
+  "material": "300系列不锈钢",
+  "medium": [
+   "硫氢化铵"
+  ],
+  "temperature_c": 57,
+  "field_evidence": "管线测厚减薄 1.6mm，污水 pH 5.4",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)",
+   "冲蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)",
+   "冲蚀"
+  ],
+  "note": "",
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-M18",
+  "kind": "multi",
+  "plant": "含硫污水系统",
+  "equipment": "污水泵入口管线",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "硫氢化铵"
+  ],
+  "temperature_c": 57,
+  "field_evidence": "管线测厚减薄 1.4mm，泵入口流速偏高",
+  "question": "该减薄是冲蚀还是腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)",
+   "冲蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)",
+   "冲蚀"
+  ],
+  "note": "",
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O01",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "连多硫酸裂解装置低温段管道",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "连多硫酸"
+  ],
+  "temperature_c": -40,
+  "field_evidence": "管线焊缝处发现渗漏，保温层外表面有白色结晶物",
+  "question": "该工况下的损伤机理和检验周期是什么？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain"
+ },
+ {
+  "sid": "SC-O02",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "深冷分离装置低温换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "有机氯化物"
+  ],
+  "temperature_c": -40,
+  "field_evidence": "换热器管束存在一处穿孔，泄漏介质呈淡黄色",
+  "question": "低温有机氯介质下的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain"
+ },
+ {
+  "sid": "SC-O03",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "深冷分离装置低温换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "有机氯化物"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "换热器低温段测厚减薄 1.9mm，保温层外表面结霜",
+  "question": "该深冷工况下的损伤机理与检验要求？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O04",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "连多硫酸裂解炉出口管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "连多硫酸"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "管线测厚减薄 2.4mm，炉出口法兰面有明显麻点",
+  "question": "该低温临氢工况下的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O05",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "含氰废液低温储罐",
+  "equipment_type": "储罐",
+  "material": "300系列不锈钢",
+  "medium": [
+   "氰化物"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "罐体外壁多处点蚀，液位计接口处见泄漏痕迹",
+  "question": "该深冷含氰工况的损伤机理与防护要求？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O06",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "高温连多硫酸设备",
+  "equipment_type": "容器",
+  "material": "Q245R",
+  "medium": [
+   "连多硫酸"
+  ],
+  "temperature_c": 1000,
+  "field_evidence": "连多硫酸设备筒体法兰泄漏，未做壁厚测定",
+  "question": "该介质在高温下的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain"
+ },
+ {
+  "sid": "SC-O07",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温酸性水储罐",
+  "equipment_type": "储罐",
+  "material": "15CrMo",
+  "medium": [
+   "酸式酸性水"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "罐体测厚减薄 1.2mm，罐底局部有腐蚀产物堆积",
+  "question": "该低温酸性水工况的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O08",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "高温碱液管线",
+  "equipment_type": "管道",
+  "material": "S22053",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 1000,
+  "field_evidence": "碱液管线保温层下有渗漏痕迹，尚未测厚",
+  "question": "该工况下的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain"
+ },
+ {
+  "sid": "SC-O09",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温碱式酸性水换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "管束测厚减薄 0.9mm，换热管外壁结垢并有腐蚀坑",
+  "question": "该低温碱性水工况下的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O10",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温连多硫酸储罐",
+  "equipment_type": "储罐",
+  "material": "12Cr2Mo1",
+  "medium": [
+   "连多硫酸"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "低温连多硫酸储罐人孔法兰渗漏",
+  "question": "该工况下的损伤机理与检验周期？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain"
+ },
+ {
+  "sid": "SC-O11",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温含氯工艺管线",
+  "equipment_type": "管道",
+  "material": "奥氏体不锈钢",
+  "medium": [
+   "氰化物"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "管线测厚减薄 1.6mm，法兰垫片处有渗漏",
+  "question": "该深冷含氰工艺管线应关注哪些损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O12",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温胺液处理设备",
+  "equipment_type": "容器",
+  "material": "奥氏体不锈钢",
+  "medium": [
+   "胺液"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "设备外壁测厚减薄 1.1mm，底部排放口局部腐蚀",
+  "question": "该低温胺液工况的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O13",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温含盐水管道",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "连多硫酸"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "管道多点测厚减薄 1.7mm，保温层下有积水",
+  "question": "该低温连多硫酸管线的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O14",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温酸式酸性水换热器",
+  "equipment_type": "换热器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": -60,
+  "field_evidence": "管板测厚减薄 1.5mm，管束内壁有点蚀坑",
+  "question": "该低温碱式酸性水换热器的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain",
+  "note": "修复 tools 材质匹配后重设（原组合在库中有覆盖）"
+ },
+ {
+  "sid": "SC-O15",
+  "kind": "out_of_domain",
+  "plant": "超范围型",
+  "equipment": "低温氰化物工艺容器",
+  "equipment_type": "容器",
+  "material": "022Cr19Ni10",
+  "medium": [
+   "氰化物"
+  ],
+  "temperature_c": -40,
+  "field_evidence": "低温氰化物容器出口管线减薄 1.4mm，介质未取样",
+  "question": "该工况下的损伤机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [],
+  "expect_status": "out_of_domain",
+  "has_discriminator": false,
+  "actual_status": "out_of_domain",
+  "actual_mechs": [],
+  "verified_status": "out_of_domain"
+ },
+ {
+  "sid": "SC-O201",
+  "kind": "multi",
+  "plant": "循环水系统",
+  "equipment": "冷却水换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 120,
+  "field_evidence": "管束测厚减薄 1.4mm，循环水 pH 8.2、氯离子 150mg/L",
+  "question": "该减薄的机理与是否需要更换衬里？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O202",
+  "kind": "multi",
+  "plant": "土壤环境",
+  "equipment": "地下埋地含盐水管线",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "含盐水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "沿线测厚发现多处减薄，土壤电阻率 1200Ω·cm",
+  "question": "该管线的腐蚀机理与防护措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "含盐水腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "note": "原设计材质在库中无对应条款覆盖，已改为该介质实际覆盖的材质",
+  "verified_status": "ok",
+  "actual_mechs": [
+   "含盐水腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-O203",
+  "kind": "multi",
+  "plant": "土壤环境",
+  "equipment": "地下储罐外壁",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 25,
+  "field_evidence": "罐底板外壁测厚减薄 2.5mm，土壤偏碱性",
+  "question": "该腐蚀机理与阴保建议？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-O204",
+  "kind": "multi",
+  "plant": "污水系统",
+  "equipment": "连多硫酸裂解装置管道",
+  "equipment_type": "换热器",
+  "material": "300系列不锈钢",
+  "medium": [
+   "连多硫酸"
+  ],
+  "temperature_c": 40,
+  "field_evidence": "叶轮表面有点蚀，冲蚀坑直径约 3mm",
+  "question": "该损伤属于哪类机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "连多硫酸应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "连多硫酸应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O205",
+  "kind": "multi",
+  "plant": "公用工程",
+  "equipment": "软水补充管线",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 57,
+  "field_evidence": "管线测厚减薄 1.3mm，软水 pH 11.2，管线保温层完好",
+  "question": "该减薄是碱应力腐蚀开裂吗？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "note": "",
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O206",
+  "kind": "multi",
+  "plant": "公用工程",
+  "equipment": "除盐水管道",
+  "equipment_type": "管道",
+  "material": "300系列不锈钢",
+  "medium": [
+   "碱式酸性水"
+  ],
+  "temperature_c": 57,
+  "field_evidence": "管道测厚减薄 0.9mm，除盐水 pH 10.8，出水电导率偏高",
+  "question": "该减薄的机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "酸性水腐蚀(碱式酸性水)"
+  ],
+  "note": "",
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O207",
+  "kind": "multi",
+  "plant": "空分装置",
+  "equipment": "氧气管线",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "氧气"
+  ],
+  "temperature_c": 30,
+  "field_evidence": "管线焊缝处有烧蚀痕迹，邻近阀门也有变色",
+  "question": "该烧蚀属于哪类损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "燃灰腐蚀",
+   "甲铵腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "燃灰腐蚀",
+   "甲铵腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O208",
+  "kind": "multi",
+  "plant": "空分装置",
+  "equipment": "液氧储罐",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "氧气"
+  ],
+  "temperature_c": -190,
+  "field_evidence": "储罐外壁结霜，阀门部件有烧蚀",
+  "question": "该损伤机理与防范要点？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "甲铵腐蚀",
+   "燃灰腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "甲铵腐蚀",
+   "燃灰腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O209",
+  "kind": "multi",
+  "plant": "锅炉系统",
+  "equipment": "汽包",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 320,
+  "field_evidence": "汽包内壁发现多处点蚀",
+  "question": "该点蚀的机理与检验要求？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "note": "冷却水腐蚀(5.12)适用材质只列碳钢，材质由低合金钢改为碳钢以匹配条款"
+ },
+ {
+  "sid": "SC-O210",
+  "kind": "multi",
+  "plant": "锅炉系统",
+  "equipment": "水冷壁管",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 340,
+  "field_evidence": "水冷壁爆管，爆破口呈喇叭状",
+  "question": "该爆破的机理与失效模式？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-O211",
+  "kind": "multi",
+  "plant": "催化剂装置",
+  "equipment": "再生器烟气管道",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "管道减薄 2.7mm",
+  "question": "该减薄属于哪类高温腐蚀？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-O212",
+  "kind": "multi",
+  "plant": "储运系统",
+  "equipment": "产品储罐内壁",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "罐壁测厚减薄 1.6mm，罐内存有含氧工艺水",
+  "question": "该减薄的机理与鉴别要点？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "微生物腐蚀",
+   "腐蚀疲劳"
+  ]
+ },
+ {
+  "sid": "SC-P01",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶空冷器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢",
+   "氯化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "塔顶水 pH 5.2、氯离子 68mg/L、铁离子 6.3mg/L；出口管束测厚未见明显减薄",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "烟气露点腐蚀"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-P02",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶回流罐",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢",
+   "氯化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "罐壁有渗漏痕迹，未取样分析，未做定点测厚",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "盐酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-P03",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔底切线系统",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "环烷酸"
+  ],
+  "temperature_c": 320,
+  "field_evidence": "弯头背弯处测厚减薄 1.8mm，管内壁有光亮面",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-P04",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压炉对流段炉管",
+  "equipment_type": "加热炉",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 450,
+  "field_evidence": "炉管外壁可见明显积灰，下部有红色锈斑",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-P05",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "减压塔底泵出入口",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "环烷酸"
+  ],
+  "temperature_c": 340,
+  "field_evidence": "泵出口法兰面有轻微点蚀；未测厚",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冲蚀",
+   "低分子有机酸腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-P06",
+  "kind": "multi",
+  "plant": "常减压装置",
+  "equipment": "常压塔中段",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 220,
+  "field_evidence": "塔壁局部减薄 3mm，未见明显腐蚀产物",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-P08",
+  "kind": "multi",
+  "plant": "加氢裂化装置",
+  "equipment": "加氢反应器入口",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 320,
+  "field_evidence": "反应器壁厚测厚数据完整，未见异常",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-P09",
+  "kind": "multi",
+  "plant": "加氢裂化装置",
+  "equipment": "高压分离器",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 200,
+  "field_evidence": "发现器壁有分层；超声检测发现壁厚减薄 2.4mm",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-P10",
+  "kind": "multi",
+  "plant": "加氢裂化装置",
+  "equipment": "循环氢压缩机出口",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 180,
+  "field_evidence": "压缩机出口管线焊缝处发现裂纹",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-P11",
+  "kind": "multi",
+  "plant": "催化裂化装置",
+  "equipment": "再生器烟气轮入口",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "轮室入口管线有明显高温变色",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-P12",
+  "kind": "multi",
+  "plant": "催化裂化装置",
+  "equipment": "反应器汽提段",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 270,
+  "field_evidence": "汽提段人孔发现裂纹",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-P13",
+  "kind": "multi",
+  "plant": "延迟焦化装置",
+  "equipment": "焦化塔",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 480,
+  "field_evidence": "塔体外壁测厚减薄 4mm，无裂纹",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-P14",
+  "kind": "multi",
+  "plant": "乙烯裂解装置",
+  "equipment": "裂解炉辐射段炉管",
+  "equipment_type": "加热炉",
+  "material": "12Cr5Mo",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 820,
+  "field_evidence": "炉管内壁测厚减薄 1.2mm",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "硝酸盐应力腐蚀开裂",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-P15",
+  "kind": "multi",
+  "plant": "乙烯裂解装置",
+  "equipment": "急冷系统",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 400,
+  "field_evidence": "换热器壳程法兰泄漏",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-P16",
+  "kind": "multi",
+  "plant": "合成氨装置",
+  "equipment": "变换反应器",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "氨"
+  ],
+  "temperature_c": 326,
+  "field_evidence": "反应器焊缝附近发现裂纹",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "渗氮",
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "渗氮",
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-P17",
+  "kind": "multi",
+  "plant": "合成氨装置",
+  "equipment": "氨储罐",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "氨"
+  ],
+  "temperature_c": 5,
+  "field_evidence": "罐体外壁有起泡，测厚未见减薄",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-P18",
+  "kind": "multi",
+  "plant": "锅炉给水系统",
+  "equipment": "给水换热器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 180,
+  "field_evidence": "管束结垢严重，壁厚测厚减薄 1.1mm",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "verified_status": "ok"
+ },
+ {
+  "sid": "SC-P20",
+  "kind": "multi",
+  "plant": "罐区",
+  "equipment": "液氨储罐",
+  "equipment_type": "储罐",
+  "material": "碳钢",
+  "medium": [
+   "氨"
+  ],
+  "temperature_c": 5,
+  "field_evidence": "罐体焊缝处发现渗漏",
+  "question": "该部位的主要损伤机理是什么？风险等级如何？建议采取什么措施？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "氨应力腐蚀开裂",
+   "大气腐蚀(有隔热层)",
+   "微生物腐蚀",
+   "低分子有机酸腐蚀",
+   "高温氢腐蚀"
+  ],
+  "verified_status": "ok",
+  "note": ""
+ },
+ {
+  "sid": "SC-P21",
+  "kind": "multi",
+  "plant": "火炬系统",
+  "equipment": "火炬总管",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 800,
+  "field_evidence": "火炬总管局部烧蚀，管壁减薄 0.6mm",
+  "question": "火炬总管的烧蚀属于哪类损伤机理？",
+  "tools": [
+   "damage_mechanism_query",
+   "standard_clause_search",
+   "rbi_lookup"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "has_discriminator": true,
+  "actual_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂",
+   "硝酸盐应力腐蚀开裂"
+  ],
+  "verified_status": "ok",
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-X01",
+  "kind": "single",
+  "plant": "常减压装置",
+  "equipment": "常压塔顶冷却器",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 140,
+  "field_evidence": "管束测厚未见减薄，塔顶水 pH 5.5",
+  "question": "该部位是否需要重点监测？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "湿硫化氢破坏",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "湿硫化氢破坏",
+   "硫酸腐蚀",
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": ""
+ },
+ {
+  "sid": "SC-X02",
+  "kind": "single",
+  "plant": "常减压装置",
+  "equipment": "常压塔一线",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 230,
+  "field_evidence": "塔壁局部减薄 2.8mm",
+  "question": "该减薄的成因？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-X03",
+  "kind": "single",
+  "plant": "加氢装置",
+  "equipment": "循环氢压缩机",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 160,
+  "field_evidence": "压缩机缸套测厚减薄 0.9mm",
+  "question": "该减薄是否属氢致损伤？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "硫酸腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-X04",
+  "kind": "single",
+  "plant": "乙烯裂解装置",
+  "equipment": "急冷器壳体",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 400,
+  "field_evidence": "壳体测厚减薄 1.2mm",
+  "question": "该减薄的机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "硝酸盐应力腐蚀开裂",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-X05",
+  "kind": "single",
+  "plant": "催化裂化装置",
+  "equipment": "再生器烟气轮",
+  "equipment_type": "容器",
+  "material": "低合金钢",
+  "medium": [
+   "高温硫化物腐蚀介质"
+  ],
+  "temperature_c": 700,
+  "field_evidence": "轮室测厚减薄 1.5mm",
+  "question": "该减薄属于哪类腐蚀？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "高温硫化物腐蚀(无氢气环境)",
+   "高温硫化物腐蚀(氢气环境)",
+   "硝酸盐应力腐蚀开裂",
+   "腐蚀疲劳",
+   "浓差电池腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "note": "温度按部位工程常识还原（高温硫化物腐蚀(无氢气环境) 适用 260~None℃）"
+ },
+ {
+  "sid": "SC-X07",
+  "kind": "single",
+  "plant": "循环水系统",
+  "equipment": "循环水冷却塔",
+  "equipment_type": "换热器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 35,
+  "field_evidence": "冷却塔填料支架减薄 1.0mm",
+  "question": "该减薄与哪些因素有关？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-X08",
+  "kind": "single",
+  "plant": "锅炉系统",
+  "equipment": "给水泵",
+  "equipment_type": "容器",
+  "material": "碳钢",
+  "medium": [
+   "循环水"
+  ],
+  "temperature_c": 95,
+  "field_evidence": "泵壳测厚减薄 0.7mm",
+  "question": "该减薄是否需关注？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "冷却水腐蚀",
+   "腐蚀疲劳",
+   "微生物腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-X09",
+  "kind": "single",
+  "plant": "公用工程",
+  "equipment": "氮气系统",
+  "equipment_type": "管道",
+  "material": "碳钢",
+  "medium": [
+   "氧气"
+  ],
+  "temperature_c": 30,
+  "field_evidence": "管道焊缝有烧蚀痕迹",
+  "question": "该烧蚀的机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "燃灰腐蚀",
+   "甲铵腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "含氧工艺水腐蚀",
+   "高含氧气体促发的燃烧、爆炸",
+   "锅炉冷凝水腐蚀",
+   "土壤腐蚀",
+   "燃灰腐蚀",
+   "甲铵腐蚀"
+  ]
+ },
+ {
+  "sid": "SC-X11",
+  "kind": "single",
+  "plant": "常减压装置",
+  "equipment": "常压塔中段塔盘",
+  "equipment_type": "塔",
+  "material": "碳钢",
+  "medium": [
+   "二氧化碳"
+  ],
+  "temperature_c": 210,
+  "field_evidence": "塔盘局部减薄 1.6mm",
+  "question": "该减薄的机理？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "锅炉冷凝水腐蚀",
+   "二氧化碳腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-X12",
+  "kind": "single",
+  "plant": "加氢精制装置",
+  "equipment": "高压换热器管束",
+  "equipment_type": "换热器",
+  "material": "低合金钢",
+  "medium": [
+   "湿硫化氢"
+  ],
+  "temperature_c": 290,
+  "field_evidence": "管束测厚减薄 1.1mm",
+  "question": "该部位存在何种风险？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "微生物腐蚀",
+   "燃灰腐蚀",
+   "碳酸盐应力腐蚀开裂"
+  ]
+ },
+ {
+  "sid": "SC-X14",
+  "kind": "single",
+  "plant": "罐区",
+  "equipment": "地下埋地碳钢管线",
+  "equipment_type": "管道",
+  "material": "低合金钢",
+  "medium": [
+   "含盐水"
+  ],
+  "temperature_c": 60,
+  "field_evidence": "管线多点测厚发现减薄 1.1mm，沿线土壤干燥",
+  "question": "该管线的腐蚀机理与防护措施？",
+  "tools": [
+   "damage_mechanism_query"
+  ],
+  "expect_mechs": [
+   "含盐水腐蚀"
+  ],
+  "actual_status": "ok",
+  "has_discriminator": true,
+  "verified_status": "ok",
+  "actual_mechs": [
+   "含盐水腐蚀"
+  ]
+ }
+]
